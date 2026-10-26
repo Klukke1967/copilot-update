@@ -4,6 +4,16 @@
       "name": "Microsoft 365 Copilot Blog",
       "homepage": "https://www.microsoft.com/en-us/copilot/blog/",
       "feedUrl": "https://www.microsoft.com/en-us/copilot/blog/feed/"
+    },
+    {
+      "name": "GitHub Copilot Changelog",
+      "homepage": "https://github.blog/changelog/label/github-copilot/",
+      "feedUrl": "https://github.blog/changelog/label/github-copilot/feed/"
+    },
+    {
+      "name": "Copilot Studio Blog",
+      "homepage": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/",
+      "feedUrl": "https://www.microsoft.com/en-us/copilot/blog/category/copilot-studio/feed/"
     }
   ]
 }
