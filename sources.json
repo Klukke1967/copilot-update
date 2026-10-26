@@ -1,19 +1,14 @@
 {
   "sources": [
     {
-      "name": "Microsoft 365 Copilot Blog",
-      "homepage": "https://www.microsoft.com/en-us/copilot/blog/",
-      "feedUrl": "https://www.microsoft.com/en-us/copilot/blog/feed/"
+      "name": "Microsoft 365 Blog (GA Updates)",
+      "homepage": "https://www.microsoft.com/en-us/microsoft-365/blog/",
+      "feedUrl": "https://www.microsoft.com/en-us/microsoft-365/blog/feed/"
     },
     {
-      "name": "GitHub Copilot Changelog",
-      "homepage": "https://github.blog/changelog/label/github-copilot/",
-      "feedUrl": "https://github.blog/changelog/label/github-copilot/feed/"
-    },
-    {
-      "name": "Copilot Studio Blog",
-      "homepage": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/",
-      "feedUrl": "https://www.microsoft.com/en-us/copilot/blog/category/copilot-studio/feed/"
+      "name": "Microsoft 365 Roadmap (Filtered for Copilot)",
+      "homepage": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "feedUrl": "https://www.microsoft.com/en-us/microsoft-365/roadmap/feed"
     }
   ]
 }
