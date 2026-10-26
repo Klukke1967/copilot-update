@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Copilot Dashboard">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="#07111f"/>
+  <circle cx="256" cy="256" r="174" fill="url(#g)" opacity="0.9"/>
+  <path d="M141 192h230v42H141zm0 86h230v42H141zm0 86h140v42H141z" fill="#07111f" opacity="0.9"/>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "name": "Microsoft 365 Copilot Blog",
+      "homepage": "https://www.microsoft.com/en-us/copilot/blog/",
+      "feedUrl": "https://www.microsoft.com/en-us/copilot/blog/feed/"
+    }
+  ]
+}
