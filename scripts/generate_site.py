@@ -1,12 +1,13 @@
 
-import json, time
+import json, time, shutil
 from pathlib import Path
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
 import urllib.request
 from xml.etree import ElementTree as ET
 
-ROOT = Path('/Users/agenten/copilot-dashboard')
+ROOT = Path('.')
+DIST = ROOT / 'dist'
 
 def load_sources():
     return json.loads((ROOT / 'sources.json').read_text())['sources']
@@ -28,15 +29,17 @@ def parse_feed(source):
     return items
 
 def main():
+    DIST.mkdir(exist_ok=True)
     sources = load_sources()
     all_items = []
     for s in sources:
-        try:
-            all_items.extend(parse_feed(s))
+        try: all_items.extend(parse_feed(s))
         except: pass
     
-    # Gem resultatet DIREKTE i roden
-    (ROOT / 'updates.json').write_text(json.dumps(all_items), encoding='utf-8')
-    (ROOT / 'version.json').write_text(json.dumps({'version': '1.0.0', 'buildTime': int(time.time() * 1000)}), encoding='utf-8')
+    (DIST / 'updates.json').write_text(json.dumps(all_items), encoding='utf-8')
+    (DIST / 'version.json').write_text(json.dumps({'version': '1.0.0', 'buildTime': int(time.time() * 1000)}), encoding='utf-8')
+    
+    for name in ['index.html', 'app.js', 'manifest.json', 'icon.svg', 'CNAME']:
+        shutil.copy2(ROOT / name, DIST / name)
 
 main()
