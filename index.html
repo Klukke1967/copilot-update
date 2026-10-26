@@ -12,6 +12,10 @@
     .tab.active { background: var(--accent); color: #000; }
     .content { display: none; }
     .content.active { display: block; }
+    /* Beholdere til data */
+    #updates { display: grid; gap: 12px; margin-top: 10px; }
+    .update { padding: 16px; border-radius: 18px; border: 1px solid #333; background: #0c1729; }
+    .meta { color: #97a7c1; font-size: 0.8rem; }
   </style>
 </head>
 <body>
@@ -21,9 +25,23 @@
     <div class="tab" onclick="showTab('Generel AI')">Generel AI</div>
     <div class="tab" onclick="showTab('Google AI')">Google AI</div>
   </div>
-  <div id="Copilot" class="content active"></div>
+  
+  <div id="Copilot" class="content active">
+    <div id="updates">Henter nyheder...</div>
+  </div>
   <div id="Generel AI" class="content"></div>
   <div id="Google AI" class="content"></div>
+
+  <!-- Nødvendige elementer til app.js -->
+  <div id="sources" style="display:none;"></div>
+  <div id="toast" style="display:none;"></div>
+  <div id="buildInfo"></div>
+  <div id="lastChecked"></div>
+  <button id="reloadBtn" style="display:none;">Reload</button>
+  <button id="refreshBtn" style="display:none;">Refresh</button>
+  <button id="updateNowBtn" style="display:none;">Update</button>
+
+  <script src="app.js"></script>
   <script>
     function showTab(name) {
       document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
