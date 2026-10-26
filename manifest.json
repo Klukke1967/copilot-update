@@ -1,0 +1,7 @@
+{
+  "name": "Copilot Nyt",
+  "short_name": "Copilot",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff"
+}

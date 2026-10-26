@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copilot Opdateringer</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        .update-toast { display: none; background: #ffcc00; padding: 10px; border-radius: 5px; margin-bottom: 20px; }
+        .reload-btn { cursor: pointer; background: #007bff; color: white; border: none; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div id="update-toast" class="update-toast">🚀 Ny opdatering klar! <button onclick="window.location.reload(true)">Opdater nu</button></div>
+    <h1>Copilot Nyt</h1>
+    <button class="reload-btn" onclick="window.location.reload(true)">🔄 Genindlæs</button>
+    <div id="content">Henter nyheder...</div>
+    <script src="app.js"></script>
+</body>
+</html>
