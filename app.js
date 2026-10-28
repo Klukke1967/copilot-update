@@ -1,10 +1,9 @@
 async function loadNews() {
   try {
-    const res = await fetch('updates.json?t=' + Date.now());
+    const res = await fetch('/updates.json?t=' + Date.now());
     const data = await res.json();
     const container = document.getElementById('updates');
     
-    // Hvis data er et array direkte (som i updates.json)
     const items = Array.isArray(data) ? data : (data.items || []);
     
     if (items.length === 0) {
@@ -24,5 +23,4 @@ async function loadNews() {
     console.error('Error loading news:', error);
   }
 }
-
 document.addEventListener('DOMContentLoaded', loadNews);
