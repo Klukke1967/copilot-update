@@ -1,1 +1,47 @@
-[]
+{
+  "generatedAt": "2026-10-28T19:29:56.951962",
+  "sources": [
+    {
+      "name": "Microsoft Copilot",
+      "homepage": "https://www.microsoft.com/en-us/copilot/blog/",
+      "feedUrl": "https://www.microsoft.com/en-us/copilot/blog/feed/"
+    }
+  ],
+  "items": [
+    {
+      "title": "The AI advantage your company can keep",
+      "summary": "<p>New research across more than 200 enterprises looks at how shared knowledge can help companies coordinate their agents\u2014and turn lessons from their ...",
+      "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
+      "published": "Tue, 27 Oct 2026 16:00:00 +0000",
+      "source": "Microsoft Copilot"
+    },
+    {
+      "title": "Bringing CRM into the flow of work and agents into business process for sales and service teams",
+      "summary": "AI omdanner traditionelle gr\u00e6nser for erhvervsapplikationer, hvor CRM-systemer nu integreres direkte i\u65e5\u5e38\u5de5\u4f5c\u6d41\u7a0b\uff0c\u4ece\u800c\u63d0\u9ad8\u4e2a\u4eba\u751f\u4ea7\u529b\u5e76\u63a8\u52a8\u7ec4\u7ec7\u6d41\u7a0b\u8f6c\u578b\u3002\u8fd9\u4e00\u53d8\u5316\u6700\u521d\u51fa\u73b0\u5728Microsoft Copilot Blog\u4e0a\u3002",
+      "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/08/bringing-crm-into-the-flow-of-work-and-agents-into-business-process-for-sales-and-service-teams/",
+      "published": "Thu, 08 Oct 2026 15:00:00 +0000",
+      "source": "Microsoft Copilot"
+    },
+    {
+      "title": "Introducing the new Copilot with Home, Code and Autopilot",
+      "summary": "Microsoft omskriver sin Copilot-tjeneste for at st\u00f8tte \u00e6ndringer i arbejdslivet og udvide.muligheder forEnhver, gennem funktioner som Home, Code og Autopilot.",
+      "link": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "published": "Fri, 25 Sep 2026 12:07:25 +0000",
+      "source": "Microsoft Copilot"
+    },
+    {
+      "title": "Building the system for AI at work",
+      "summary": "I AI-branchen er der mange vigtede diskussioner og aktiviteter i \u00f8jeblikket. Microsoft har p\u00e5 sin Copilot-blog forespurt om opm\u00e6rksomhed til bygning af AI-systemer for arbejdslivet. Indl\u00e6gget er prim\u00e6rt pr\u00e6sentet p\u00e5 Microsoft Copilot Blog.",
+      "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/23/building-the-system-for-ai-at-work/",
+      "published": "Wed, 23 Sep 2026 15:00:00 +0000",
+      "source": "Microsoft Copilot"
+    },
+    {
+      "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+      "summary": "Microsoft 365 G7 kombinerer AI, Copilot, sikkerhedskontrol og overholdelse for at st\u00f8tte offentlige myndigheder i en moderne og sikker digital transformation. Blogindl\u00e6gget findes f\u00f8rst p\u00e5 Microsoft Copilot Blog.",
+      "link": "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+      "published": "Tue, 15 Sep 2026 15:00:00 +0000",
+      "source": "Microsoft Copilot"
+    }
+  ]
+}

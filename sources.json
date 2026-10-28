@@ -1,27 +1,23 @@
 {
   "sources": [
     {
-      "name": "Microsoft 365 Blog",
+      "name": "Microsoft Copilot",
       "category": "Copilot",
-      "homepage": "https://www.microsoft.com/en-us/microsoft-365/blog/",
-      "feedUrl": "https://www.microsoft.com/en-us/microsoft-365/blog/feed/"
+      "feedUrl": "https://www.microsoft.com/en-us/copilot/blog/feed/"
     },
     {
       "name": "OpenAI Blog",
       "category": "Generel AI",
-      "homepage": "https://openai.com/news/",
       "feedUrl": "https://openai.com/news/feed.xml"
     },
     {
       "name": "Anthropic News",
       "category": "Generel AI",
-      "homepage": "https://www.anthropic.com/news",
       "feedUrl": "https://www.anthropic.com/news/feed.xml"
     },
     {
-      "name": "Google The Keyword (AI)",
+      "name": "Google AI Blog",
       "category": "Google AI",
-      "homepage": "https://blog.google/technology/ai/",
       "feedUrl": "https://blog.google/technology/ai/rss/"
     }
   ]
