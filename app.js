@@ -1,25 +1,27 @@
+
 async function loadNews() {
   try {
-    const res = await fetch('/updates.json?t=' + Date.now());
+    const res = await fetch('updates.json?t=' + Date.now());
     const data = await res.json();
-    const container = document.getElementById('updates');
     
-    const items = Array.isArray(data) ? data : (data.items || []);
-    
-    if (items.length === 0) {
-      container.innerHTML = '<p>Ingen nyheder tilgængelige.</p>';
-      return;
+    // Vi ved fra tidligere at data er et array af items. 
+    // Men hvis den fejler med "forEach is not a function", er det fordi 'data' er noget andet.
+    // Jeg tilføjer en log her for at se hvad der kommer ind.
+    console.log("Data fra updates.json:", data);
+
+    if (!Array.isArray(data)) {
+        console.error("Data er ikke et array!");
+        return;
     }
 
-    container.innerHTML = items.map(item => `
-      <div class="card">
-        <h2>${item.title || 'Uden titel'}</h2>
-        <p>${item.summary || 'Ingen opsummering'}</p>
-        <a href="${item.link}" target="_blank">Læs mere</a>
-      </div>
-    `).join('');
+    data.forEach(item => {
+        const targetId = item.category || 'Copilot'; // Fallback til Copilot
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.innerHTML += `<div class="card"><h3>${item.title}</h3><a href="${item.link}" target="_blank">Læs mere</a></div>`;
+        }
+    });
   } catch (error) {
-    document.getElementById('updates').innerHTML = '<p>Kunne ikke hente nyheder. Prøv igen senere.</p>';
     console.error('Error loading news:', error);
   }
 }
