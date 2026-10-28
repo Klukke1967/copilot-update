@@ -7,12 +7,12 @@
     },
     {
       "name": "OpenAI Blog",
-      "category": "Generel AI",
+      "category": "OpenAI",
       "feedUrl": "https://openai.com/news/feed.xml"
     },
     {
       "name": "Anthropic News",
-      "category": "Generel AI",
+      "category": "Anthropic",
       "feedUrl": "https://www.anthropic.com/news/feed.xml"
     },
     {

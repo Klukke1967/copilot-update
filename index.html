@@ -6,8 +6,8 @@
   <style>
     :root { --bg: #07111f; --panel: #111d33; --text: #e5eefc; --accent: #38bdf8; }
     body { font-family: sans-serif; background: var(--bg); color: var(--text); padding: 20px; }
-    .nav { display: flex; gap: 10px; margin-bottom: 20px; }
-    .tab { padding: 10px 20px; cursor: pointer; border-radius: 8px; border: 1px solid #333; }
+    .nav { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+    .tab { padding: 10px 15px; cursor: pointer; border-radius: 8px; border: 1px solid #333; }
     .tab.active { background: var(--accent); color: #000; }
     .view { display: none; }
     .view.active { display: block; }
@@ -17,14 +17,14 @@
 <body>
   <div class="nav">
     <div class="tab active" onclick="switchView(this, 'Copilot')">Copilot</div>
-    <div class="tab" onclick="switchView(this, 'Generel AI')">Generel AI</div>
+    <div class="tab" onclick="switchView(this, 'OpenAI')">OpenAI</div>
+    <div class="tab" onclick="switchView(this, 'Anthropic')">Anthropic</div>
     <div class="tab" onclick="switchView(this, 'Google AI')">Google AI</div>
-    <div class="tab" onclick="switchView(this, 'chat')">Chat med Hermes</div>
   </div>
   <div id="Copilot" class="view active"></div>
-  <div id="Generel AI" class="view"></div>
+  <div id="OpenAI" class="view"></div>
+  <div id="Anthropic" class="view"></div>
   <div id="Google AI" class="view"></div>
-  <div id="chat" class="view">Chat-modul kommer...</div>
 
   <script>
     function switchView(el, id) {
@@ -35,7 +35,7 @@
     }
     
     async function loadNews() {
-      const res = await fetch('updates.json');
+      const res = await fetch('updates.json?t=' + Date.now());
       const data = await res.json();
       data.forEach(item => {
         const target = document.getElementById(item.category);
