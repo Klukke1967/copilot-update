@@ -6,8 +6,8 @@
   <style>
     :root { --bg: #07111f; --panel: #111d33; --text: #e5eefc; --accent: #38bdf8; }
     body { font-family: sans-serif; background: var(--bg); color: var(--text); padding: 20px; }
-    .nav { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
-    .tab { padding: 10px 15px; cursor: pointer; border-radius: 8px; border: 1px solid #333; }
+    .nav { display: flex; gap: 10px; margin-bottom: 20px; }
+    .tab { padding: 10px 20px; cursor: pointer; border-radius: 8px; border: 1px solid #333; }
     .tab.active { background: var(--accent); color: #000; }
     .view { display: none; }
     .view.active { display: block; }
@@ -16,15 +16,15 @@
 </head>
 <body>
   <div class="nav">
-    <div class="tab active" onclick="switchView(this, 'Copilot')">Copilot</div>
-    <div class="tab" onclick="switchView(this, 'OpenAI')">OpenAI</div>
-    <div class="tab" onclick="switchView(this, 'Anthropic')">Anthropic</div>
-    <div class="tab" onclick="switchView(this, 'Google AI')">Google AI</div>
+    <div class="tab active" onclick="switchView(this, 'copilot')">Copilot</div>
+    <div class="tab" onclick="switchView(this, 'openai')">OpenAI</div>
+    <div class="tab" onclick="switchView(this, 'anthropic')">Anthropic</div>
+    <div class="tab" onclick="switchView(this, 'google')">Google</div>
   </div>
-  <div id="Copilot" class="view active"></div>
-  <div id="OpenAI" class="view"></div>
-  <div id="Anthropic" class="view"></div>
-  <div id="Google AI" class="view"></div>
+  <div id="copilot" class="view active"></div>
+  <div id="openai" class="view"></div>
+  <div id="anthropic" class="view"></div>
+  <div id="google" class="view"></div>
 
   <script>
     function switchView(el, id) {
@@ -38,7 +38,10 @@
       const res = await fetch('updates.json?t=' + Date.now());
       const data = await res.json();
       data.forEach(item => {
-        const target = document.getElementById(item.category);
+        // Mapp kategori til ID
+        const map = {'Copilot': 'copilot', 'OpenAI': 'openai', 'Anthropic': 'anthropic', 'Google AI': 'google'};
+        const targetId = map[item.category] || 'copilot';
+        const target = document.getElementById(targetId);
         if (target) {
           target.innerHTML += `<div class="card"><h3>${item.title}</h3><a href="${item.link}" target="_blank">Læs mere</a></div>`;
         }
