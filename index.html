@@ -37,15 +37,19 @@
     async function loadNews() {
       const res = await fetch('updates.json?t=' + Date.now());
       const data = await res.json();
-      data.forEach(item => {
-        // Mapp kategori til ID
-        const map = {'Copilot': 'copilot', 'OpenAI': 'openai', 'Anthropic': 'anthropic', 'Google AI': 'google'};
-        const targetId = map[item.category] || 'copilot';
+        data.forEach(item => {
+        // Mapp kategori til ID - Vi gør det case-insensitive
+        const cat = (item.category || "").toLowerCase();
+        let targetId = 'copilot';
+        if (cat.includes('openai')) targetId = 'openai';
+        else if (cat.includes('anthropic')) targetId = 'anthropic';
+        else if (cat.includes('google')) targetId = 'google';
+        
         const target = document.getElementById(targetId);
         if (target) {
           target.innerHTML += `<div class="card"><h3>${item.title}</h3><a href="${item.link}" target="_blank">Læs mere</a></div>`;
         }
-      });
+    });
     }
     loadNews();
   </script>
