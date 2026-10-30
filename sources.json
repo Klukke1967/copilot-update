@@ -17,8 +17,13 @@
     },
     {
       "name": "Google AI Blog",
-      "category": "Google AI",
+      "category": "Google",
       "feedUrl": "https://blog.google/technology/ai/rss/"
+    },
+    {
+      "name": "Mike Tholfsen",
+      "category": "Copilot",
+      "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2dSE9W3lGYbFi_CPmVtA-A"
     }
   ]
 }
