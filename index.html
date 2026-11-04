@@ -15,7 +15,7 @@
   </style>
 </head>
 <body>
-  <div class="nav">
+    <div class="nav">
     <div class="tab active" onclick="switchView(this, 'copilot')">Copilot</div>
     <div class="tab" onclick="switchView(this, 'openai')">OpenAI</div>
     <div class="tab" onclick="switchView(this, 'anthropic')">Anthropic</div>
@@ -38,11 +38,11 @@
       const res = await fetch('updates.json?t=' + Date.now());
       const data = await res.json();
       data.forEach(item => {
-        // Mapp kategori til ID - Vi gør det case-insensitive
         const cat = (item.category || "").toLowerCase();
-        let targetId = 'Copilot';
-        if (cat.includes('google')) targetId = 'Google AI';
-        else if (cat.includes('tech')) targetId = 'Generel AI';
+        let targetId = 'copilot'; // Default
+        if (cat.includes('openai')) targetId = 'openai';
+        else if (cat.includes('anthropic')) targetId = 'anthropic';
+        else if (cat.includes('google')) targetId = 'google';
         
         const target = document.getElementById(targetId);
         if (target) {
