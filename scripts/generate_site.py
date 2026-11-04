@@ -3,7 +3,7 @@ import json, feedparser
 from pathlib import Path
 
 # AI-delen fjernes for at gøre deployment robust på GitHub Pages
-ROOT = Path('/Users/agenten/copilot-dashboard')
+ROOT = Path('.')
 
 def main():
     sources = json.loads((ROOT / 'sources.json').read_text())['sources']
