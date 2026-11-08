@@ -440,6 +440,12 @@
       color: #ffffff;
     }
 
+    .chip[data-target="bookmarks"].active {
+      background: #eab308;
+      border-color: #ca8a04;
+      color: #000000;
+    }
+
     .chip .chip-count {
       font-size: 0.75rem;
       opacity: 0.8;
@@ -679,6 +685,95 @@
     .btn-action:hover {
       background: var(--border);
       color: var(--text-main);
+    }
+
+    /* Bookmark & Notes Styling */
+    .btn-star {
+      background: none;
+      border: none;
+      font-size: 1.25rem;
+      color: var(--text-soft);
+      cursor: pointer;
+      line-height: 1;
+      padding: 2px 4px;
+      border-radius: var(--radius-sm);
+      transition: transform 0.15s ease, color 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-star:hover {
+      color: #eab308;
+      transform: scale(1.2);
+    }
+    .btn-star.active {
+      color: #eab308;
+      text-shadow: 0 1px 3px rgba(234, 179, 8, 0.5);
+    }
+
+    .card-note-box {
+      background: #fefce8;
+      border: 1px solid #fef08a;
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      margin-bottom: 12px;
+      font-size: 0.82rem;
+    }
+    .card-note-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      color: #854d0e;
+      margin-bottom: 4px;
+    }
+    .btn-edit-note {
+      background: none;
+      border: none;
+      color: var(--copilot);
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 2px 4px;
+    }
+    .btn-edit-note:hover {
+      text-decoration: underline;
+    }
+    .card-note-text {
+      color: #713f12;
+      line-height: 1.4;
+      white-space: pre-wrap;
+    }
+    .note-editor {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .note-editor input {
+      flex: 1;
+      padding: 6px 10px;
+      font-size: 0.82rem;
+      border: 1px solid #fde047;
+      border-radius: 4px;
+      background: #ffffff;
+      color: #0f172a;
+      outline: none;
+    }
+    .note-editor input:focus {
+      border-color: #ca8a04;
+    }
+    .note-editor button {
+      background: #854d0e;
+      color: #ffffff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .note-editor button:hover {
+      background: #713f12;
     }
 
     /* Empty state */
@@ -1012,6 +1107,10 @@
         <span class="item-label">🎬 Kun videoer / YouTube</span>
         <span class="item-badge" id="menu-count-video">0</span>
       </button>
+      <button class="drawer-item" data-category="bookmarks" onclick="selectFromMenu('bookmarks')">
+        <span class="item-label">⭐ Mine bogmærker</span>
+        <span class="item-badge" id="menu-count-bookmarks">0</span>
+      </button>
     </div>
     <div class="drawer-footer">
       <button class="drawer-submit-btn" onclick="scrollToSubmit()">
@@ -1049,6 +1148,9 @@
         </button>
         <button class="chip" data-target="video" onclick="filterBy('video')">
           🎬 Videoer <span class="chip-count" id="chip-count-video">0</span>
+        </button>
+        <button class="chip" data-target="bookmarks" onclick="filterBy('bookmarks')">
+          ⭐ Bogmærker <span class="chip-count" id="chip-count-bookmarks">0</span>
         </button>
       </div>
     </div>
@@ -1211,6 +1313,75 @@
       }, 2500);
     }
 
+    // Bookmark Storage & Logic
+    function getBookmarks() {
+      try {
+        const raw = localStorage.getItem('ai_hub_bookmarks');
+        return raw ? JSON.parse(raw) : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveBookmarks(list) {
+      try {
+        localStorage.setItem('ai_hub_bookmarks', JSON.stringify(list));
+      } catch (e) {}
+    }
+
+    function isBookmarked(id) {
+      const list = getBookmarks();
+      return list.some(b => b.id === id);
+    }
+
+    function getBookmark(id) {
+      const list = getBookmarks();
+      return list.find(b => b.id === id);
+    }
+
+    function toggleBookmark(id) {
+      let list = getBookmarks();
+      const idx = list.findIndex(b => b.id === id);
+      if (idx >= 0) {
+        list.splice(idx, 1);
+        showNotification('Fjernet fra bogmærker');
+      } else {
+        const item = allNews.find(n => n.id === id);
+        if (item) {
+          list.unshift({ ...item, note: '', savedAt: new Date().toISOString() });
+          showNotification('⭐ Gemt i bogmærker!');
+        }
+      }
+      saveBookmarks(list);
+      updateCounts();
+      render();
+    }
+
+    function toggleNoteEditor(id) {
+      const ed = document.getElementById('note-editor-' + id);
+      if (ed) {
+        const isHidden = ed.style.display === 'none';
+        ed.style.display = isHidden ? 'flex' : 'none';
+        if (isHidden) {
+          document.getElementById('note-input-' + id)?.focus();
+        }
+      }
+    }
+
+    function saveNote(id) {
+      const input = document.getElementById('note-input-' + id);
+      if (!input) return;
+      const text = input.value.trim();
+      let list = getBookmarks();
+      let b = list.find(x => x.id === id);
+      if (b) {
+        b.note = text;
+        saveBookmarks(list);
+        showNotification('Note opdateret!');
+        render();
+      }
+    }
+
     // Filter Logic
     function filterBy(category) {
       currentFilter = category;
@@ -1252,9 +1423,13 @@
 
     // Render cards
     function render() {
+      const bookmarkIds = new Set(getBookmarks().map(b => b.id));
+
       let filtered = allNews.filter(item => {
         // Category filter
-        if (currentFilter === 'video') {
+        if (currentFilter === 'bookmarks') {
+          if (!bookmarkIds.has(item.id)) return false;
+        } else if (currentFilter === 'video') {
           if (item.type !== 'youtube' && !item.thumbnail) return false;
         } else if (currentFilter !== 'all') {
           if (item.category !== currentFilter) return false;
@@ -1277,6 +1452,7 @@
       else if (currentFilter === 'claude') filterName = 'Claude (Anthropic)';
       else if (currentFilter === 'chatgpt') filterName = 'ChatGPT (OpenAI)';
       else if (currentFilter === 'video') filterName = 'AI Videoer';
+      else if (currentFilter === 'bookmarks') filterName = 'Dine bogmærker';
 
       if (searchQuery) {
         statusText.innerHTML = `Fandt <strong>${filtered.length}</strong> resultat(er) for "<em>${escapeHtml(searchQuery)}</em>" i ${filterName}`;
@@ -1290,12 +1466,21 @@
       }
 
       if (filtered.length === 0) {
-        newsGrid.innerHTML = `
-          <div class="empty-state">
-            <h3>Ingen nyheder fundet</h3>
-            <p>Prøv et andet søgeord eller vælg en anden kategori i menuen.</p>
-          </div>
-        `;
+        if (currentFilter === 'bookmarks') {
+          newsGrid.innerHTML = `
+            <div class="empty-state">
+              <h3>Ingen gemte bogmærker endnu</h3>
+              <p>Tryk på stjerne-ikonet (☆) på enhver artikel eller video for at gemme den her til senere.</p>
+            </div>
+          `;
+        } else {
+          newsGrid.innerHTML = `
+            <div class="empty-state">
+              <h3>Ingen nyheder fundet</h3>
+              <p>Prøv et andet søgeord eller vælg en anden kategori i menuen.</p>
+            </div>
+          `;
+        }
         return;
       }
 
@@ -1303,6 +1488,9 @@
       filtered.forEach(item => {
         const isYt = item.type === 'youtube' || !!item.thumbnail;
         const cat = item.category || 'copilot';
+        const bm = getBookmark(item.id);
+        const isBm = !!bm;
+        const userNote = bm ? (bm.note || '') : '';
         
         let badgeClass = 'badge-copilot';
         let badgeLabel = 'Copilot';
@@ -1321,13 +1509,31 @@
             <div class="card-body">
               <div class="card-meta-top">
                 <span class="category-badge ${badgeClass}">${badgeLabel}</span>
-                <span class="card-date">${escapeHtml(item.display_date || '')}</span>
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <span class="card-date">${escapeHtml(item.display_date || '')}</span>
+                  <button class="btn-star ${isBm ? 'active' : ''}" onclick="toggleBookmark('${item.id}')" title="${isBm ? 'Fjern bogmærke' : 'Gem bogmærke'}" aria-label="Bogmærke">
+                    ${isBm ? '★' : '☆'}
+                  </button>
+                </div>
               </div>
               <div class="card-source">${escapeHtml(item.source || '')}</div>
               <h2 class="card-title">
                 <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>
               </h2>
               ${item.summary ? `<p class="card-summary">${escapeHtml(item.summary)}</p>` : ''}
+              ${isBm ? `
+                <div class="card-note-box">
+                  <div class="card-note-header">
+                    <span>📝 Min note:</span>
+                    <button class="btn-edit-note" onclick="toggleNoteEditor('${item.id}')">${userNote ? 'Redigér' : '+ Tilføj note'}</button>
+                  </div>
+                  ${userNote ? `<p class="card-note-text">${escapeHtml(userNote)}</p>` : ''}
+                  <div id="note-editor-${item.id}" class="note-editor" style="display:${userNote ? 'none' : 'none'};">
+                    <input type="text" id="note-input-${item.id}" value="${escapeHtml(userNote)}" placeholder="Skriv en personlig note...">
+                    <button onclick="saveNote('${item.id}')">Gem</button>
+                  </div>
+                </div>
+              ` : ''}
               <div class="card-footer">
                 <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer" class="read-link">
                   ${isYt ? 'Se på YouTube ↗' : 'Læs artikel ↗'}
@@ -1350,7 +1556,8 @@
         copilot: allNews.filter(n => n.category === 'copilot').length,
         claude: allNews.filter(n => n.category === 'claude').length,
         chatgpt: allNews.filter(n => n.category === 'chatgpt').length,
-        video: allNews.filter(n => n.type === 'youtube' || !!n.thumbnail).length
+        video: allNews.filter(n => n.type === 'youtube' || !!n.thumbnail).length,
+        bookmarks: getBookmarks().length
       };
 
       // Chips
@@ -1359,6 +1566,7 @@
       document.getElementById('chip-count-claude').textContent = counts.claude;
       document.getElementById('chip-count-chatgpt').textContent = counts.chatgpt;
       document.getElementById('chip-count-video').textContent = counts.video;
+      document.getElementById('chip-count-bookmarks').textContent = counts.bookmarks;
 
       // Drawer
       document.getElementById('menu-count-all').textContent = counts.all;
@@ -1366,6 +1574,7 @@
       document.getElementById('menu-count-claude').textContent = counts.claude;
       document.getElementById('menu-count-chatgpt').textContent = counts.chatgpt;
       document.getElementById('menu-count-video').textContent = counts.video;
+      document.getElementById('menu-count-bookmarks').textContent = counts.bookmarks;
     }
 
     // Copy link helper
@@ -1615,9 +1824,9 @@
 
     // Startup & Service Worker
     window.addEventListener('DOMContentLoaded', () => {
-      // Check URL hash for filter (#copilot, #claude, #chatgpt)
+      // Check URL hash for filter (#copilot, #claude, #chatgpt, #bookmarks)
       const hash = window.location.hash.replace('#', '').toLowerCase();
-      if (['copilot', 'claude', 'chatgpt', 'video'].includes(hash)) {
+      if (['copilot', 'claude', 'chatgpt', 'video', 'bookmarks'].includes(hash)) {
         currentFilter = hash;
       }
 
