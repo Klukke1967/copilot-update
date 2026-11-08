@@ -1,1 +1,6 @@
-# dist/
+# Ignored directories and files
+models/
+*.gguf
+.DS_Store
+__pycache__/
+*.pyc

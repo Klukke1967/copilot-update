@@ -2,55 +2,1644 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <title>AI Intelligence Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>AI Nyhedshub – Copilot, Claude & ChatGPT</title>
+  
+  <!-- Strict Cache-Control Meta Tags (Klaus standard) -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  
+  <!-- PWA & Mobile Meta Tags -->
+  <meta name="theme-color" content="#0284c7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="AI Nyheder">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="icon.svg">
+
   <style>
-    :root { --bg: #07111f; --panel: #111d33; --text: #e5eefc; --accent: #38bdf8; }
-    body { font-family: sans-serif; background: var(--bg); color: var(--text); padding: 20px; }
-    .nav { display: flex; gap: 10px; margin-bottom: 20px; }
-    .tab { padding: 10px 20px; cursor: pointer; border-radius: 8px; border: 1px solid #333; }
-    .tab.active { background: var(--accent); color: #000; }
-    .view { display: none; }
-    .view.active { display: block; }
-    .card { background: var(--panel); padding: 15px; border-radius: 8px; margin-bottom: 10px; border: 1px solid #222; }
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-subtle: #f1f5f9;
+      --border: #e2e8f0;
+      --border-hover: #cbd5e1;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-soft: #94a3b8;
+      
+      /* AI Brand Colors */
+      --copilot: #0284c7;
+      --copilot-bg: #e0f2fe;
+      --copilot-border: #bae6fd;
+      
+      --claude: #d97706;
+      --claude-bg: #fef3c7;
+      --claude-border: #fde68a;
+      
+      --chatgpt: #10a37f;
+      --chatgpt-bg: #d1fae5;
+      --chatgpt-border: #a7f3d0;
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* In-app Update Toast */
+    #update-toast {
+      display: none;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: linear-gradient(90deg, #0284c7, #2563eb);
+      color: #ffffff;
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+      box-shadow: var(--shadow-md);
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    #update-toast.show {
+      display: flex;
+    }
+    #update-toast button {
+      background: #ffffff;
+      color: #0284c7;
+      border: none;
+      padding: 5px 12px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    /* Header */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #e0f2fe 0%, #fef3c7 50%, #d1fae5 100%);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-size: 1.18rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .brand-subtitle {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .icon-btn {
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-size: 1.1rem;
+    }
+
+    .icon-btn:hover {
+      background: var(--border);
+    }
+
+    .icon-btn.spinning svg {
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Burger Menu / Off-canvas Drawer */
+    .menu-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(3px);
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .menu-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 320px;
+      max-width: 85vw;
+      background: var(--surface);
+      z-index: 210;
+      transform: translateX(100%);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .drawer.open {
+      transform: translateX(0);
+    }
+
+    .drawer-header {
+      padding: 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .drawer-header h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .drawer-nav {
+      padding: 16px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .drawer-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: transparent;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .drawer-item:hover {
+      background: var(--surface-subtle);
+    }
+
+    .drawer-item.active {
+      background: var(--surface-subtle);
+      border-color: var(--border);
+      color: var(--copilot);
+    }
+
+    .drawer-item .item-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .item-badge {
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--surface-subtle);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+
+    .drawer-footer {
+      padding: 16px 20px;
+      border-top: 1px solid var(--border);
+      background: var(--surface-subtle);
+    }
+
+    .drawer-submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: #ffffff;
+      border: none;
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px 20px 48px;
+      width: 100%;
+      flex: 1;
+    }
+
+    /* Controls Bar: Search & Filter Chips */
+    .controls-wrapper {
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .search-box {
+      position: relative;
+      width: 100%;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 14px 16px 14px 44px;
+      font-size: 0.95rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-main);
+      box-shadow: var(--shadow-sm);
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .search-box input:focus {
+      border-color: var(--copilot);
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-soft);
+      pointer-events: none;
+    }
+
+    .clear-search {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--text-soft);
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: none;
+      padding: 4px;
+    }
+
+    .clear-search.visible {
+      display: block;
+    }
+
+    /* Quick Filter Chips */
+    .filter-chips {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .filter-chips::-webkit-scrollbar {
+      display: none;
+    }
+
+    .chip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .chip:hover {
+      border-color: var(--border-hover);
+      background: var(--surface-subtle);
+    }
+
+    .chip.active {
+      background: #0f172a;
+      color: #ffffff;
+      border-color: #0f172a;
+    }
+
+    .chip[data-target="copilot"].active {
+      background: var(--copilot);
+      border-color: var(--copilot);
+      color: #ffffff;
+    }
+
+    .chip[data-target="claude"].active {
+      background: var(--claude);
+      border-color: var(--claude);
+      color: #ffffff;
+    }
+
+    .chip[data-target="chatgpt"].active {
+      background: var(--chatgpt);
+      border-color: var(--chatgpt);
+      color: #ffffff;
+    }
+
+    .chip .chip-count {
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
+
+    /* Status Banner */
+    .status-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .status-count {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .reset-filter-btn {
+      background: none;
+      border: none;
+      color: var(--copilot);
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    /* News Grid */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+      margin-bottom: 48px;
+    }
+
+    @media (max-width: 640px) {
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* News Card */
+    .news-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      position: relative;
+    }
+
+    .news-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-hover);
+    }
+
+    .card-thumb-wrap {
+      width: 100%;
+      height: 180px;
+      background: #0f172a;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .news-card:hover .card-thumb {
+      transform: scale(1.03);
+    }
+
+    .video-badge {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .card-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-meta-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .category-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .badge-copilot {
+      background: var(--copilot-bg);
+      color: #0369a1;
+      border: 1px solid var(--copilot-border);
+    }
+
+    .badge-claude {
+      background: var(--claude-bg);
+      color: #9a3412;
+      border: 1px solid var(--claude-border);
+    }
+
+    .badge-chatgpt {
+      background: var(--chatgpt-bg);
+      color: #065f46;
+      border: 1px solid var(--chatgpt-border);
+    }
+
+    .badge-custom {
+      background: #ede9fe;
+      color: #4f46e5;
+      border: 1px solid #ddd6fe;
+    }
+
+    .card-date {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      white-space: nowrap;
+    }
+
+    .card-source {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .card-title a:hover {
+      color: var(--copilot);
+    }
+
+    .card-summary {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 16px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      margin-top: auto;
+    }
+
+    .read-link {
+      color: var(--copilot);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .read-link:hover {
+      text-decoration: underline;
+    }
+
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-action {
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 5px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+    }
+
+    .btn-action:hover {
+      background: var(--border);
+      color: var(--text-main);
+    }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center;
+      padding: 48px 20px;
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius-md);
+      grid-column: 1 / -1;
+    }
+    .empty-state h3 {
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+    }
+    .empty-state p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    /* Submit Resource Section */
+    .submit-section {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      box-shadow: var(--shadow-md);
+      margin-top: 24px;
+    }
+
+    .submit-header {
+      max-width: 600px;
+      margin-bottom: 24px;
+    }
+
+    .submit-header h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-main);
+    }
+
+    .submit-header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .submit-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .submit-form {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 12px 14px;
+      font-size: 0.95rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      color: var(--text-main);
+      outline: none;
+      font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--copilot);
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+    }
+
+    .submit-actions {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .btn-submit-primary {
+      background: #0f172a;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.15s ease;
+    }
+
+    .btn-submit-primary:hover {
+      background: #1e293b;
+    }
+
+    .btn-submit-secondary {
+      background: var(--surface);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      padding: 12px 18px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+
+    .btn-submit-secondary:hover {
+      background: var(--surface-subtle);
+    }
+
+    /* User submitted list */
+    .user-resources {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .user-resources h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .user-resource-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .user-resource-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+    }
+
+    .user-resource-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow: hidden;
+    }
+
+    .user-resource-info a {
+      color: var(--copilot);
+      text-decoration: none;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 24px 20px;
+      margin-top: auto;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--copilot);
+      text-decoration: underline;
+    }
+
+    /* Notification Toast (Copy / Success) */
+    #notification-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 300;
+      pointer-events: none;
+    }
+    #notification-toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
-    <div class="nav">
-    <div class="tab active" onclick="switchView(this, 'copilot')">Copilot</div>
-    <div class="tab" onclick="switchView(this, 'openai')">OpenAI</div>
-    <div class="tab" onclick="switchView(this, 'anthropic')">Anthropic</div>
-    <div class="tab" onclick="switchView(this, 'google')">Google</div>
+
+  <!-- PWA Update Banner -->
+  <div id="update-toast" role="alert">
+    <span>✨ Ny opdatering klar med friske AI-nyheder!</span>
+    <button onclick="applyAppUpdate()">Opdater nu</button>
   </div>
-  <div id="copilot" class="view active"></div>
-  <div id="openai" class="view"></div>
-  <div id="anthropic" class="view"></div>
-  <div id="google" class="view"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="brand" onclick="filterBy('all')">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+          </svg>
+        </div>
+        <div class="brand-title">
+          <span>AI Nyhedshub</span>
+          <span class="brand-subtitle">Copilot • Claude • ChatGPT</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Manual Reload Button (Klaus standard) -->
+        <button id="btn-reload" class="icon-btn" title="Genindlæs seneste nyheder" onclick="manualReload()" aria-label="Genindlæs">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 2v6h-6"></path>
+            <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+            <path d="M3 22v-6h6"></path>
+            <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+          </svg>
+        </button>
+
+        <!-- Burger Menu Toggle -->
+        <button id="btn-burger" class="icon-btn" title="Åbn menu" onclick="toggleMenu()" aria-label="Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Off-canvas Burger Menu Drawer -->
+  <div id="menu-backdrop" class="menu-backdrop" onclick="closeMenu()"></div>
+  <div id="drawer" class="drawer" aria-label="Navigationsmenu">
+    <div class="drawer-header">
+      <h3>Vælg AI kilde</h3>
+      <button class="icon-btn" onclick="closeMenu()" aria-label="Luk menu" style="width:34px; height:34px;">
+        ✕
+      </button>
+    </div>
+    <div class="drawer-nav">
+      <button class="drawer-item active" data-category="all" onclick="selectFromMenu('all')">
+        <span class="item-label">🌐 Alle nyheder</span>
+        <span class="item-badge" id="menu-count-all">0</span>
+      </button>
+      <button class="drawer-item" data-category="copilot" onclick="selectFromMenu('copilot')">
+        <span class="item-label">🔷 Microsoft Copilot</span>
+        <span class="item-badge" id="menu-count-copilot">0</span>
+      </button>
+      <button class="drawer-item" data-category="claude" onclick="selectFromMenu('claude')">
+        <span class="item-label">🟧 Claude (Anthropic)</span>
+        <span class="item-badge" id="menu-count-claude">0</span>
+      </button>
+      <button class="drawer-item" data-category="chatgpt" onclick="selectFromMenu('chatgpt')">
+        <span class="item-label">🟩 ChatGPT (OpenAI)</span>
+        <span class="item-badge" id="menu-count-chatgpt">0</span>
+      </button>
+      <button class="drawer-item" data-category="video" onclick="selectFromMenu('video')">
+        <span class="item-label">🎬 Kun videoer / YouTube</span>
+        <span class="item-badge" id="menu-count-video">0</span>
+      </button>
+    </div>
+    <div class="drawer-footer">
+      <button class="drawer-submit-btn" onclick="scrollToSubmit()">
+        💡 Tip eller tilføj ressource
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Controls: Search & Chips -->
+    <div class="controls-wrapper">
+      <div class="search-box">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" placeholder="Søg i artikler, videoer, modeller og emner..." oninput="onSearchChange(this.value)" autocomplete="off">
+        <button id="clear-search" class="clear-search" onclick="clearSearch()" title="Ryd søgning">✕</button>
+      </div>
+
+      <!-- Quick Filter Chips -->
+      <div class="filter-chips">
+        <button class="chip active" data-target="all" onclick="filterBy('all')">
+          Alle <span class="chip-count" id="chip-count-all">0</span>
+        </button>
+        <button class="chip" data-target="copilot" onclick="filterBy('copilot')">
+          🔷 Copilot <span class="chip-count" id="chip-count-copilot">0</span>
+        </button>
+        <button class="chip" data-target="claude" onclick="filterBy('claude')">
+          🟧 Claude <span class="chip-count" id="chip-count-claude">0</span>
+        </button>
+        <button class="chip" data-target="chatgpt" onclick="filterBy('chatgpt')">
+          🟩 ChatGPT <span class="chip-count" id="chip-count-chatgpt">0</span>
+        </button>
+        <button class="chip" data-target="video" onclick="filterBy('video')">
+          🎬 Videoer <span class="chip-count" id="chip-count-video">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Status / Filter info -->
+    <div class="status-banner">
+      <span id="status-text">Indlæser nyheder...</span>
+      <button id="btn-reset-filter" class="reset-filter-btn" style="display:none;" onclick="filterBy('all')">Vis alle nyheder</button>
+    </div>
+
+    <!-- News Grid -->
+    <div id="news-grid" class="news-grid">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Submit Resource Section -->
+    <section id="submit-section" class="submit-section">
+      <div class="submit-header">
+        <h2>💡 Tip eller tilføj en AI-ressource</h2>
+        <p>Har du fundet en god YouTube-video, blogpost eller vejledning om Microsoft Copilot, Claude eller ChatGPT? Del den her.</p>
+      </div>
+
+      <form id="resource-form" class="submit-form" onsubmit="handleResourceSubmit(event)">
+        <div class="form-group full-width">
+          <label for="resource-url">Link / URL *</label>
+          <input type="url" id="resource-url" placeholder="https://youtube.com/watch?v=... eller https://blog..." required onchange="autoDetectResource(this.value)">
+        </div>
+
+        <div class="form-group">
+          <label for="resource-title">Titel / Beskrivelse</label>
+          <input type="text" id="resource-title" placeholder="F.eks. Mike Tholfsen: Ny Copilot integration">
+        </div>
+
+        <div class="form-group">
+          <label for="resource-category">AI Kategori</label>
+          <select id="resource-category">
+            <option value="copilot">Microsoft Copilot</option>
+            <option value="claude">Claude (Anthropic)</option>
+            <option value="chatgpt">ChatGPT (OpenAI)</option>
+            <option value="general">Generel AI / Andet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="resource-type">Ressourcetype</label>
+          <select id="resource-type">
+            <option value="youtube">YouTube Video</option>
+            <option value="article">Blog / Artikel</option>
+            <option value="tutorial">Guide / Tutorial</option>
+            <option value="tool">Værktøj / Model</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="resource-notes">Evt. bemærkning (valgfrit)</label>
+          <input type="text" id="resource-notes" placeholder="Hvorfor er den værd at læse/se?">
+        </div>
+
+        <div class="submit-actions">
+          <button type="submit" class="btn-submit-primary">
+            <span>+ Tilføj ressource</span>
+          </button>
+          <button type="button" class="btn-submit-secondary" onclick="submitViaGithub()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>Opret GitHub Issue</span>
+          </button>
+          <button type="button" class="btn-submit-secondary" onclick="submitViaMail()">
+            ✉️ Send som e-mail tip
+          </button>
+        </div>
+      </form>
+
+      <!-- Local user resources display -->
+      <div id="user-resources" class="user-resources" style="display:none;">
+        <h3>Dine lokalt tilføjede ressourcer</h3>
+        <div id="user-resources-list" class="user-resource-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>AI Nyhedshub</strong> &bull; Opdateres automatisk dagligt &bull;
+        <span id="footer-version">v1.0</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Klukke1967/copilot-update" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        <a href="#submit-section">Tip redaktionen</a>
+        <a href="javascript:void(0)" onclick="manualReload()">Genindlæs 🔄</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div id="notification-toast">Besked</div>
 
   <script>
-    function switchView(el, id) {
-      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      el.classList.add('active');
+    let allNews = [];
+    let currentFilter = 'all';
+    let searchQuery = '';
+    let currentAppVersion = '';
+
+    // Elements
+    const newsGrid = document.getElementById('news-grid');
+    const statusText = document.getElementById('status-text');
+    const resetFilterBtn = document.getElementById('btn-reset-filter');
+    const searchInput = document.getElementById('search-input');
+    const clearSearchBtn = document.getElementById('clear-search');
+    const drawer = document.getElementById('drawer');
+    const menuBackdrop = document.getElementById('menu-backdrop');
+    const reloadBtn = document.getElementById('btn-reload');
+    const updateToast = document.getElementById('update-toast');
+
+    // Drawer / Menu
+    function toggleMenu() {
+      const isOpen = drawer.classList.contains('open');
+      if (isOpen) closeMenu();
+      else openMenu();
     }
-    
-    async function loadNews() {
-      const res = await fetch('updates.json?t=' + Date.now());
-      const data = await res.json();
-      data.forEach(item => {
-        const cat = (item.category || "").toLowerCase();
-        let targetId = 'copilot'; // Default
-        if (cat.includes('openai')) targetId = 'openai';
-        else if (cat.includes('anthropic')) targetId = 'anthropic';
-        else if (cat.includes('google')) targetId = 'google';
+
+    function openMenu() {
+      drawer.classList.add('open');
+      menuBackdrop.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      drawer.classList.remove('open');
+      menuBackdrop.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function selectFromMenu(category) {
+      filterBy(category);
+      closeMenu();
+    }
+
+    function scrollToSubmit() {
+      closeMenu();
+      const el = document.getElementById('submit-section');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+          document.getElementById('resource-url')?.focus();
+        }, 500);
+      }
+    }
+
+    // Toast helper
+    function showNotification(msg) {
+      const toast = document.getElementById('notification-toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    // Filter Logic
+    function filterBy(category) {
+      currentFilter = category;
+      
+      // Update UI Chips
+      document.querySelectorAll('.chip').forEach(c => {
+        c.classList.toggle('active', c.getAttribute('data-target') === category);
+      });
+
+      // Update Drawer items
+      document.querySelectorAll('.drawer-item').forEach(d => {
+        d.classList.toggle('active', d.getAttribute('data-category') === category);
+      });
+
+      // Save to URL hash for direct linking
+      if (category === 'all') {
+        history.replaceState(null, '', window.location.pathname);
+      } else {
+        history.replaceState(null, '', '#' + category);
+      }
+
+      render();
+    }
+
+    // Search
+    function onSearchChange(val) {
+      searchQuery = (val || '').trim().toLowerCase();
+      clearSearchBtn.classList.toggle('visible', searchQuery.length > 0);
+      render();
+    }
+
+    function clearSearch() {
+      searchInput.value = '';
+      searchQuery = '';
+      clearSearchBtn.classList.remove('visible');
+      render();
+      searchInput.focus();
+    }
+
+    // Render cards
+    function render() {
+      let filtered = allNews.filter(item => {
+        // Category filter
+        if (currentFilter === 'video') {
+          if (item.type !== 'youtube' && !item.thumbnail) return false;
+        } else if (currentFilter !== 'all') {
+          if (item.category !== currentFilter) return false;
+        }
+
+        // Search query
+        if (searchQuery) {
+          const matchTitle = (item.title || '').toLowerCase().includes(searchQuery);
+          const matchSummary = (item.summary || '').toLowerCase().includes(searchQuery);
+          const matchSource = (item.source || '').toLowerCase().includes(searchQuery);
+          if (!matchTitle && !matchSummary && !matchSource) return false;
+        }
+
+        return true;
+      });
+
+      // Update status text
+      let filterName = 'alle AI nyheder';
+      if (currentFilter === 'copilot') filterName = 'Microsoft Copilot';
+      else if (currentFilter === 'claude') filterName = 'Claude (Anthropic)';
+      else if (currentFilter === 'chatgpt') filterName = 'ChatGPT (OpenAI)';
+      else if (currentFilter === 'video') filterName = 'AI Videoer';
+
+      if (searchQuery) {
+        statusText.innerHTML = `Fandt <strong>${filtered.length}</strong> resultat(er) for "<em>${escapeHtml(searchQuery)}</em>" i ${filterName}`;
+        resetFilterBtn.style.display = 'inline';
+      } else if (currentFilter !== 'all') {
+        statusText.innerHTML = `Viser <strong>${filtered.length}</strong> nyheder for <strong>${filterName}</strong>`;
+        resetFilterBtn.style.display = 'inline';
+      } else {
+        statusText.innerHTML = `Viser alle <strong>${filtered.length}</strong> nyheder (nyeste først)`;
+        resetFilterBtn.style.display = 'none';
+      }
+
+      if (filtered.length === 0) {
+        newsGrid.innerHTML = `
+          <div class="empty-state">
+            <h3>Ingen nyheder fundet</h3>
+            <p>Prøv et andet søgeord eller vælg en anden kategori i menuen.</p>
+          </div>
+        `;
+        return;
+      }
+
+      let html = '';
+      filtered.forEach(item => {
+        const isYt = item.type === 'youtube' || !!item.thumbnail;
+        const cat = item.category || 'copilot';
         
-        const target = document.getElementById(targetId);
-        if (target) {
-          target.innerHTML += `<div class="card"><h3>${item.title}</h3><a href="${item.link}" target="_blank">Læs mere</a></div>`;
+        let badgeClass = 'badge-copilot';
+        let badgeLabel = 'Copilot';
+        if (cat === 'claude') { badgeClass = 'badge-claude'; badgeLabel = 'Claude'; }
+        else if (cat === 'chatgpt') { badgeClass = 'badge-chatgpt'; badgeLabel = 'ChatGPT'; }
+        else if (cat === 'custom') { badgeClass = 'badge-custom'; badgeLabel = 'Bruger-tip'; }
+
+        html += `
+          <article class="news-card">
+            ${isYt && item.thumbnail ? `
+              <div class="card-thumb-wrap">
+                <img src="${escapeHtml(item.thumbnail)}" alt="${escapeHtml(item.title)}" class="card-thumb" loading="lazy" onerror="this.closest('.card-thumb-wrap').style.display='none'">
+                <span class="video-badge">▶ Video</span>
+              </div>
+            ` : ''}
+            <div class="card-body">
+              <div class="card-meta-top">
+                <span class="category-badge ${badgeClass}">${badgeLabel}</span>
+                <span class="card-date">${escapeHtml(item.display_date || '')}</span>
+              </div>
+              <div class="card-source">${escapeHtml(item.source || '')}</div>
+              <h2 class="card-title">
+                <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>
+              </h2>
+              ${item.summary ? `<p class="card-summary">${escapeHtml(item.summary)}</p>` : ''}
+              <div class="card-footer">
+                <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer" class="read-link">
+                  ${isYt ? 'Se på YouTube ↗' : 'Læs artikel ↗'}
+                </a>
+                <div class="card-actions">
+                  <button class="btn-action" onclick="copyCardLink('${escapeHtml(item.link)}')">Del</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        `;
+      });
+
+      newsGrid.innerHTML = html;
+    }
+
+    function updateCounts() {
+      const counts = {
+        all: allNews.length,
+        copilot: allNews.filter(n => n.category === 'copilot').length,
+        claude: allNews.filter(n => n.category === 'claude').length,
+        chatgpt: allNews.filter(n => n.category === 'chatgpt').length,
+        video: allNews.filter(n => n.type === 'youtube' || !!n.thumbnail).length
+      };
+
+      // Chips
+      document.getElementById('chip-count-all').textContent = counts.all;
+      document.getElementById('chip-count-copilot').textContent = counts.copilot;
+      document.getElementById('chip-count-claude').textContent = counts.claude;
+      document.getElementById('chip-count-chatgpt').textContent = counts.chatgpt;
+      document.getElementById('chip-count-video').textContent = counts.video;
+
+      // Drawer
+      document.getElementById('menu-count-all').textContent = counts.all;
+      document.getElementById('menu-count-copilot').textContent = counts.copilot;
+      document.getElementById('menu-count-claude').textContent = counts.claude;
+      document.getElementById('menu-count-chatgpt').textContent = counts.chatgpt;
+      document.getElementById('menu-count-video').textContent = counts.video;
+    }
+
+    // Copy link helper
+    function copyCardLink(url) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+          showNotification('Link kopieret til udklipsholder!');
+        });
+      } else {
+        const t = document.createElement('textarea');
+        t.value = url;
+        document.body.appendChild(t);
+        t.select();
+        document.execCommand('copy');
+        document.body.removeChild(t);
+        showNotification('Link kopieret!');
+      }
+    }
+
+    // Helper: Escape HTML
+    function escapeHtml(text) {
+      if (!text) return '';
+      return text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Load Data
+    async function loadNewsData() {
+      try {
+        const res = await fetch('updates.json?t=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('Kunne ikke hente updates.json');
+        const data = await res.json();
+        
+        // Merge with local user submissions
+        const localItems = getLocalResources();
+        allNews = [...localItems, ...data];
+
+        updateCounts();
+        render();
+      } catch (err) {
+        console.error('Fejl ved indlæsning:', err);
+        statusText.textContent = 'Kunne ikke indlæse nyheder lige nu.';
+      }
+    }
+
+    // Version Polling & Cache-Busting (Standard Requirement)
+    async function checkVersion() {
+      try {
+        const res = await fetch('version.json?t=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) return;
+        const data = await res.json();
+        
+        if (!currentAppVersion) {
+          currentAppVersion = data.version;
+          const fv = document.getElementById('footer-version');
+          if (fv) fv.textContent = 'v' + data.version;
+        } else if (currentAppVersion !== data.version) {
+          console.log('Ny version detekteret:', data.version);
+          updateToast.classList.add('show');
+        }
+      } catch (e) {
+        // Silent fail on offline
+      }
+    }
+
+    function applyAppUpdate() {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(regs => {
+          for (let reg of regs) reg.update();
+        });
+      }
+      window.location.reload(true);
+    }
+
+    function manualReload() {
+      reloadBtn.classList.add('spinning');
+      setTimeout(() => {
+        window.location.reload(true);
+      }, 300);
+    }
+
+    // Resource Submission Handling
+    function autoDetectResource(url) {
+      const catSelect = document.getElementById('resource-category');
+      const typeSelect = document.getElementById('resource-type');
+      const titleInput = document.getElementById('resource-title');
+
+      if (/youtube\.com|youtu\.be/i.test(url)) {
+        typeSelect.value = 'youtube';
+        if (!titleInput.value) {
+          titleInput.placeholder = 'Indtast videotitel...';
+        }
+      } else if (/microsoft|copilot/i.test(url)) {
+        catSelect.value = 'copilot';
+      } else if (/anthropic|claude/i.test(url)) {
+        catSelect.value = 'claude';
+      } else if (/openai|chatgpt/i.test(url)) {
+        catSelect.value = 'chatgpt';
+      }
+    }
+
+    function getLocalResources() {
+      try {
+        const raw = localStorage.getItem('custom_ai_resources');
+        return raw ? JSON.parse(raw) : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveLocalResources(items) {
+      try {
+        localStorage.setItem('custom_ai_resources', JSON.stringify(items));
+      } catch (e) {}
+    }
+
+    function handleResourceSubmit(e) {
+      e.preventDefault();
+      const url = document.getElementById('resource-url').value.trim();
+      const title = document.getElementById('resource-title').value.trim() || url;
+      const category = document.getElementById('resource-category').value;
+      const type = document.getElementById('resource-type').value;
+      const notes = document.getElementById('resource-notes').value.trim();
+
+      if (!url) return;
+
+      // Check YouTube thumb
+      let thumb = '';
+      const isYt = /youtube\.com|youtu\.be/i.test(url) || type === 'youtube';
+      if (isYt) {
+        const m = url.match(/[?&]v=([a-zA-Z0-9_-]+)/) || url.match(/\/(?:shorts|embed|v)\/([a-zA-Z0-9_-]+)/);
+        if (m) thumb = `https://img.youtube.com/vi/${m[1]}/hqdefault.jpg`;
+      }
+
+      const today = new Date();
+      const months = ['jan.', 'feb.', 'mar.', 'apr.', 'maj', 'jun.', 'jul.', 'aug.', 'sep.', 'okt.', 'nov.', 'dec.'];
+      const displayDate = `${today.getDate()}. ${months[today.getMonth()]} ${today.getFullYear()}`;
+
+      const newResource = {
+        id: 'local_' + Date.now(),
+        title: title,
+        link: url,
+        category: category,
+        source: 'Bruger-tip' + (notes ? ` (${notes})` : ''),
+        type: isYt ? 'youtube' : 'article',
+        published_at: today.toISOString(),
+        display_date: displayDate,
+        summary: notes || 'Manuelt indsendt AI-ressource.',
+        thumbnail: thumb,
+        is_user_submitted: true
+      };
+
+      const items = getLocalResources();
+      items.unshift(newResource);
+      saveLocalResources(items);
+
+      // Prepend to current feed
+      allNews.unshift(newResource);
+      updateCounts();
+      render();
+      renderUserResources();
+
+      // Clear form
+      document.getElementById('resource-form').reset();
+      showNotification('✅ Ressource tilføjet lokalt!');
+
+      // Scroll up to view it
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function renderUserResources() {
+      const items = getLocalResources();
+      const container = document.getElementById('user-resources');
+      const list = document.getElementById('user-resources-list');
+      
+      if (!items || items.length === 0) {
+        container.style.display = 'none';
+        return;
+      }
+
+      container.style.display = 'block';
+      let html = '';
+      items.forEach((item, idx) => {
+        html += `
+          <div class="user-resource-item">
+            <div class="user-resource-info">
+              <span>📌</span>
+              <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>
+              <span class="item-badge">${escapeHtml(item.category)}</span>
+            </div>
+            <button class="btn-action" onclick="deleteLocalResource('${item.id}')" title="Slet">✕</button>
+          </div>
+        `;
+      });
+      list.innerHTML = html;
+    }
+
+    function deleteLocalResource(id) {
+      let items = getLocalResources();
+      items = items.filter(x => x.id !== id);
+      saveLocalResources(items);
+      allNews = allNews.filter(x => x.id !== id);
+      updateCounts();
+      render();
+      renderUserResources();
+      showNotification('Ressource fjernet.');
+    }
+
+    function submitViaGithub() {
+      const url = document.getElementById('resource-url').value.trim();
+      const title = document.getElementById('resource-title').value.trim() || 'Nyt AI tip';
+      const cat = document.getElementById('resource-category').value;
+      const type = document.getElementById('resource-type').value;
+      const notes = document.getElementById('resource-notes').value.trim();
+
+      const issueTitle = encodeURIComponent(`[Ressource] ${title}`);
+      const issueBody = encodeURIComponent(
+        `### Nyt ressource-tip til AI Hub\n\n` +
+        `- **Link:** ${url || 'Ikke angivet'}\n` +
+        `- **Kategori:** ${cat}\n` +
+        `- **Type:** ${type}\n` +
+        `- **Bemærkning:** ${notes || 'Ingen'}\n\n` +
+        `_Indsendt via AI Nyhedshub webformular._`
+      );
+
+      const githubUrl = `https://github.com/Klukke1967/copilot-update/issues/new?title=${issueTitle}&body=${issueBody}`;
+      window.open(githubUrl, '_blank');
+    }
+
+    function submitViaMail() {
+      const url = document.getElementById('resource-url').value.trim();
+      const title = document.getElementById('resource-title').value.trim() || 'Nyt AI ressource tip';
+      const cat = document.getElementById('resource-category').value;
+      const notes = document.getElementById('resource-notes').value.trim();
+
+      const subject = encodeURIComponent(`AI Hub Tip: ${title}`);
+      const body = encodeURIComponent(
+        `Hej Klaus,\n\nHer er et nyt AI tip til nyhedshubben:\n\nTitel: ${title}\nURL: ${url}\nKategori: ${cat}\nBemærkning: ${notes}\n\nMvh`
+      );
+
+      window.location.href = `mailto:klausklukke@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    // Startup & Service Worker
+    window.addEventListener('DOMContentLoaded', () => {
+      // Check URL hash for filter (#copilot, #claude, #chatgpt)
+      const hash = window.location.hash.replace('#', '').toLowerCase();
+      if (['copilot', 'claude', 'chatgpt', 'video'].includes(hash)) {
+        currentFilter = hash;
+      }
+
+      loadNewsData();
+      checkVersion();
+      renderUserResources();
+
+      // Periodic version check
+      setInterval(checkVersion, 5 * 60 * 1000);
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+          checkVersion();
         }
       });
-    }
-    loadNews();
+
+      // Register SW
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').catch(err => {
+          console.warn('SW reg error:', err);
+        });
+      }
+    });
   </script>
 </body>
 </html>

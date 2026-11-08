@@ -1,15 +1,29 @@
-const CACHE_NAME = 'copilot-dashboard-v1';
-const ASSETS = ['/', '/index.html', '/app.js', '/manifest.json', '/updates.json', '/version.json', '/icon.svg'];
+const CACHE_NAME = 'ai-hub-v2';
+const STATIC_ASSETS = [
+  '/',
+  '/index.html',
+  '/manifest.json',
+  '/icon.svg',
+  '/CNAME'
+];
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())
+    caches.open(CACHE_NAME).then(cache => {
+      return Promise.allSettled(
+        STATIC_ASSETS.map(url => cache.add(url).catch(err => console.warn('Cache skip:', url, err)))
+      );
+    }).then(() => self.skipWaiting())
   );
 });
 
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))).then(() => self.clients.claim())
+    caches.keys().then(keys => {
+      return Promise.all(
+        keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))
+      );
+    }).then(() => self.clients.claim())
   );
 });
 
@@ -17,17 +31,31 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
 
-  if (url.pathname.endsWith('/version.json')) {
-    event.respondWith(fetch(request, { cache: 'no-store' }));
+  // 1. version.json og updates.json skal ALTID være network-first / bypass cache
+  if (url.pathname.endsWith('/version.json') || url.pathname.endsWith('/updates.json')) {
+    event.respondWith(
+      fetch(request, { cache: 'no-store' })
+        .then(response => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
     return;
   }
 
-  if (request.mode === 'navigate') {
+  // 2. Navigation / HTML requests: Network-First (aldrig Cache-First på HTML)
+  if (request.mode === 'navigate' || request.destination === 'document') {
     event.respondWith(
       fetch(request)
         .then(response => {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put('/index.html', clone));
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put('/index.html', clone));
+          }
           return response;
         })
         .catch(() => caches.match('/index.html'))
@@ -35,11 +63,17 @@ self.addEventListener('fetch', event => {
     return;
   }
 
+  // 3. Statiske filer (ikoner, svg, etc.): Cache-first med network fallback
   event.respondWith(
-    caches.match(request).then(cached => cached || fetch(request).then(response => {
-      const clone = response.clone();
-      caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
-      return response;
-    }))
+    caches.match(request).then(cached => {
+      if (cached) return cached;
+      return fetch(request).then(response => {
+        if (response.ok && request.method === 'GET' && url.origin === self.location.origin) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+        }
+        return response;
+      });
+    })
   );
 });

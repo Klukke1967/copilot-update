@@ -1,29 +1,40 @@
 {
   "sources": [
     {
-      "name": "Microsoft Copilot",
-      "category": "Copilot",
+      "name": "Microsoft Copilot Blog",
+      "category": "copilot",
+      "type": "article",
       "feedUrl": "https://www.microsoft.com/en-us/copilot/blog/feed/"
     },
     {
-      "name": "OpenAI Blog",
-      "category": "OpenAI",
-      "feedUrl": "https://openai.com/news/feed.xml"
-    },
-    {
-      "name": "Anthropic News",
-      "category": "Anthropic",
-      "feedUrl": "https://www.anthropic.com/news/feed.xml"
-    },
-    {
-      "name": "Google AI Blog",
-      "category": "Google",
-      "feedUrl": "https://blog.google/technology/ai/rss/"
-    },
-    {
-      "name": "Mike Tholfsen",
-      "category": "Copilot",
+      "name": "Mike Tholfsen (Copilot)",
+      "category": "copilot",
+      "type": "youtube",
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2dSE9W3lGYbFi_CPmVtA-A"
+    },
+    {
+      "name": "Anthropic News (Claude)",
+      "category": "claude",
+      "type": "article",
+      "feedUrl": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml"
+    },
+    {
+      "name": "Anthropic Research (Claude)",
+      "category": "claude",
+      "type": "article",
+      "feedUrl": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml"
+    },
+    {
+      "name": "OpenAI Blog (ChatGPT)",
+      "category": "chatgpt",
+      "type": "article",
+      "feedUrl": "https://openai.com/blog/rss.xml"
+    },
+    {
+      "name": "OpenAI (YouTube)",
+      "category": "chatgpt",
+      "type": "youtube",
+      "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXZCJLdBC09xxGZ6gcdrc6A"
     }
   ]
 }
