@@ -13,6 +13,12 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2dSE9W3lGYbFi_CPmVtA-A"
     },
     {
+      "name": "David Fortin (Copilot & Excel)",
+      "category": "copilot",
+      "type": "youtube",
+      "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEJoO7Zkfv45zIjuALuJLTQ"
+    },
+    {
       "name": "Anthropic News (Claude)",
       "category": "claude",
       "type": "article",
