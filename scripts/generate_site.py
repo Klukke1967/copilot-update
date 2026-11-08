@@ -24,6 +24,42 @@ HEADERS = {
 
 DANISH_MONTHS = ["jan.", "feb.", "mar.", "apr.", "maj", "jun.", "jul.", "aug.", "sep.", "okt.", "nov.", "dec."]
 
+TAG_RULES = {
+    'm365': {
+        'label': 'Copilot & M365',
+        'keywords': ['excel', 'word', 'powerpoint', 'teams', 'sharepoint', 'outlook', 'office', 'productivity', 'data in excel', 'spreadsheet', 'workspace', 'crm', 'copilot dashboard']
+    },
+    'leadership': {
+        'label': 'Ledelse & Strategi',
+        'keywords': ['enterprise', 'business', 'governance', 'security', 'compliance', 'company', 'organization', 'roi', 'policy', 'strategy', 'leadership', 'management', 'adoption', 'risk', 'trust', 'cyber', 'vulnerabilit', 'safety', 'threat']
+    },
+    'developer': {
+        'label': 'Udvikling & Agenter',
+        'keywords': ['code', 'coding', 'agent', 'api', 'sdk', 'developer', 'engineer', 'python', 'computer use', 'automation', 'hacktron', 'software', 'graduates']
+    },
+    'research': {
+        'label': 'Forskning & Modeller',
+        'keywords': ['research', 'biology', 'science', 'reasoning', 'benchmark', 'paper', 'eval', 'laboratory', 'frontier', 'particle', 'experiment', 'wet-lab', 'scientific']
+    }
+}
+
+def classify_tags(title: str, summary: str, category: str, source: str) -> list:
+    text = f"{title} {summary}".lower()
+    tags = []
+    for tag_id, tag_data in TAG_RULES.items():
+        if any(kw in text for kw in tag_data['keywords']):
+            tags.append(tag_id)
+    if not tags:
+        if category == 'copilot':
+            tags.append('m365')
+        elif 'research' in source.lower():
+            tags.append('research')
+        elif 'blog' in source.lower():
+            tags.append('developer')
+        else:
+            tags.append('leadership')
+    return tags
+
 def clean_text(html_text: str, max_len: int = 180) -> str:
     if not html_text:
         return ""
@@ -103,12 +139,14 @@ def main():
 
                     is_youtube = ("youtube.com" in link) or ("youtu.be" in link) or (item_type == "youtube")
                     thumb = extract_youtube_thumb(link) if is_youtube else ""
+                    tags = classify_tags(title, summary, cat, name)
 
                     all_items.append({
                         "id": f"{cat}_{abs(hash(norm_link)) % 10000000}",
                         "title": title,
                         "link": link,
                         "category": cat,
+                        "tags": tags,
                         "source": name,
                         "type": "youtube" if is_youtube else "article",
                         "published_at": iso_date,

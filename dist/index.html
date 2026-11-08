@@ -446,6 +446,129 @@
       color: #000000;
     }
 
+    .chip[data-target="foryou"].active {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      border-color: #1d4ed8;
+      color: #ffffff;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+      margin-bottom: 12px;
+    }
+
+    .tag-chip {
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .tag-chip:hover {
+      background: #e2e8f0;
+      color: var(--text-main);
+    }
+    .tag-chip.active {
+      background: #0f172a;
+      color: #ffffff;
+      border-color: #0f172a;
+    }
+
+    /* Modal / Dialog for Preferences */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(4px);
+      z-index: 250;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .modal-content {
+      background: var(--surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+      max-width: 480px;
+      width: 100%;
+      padding: 24px;
+      position: relative;
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .modal-header h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+    .modal-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .interest-checkbox-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .interest-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .interest-label:hover {
+      background: var(--surface-subtle);
+    }
+    .interest-label input[type="checkbox"] {
+      margin-top: 3px;
+      width: 18px;
+      height: 18px;
+      accent-color: var(--copilot);
+    }
+    .interest-text strong {
+      display: block;
+      font-size: 0.92rem;
+      color: var(--text-main);
+    }
+    .interest-text span {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .drawer-section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--text-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 14px 16px 4px;
+    }
+
     .chip .chip-count {
       font-size: 0.75rem;
       opacity: 0.8;
@@ -1087,10 +1210,21 @@
       </button>
     </div>
     <div class="drawer-nav">
+      <div class="drawer-section-title">Dit Feed</div>
       <button class="drawer-item active" data-category="all" onclick="selectFromMenu('all')">
         <span class="item-label">🌐 Alle nyheder</span>
         <span class="item-badge" id="menu-count-all">0</span>
       </button>
+      <button class="drawer-item" data-category="foryou" onclick="selectFromMenu('foryou')">
+        <span class="item-label">🎯 For Dig (Mit feed)</span>
+        <span class="item-badge" id="menu-count-foryou">0</span>
+      </button>
+      <button class="drawer-item" data-category="bookmarks" onclick="selectFromMenu('bookmarks')">
+        <span class="item-label">⭐ Mine bogmærker</span>
+        <span class="item-badge" id="menu-count-bookmarks">0</span>
+      </button>
+
+      <div class="drawer-section-title">AI Selskaber</div>
       <button class="drawer-item" data-category="copilot" onclick="selectFromMenu('copilot')">
         <span class="item-label">🔷 Microsoft Copilot</span>
         <span class="item-badge" id="menu-count-copilot">0</span>
@@ -1107,12 +1241,29 @@
         <span class="item-label">🎬 Kun videoer / YouTube</span>
         <span class="item-badge" id="menu-count-video">0</span>
       </button>
-      <button class="drawer-item" data-category="bookmarks" onclick="selectFromMenu('bookmarks')">
-        <span class="item-label">⭐ Mine bogmærker</span>
-        <span class="item-badge" id="menu-count-bookmarks">0</span>
+
+      <div class="drawer-section-title">Faglige Emner</div>
+      <button class="drawer-item" data-category="tag:leadership" onclick="selectFromMenu('tag:leadership')">
+        <span class="item-label">📊 Ledelse & Strategi</span>
+        <span class="item-badge" id="menu-count-leadership">0</span>
+      </button>
+      <button class="drawer-item" data-category="tag:m365" onclick="selectFromMenu('tag:m365')">
+        <span class="item-label">💼 Copilot & M365</span>
+        <span class="item-badge" id="menu-count-m365">0</span>
+      </button>
+      <button class="drawer-item" data-category="tag:developer" onclick="selectFromMenu('tag:developer')">
+        <span class="item-label">🛠️ Udvikling & Agenter</span>
+        <span class="item-badge" id="menu-count-developer">0</span>
+      </button>
+      <button class="drawer-item" data-category="tag:research" onclick="selectFromMenu('tag:research')">
+        <span class="item-label">🔬 Forskning & Modeller</span>
+        <span class="item-badge" id="menu-count-research">0</span>
       </button>
     </div>
-    <div class="drawer-footer">
+    <div class="drawer-footer" style="display:flex; flex-direction:column; gap:8px;">
+      <button class="btn-submit-secondary" onclick="openInterestsModal()" style="width:100%; justify-content:center;">
+        ⚙️ Tilpas mine interesser
+      </button>
       <button class="drawer-submit-btn" onclick="scrollToSubmit()">
         💡 Tip eller tilføj ressource
       </button>
@@ -1136,6 +1287,12 @@
       <div class="filter-chips">
         <button class="chip active" data-target="all" onclick="filterBy('all')">
           Alle <span class="chip-count" id="chip-count-all">0</span>
+        </button>
+        <button class="chip" data-target="foryou" onclick="filterBy('foryou')">
+          🎯 For Dig <span class="chip-count" id="chip-count-foryou">0</span>
+        </button>
+        <button class="chip" data-target="bookmarks" onclick="filterBy('bookmarks')">
+          ⭐ Bogmærker <span class="chip-count" id="chip-count-bookmarks">0</span>
         </button>
         <button class="chip" data-target="copilot" onclick="filterBy('copilot')">
           🔷 Copilot <span class="chip-count" id="chip-count-copilot">0</span>
@@ -1248,6 +1405,56 @@
     </div>
   </footer>
 
+  <!-- Interests Preference Modal -->
+  <div id="interests-modal" class="modal-backdrop" onclick="closeInterestsModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3>🎯 Dine faglige AI-interesser</h3>
+        <button class="icon-btn" onclick="closeInterestsModal()" style="width:34px; height:34px;">✕</button>
+      </div>
+      <p class="modal-desc">Vælg de områder du vil fokusere på. Dit "For Dig"-feed filtrerer automatisk efter dine valg.</p>
+      
+      <div class="interest-checkbox-list">
+        <label class="interest-label">
+          <input type="checkbox" id="int-m365" value="m365">
+          <div class="interest-text">
+            <strong>💼 Copilot & M365 Workflows</strong>
+            <span>Praktisk brug i Excel, Word, Teams, SharePoint og Copilot-prompts</span>
+          </div>
+        </label>
+
+        <label class="interest-label">
+          <input type="checkbox" id="int-leadership" value="leadership">
+          <div class="interest-text">
+            <strong>📊 Ledelse, Strategi & Sikkerhed</strong>
+            <span>AI-governance, organisatorisk adoption, forretningsværdi, ROI og cyber defense</span>
+          </div>
+        </label>
+
+        <label class="interest-label">
+          <input type="checkbox" id="int-developer" value="developer">
+          <div class="interest-text">
+            <strong>🛠️ Udvikling & AI-Agenter</strong>
+            <span>Autonome agenter, Computer Use, kodning med AI, API'er og frameworks</span>
+          </div>
+        </label>
+
+        <label class="interest-label">
+          <input type="checkbox" id="int-research" value="research">
+          <div class="interest-text">
+            <strong>🔬 Forskning & Frontier Modeller</strong>
+            <span>Ræsonneringsgennembrud, videnskabelige modeller, benchmarks og evalueringer</span>
+          </div>
+        </label>
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:10px;">
+        <button class="btn-submit-secondary" onclick="closeInterestsModal()">Annuller</button>
+        <button class="btn-submit-primary" onclick="saveUserInterests()">Gem interesser</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Notification Toast -->
   <div id="notification-toast">Besked</div>
 
@@ -1311,6 +1518,60 @@
       setTimeout(() => {
         toast.classList.remove('show');
       }, 2500);
+    }
+
+    // Faglige Tags & Interesser (Fase 2)
+    const TAG_LABELS = {
+      'm365': 'Copilot & M365',
+      'leadership': 'Ledelse & Strategi',
+      'developer': 'Udvikling & Agenter',
+      'research': 'Forskning & Modeller'
+    };
+
+    function getUserInterests() {
+      try {
+        const raw = localStorage.getItem('ai_hub_interests');
+        return raw ? JSON.parse(raw) : ['m365', 'leadership'];
+      } catch (e) {
+        return ['m365', 'leadership'];
+      }
+    }
+
+    function saveUserInterests() {
+      const selected = [];
+      ['m365', 'leadership', 'developer', 'research'].forEach(id => {
+        const cb = document.getElementById('int-' + id);
+        if (cb && cb.checked) selected.push(id);
+      });
+      if (selected.length === 0) {
+        showNotification('Vælg mindst ét interesseområde!');
+        return;
+      }
+      localStorage.setItem('ai_hub_interests', JSON.stringify(selected));
+      closeInterestsModal();
+      showNotification('🎯 Interesser opdateret!');
+      updateCounts();
+      render();
+    }
+
+    function openInterestsModal() {
+      closeMenu();
+      const interests = getUserInterests();
+      ['m365', 'leadership', 'developer', 'research'].forEach(id => {
+        const cb = document.getElementById('int-' + id);
+        if (cb) cb.checked = interests.includes(id);
+      });
+      document.getElementById('interests-modal').classList.add('open');
+    }
+
+    function closeInterestsModal(e) {
+      if (e && e.target && e.target.id !== 'interests-modal') return;
+      document.getElementById('interests-modal').classList.remove('open');
+    }
+
+    function filterByTag(tagId, e) {
+      if (e) e.stopPropagation();
+      filterBy('tag:' + tagId);
     }
 
     // Bookmark Storage & Logic
@@ -1424,10 +1685,18 @@
     // Render cards
     function render() {
       const bookmarkIds = new Set(getBookmarks().map(b => b.id));
+      const userInts = getUserInterests();
 
       let filtered = allNews.filter(item => {
-        // Category filter
-        if (currentFilter === 'bookmarks') {
+        // Category / Topic filter
+        if (currentFilter === 'foryou') {
+          const itemTags = item.tags || [];
+          if (!itemTags.some(t => userInts.includes(t))) return false;
+        } else if (currentFilter.startsWith('tag:')) {
+          const targetTag = currentFilter.replace('tag:', '');
+          const itemTags = item.tags || [];
+          if (!itemTags.includes(targetTag)) return false;
+        } else if (currentFilter === 'bookmarks') {
           if (!bookmarkIds.has(item.id)) return false;
         } else if (currentFilter === 'video') {
           if (item.type !== 'youtube' && !item.thumbnail) return false;
@@ -1440,7 +1709,8 @@
           const matchTitle = (item.title || '').toLowerCase().includes(searchQuery);
           const matchSummary = (item.summary || '').toLowerCase().includes(searchQuery);
           const matchSource = (item.source || '').toLowerCase().includes(searchQuery);
-          if (!matchTitle && !matchSummary && !matchSource) return false;
+          const matchTags = (item.tags || []).some(t => (TAG_LABELS[t] || '').toLowerCase().includes(searchQuery));
+          if (!matchTitle && !matchSummary && !matchSource && !matchTags) return false;
         }
 
         return true;
@@ -1453,6 +1723,13 @@
       else if (currentFilter === 'chatgpt') filterName = 'ChatGPT (OpenAI)';
       else if (currentFilter === 'video') filterName = 'AI Videoer';
       else if (currentFilter === 'bookmarks') filterName = 'Dine bogmærker';
+      else if (currentFilter === 'foryou') {
+        const labels = userInts.map(id => TAG_LABELS[id] || id).join(', ');
+        filterName = `For Dig (${labels}) <a href="javascript:void(0)" onclick="openInterestsModal()" style="font-size:0.8rem; margin-left:4px; color:var(--copilot);">[⚙️ Tilpas]</a>`;
+      } else if (currentFilter.startsWith('tag:')) {
+        const tId = currentFilter.replace('tag:', '');
+        filterName = `emnet #${TAG_LABELS[tId] || tId}`;
+      }
 
       if (searchQuery) {
         statusText.innerHTML = `Fandt <strong>${filtered.length}</strong> resultat(er) for "<em>${escapeHtml(searchQuery)}</em>" i ${filterName}`;
@@ -1471,6 +1748,14 @@
             <div class="empty-state">
               <h3>Ingen gemte bogmærker endnu</h3>
               <p>Tryk på stjerne-ikonet (☆) på enhver artikel eller video for at gemme den her til senere.</p>
+            </div>
+          `;
+        } else if (currentFilter === 'foryou') {
+          newsGrid.innerHTML = `
+            <div class="empty-state">
+              <h3>Ingen nyheder matcher dine valgte interesser</h3>
+              <p>Prøv at tilføje flere fokusområder under dine indstillinger.</p>
+              <button class="btn-submit-secondary" onclick="openInterestsModal()" style="margin:16px auto 0;">⚙️ Vælg interesser</button>
             </div>
           `;
         } else {
@@ -1521,6 +1806,11 @@
                 <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>
               </h2>
               ${item.summary ? `<p class="card-summary">${escapeHtml(item.summary)}</p>` : ''}
+              ${item.tags && item.tags.length ? `
+                <div class="card-tags">
+                  ${item.tags.map(t => `<button class="tag-chip ${currentFilter === 'tag:' + t ? 'active' : ''}" onclick="filterByTag('${t}', event)">#${TAG_LABELS[t] || t}</button>`).join('')}
+                </div>
+              ` : ''}
               ${isBm ? `
                 <div class="card-note-box">
                   <div class="card-note-header">
@@ -1551,17 +1841,24 @@
     }
 
     function updateCounts() {
+      const userInts = getUserInterests();
       const counts = {
         all: allNews.length,
+        foryou: allNews.filter(n => (n.tags || []).some(t => userInts.includes(t))).length,
         copilot: allNews.filter(n => n.category === 'copilot').length,
         claude: allNews.filter(n => n.category === 'claude').length,
         chatgpt: allNews.filter(n => n.category === 'chatgpt').length,
         video: allNews.filter(n => n.type === 'youtube' || !!n.thumbnail).length,
-        bookmarks: getBookmarks().length
+        bookmarks: getBookmarks().length,
+        leadership: allNews.filter(n => (n.tags || []).includes('leadership')).length,
+        m365: allNews.filter(n => (n.tags || []).includes('m365')).length,
+        developer: allNews.filter(n => (n.tags || []).includes('developer')).length,
+        research: allNews.filter(n => (n.tags || []).includes('research')).length
       };
 
       // Chips
       document.getElementById('chip-count-all').textContent = counts.all;
+      document.getElementById('chip-count-foryou').textContent = counts.foryou;
       document.getElementById('chip-count-copilot').textContent = counts.copilot;
       document.getElementById('chip-count-claude').textContent = counts.claude;
       document.getElementById('chip-count-chatgpt').textContent = counts.chatgpt;
@@ -1570,11 +1867,16 @@
 
       // Drawer
       document.getElementById('menu-count-all').textContent = counts.all;
+      document.getElementById('menu-count-foryou').textContent = counts.foryou;
       document.getElementById('menu-count-copilot').textContent = counts.copilot;
       document.getElementById('menu-count-claude').textContent = counts.claude;
       document.getElementById('menu-count-chatgpt').textContent = counts.chatgpt;
       document.getElementById('menu-count-video').textContent = counts.video;
       document.getElementById('menu-count-bookmarks').textContent = counts.bookmarks;
+      document.getElementById('menu-count-leadership').textContent = counts.leadership;
+      document.getElementById('menu-count-m365').textContent = counts.m365;
+      document.getElementById('menu-count-developer').textContent = counts.developer;
+      document.getElementById('menu-count-research').textContent = counts.research;
     }
 
     // Copy link helper
@@ -1824,9 +2126,9 @@
 
     // Startup & Service Worker
     window.addEventListener('DOMContentLoaded', () => {
-      // Check URL hash for filter (#copilot, #claude, #chatgpt, #bookmarks)
+      // Check URL hash for filter (#copilot, #claude, #chatgpt, #bookmarks, #foryou, #tag:...)
       const hash = window.location.hash.replace('#', '').toLowerCase();
-      if (['copilot', 'claude', 'chatgpt', 'video', 'bookmarks'].includes(hash)) {
+      if (['copilot', 'claude', 'chatgpt', 'video', 'bookmarks', 'foryou'].includes(hash) || hash.startsWith('tag:')) {
         currentFilter = hash;
       }
 

@@ -1,9 +1,14 @@
 [
   {
-    "id": "chatgpt_7173251",
+    "id": "chatgpt_6349147",
     "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
     "link": "https://openai.com/index/partnering-with-hacktron",
     "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "developer",
+      "research"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-06T07:00:00Z",
@@ -12,10 +17,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_7827510",
+    "id": "claude_4738006",
     "title": "Teaching AI to build scientific models",
     "link": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-11-05T23:00:00Z",
@@ -24,10 +32,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_2596315",
+    "id": "claude_2818501",
     "title": "The components of agent memory",
     "link": "https://www.anthropic.com/research/components-of-agent-memory",
     "category": "claude",
+    "tags": [
+      "developer"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-11-05T23:00:00Z",
@@ -36,10 +47,14 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_2508873",
+    "id": "chatgpt_9330636",
     "title": "Measuring how AI agents handle everyday wet-lab science",
     "link": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
     "category": "chatgpt",
+    "tags": [
+      "developer",
+      "research"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-05T23:00:00Z",
@@ -48,10 +63,14 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_6189898",
+    "id": "chatgpt_6825882",
     "title": "Cult.fit builds operational muscle with Codex",
     "link": "https://openai.com/index/cultfit-builds-with-codex",
     "category": "chatgpt",
+    "tags": [
+      "m365",
+      "developer"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-05T19:00:00Z",
@@ -60,10 +79,13 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_9205193",
+    "id": "chatgpt_5075228",
     "title": "Australian universities are creating AI-native graduates",
     "link": "https://openai.com/index/australian-universities-ai-native-graduates",
     "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-05T16:00:00Z",
@@ -72,10 +94,15 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_3511862",
+    "id": "chatgpt_4037215",
     "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
     "link": "https://openai.com/index/introducing-gpt-6-cyber",
     "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "developer",
+      "research"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-05T08:00:00Z",
@@ -84,10 +111,15 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_5856091",
+    "id": "chatgpt_7881243",
     "title": "Merge builds product and business tools with OpenAI technology",
     "link": "https://openai.com/index/merge-builds-with-openai",
     "category": "chatgpt",
+    "tags": [
+      "m365",
+      "leadership",
+      "developer"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-05T07:00:00Z",
@@ -96,10 +128,13 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_3143901",
+    "id": "chatgpt_1506949",
     "title": "Setting a new standard for responsible AI infrastructure",
     "link": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
     "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-05T01:00:00Z",
@@ -108,10 +143,13 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_4511276",
+    "id": "chatgpt_4540468",
     "title": "Flipsnack grows product signups with conversion optimization",
     "link": "https://openai.com/ads/customers/flipsnack",
     "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-04T23:45:15Z",
@@ -120,10 +158,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_5322359",
+    "id": "claude_9863702",
     "title": "AI for scientific discovery: How researchers use Claude",
     "link": "https://www.anthropic.com/research/how-researchers-use-claude",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-11-04T23:00:00Z",
@@ -132,10 +173,14 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_4622461",
+    "id": "chatgpt_252692",
     "title": "Franklin Templeton uses OpenAI to support investment research",
     "link": "https://openai.com/index/franklin-templeton",
     "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "research"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-04T23:00:00Z",
@@ -144,10 +189,13 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_4930939",
+    "id": "chatgpt_1113550",
     "title": "Messi asks ChatGPT to reimagine his room",
     "link": "https://www.youtube.com/shorts/6IttBmI4P9M",
     "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
     "source": "OpenAI (YouTube)",
     "type": "youtube",
     "published_at": "2026-11-04T18:25:46Z",
@@ -156,10 +204,13 @@
     "thumbnail": "https://img.youtube.com/vi/6IttBmI4P9M/hqdefault.jpg"
   },
   {
-    "id": "chatgpt_6962634",
+    "id": "chatgpt_5832389",
     "title": "How Figma Is Building Self-Serve Analytics with OpenAI",
     "link": "https://www.youtube.com/shorts/0LDs5rvx1EI",
     "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
     "source": "OpenAI (YouTube)",
     "type": "youtube",
     "published_at": "2026-11-04T16:33:11Z",
@@ -168,10 +219,14 @@
     "thumbnail": "https://img.youtube.com/vi/0LDs5rvx1EI/hqdefault.jpg"
   },
   {
-    "id": "chatgpt_1887293",
+    "id": "chatgpt_5325346",
     "title": "OpenAI to acquire Pierre Computer Company, Inc.",
     "link": "https://openai.com/index/openai-to-acquire-pierre",
     "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "developer"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-04T13:30:00Z",
@@ -180,10 +235,13 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_5475562",
+    "id": "chatgpt_8668597",
     "title": "A thousand fewer paths to root",
     "link": "https://openai.com/index/a-thousand-fewer-paths-to-root",
     "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-04T07:00:00Z",
@@ -192,10 +250,13 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_5007171",
+    "id": "chatgpt_6637310",
     "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
     "link": "https://openai.com/index/daybreak-red-aws-govcloud",
     "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-04T06:00:00Z",
@@ -204,10 +265,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_1584170",
+    "id": "claude_8936816",
     "title": "Investigating vault particles with Claude",
     "link": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-11-03T23:00:00Z",
@@ -216,10 +280,13 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_3227817",
+    "id": "chatgpt_4598013",
     "title": "Introducing Images 2.6",
     "link": "https://openai.com/index/introducing-images-2-6",
     "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-03T23:00:00Z",
@@ -228,10 +295,14 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_3794767",
+    "id": "chatgpt_669324",
     "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
     "link": "https://openai.com/index/devrev-enterprise-self-service",
     "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "research"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-03T23:00:00Z",
@@ -240,10 +311,13 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_1784082",
+    "id": "chatgpt_2048762",
     "title": "Glean on privacy and OpenAI Private Intelligence",
     "link": "https://www.youtube.com/shorts/JR7xBi2kJjY",
     "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
     "source": "OpenAI (YouTube)",
     "type": "youtube",
     "published_at": "2026-11-03T15:51:36Z",
@@ -252,10 +326,13 @@
     "thumbnail": "https://img.youtube.com/vi/JR7xBi2kJjY/hqdefault.jpg"
   },
   {
-    "id": "copilot_5806056",
+    "id": "copilot_1485139",
     "title": "How to Clean Messy Data in Excel with Copilot",
     "link": "https://www.youtube.com/shorts/_eIxuzpdkm4",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-11-03T11:15:27Z",
@@ -264,10 +341,13 @@
     "thumbnail": "https://img.youtube.com/vi/_eIxuzpdkm4/hqdefault.jpg"
   },
   {
-    "id": "chatgpt_7197562",
+    "id": "chatgpt_1957519",
     "title": "Accelerating engineering for the physical world",
     "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
     "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
     "source": "OpenAI Blog (ChatGPT)",
     "type": "article",
     "published_at": "2026-11-03T11:00:00Z",
@@ -276,10 +356,13 @@
     "thumbnail": ""
   },
   {
-    "id": "chatgpt_5505239",
+    "id": "chatgpt_3035289",
     "title": "Coinbase on OpenAI Private Intelligence",
     "link": "https://www.youtube.com/shorts/NbDF90z-g6w",
     "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
     "source": "OpenAI (YouTube)",
     "type": "youtube",
     "published_at": "2026-11-02T21:44:26Z",
@@ -288,10 +371,13 @@
     "thumbnail": "https://img.youtube.com/vi/NbDF90z-g6w/hqdefault.jpg"
   },
   {
-    "id": "copilot_1814695",
+    "id": "copilot_529192",
     "title": "Create Incredible Copilot Dashboards in Excel, PowerPoint & SharePoint",
     "link": "https://www.youtube.com/watch?v=-XeCMdR7Zz4",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "Mike Tholfsen (Copilot)",
     "type": "youtube",
     "published_at": "2026-11-02T12:37:21Z",
@@ -300,10 +386,13 @@
     "thumbnail": "https://img.youtube.com/vi/-XeCMdR7Zz4/hqdefault.jpg"
   },
   {
-    "id": "claude_9901985",
+    "id": "claude_3494286",
     "title": "Progress on provable inference for large language models",
     "link": "https://www.anthropic.com/research/provable-inference",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-11-01T23:00:00Z",
@@ -312,10 +401,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_3781212",
+    "id": "copilot_1678155",
     "title": "How to Stop Copilot from Making Things Up",
     "link": "https://www.youtube.com/shorts/OuPexkmO2z8",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-11-01T14:00:31Z",
@@ -324,10 +416,13 @@
     "thumbnail": "https://img.youtube.com/vi/OuPexkmO2z8/hqdefault.jpg"
   },
   {
-    "id": "copilot_9697993",
+    "id": "copilot_8232901",
     "title": "How to Convert a PDF Report to Excel with Copilot",
     "link": "https://www.youtube.com/shorts/JTXrEUhE9Jg",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-31T12:00:13Z",
@@ -336,10 +431,13 @@
     "thumbnail": "https://img.youtube.com/vi/JTXrEUhE9Jg/hqdefault.jpg"
   },
   {
-    "id": "copilot_9120612",
+    "id": "copilot_2550562",
     "title": "Excel file to Interactive Dashboard for Free with Copilot Chat",
     "link": "https://www.youtube.com/shorts/kahoJTXNLKU",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-30T09:45:32Z",
@@ -348,10 +446,14 @@
     "thumbnail": "https://img.youtube.com/vi/kahoJTXNLKU/hqdefault.jpg"
   },
   {
-    "id": "copilot_6498868",
+    "id": "copilot_4383703",
     "title": "3 Copilot Tips to Build Your Own Skills and Agents",
     "link": "https://www.youtube.com/shorts/bSe8Sn2_juM",
     "category": "copilot",
+    "tags": [
+      "m365",
+      "developer"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-29T10:00:39Z",
@@ -360,10 +462,13 @@
     "thumbnail": "https://img.youtube.com/vi/bSe8Sn2_juM/hqdefault.jpg"
   },
   {
-    "id": "copilot_5306644",
+    "id": "copilot_9473935",
     "title": "Word mail merge from Excel",
     "link": "https://www.youtube.com/shorts/FShCrG19tPA",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "Mike Tholfsen (Copilot)",
     "type": "youtube",
     "published_at": "2026-10-28T11:20:49Z",
@@ -372,10 +477,13 @@
     "thumbnail": "https://img.youtube.com/vi/FShCrG19tPA/hqdefault.jpg"
   },
   {
-    "id": "copilot_7545483",
+    "id": "copilot_1952026",
     "title": "3 Microsoft Copilot Tips That Go Beyond Emails",
     "link": "https://www.youtube.com/shorts/T_JqQmatYVI",
     "category": "copilot",
+    "tags": [
+      "developer"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-28T10:00:37Z",
@@ -384,10 +492,13 @@
     "thumbnail": "https://img.youtube.com/vi/T_JqQmatYVI/hqdefault.jpg"
   },
   {
-    "id": "claude_9658311",
+    "id": "claude_1766338",
     "title": "AI for Science expands to foundations and research institutions",
     "link": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-27T23:00:00Z",
@@ -396,10 +507,15 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_518350",
+    "id": "copilot_7534418",
     "title": "The AI advantage your company can keep",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
     "category": "copilot",
+    "tags": [
+      "leadership",
+      "developer",
+      "research"
+    ],
     "source": "Microsoft Copilot Blog",
     "type": "article",
     "published_at": "2026-10-27T15:00:00Z",
@@ -408,10 +524,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_2702320",
+    "id": "copilot_3401189",
     "title": "How to Catch Up on Emails After Vacation with Copilot",
     "link": "https://www.youtube.com/shorts/czboBvUJVwA",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-27T10:00:11Z",
@@ -420,10 +539,13 @@
     "thumbnail": "https://img.youtube.com/vi/czboBvUJVwA/hqdefault.jpg"
   },
   {
-    "id": "claude_3835000",
+    "id": "claude_3720767",
     "title": "Early progress on accelerating drug development with Claude",
     "link": "https://www.anthropic.com/research/early-progress-drug-development",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-26T23:00:00Z",
@@ -432,10 +554,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_2427933",
+    "id": "claude_9895613",
     "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
     "link": "https://www.anthropic.com/news/expanding-partnership-gsa",
     "category": "claude",
+    "tags": [
+      "leadership"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-26T23:00:00Z",
@@ -444,10 +569,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_6313145",
+    "id": "claude_2653060",
     "title": "How AI agents shape experts’ judgment calls",
     "link": "https://www.anthropic.com/research/agents-judgment-calls",
     "category": "claude",
+    "tags": [
+      "developer"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-10-26T23:00:00Z",
@@ -456,10 +584,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_6177674",
+    "id": "copilot_9965424",
     "title": "Copilot Code + Work IQ Made This From ONE Prompt",
     "link": "https://www.youtube.com/shorts/7n4uLMzmemQ",
     "category": "copilot",
+    "tags": [
+      "developer"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-26T20:00:10Z",
@@ -468,10 +599,14 @@
     "thumbnail": "https://img.youtube.com/vi/7n4uLMzmemQ/hqdefault.jpg"
   },
   {
-    "id": "copilot_8886408",
+    "id": "copilot_7012322",
     "title": "How to Do Deep Research with Microsoft Copilot",
     "link": "https://www.youtube.com/shorts/0NpVTw2nggE",
     "category": "copilot",
+    "tags": [
+      "developer",
+      "research"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-26T11:00:34Z",
@@ -480,10 +615,13 @@
     "thumbnail": "https://img.youtube.com/vi/0NpVTw2nggE/hqdefault.jpg"
   },
   {
-    "id": "claude_1529744",
+    "id": "claude_2658367",
     "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
     "link": "https://www.anthropic.com/news/s1-sec",
     "category": "claude",
+    "tags": [
+      "leadership"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-25T23:00:00Z",
@@ -492,10 +630,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_3511530",
+    "id": "copilot_4346480",
     "title": "How to Build a Copilot Agent in 2 Seconds",
     "link": "https://www.youtube.com/shorts/1KM1N8nal44",
     "category": "copilot",
+    "tags": [
+      "developer"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-24T10:30:00Z",
@@ -504,10 +645,13 @@
     "thumbnail": "https://img.youtube.com/vi/1KM1N8nal44/hqdefault.jpg"
   },
   {
-    "id": "copilot_8699194",
+    "id": "copilot_2269759",
     "title": "Microsoft Copilot Licenses Explained (Free vs Paid)",
     "link": "https://www.youtube.com/shorts/c8mPTRUnJKM",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-23T11:00:01Z",
@@ -516,10 +660,14 @@
     "thumbnail": "https://img.youtube.com/vi/c8mPTRUnJKM/hqdefault.jpg"
   },
   {
-    "id": "claude_1638290",
+    "id": "claude_4072801",
     "title": "An alignment assessment of the UK AISI cybertesting incident",
     "link": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
     "category": "claude",
+    "tags": [
+      "leadership",
+      "research"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-10-22T23:00:00Z",
@@ -528,10 +676,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_6482743",
+    "id": "copilot_2627227",
     "title": "How to Summarize a PDF Report with Copilot (the Right Way)",
     "link": "https://www.youtube.com/shorts/23Jg-lbupxM",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-22T10:45:33Z",
@@ -540,10 +691,13 @@
     "thumbnail": "https://img.youtube.com/vi/23Jg-lbupxM/hqdefault.jpg"
   },
   {
-    "id": "claude_6847781",
+    "id": "claude_551716",
     "title": "Open call for guest investigators in the life sciences",
     "link": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-21T23:00:00Z",
@@ -552,10 +706,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_4893878",
+    "id": "claude_7668108",
     "title": "Donating Agent Skills to the Agentic AI Foundation",
     "link": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
     "category": "claude",
+    "tags": [
+      "developer"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-21T23:00:00Z",
@@ -564,10 +721,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_3360816",
+    "id": "claude_5592319",
     "title": "LLMs are making formal software verification feasible at a much larger scale",
     "link": "https://www.anthropic.com/research/formal-verification",
     "category": "claude",
+    "tags": [
+      "developer"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-10-21T23:00:00Z",
@@ -576,10 +736,14 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_7352573",
+    "id": "copilot_1434758",
     "title": "Copilot in PowerPoint: Branded Deck in 1 Prompt",
     "link": "https://www.youtube.com/shorts/-FDPoshlRM8",
     "category": "copilot",
+    "tags": [
+      "m365",
+      "developer"
+    ],
     "source": "David Fortin (Copilot & Excel)",
     "type": "youtube",
     "published_at": "2026-10-21T10:15:17Z",
@@ -588,10 +752,14 @@
     "thumbnail": "https://img.youtube.com/vi/-FDPoshlRM8/hqdefault.jpg"
   },
   {
-    "id": "claude_4567716",
+    "id": "claude_811411",
     "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
     "link": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
     "category": "claude",
+    "tags": [
+      "leadership",
+      "research"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-20T23:00:00Z",
@@ -600,10 +768,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_2272897",
+    "id": "claude_741246",
     "title": "How Claude designed protein binders against scorpion neurotoxins",
     "link": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-10-19T23:00:00Z",
@@ -612,10 +783,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_5989865",
+    "id": "claude_4107401",
     "title": "Investing in the public benefit",
     "link": "https://www.anthropic.com/news/public-benefit-fund",
     "category": "claude",
+    "tags": [
+      "leadership"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-17T23:00:00Z",
@@ -624,10 +798,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_8702033",
+    "id": "claude_8349636",
     "title": "Working at the frontier shapes expectations for the future",
     "link": "https://www.anthropic.com/research/expectations-for-the-future",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-10-15T23:00:00Z",
@@ -636,10 +813,14 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_7650151",
+    "id": "claude_4801806",
     "title": "How employment is changing at Anthropic",
     "link": "https://www.anthropic.com/research/employment-at-anthropic",
     "category": "claude",
+    "tags": [
+      "leadership",
+      "research"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-10-15T23:00:00Z",
@@ -648,10 +829,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_9345862",
+    "id": "claude_6497692",
     "title": "Claude reveals ECDSA curve origins",
     "link": "https://www.anthropic.com/research/ecdsa-curve-origins",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-10-15T23:00:00Z",
@@ -660,10 +844,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_8407123",
+    "id": "claude_8304588",
     "title": "Designing more efficient quantum circuits with Claude",
     "link": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic Research (Claude)",
     "type": "article",
     "published_at": "2026-10-15T23:00:00Z",
@@ -672,10 +859,14 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_6848731",
+    "id": "claude_1235285",
     "title": "An update on independent evaluators",
     "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
     "category": "claude",
+    "tags": [
+      "leadership",
+      "research"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-14T23:00:00Z",
@@ -684,10 +875,14 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_3339474",
+    "id": "claude_5863551",
     "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
     "link": "https://www.anthropic.com/news/singapore-office-opening",
     "category": "claude",
+    "tags": [
+      "m365",
+      "leadership"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-13T23:00:00Z",
@@ -696,10 +891,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_8728845",
+    "id": "claude_7545094",
     "title": "Preparing for the 2026 US midterms",
     "link": "https://www.anthropic.com/news/2026-us-midterms",
     "category": "claude",
+    "tags": [
+      "leadership"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-13T23:00:00Z",
@@ -708,10 +906,14 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_930876",
+    "id": "claude_8680271",
     "title": "Strengthening our defenses against distillation attacks",
     "link": "https://www.anthropic.com/news/distillation-defenses",
     "category": "claude",
+    "tags": [
+      "developer",
+      "research"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-11T23:00:00Z",
@@ -720,10 +922,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_8046510",
+    "id": "copilot_2443108",
     "title": "Email a PowerPoint deck as PDF in 1 click",
     "link": "https://www.youtube.com/shorts/iSp5KuK4wq8",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "Mike Tholfsen (Copilot)",
     "type": "youtube",
     "published_at": "2026-10-09T12:43:43Z",
@@ -732,10 +937,15 @@
     "thumbnail": "https://img.youtube.com/vi/iSp5KuK4wq8/hqdefault.jpg"
   },
   {
-    "id": "copilot_9087556",
+    "id": "copilot_9965122",
     "title": "Bringing CRM into the flow of work and agents into business process for sales and service teams",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/08/bringing-crm-into-the-flow-of-work-and-agents-into-business-process-for-sales-and-service-teams/",
     "category": "copilot",
+    "tags": [
+      "m365",
+      "leadership",
+      "developer"
+    ],
     "source": "Microsoft Copilot Blog",
     "type": "article",
     "published_at": "2026-10-08T14:00:00Z",
@@ -744,10 +954,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_8361012",
+    "id": "claude_5921184",
     "title": "Building on our commitment to American scientific discovery",
     "link": "https://www.anthropic.com/news/genesis-mission-commitment",
     "category": "claude",
+    "tags": [
+      "research"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-07T23:00:00Z",
@@ -756,10 +969,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_9338263",
+    "id": "claude_5360776",
     "title": "Introducing the Anthropic Cyber Mission",
     "link": "https://www.anthropic.com/news/anthropic-cyber-mission",
     "category": "claude",
+    "tags": [
+      "leadership"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-07T23:00:00Z",
@@ -768,10 +984,13 @@
     "thumbnail": ""
   },
   {
-    "id": "claude_1122120",
+    "id": "claude_9916125",
     "title": "2026 Usage Policy update",
     "link": "https://www.anthropic.com/news/2026-usage-policy-update",
     "category": "claude",
+    "tags": [
+      "leadership"
+    ],
     "source": "Anthropic News (Claude)",
     "type": "article",
     "published_at": "2026-10-07T23:00:00Z",
@@ -780,10 +999,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_6950008",
+    "id": "copilot_5624680",
     "title": "Teach in Copilot is available for ALL M365 teachers globally!",
     "link": "https://www.youtube.com/shorts/rR44D4kQOkA",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "Mike Tholfsen (Copilot)",
     "type": "youtube",
     "published_at": "2026-09-30T12:27:59Z",
@@ -792,10 +1014,13 @@
     "thumbnail": "https://img.youtube.com/vi/rR44D4kQOkA/hqdefault.jpg"
   },
   {
-    "id": "copilot_8621340",
+    "id": "copilot_9804357",
     "title": "Secret Word Tables tip 💡",
     "link": "https://www.youtube.com/shorts/oxnbjdNovoM",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "Mike Tholfsen (Copilot)",
     "type": "youtube",
     "published_at": "2026-09-25T12:58:06Z",
@@ -804,10 +1029,14 @@
     "thumbnail": "https://img.youtube.com/vi/oxnbjdNovoM/hqdefault.jpg"
   },
   {
-    "id": "copilot_6526454",
+    "id": "copilot_7905272",
     "title": "Introducing the new Copilot with Home, Code and Autopilot",
     "link": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
     "category": "copilot",
+    "tags": [
+      "leadership",
+      "developer"
+    ],
     "source": "Microsoft Copilot Blog",
     "type": "article",
     "published_at": "2026-09-25T11:07:25Z",
@@ -816,10 +1045,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_4764928",
+    "id": "copilot_67241",
     "title": "Building the system for AI at work",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/23/building-the-system-for-ai-at-work/",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "Microsoft Copilot Blog",
     "type": "article",
     "published_at": "2026-09-23T14:00:00Z",
@@ -828,10 +1060,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_5520761",
+    "id": "copilot_1769825",
     "title": "Email a Word doc in 1 click 📨",
     "link": "https://www.youtube.com/shorts/hZ-ycfMXYoU",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "Mike Tholfsen (Copilot)",
     "type": "youtube",
     "published_at": "2026-09-18T14:07:04Z",
@@ -840,10 +1075,14 @@
     "thumbnail": "https://img.youtube.com/vi/hZ-ycfMXYoU/hqdefault.jpg"
   },
   {
-    "id": "copilot_6296597",
+    "id": "copilot_9361579",
     "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
     "link": "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
     "category": "copilot",
+    "tags": [
+      "leadership",
+      "developer"
+    ],
     "source": "Microsoft Copilot Blog",
     "type": "article",
     "published_at": "2026-09-15T14:00:00Z",
@@ -852,10 +1091,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_7158884",
+    "id": "copilot_1176080",
     "title": "ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/10/espc-2026-is-coming-to-amsterdam-bringing-microsoft-and-the-community-together/",
     "category": "copilot",
+    "tags": [
+      "developer"
+    ],
     "source": "Microsoft Copilot Blog",
     "type": "article",
     "published_at": "2026-09-10T15:00:00Z",
@@ -864,10 +1106,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_7077797",
+    "id": "copilot_7219649",
     "title": "Build apps in Copilot Cowork and Copilot Studio",
     "link": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/",
     "category": "copilot",
+    "tags": [
+      "leadership"
+    ],
     "source": "Microsoft Copilot Blog",
     "type": "article",
     "published_at": "2026-09-10T14:00:00Z",
@@ -876,10 +1121,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_8402801",
+    "id": "copilot_81776",
     "title": "PPCC 2026: Bringing AI and your business processes together",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/03/ppcc-2026-bringing-ai-and-your-business-processes-together/",
     "category": "copilot",
+    "tags": [
+      "leadership"
+    ],
     "source": "Microsoft Copilot Blog",
     "type": "article",
     "published_at": "2026-09-03T14:00:00Z",
@@ -888,10 +1136,13 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_8247934",
+    "id": "copilot_9603092",
     "title": "The next measure of AI momentum is work transformed",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
     "category": "copilot",
+    "tags": [
+      "m365"
+    ],
     "source": "Microsoft Copilot Blog",
     "type": "article",
     "published_at": "2026-07-30T12:00:00Z",
@@ -900,10 +1151,14 @@
     "thumbnail": ""
   },
   {
-    "id": "copilot_7764271",
+    "id": "copilot_7285562",
     "title": "Copilot in Excel: Built for the era of Frontier Finance",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
     "category": "copilot",
+    "tags": [
+      "m365",
+      "research"
+    ],
     "source": "Microsoft Copilot Blog",
     "type": "article",
     "published_at": "2026-06-25T12:00:00Z",
