@@ -9,6 +9,7 @@ import json
 import re
 import time
 import urllib.request
+import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
 import feedparser
@@ -106,6 +107,14 @@ def build_fallback_tldr(title: str, summary: str, cat: str, source: str, tags: l
             return f"Videodemonstration fra OpenAI med fokus på nye modelfunktioner og problemløsning med ChatGPT."
         return f"Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
     return f"Væsentlig opdatering fra {source} om de seneste fremskridt inden for kunstig intelligens."
+
+def check_llm_available() -> bool:
+    try:
+        req = urllib.request.Request("http://192.168.68.62:11434/api/tags")
+        with urllib.request.urlopen(req, timeout=1.5) as resp:
+            return resp.status == 200
+    except Exception:
+        return False
 
 def get_danish_tldr(item: dict, cache: dict, allow_llm: bool = True) -> str:
     item_id = item["id"]
@@ -207,9 +216,10 @@ def main():
                     is_youtube = ("youtube.com" in link) or ("youtu.be" in link) or (item_type == "youtube")
                     thumb = extract_youtube_thumb(link) if is_youtube else ""
                     tags = classify_tags(title, summary, cat, name)
+                    item_hash = hashlib.md5(norm_link.encode("utf-8")).hexdigest()[:8]
 
                     all_items.append({
-                        "id": f"{cat}_{abs(hash(norm_link)) % 10000000}",
+                        "id": f"{cat}_{item_hash}",
                         "title": title,
                         "link": link,
                         "category": cat,
@@ -235,9 +245,11 @@ def main():
         except Exception:
             cache = {}
 
+    llm_online = check_llm_available()
+    print(f"Lokal LLM (Qwen2.5) status: {'Online' if llm_online else 'Offline/Fjern'}")
     print(f"Genererer/tilknytter danske TL;DR opsummeringer (tidligere cachet: {len(cache)})...")
     for idx, item in enumerate(all_items):
-        allow_llm = (idx < 35) or (item["id"] in cache)  # Få fat i de 35 nyeste via LLM
+        allow_llm = llm_online and ((idx < 35) or (item["id"] not in cache))
         item["tldr_da"] = get_danish_tldr(item, cache, allow_llm=allow_llm)
 
     SUMMARIES_CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
