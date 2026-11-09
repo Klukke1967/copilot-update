@@ -19,6 +19,18 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEJoO7Zkfv45zIjuALuJLTQ"
     },
     {
+      "name": "Steve Corey (YouTube)",
+      "category": "copilot",
+      "type": "youtube",
+      "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCOZthH-jESHnUuH2HDyYONg"
+    },
+    {
+      "name": "Steve Corey Insights (Blog)",
+      "category": "copilot",
+      "type": "article",
+      "feedUrl": "https://stevecorey.com/feed.xml"
+    },
+    {
       "name": "Anthropic News (Claude)",
       "category": "claude",
       "type": "article",
