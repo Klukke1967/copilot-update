@@ -1237,6 +1237,62 @@
       margin-bottom: 20px;
       width: 100%;
     }
+
+    /* TL;DR Quick-Take Styling (Fase 3) */
+    .card-tldr-wrap {
+      margin-top: 6px;
+      margin-bottom: 12px;
+    }
+    .btn-tldr-toggle {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .btn-tldr-toggle:hover {
+      background: #dcfce7;
+      border-color: #86efac;
+    }
+    .btn-tldr-toggle.open {
+      background: #166534;
+      color: #ffffff;
+      border-color: #166534;
+    }
+    .tldr-arrow {
+      font-size: 0.65rem;
+      transition: transform 0.2s ease;
+    }
+    .btn-tldr-toggle.open .tldr-arrow {
+      transform: rotate(180deg);
+    }
+    .card-tldr-box {
+      display: none;
+      background: #f8fafc;
+      border-left: 3px solid #16a34a;
+      border-radius: 0 8px 8px 0;
+      padding: 10px 14px;
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: #1e293b;
+      line-height: 1.45;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      animation: fadeIn 0.2s ease;
+    }
+    .card-tldr-box.open {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-3px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 
   <!-- Firebase App & Services (v10 compat) -->
@@ -1943,6 +1999,16 @@
       filterBy('tag:' + tagId);
     }
 
+    // TL;DR Quick-Take (Fase 3)
+    function toggleTldr(id) {
+      const box = document.getElementById('tldr-box-' + id);
+      const btn = document.getElementById('btn-tldr-' + id);
+      if (!box || !btn) return;
+      const isOpen = box.classList.contains('open');
+      box.classList.toggle('open', !isOpen);
+      btn.classList.toggle('open', !isOpen);
+    }
+
     // Bookmark Storage & Logic
     function getBookmarks() {
       try {
@@ -2080,7 +2146,8 @@
           const matchSummary = (item.summary || '').toLowerCase().includes(searchQuery);
           const matchSource = (item.source || '').toLowerCase().includes(searchQuery);
           const matchTags = (item.tags || []).some(t => (TAG_LABELS[t] || '').toLowerCase().includes(searchQuery));
-          if (!matchTitle && !matchSummary && !matchSource && !matchTags) return false;
+          const matchTldr = (item.tldr_da || '').toLowerCase().includes(searchQuery);
+          if (!matchTitle && !matchSummary && !matchSource && !matchTags && !matchTldr) return false;
         }
 
         return true;
@@ -2179,6 +2246,17 @@
               ${item.tags && item.tags.length ? `
                 <div class="card-tags">
                   ${item.tags.map(t => `<button class="tag-chip ${currentFilter === 'tag:' + t ? 'active' : ''}" onclick="filterByTag('${t}', event)">#${TAG_LABELS[t] || t}</button>`).join('')}
+                </div>
+              ` : ''}
+              ${item.tldr_da ? `
+                <div class="card-tldr-wrap">
+                  <button class="btn-tldr-toggle" onclick="toggleTldr('${item.id}')" id="btn-tldr-${item.id}" title="Klik for dansk resumé">
+                    <span>💡 Dansk TL;DR</span>
+                    <span class="tldr-arrow">▼</span>
+                  </button>
+                  <div class="card-tldr-box" id="tldr-box-${item.id}">
+                    <p class="card-tldr-text">${escapeHtml(item.tldr_da)}</p>
+                  </div>
                 </div>
               ` : ''}
               ${isBm ? `

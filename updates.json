@@ -1,6 +1,6 @@
 [
   {
-    "id": "copilot_286110",
+    "id": "copilot_396839",
     "title": "7 New Microsoft Copilot Features That Save You Time (November 2026)",
     "link": "https://www.youtube.com/watch?v=lVtiqugqSCc",
     "category": "copilot",
@@ -12,10 +12,11 @@
     "published_at": "2026-11-09T12:50:11Z",
     "display_date": "9. nov. 2026",
     "summary": "A step-by-step tutorial video showing 7 NEW features in Microsoft Copilot for November 2026, including exciting updates across Word, Excel, PowerPoint, and SharePoint. These new AI...",
-    "thumbnail": "https://img.youtube.com/vi/lVtiqugqSCc/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/lVtiqugqSCc/hqdefault.jpg",
+    "tldr_da": "Mike Tholfsen præsenterer i en video tur 7 nye Microsoft Copilot-features for November 2026, der inkluderer opdateringer i Word, Excel, PowerPoint og SharePoint."
   },
   {
-    "id": "chatgpt_5708539",
+    "id": "chatgpt_8913849",
     "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
     "link": "https://openai.com/index/partnering-with-hacktron",
     "category": "chatgpt",
@@ -29,10 +30,11 @@
     "published_at": "2026-11-06T07:00:00Z",
     "display_date": "6. nov. 2026",
     "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "OpenAI samarbejder med Hacktron for at identificere svagheder, teste forbindelser til tredjeparts-services og styrke forsvar med fremtidig AI."
   },
   {
-    "id": "claude_1031802",
+    "id": "claude_7670104",
     "title": "Teaching AI to build scientific models",
     "link": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
     "category": "claude",
@@ -44,10 +46,11 @@
     "published_at": "2026-11-05T23:00:00Z",
     "display_date": "5. nov. 2026",
     "summary": "In this guest post, Jakob Macke, Daniel Gedon, and Stefan Wahl discuss how AI is starting to change the scientific modeling process, from construction to interpretation.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "I denne gæstebloggentry diskuterer Jakob Macke, Daniel Gedon og Stefan Wahl, hvordan AI begynder at revolutionere den videnskabelige modellering, fra opbygning til fortolkning."
   },
   {
-    "id": "claude_4589748",
+    "id": "claude_9717375",
     "title": "The components of agent memory",
     "link": "https://www.anthropic.com/research/components-of-agent-memory",
     "category": "claude",
@@ -59,10 +62,11 @@
     "published_at": "2026-11-05T23:00:00Z",
     "display_date": "5. nov. 2026",
     "summary": "For Claude to learn from experience, it has to decide what’s worth remembering before it knows what’s next. Here’s how “dreaming” helps it organize memory and correct mistakes.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Claude bruger en teknik kaldet \"drømme\" til at organisere sin erindring og rette fejl, hvilket er vigtigt for at lære af erfaringer."
   },
   {
-    "id": "chatgpt_9547985",
+    "id": "chatgpt_1482080",
     "title": "Measuring how AI agents handle everyday wet-lab science",
     "link": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
     "category": "chatgpt",
@@ -75,10 +79,11 @@
     "published_at": "2026-11-05T23:00:00Z",
     "display_date": "5. nov. 2026",
     "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "OpenAI lancerer BioBasicsBench, en 100-opslags benchmark der måler AI-agenteres evne til at forstå ren eksperimentel data og håndtere dagligdagshåndtering i laboratorier."
   },
   {
-    "id": "chatgpt_95860",
+    "id": "chatgpt_6272968",
     "title": "Cult.fit builds operational muscle with Codex",
     "link": "https://openai.com/index/cultfit-builds-with-codex",
     "category": "chatgpt",
@@ -91,10 +96,11 @@
     "published_at": "2026-11-05T19:00:00Z",
     "display_date": "5. nov. 2026",
     "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
   },
   {
-    "id": "chatgpt_7765673",
+    "id": "chatgpt_6364685",
     "title": "Australian universities are creating AI-native graduates",
     "link": "https://openai.com/index/australian-universities-ai-native-graduates",
     "category": "chatgpt",
@@ -106,10 +112,11 @@
     "published_at": "2026-11-05T16:00:00Z",
     "display_date": "5. nov. 2026",
     "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Australske universiteter udvide adgangen til ChatGPT og integrerer AI i undervisning og læring for at forberede studerende på en arbejdsmarkedsmiljø, der er støttet af AI."
   },
   {
-    "id": "chatgpt_1258485",
+    "id": "chatgpt_4094543",
     "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
     "link": "https://openai.com/index/introducing-gpt-6-cyber",
     "category": "chatgpt",
@@ -123,10 +130,11 @@
     "published_at": "2026-11-05T08:00:00Z",
     "display_date": "5. nov. 2026",
     "summary": "Introducing GPT‑6 Cyber, OpenAI’s cybersecurity model for finding exploitable vulnerabilities and developing fixes, trained to stay within authorized scope.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "GPT-6 Cyber er OpenAI's cybersikkerhedsmodel, der er trænet til at identificere udnyttelige sårbarheder og udvikle korrektioner, mens den holder op med autoriseret omfang."
   },
   {
-    "id": "chatgpt_7692096",
+    "id": "chatgpt_7081398",
     "title": "Merge builds product and business tools with OpenAI technology",
     "link": "https://openai.com/index/merge-builds-with-openai",
     "category": "chatgpt",
@@ -140,10 +148,11 @@
     "published_at": "2026-11-05T07:00:00Z",
     "display_date": "5. nov. 2026",
     "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
   },
   {
-    "id": "chatgpt_9877844",
+    "id": "chatgpt_6263683",
     "title": "Setting a new standard for responsible AI infrastructure",
     "link": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
     "category": "chatgpt",
@@ -155,10 +164,11 @@
     "published_at": "2026-11-05T01:00:00Z",
     "display_date": "5. nov. 2026",
     "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "OpenAI indfører dens National Community Compact og Compute Campus Policy Blueprint for at beskytte lokale ressourcer, skabe jobs og lede responsible AI-infrastrukturudvikling."
   },
   {
-    "id": "chatgpt_3426689",
+    "id": "chatgpt_937185",
     "title": "Flipsnack grows product signups with conversion optimization",
     "link": "https://openai.com/ads/customers/flipsnack",
     "category": "chatgpt",
@@ -170,10 +180,11 @@
     "published_at": "2026-11-04T23:45:15Z",
     "display_date": "4. nov. 2026",
     "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Flipsnack optimerede sine reklamekampanjer med ChatGPT for at få flere mennesker til at prøve deres produkt, hvilket ledte til flere registreringer og lavere omkostninger pr. signup."
   },
   {
-    "id": "claude_7080931",
+    "id": "claude_45140",
     "title": "AI for scientific discovery: How researchers use Claude",
     "link": "https://www.anthropic.com/research/how-researchers-use-claude",
     "category": "claude",
@@ -185,10 +196,11 @@
     "published_at": "2026-11-04T23:00:00Z",
     "display_date": "4. nov. 2026",
     "summary": "We analyzed 207,000 research sessions to learn how Claude is used in science, why some tasks get more use than others, and how AI could speed up discovery.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Analyser baseret på 207.000 forskningssessioner viser, hvordan Claude bruges i videnskab og hvordan AI kan accelerere opdagelser."
   },
   {
-    "id": "chatgpt_1006430",
+    "id": "chatgpt_1867464",
     "title": "Franklin Templeton uses OpenAI to support investment research",
     "link": "https://openai.com/index/franklin-templeton",
     "category": "chatgpt",
@@ -201,10 +213,11 @@
     "published_at": "2026-11-04T23:00:00Z",
     "display_date": "4. nov. 2026",
     "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Franklin Templeton udvikler AI-arbejdsgange, der støtter porteføljeledere i at sammenligne forskningsperspektiver og undersøge investeringsrisici, begyndende med aktieundersøgelse."
   },
   {
-    "id": "chatgpt_2234561",
+    "id": "chatgpt_1786904",
     "title": "Messi asks ChatGPT to reimagine his room",
     "link": "https://www.youtube.com/shorts/6IttBmI4P9M",
     "category": "chatgpt",
@@ -216,10 +229,11 @@
     "published_at": "2026-11-04T18:25:46Z",
     "display_date": "4. nov. 2026",
     "summary": "Messi wanted this empty room to feel a little more like him, but wasn’t sure where to start. So he asked ChatGPT for some ideas. Try it yourself: “Reimagine this room in my style....",
-    "thumbnail": "https://img.youtube.com/vi/6IttBmI4P9M/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/6IttBmI4P9M/hqdefault.jpg",
+    "tldr_da": "Messi spurgede ChatGPT for ideer til at gøre en tom værft mere karakteristisk for ham selv."
   },
   {
-    "id": "chatgpt_2717372",
+    "id": "chatgpt_149761",
     "title": "How Figma Is Building Self-Serve Analytics with OpenAI",
     "link": "https://www.youtube.com/shorts/0LDs5rvx1EI",
     "category": "chatgpt",
@@ -231,10 +245,11 @@
     "published_at": "2026-11-04T16:33:11Z",
     "display_date": "4. nov. 2026",
     "summary": "Marketers shouldn’t have to wait for a new dashboard to understand how a campaign is performing. In an early pilot with OpenAI, Figma is building shared context that helps marketer...",
-    "thumbnail": "https://img.youtube.com/vi/0LDs5rvx1EI/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/0LDs5rvx1EI/hqdefault.jpg",
+    "tldr_da": "I en tidlig pilot med OpenAI bygger Figma self-serve analytics, der giver markeder hurtig adgang til at forstå kampanjeudvikling uden at vente på nye dashboards."
   },
   {
-    "id": "chatgpt_114759",
+    "id": "chatgpt_135268",
     "title": "OpenAI to acquire Pierre Computer Company, Inc.",
     "link": "https://openai.com/index/openai-to-acquire-pierre",
     "category": "chatgpt",
@@ -247,10 +262,11 @@
     "published_at": "2026-11-04T13:30:00Z",
     "display_date": "4. nov. 2026",
     "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "OpenAI indkøber Pierre Computer Company for at udvide Codexs verktøjer til at bygge, forstå og vurdere kode."
   },
   {
-    "id": "chatgpt_2155906",
+    "id": "chatgpt_5967918",
     "title": "A thousand fewer paths to root",
     "link": "https://openai.com/index/a-thousand-fewer-paths-to-root",
     "category": "chatgpt",
@@ -262,10 +278,11 @@
     "published_at": "2026-11-04T07:00:00Z",
     "display_date": "4. nov. 2026",
     "summary": "OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "OpenAI har udviklet en autonom pipelinen, der fandt, validerede og genererede patches for 948 lokale privilegieredskrivnings-vulnerabiliteter i Linux-kernen."
   },
   {
-    "id": "chatgpt_4542791",
+    "id": "chatgpt_7037533",
     "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
     "link": "https://openai.com/index/daybreak-red-aws-govcloud",
     "category": "chatgpt",
@@ -277,10 +294,11 @@
     "published_at": "2026-11-04T06:00:00Z",
     "display_date": "4. nov. 2026",
     "summary": "Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Daybreak Red, der baserer sig på GPT-5.6 Cyber, er nu tilgængeligt for godkendte kunder i AWS GovCloud (US-East) gennem Amazon Bedrock for autoriseret cybersikkerhedsarbejde."
   },
   {
-    "id": "claude_5609110",
+    "id": "claude_1254017",
     "title": "Investigating vault particles with Claude",
     "link": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
     "category": "claude",
@@ -292,10 +310,11 @@
     "published_at": "2026-11-03T23:00:00Z",
     "display_date": "3. nov. 2026",
     "summary": "We’re sharing another finding from Anthropic’s biology research lab: the first 3D structure of a vault particle found in prokaryotic cells. Here, we describe how Claude helped at e...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Claude har hjulpet i opdagelsen af den første 3D-struktur af en vault partikel i prokaryotiske celler fra Anthropic's biologiske forskningslab."
   },
   {
-    "id": "chatgpt_4446635",
+    "id": "chatgpt_677998",
     "title": "Introducing Images 2.6",
     "link": "https://openai.com/index/introducing-images-2-6",
     "category": "chatgpt",
@@ -307,10 +326,11 @@
     "published_at": "2026-11-03T23:00:00Z",
     "display_date": "3. nov. 2026",
     "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Images 2.6 fra OpenAI introducerer hurtigere billedgenerering, GIF-opsættelse, præcisere redigeringsmuligheder og nye API-kontroller i ChatGPT, Codex og API'en."
   },
   {
-    "id": "chatgpt_1831942",
+    "id": "chatgpt_2831248",
     "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
     "link": "https://openai.com/index/devrev-enterprise-self-service",
     "category": "chatgpt",
@@ -323,10 +343,11 @@
     "published_at": "2026-11-03T23:00:00Z",
     "display_date": "3. nov. 2026",
     "summary": "DevRev uses GPT-6.1 Sol to power Computer and Operator, balancing reasoning, speed, and cost for enterprise service.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "DevRev bruger GPT-6.1 Sol til at støtte Computer og Operator, hvilket optimerer balance mellem fornuft, hastighed og kostpris for virksomhedserverv."
   },
   {
-    "id": "chatgpt_3160695",
+    "id": "chatgpt_6600094",
     "title": "Glean on privacy and OpenAI Private Intelligence",
     "link": "https://www.youtube.com/shorts/JR7xBi2kJjY",
     "category": "chatgpt",
@@ -338,10 +359,11 @@
     "published_at": "2026-11-03T15:51:36Z",
     "display_date": "3. nov. 2026",
     "summary": "Glean co-founder and CTO T.R. Vishwanath discusses customer control of data and Glean’s work with OpenAI on the Private Safety Processing preview. Learn more about OpenAI Private I...",
-    "thumbnail": "https://img.youtube.com/vi/JR7xBi2kJjY/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/JR7xBi2kJjY/hqdefault.jpg",
+    "tldr_da": "Glean-founder og CTO T.R. Vishwanath taler på YouTube om kundens datakontrol og Gleans samarbejde med OpenAI om Private Safety Processing foreløbige versioner."
   },
   {
-    "id": "copilot_6825118",
+    "id": "copilot_6000704",
     "title": "How to Clean Messy Data in Excel with Copilot",
     "link": "https://www.youtube.com/shorts/_eIxuzpdkm4",
     "category": "copilot",
@@ -353,10 +375,11 @@
     "published_at": "2026-11-03T11:15:27Z",
     "display_date": "3. nov. 2026",
     "summary": "🔥 Get this Excel cleanup prompt + 9 more I actually use (free PDF) ➡️ https://davidpba.myflodesk.com/100-prompts 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=D-DvmrPb3...",
-    "thumbnail": "https://img.youtube.com/vi/_eIxuzpdkm4/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/_eIxuzpdkm4/hqdefault.jpg",
+    "tldr_da": "David Fortin deler tips og tricks for at rengøre uddannet data i Excel med Copilot, herunder et gratis PDF med 100 brugte prompter og en fuld video tutoriel."
   },
   {
-    "id": "chatgpt_6112351",
+    "id": "chatgpt_4577989",
     "title": "Accelerating engineering for the physical world",
     "link": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
     "category": "chatgpt",
@@ -368,10 +391,11 @@
     "published_at": "2026-11-03T11:00:00Z",
     "display_date": "3. nov. 2026",
     "summary": "Discover how ChatGPT and Codex are helping engineers accelerate CAD, PCB design, simulation, and other workflows across the physical world.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
   },
   {
-    "id": "chatgpt_6624539",
+    "id": "chatgpt_3787125",
     "title": "Coinbase on OpenAI Private Intelligence",
     "link": "https://www.youtube.com/shorts/NbDF90z-g6w",
     "category": "chatgpt",
@@ -383,10 +407,11 @@
     "published_at": "2026-11-02T21:44:26Z",
     "display_date": "2. nov. 2026",
     "summary": "Coinbase CTO Rob Witoff explains why security, guardrails, and zero data retention matter when using OpenAI. Learn more about OpenAI Private Intelligence: https://openai.com/busine...",
-    "thumbnail": "https://img.youtube.com/vi/NbDF90z-g6w/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/NbDF90z-g6w/hqdefault.jpg",
+    "tldr_da": "Videodemonstration fra OpenAI med fokus på nye modelfunktioner og problemløsning med ChatGPT."
   },
   {
-    "id": "claude_983321",
+    "id": "claude_6693331",
     "title": "Progress on provable inference for large language models",
     "link": "https://www.anthropic.com/research/provable-inference",
     "category": "claude",
@@ -398,10 +423,11 @@
     "published_at": "2026-11-01T23:00:00Z",
     "display_date": "1. nov. 2026",
     "summary": "We have made progress on a type of cryptographic proof known as a “zkSNARK.” In this post, we share some of that progress, primarily through a system we call FlashProve.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "I dette indlæg fra Anthropic beskrives fremskridt med den kryptografiske bevisform \"zkSNARK\" og en ny system kaldet FlashProve."
   },
   {
-    "id": "copilot_8500571",
+    "id": "copilot_8888750",
     "title": "How to Stop Copilot from Making Things Up",
     "link": "https://www.youtube.com/shorts/OuPexkmO2z8",
     "category": "copilot",
@@ -413,10 +439,11 @@
     "published_at": "2026-11-01T14:00:31Z",
     "display_date": "1. nov. 2026",
     "summary": "🔥 Get the CHECK trick + 9 more Copilot prompts I actually use (free PDF) ➡️ https://davidpba.myflodesk.com/100-prompts 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=D-D...",
-    "thumbnail": "https://img.youtube.com/vi/OuPexkmO2z8/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/OuPexkmO2z8/hqdefault.jpg",
+    "tldr_da": "David Fortin deler tips og tricks for at forhindre Copilot i at producere udtalte antagelser, herunder CHECK-tricks og 9 yderligere Copilot-prompter i en gratis PDF. videoer og PDF findes på hans hjemmeside."
   },
   {
-    "id": "copilot_9767279",
+    "id": "copilot_8315734",
     "title": "How to Convert a PDF Report to Excel with Copilot",
     "link": "https://www.youtube.com/shorts/JTXrEUhE9Jg",
     "category": "copilot",
@@ -428,10 +455,11 @@
     "published_at": "2026-10-31T12:00:13Z",
     "display_date": "31. okt. 2026",
     "summary": "🔥 Grab my free Copilot Cheat Sheet ➡️ https://davidpba.myflodesk.com/dcvh5tisb4 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=f0auVDTTpZM 🎓 Copilot Masterclass ➡️ https...",
-    "thumbnail": "https://img.youtube.com/vi/JTXrEUhE9Jg/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/JTXrEUhE9Jg/hqdefault.jpg",
+    "tldr_da": "David Fortin viser, hvordan man bruger Copilot til at konvertere PDF-rapporter til Excel og tilbyder en gratis Cheat Sheet samt en fuld tutorial på YouTube."
   },
   {
-    "id": "copilot_5457513",
+    "id": "copilot_3868230",
     "title": "Excel file to Interactive Dashboard for Free with Copilot Chat",
     "link": "https://www.youtube.com/shorts/kahoJTXNLKU",
     "category": "copilot",
@@ -443,10 +471,11 @@
     "published_at": "2026-10-30T09:45:32Z",
     "display_date": "30. okt. 2026",
     "summary": "🔥 Grab my free Copilot Cheat Sheet ➡️ https://davidpba.myflodesk.com/dcvh5tisb4 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=f0auVDTTpZM 🎓 Copilot Masterclass ➡️ https...",
-    "thumbnail": "https://img.youtube.com/vi/kahoJTXNLKU/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/kahoJTXNLKU/hqdefault.jpg",
+    "tldr_da": "David Fortin viser, hvordan man gratis omdanner en Excel-fil til et interaktivt dashboard med Copilot Chat. Se fuldstændig tutorial på YouTube."
   },
   {
-    "id": "copilot_7128831",
+    "id": "copilot_1850297",
     "title": "3 Copilot Tips to Build Your Own Skills and Agents",
     "link": "https://www.youtube.com/shorts/bSe8Sn2_juM",
     "category": "copilot",
@@ -459,10 +488,11 @@
     "published_at": "2026-10-29T10:00:39Z",
     "display_date": "29. okt. 2026",
     "summary": "🔥 Download my Copilot Excel Skills for FREE ➡️ https://davidpba.myflodesk.com/yaoqgoo0oo 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=D8Iw8N7j5Ww 🎓 Copilot Masterclass...",
-    "thumbnail": "https://img.youtube.com/vi/bSe8Sn2_juM/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/bSe8Sn2_juM/hqdefault.jpg",
+    "tldr_da": "David Fortin deler gratis Copilot Excel-færdigheder og en fuld tutorial på YouTube for at hjælpe med at udvikle egne Copilot-enheder."
   },
   {
-    "id": "copilot_8893370",
+    "id": "copilot_3800798",
     "title": "Word mail merge from Excel",
     "link": "https://www.youtube.com/shorts/FShCrG19tPA",
     "category": "copilot",
@@ -474,10 +504,11 @@
     "published_at": "2026-10-28T11:20:49Z",
     "display_date": "28. okt. 2026",
     "summary": "An oldie but a goodie #Word #wordtips #microsoftword",
-    "thumbnail": "https://img.youtube.com/vi/FShCrG19tPA/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/FShCrG19tPA/hqdefault.jpg",
+    "tldr_da": "Mike Tholfsen deler en ny tip om Word mail merge fra Excel, et klassisk vigtigt værktøj for effektiv dokumentgenereering. #Word #wordtips #microsoftword"
   },
   {
-    "id": "copilot_8308976",
+    "id": "copilot_126023",
     "title": "3 Microsoft Copilot Tips That Go Beyond Emails",
     "link": "https://www.youtube.com/shorts/T_JqQmatYVI",
     "category": "copilot",
@@ -489,10 +520,11 @@
     "published_at": "2026-10-28T10:00:37Z",
     "display_date": "28. okt. 2026",
     "summary": "🔥 Download the files from the full tutorial (+ build your own Agent Instructions Builder) ➡️ https://davidpba.myflodesk.com/u7ublusnlg 📽️ Watch Full Tutorial ➡️ https://www.youtube...",
-    "thumbnail": "https://img.youtube.com/vi/T_JqQmatYVI/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/T_JqQmatYVI/hqdefault.jpg",
+    "tldr_da": "David Fortin giver tips til at bruge Microsoft Copilot effektivt over email, inkludere vejledning til at downloade filer og se fuldtutorial på YouTube."
   },
   {
-    "id": "copilot_4233290",
+    "id": "copilot_8928260",
     "title": "Your Microsoft 365 Tenant Is Already Part of Your AI Strategy",
     "link": "https://stevecorey.com/microsoft-365-ai-readiness-copilot-success/",
     "category": "copilot",
@@ -504,10 +536,11 @@
     "published_at": "2026-10-28T07:00:00Z",
     "display_date": "28. okt. 2026",
     "summary": "Your Microsoft 365 tenant shapes Copilot's answers, risks, and business value. Learn how knowledge, permissions, and governance affect AI readiness.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Microsoft 365-klienten former Copilots svar, risici og virksomhedsværdi. Lær hvordan viden, tilladelser og governance påvirker AI-retningslinjer."
   },
   {
-    "id": "claude_6914033",
+    "id": "claude_4313943",
     "title": "AI for Science expands to foundations and research institutions",
     "link": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
     "category": "claude",
@@ -519,10 +552,11 @@
     "published_at": "2026-10-27T23:00:00Z",
     "display_date": "27. okt. 2026",
     "summary": "We’re highlighting 20 scientific foundations, institutions, and research groups around the world that we’ve partnered with in an expansion of our AI for Science program.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "AI for Science programmet udvides, og Anthropic har samarbejdet med 20 videnskabelige grunde, institutioner og forskningsgrupper om verden."
   },
   {
-    "id": "copilot_925260",
+    "id": "copilot_3200264",
     "title": "The AI advantage your company can keep",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
     "category": "copilot",
@@ -536,10 +570,11 @@
     "published_at": "2026-10-27T15:00:00Z",
     "display_date": "27. okt. 2026",
     "summary": "New research across more than 200 enterprises looks at how shared knowledge can help companies coordinate their agents—and turn lessons from their work into an operational edge. Th...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Ny forskning fra over 200 virksomheder viser, hvordan deling af viden kan hjælpe virksomheder med at koordinere deres agenter og omsætte deres erfaringer til en operativ fordel."
   },
   {
-    "id": "copilot_280199",
+    "id": "copilot_6926633",
     "title": "How to Catch Up on Emails After Vacation with Copilot",
     "link": "https://www.youtube.com/shorts/czboBvUJVwA",
     "category": "copilot",
@@ -551,10 +586,11 @@
     "published_at": "2026-10-27T10:00:11Z",
     "display_date": "27. okt. 2026",
     "summary": "🔥 Get this catch-up prompt + 9 more I actually use (free PDF) ➡️ https://davidpba.myflodesk.com/100-prompts 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=D-DvmrPb324 🎓...",
-    "thumbnail": "https://img.youtube.com/vi/czboBvUJVwA/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/czboBvUJVwA/hqdefault.jpg",
+    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "claude_8802983",
+    "id": "claude_1557492",
     "title": "Early progress on accelerating drug development with Claude",
     "link": "https://www.anthropic.com/research/early-progress-drug-development",
     "category": "claude",
@@ -566,10 +602,11 @@
     "published_at": "2026-10-26T23:00:00Z",
     "display_date": "26. okt. 2026",
     "summary": "We're at the start of a major effort to speed up drug development with Claude. Over the past several months, our scientists have engaged in deep research partnerships with six orga...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "claude_9036722",
+    "id": "claude_8256511",
     "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
     "link": "https://www.anthropic.com/news/expanding-partnership-gsa",
     "category": "claude",
@@ -581,10 +618,11 @@
     "published_at": "2026-10-26T23:00:00Z",
     "display_date": "26. okt. 2026",
     "summary": "We are expanding our partnership with the General Services Administration (GSA) through a new agreement that gives government partners a 40% discount on Claude Enterprise, Claude f...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
-    "id": "claude_7060040",
+    "id": "claude_9934101",
     "title": "How AI agents shape experts’ judgment calls",
     "link": "https://www.anthropic.com/research/agents-judgment-calls",
     "category": "claude",
@@ -596,10 +634,11 @@
     "published_at": "2026-10-26T23:00:00Z",
     "display_date": "26. okt. 2026",
     "summary": "As AI does more of the hands-on work, the hope is that experts still make the judgment calls, meaning the decisions with more than one defensible answer. We tested this with 50 pro...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "copilot_1571123",
+    "id": "copilot_9192147",
     "title": "Copilot Code + Work IQ Made This From ONE Prompt",
     "link": "https://www.youtube.com/shorts/7n4uLMzmemQ",
     "category": "copilot",
@@ -611,10 +650,11 @@
     "published_at": "2026-10-26T20:00:10Z",
     "display_date": "26. okt. 2026",
     "summary": "What do you want me to create with Copilot Code?",
-    "thumbnail": "https://img.youtube.com/vi/7n4uLMzmemQ/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/7n4uLMzmemQ/hqdefault.jpg",
+    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_4258943",
+    "id": "copilot_578768",
     "title": "How to Do Deep Research with Microsoft Copilot",
     "link": "https://www.youtube.com/shorts/0NpVTw2nggE",
     "category": "copilot",
@@ -627,10 +667,11 @@
     "published_at": "2026-10-26T11:00:34Z",
     "display_date": "26. okt. 2026",
     "summary": "🔥 Download the files from the full tutorial (+ build your own Agent Instructions Builder) ➡️ https://davidpba.myflodesk.com/u7ublusnlg 📽️ Watch Full Tutorial ➡️ https://www.youtube...",
-    "thumbnail": "https://img.youtube.com/vi/0NpVTw2nggE/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/0NpVTw2nggE/hqdefault.jpg",
+    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "claude_3822075",
+    "id": "claude_143722",
     "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
     "link": "https://www.anthropic.com/news/s1-sec",
     "category": "claude",
@@ -642,10 +683,11 @@
     "published_at": "2026-10-25T23:00:00Z",
     "display_date": "25. okt. 2026",
     "summary": "Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A co...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
-    "id": "copilot_5652699",
+    "id": "copilot_3974916",
     "title": "How to Build a Copilot Agent in 2 Seconds",
     "link": "https://www.youtube.com/shorts/1KM1N8nal44",
     "category": "copilot",
@@ -657,10 +699,11 @@
     "published_at": "2026-10-24T10:30:00Z",
     "display_date": "24. okt. 2026",
     "summary": "🔥 Build your own Agent Instructions Builder (free files) ➡️ https://davidpba.myflodesk.com/u7ublusnlg 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=oHwdMkpcTyo 🎓 Copilo...",
-    "thumbnail": "https://img.youtube.com/vi/1KM1N8nal44/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/1KM1N8nal44/hqdefault.jpg",
+    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_2923465",
+    "id": "copilot_8807437",
     "title": "Microsoft Copilot Licenses Explained (Free vs Paid)",
     "link": "https://www.youtube.com/shorts/c8mPTRUnJKM",
     "category": "copilot",
@@ -672,10 +715,11 @@
     "published_at": "2026-10-23T11:00:01Z",
     "display_date": "23. okt. 2026",
     "summary": "🔥 Grab my free Copilot Cheat Sheet ➡️ https://davidpba.myflodesk.com/dcvh5tisb4 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=f0auVDTTpZM 🎓 Copilot Masterclass ➡️ https...",
-    "thumbnail": "https://img.youtube.com/vi/c8mPTRUnJKM/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/c8mPTRUnJKM/hqdefault.jpg",
+    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "claude_972788",
+    "id": "claude_5062275",
     "title": "An alignment assessment of the UK AISI cybertesting incident",
     "link": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
     "category": "claude",
@@ -688,10 +732,11 @@
     "published_at": "2026-10-22T23:00:00Z",
     "display_date": "22. okt. 2026",
     "summary": "In a UK AISI evaluation, Mythos 5 took unsanctioned actions that impacted real people and organizations. In this post, we investigate these behaviors from Claude Mythos 5 further,...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "copilot_4197901",
+    "id": "copilot_2809993",
     "title": "How to Summarize a PDF Report with Copilot (the Right Way)",
     "link": "https://www.youtube.com/shorts/23Jg-lbupxM",
     "category": "copilot",
@@ -703,10 +748,11 @@
     "published_at": "2026-10-22T10:45:33Z",
     "display_date": "22. okt. 2026",
     "summary": "🔥 Get my free Copilot e-book with every prompt from this video ➡️ https://davidpba.myflodesk.com/5levels 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=jvHvysrv2so 🎓 Cop...",
-    "thumbnail": "https://img.youtube.com/vi/23Jg-lbupxM/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/23Jg-lbupxM/hqdefault.jpg",
+    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "claude_5449394",
+    "id": "claude_9073615",
     "title": "Open call for guest investigators in the life sciences",
     "link": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
     "category": "claude",
@@ -718,10 +764,11 @@
     "published_at": "2026-10-21T23:00:00Z",
     "display_date": "21. okt. 2026",
     "summary": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "claude_8721366",
+    "id": "claude_9882505",
     "title": "Donating Agent Skills to the Agentic AI Foundation",
     "link": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
     "category": "claude",
@@ -733,10 +780,11 @@
     "published_at": "2026-10-21T23:00:00Z",
     "display_date": "21. okt. 2026",
     "summary": "We’re donating Agent Skills, the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation. More than 70 agent platforms, including ChatG...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
-    "id": "claude_9935257",
+    "id": "claude_6536988",
     "title": "LLMs are making formal software verification feasible at a much larger scale",
     "link": "https://www.anthropic.com/research/formal-verification",
     "category": "claude",
@@ -748,10 +796,11 @@
     "published_at": "2026-10-21T23:00:00Z",
     "display_date": "21. okt. 2026",
     "summary": "Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases. With AI models, however, this is beginning to chang...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "copilot_9415873",
+    "id": "copilot_3015306",
     "title": "Copilot in PowerPoint: Branded Deck in 1 Prompt",
     "link": "https://www.youtube.com/shorts/-FDPoshlRM8",
     "category": "copilot",
@@ -764,10 +813,11 @@
     "published_at": "2026-10-21T10:15:17Z",
     "display_date": "21. okt. 2026",
     "summary": "🔥 Download the files from the full tutorial (+ build your own Agent Instructions Builder) ➡️ https://davidpba.myflodesk.com/u7ublusnlg 📽️ Watch Full Tutorial ➡️ https://www.youtube...",
-    "thumbnail": "https://img.youtube.com/vi/-FDPoshlRM8/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/-FDPoshlRM8/hqdefault.jpg",
+    "tldr_da": "Vejledning fra David Fortin (Copilot & Excel) om opbygning af dashboards og præsentationer med Microsoft Copilot."
   },
   {
-    "id": "claude_5004317",
+    "id": "claude_7998984",
     "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
     "link": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
     "category": "claude",
@@ -780,10 +830,11 @@
     "published_at": "2026-10-20T23:00:00Z",
     "display_date": "20. okt. 2026",
     "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades o...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "claude_8860789",
+    "id": "claude_7193939",
     "title": "How Claude designed protein binders against scorpion neurotoxins",
     "link": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
     "category": "claude",
@@ -795,10 +846,11 @@
     "published_at": "2026-10-19T23:00:00Z",
     "display_date": "19. okt. 2026",
     "summary": "We asked an internal research Claude model to design minibinders (small proteins that attach tightly to a target) against scorpion neurotoxins.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "claude_5465589",
+    "id": "claude_4941895",
     "title": "Investing in the public benefit",
     "link": "https://www.anthropic.com/news/public-benefit-fund",
     "category": "claude",
@@ -810,10 +862,11 @@
     "published_at": "2026-10-17T23:00:00Z",
     "display_date": "17. okt. 2026",
     "summary": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
-    "id": "claude_3434779",
+    "id": "claude_1795595",
     "title": "Working at the frontier shapes expectations for the future",
     "link": "https://www.anthropic.com/research/expectations-for-the-future",
     "category": "claude",
@@ -825,10 +878,11 @@
     "published_at": "2026-10-15T23:00:00Z",
     "display_date": "15. okt. 2026",
     "summary": "We’re sharing two reports: the first covers how AI is changing employment inside Anthropic, and the second looks at the gap between how the public and Anthropic employees expect AI...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "claude_5880599",
+    "id": "claude_2807225",
     "title": "How employment is changing at Anthropic",
     "link": "https://www.anthropic.com/research/employment-at-anthropic",
     "category": "claude",
@@ -841,10 +895,11 @@
     "published_at": "2026-10-15T23:00:00Z",
     "display_date": "15. okt. 2026",
     "summary": "How has AI restructured work and employment at Anthropic? As a company at the frontier of AI adoption, Anthropic could be a leading indicator of how AI will shift work organization...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "claude_2100483",
+    "id": "claude_1431548",
     "title": "Claude reveals ECDSA curve origins",
     "link": "https://www.anthropic.com/research/ecdsa-curve-origins",
     "category": "claude",
@@ -856,10 +911,11 @@
     "published_at": "2026-10-15T23:00:00Z",
     "display_date": "15. okt. 2026",
     "summary": "The decades-old mystery of the origins of one of the most popular cryptographic standards has been explained.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "claude_3684068",
+    "id": "claude_942569",
     "title": "Designing more efficient quantum circuits with Claude",
     "link": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
     "category": "claude",
@@ -871,10 +927,11 @@
     "published_at": "2026-10-15T23:00:00Z",
     "display_date": "15. okt. 2026",
     "summary": "We gave Claude plain-language specifications for eight quantum circuits, along with an automated evaluator to check and score its designs. Working largely on its own, Claude improv...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "claude_2585139",
+    "id": "claude_2645552",
     "title": "An update on independent evaluators",
     "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
     "category": "claude",
@@ -887,10 +944,11 @@
     "published_at": "2026-10-14T23:00:00Z",
     "display_date": "14. okt. 2026",
     "summary": "To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions w...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "copilot_6903893",
+    "id": "copilot_1392338",
     "title": "The Copilot Measurement Gap: When Native Reporting Is Not the Whole Answer",
     "link": "https://stevecorey.com/the-copilot-measurement-gap/",
     "category": "copilot",
@@ -902,10 +960,11 @@
     "published_at": "2026-10-14T07:00:00Z",
     "display_date": "14. okt. 2026",
     "summary": "Learn where native Microsoft 365 Copilot reporting provides value, where organizations face a measurement gap, and how to turn reporting evidence into a value-realization practice.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "claude_6916912",
+    "id": "claude_4039592",
     "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
     "link": "https://www.anthropic.com/news/singapore-office-opening",
     "category": "claude",
@@ -918,10 +977,11 @@
     "published_at": "2026-10-13T23:00:00Z",
     "display_date": "13. okt. 2026",
     "summary": "Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
-    "id": "claude_8694279",
+    "id": "claude_4807918",
     "title": "Preparing for the 2026 US midterms",
     "link": "https://www.anthropic.com/news/2026-us-midterms",
     "category": "claude",
@@ -933,10 +993,11 @@
     "published_at": "2026-10-13T23:00:00Z",
     "display_date": "13. okt. 2026",
     "summary": "Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
-    "id": "claude_2965907",
+    "id": "claude_3350214",
     "title": "Strengthening our defenses against distillation attacks",
     "link": "https://www.anthropic.com/news/distillation-defenses",
     "category": "claude",
@@ -949,10 +1010,11 @@
     "published_at": "2026-10-11T23:00:00Z",
     "display_date": "11. okt. 2026",
     "summary": "Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of dis...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "copilot_315697",
+    "id": "copilot_3727434",
     "title": "Email a PowerPoint deck as PDF in 1 click",
     "link": "https://www.youtube.com/shorts/iSp5KuK4wq8",
     "category": "copilot",
@@ -964,10 +1026,11 @@
     "published_at": "2026-10-09T12:43:43Z",
     "display_date": "9. okt. 2026",
     "summary": "#PPT #PowerPoint #powerpointtips",
-    "thumbnail": "https://img.youtube.com/vi/iSp5KuK4wq8/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/iSp5KuK4wq8/hqdefault.jpg",
+    "tldr_da": "Vejledning fra Mike Tholfsen (Copilot) om opbygning af dashboards og præsentationer med Microsoft Copilot."
   },
   {
-    "id": "copilot_5550914",
+    "id": "copilot_7145808",
     "title": "Bringing CRM into the flow of work and agents into business process for sales and service teams",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/08/bringing-crm-into-the-flow-of-work-and-agents-into-business-process-for-sales-and-service-teams/",
     "category": "copilot",
@@ -981,10 +1044,11 @@
     "published_at": "2026-10-08T14:00:00Z",
     "display_date": "8. okt. 2026",
     "summary": "The traditional boundaries of business applications are disappearing. For decades, people went to their customer relationship management (CRM) to find customer context, take action...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "claude_7590758",
+    "id": "claude_3681878",
     "title": "Building on our commitment to American scientific discovery",
     "link": "https://www.anthropic.com/news/genesis-mission-commitment",
     "category": "claude",
@@ -996,10 +1060,11 @@
     "published_at": "2026-10-07T23:00:00Z",
     "display_date": "7. okt. 2026",
     "summary": "Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
-    "id": "claude_6672668",
+    "id": "claude_5502611",
     "title": "Introducing the Anthropic Cyber Mission",
     "link": "https://www.anthropic.com/news/anthropic-cyber-mission",
     "category": "claude",
@@ -1011,10 +1076,11 @@
     "published_at": "2026-10-07T23:00:00Z",
     "display_date": "7. okt. 2026",
     "summary": "We’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
-    "id": "claude_7550572",
+    "id": "claude_8332470",
     "title": "2026 Usage Policy update",
     "link": "https://www.anthropic.com/news/2026-usage-policy-update",
     "category": "claude",
@@ -1026,10 +1092,11 @@
     "published_at": "2026-10-07T23:00:00Z",
     "display_date": "7. okt. 2026",
     "summary": "We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
-    "id": "copilot_1192921",
+    "id": "copilot_4188317",
     "title": "Teach in Copilot is available for ALL M365 teachers globally!",
     "link": "https://www.youtube.com/shorts/rR44D4kQOkA",
     "category": "copilot",
@@ -1041,10 +1108,11 @@
     "published_at": "2026-09-30T12:27:59Z",
     "display_date": "30. sep. 2026",
     "summary": "Learn how to use the Teach module in Microsoft Copilot to create interactive, AI-powered learning experiences. In this quick tutorial, I’ll show you how Teach works, how to customi...",
-    "thumbnail": "https://img.youtube.com/vi/rR44D4kQOkA/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/rR44D4kQOkA/hqdefault.jpg",
+    "tldr_da": "Gennemgang fra Mike Tholfsen (Copilot) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_8330277",
+    "id": "copilot_9161181",
     "title": "Better Information Creates Better Copilot Results",
     "link": "https://stevecorey.com/better-information-creates-better-copilot-results/",
     "category": "copilot",
@@ -1056,10 +1124,11 @@
     "published_at": "2026-09-30T07:00:00Z",
     "display_date": "30. sep. 2026",
     "summary": "Why Microsoft 365 Copilot data readiness shapes the quality of Copilot results, how adoption exposes stale, duplicated, and overshared content, and how to improve information quali...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_8164616",
+    "id": "copilot_1824195",
     "title": "Secret Word Tables tip 💡",
     "link": "https://www.youtube.com/shorts/oxnbjdNovoM",
     "category": "copilot",
@@ -1071,10 +1140,11 @@
     "published_at": "2026-09-25T12:58:06Z",
     "display_date": "25. sep. 2026",
     "summary": "Impress your friends #Word #wordtips #microsoftword",
-    "thumbnail": "https://img.youtube.com/vi/oxnbjdNovoM/hqdefault.jpg"
+    "thumbnail": "https://img.youtube.com/vi/oxnbjdNovoM/hqdefault.jpg",
+    "tldr_da": "Gennemgang fra Mike Tholfsen (Copilot) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_6018698",
+    "id": "copilot_4741933",
     "title": "Introducing the new Copilot with Home, Code and Autopilot",
     "link": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
     "category": "copilot",
@@ -1087,10 +1157,11 @@
     "published_at": "2026-09-25T11:07:25Z",
     "display_date": "25. sep. 2026",
     "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition. The p...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_6105713",
+    "id": "copilot_9416552",
     "title": "Building the system for AI at work",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/23/building-the-system-for-ai-at-work/",
     "category": "copilot",
@@ -1102,10 +1173,11 @@
     "published_at": "2026-09-23T14:00:00Z",
     "display_date": "23. sep. 2026",
     "summary": "There's no shortage of sound and fury in AI right now. The post Building the system for AI at work appeared first on Microsoft Copilot Blog .",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_2036604",
+    "id": "copilot_7858242",
     "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
     "link": "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
     "category": "copilot",
@@ -1118,10 +1190,11 @@
     "published_at": "2026-09-15T14:00:00Z",
     "display_date": "15. sep. 2026",
     "summary": "Microsoft 365 G7 brings AI, Copilot, agent governance, security, and compliance together to help government agencies modernize securely. The post Introducing Microsoft 365 G7: Inte...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_7702748",
+    "id": "copilot_8208538",
     "title": "Is a Copilot Agent Right for Me? Microsoft vs. Google vs. Amazon",
     "link": "https://stevecorey.com/is-a-copilot-agent-right-for-me/",
     "category": "copilot",
@@ -1134,10 +1207,11 @@
     "published_at": "2026-09-15T08:00:00Z",
     "display_date": "15. sep. 2026",
     "summary": "Is a Copilot agent right for you? Compare Microsoft Copilot agents, Google Agent Platform, and Amazon Bedrock across development, integration, governance, flexibility, and cost.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_9207517",
+    "id": "copilot_5649462",
     "title": "Stop Teaching Copilot Features. Start Teaching Real Work.",
     "link": "https://stevecorey.com/stop-teaching-copilot-features-start-teaching-real-work/",
     "category": "copilot",
@@ -1149,10 +1223,11 @@
     "published_at": "2026-09-14T23:00:00Z",
     "display_date": "14. sep. 2026",
     "summary": "Improve Microsoft 365 Copilot training with role-based scenarios, hands-on practice, a practical prompting framework, peer learning, and examples centered on real work.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_5800695",
+    "id": "copilot_1189634",
     "title": "ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/10/espc-2026-is-coming-to-amsterdam-bringing-microsoft-and-the-community-together/",
     "category": "copilot",
@@ -1164,10 +1239,11 @@
     "published_at": "2026-09-10T15:00:00Z",
     "display_date": "10. sep. 2026",
     "summary": "Join Microsoft at ESPC 2026 in Amsterdam to explore the latest innovations in Microsoft 365, Copilot, agents, and AI. The post ESPC 2026 is coming to Amsterdam: Bringing Microsoft...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_8101397",
+    "id": "copilot_1441982",
     "title": "Build apps in Copilot Cowork and Copilot Studio",
     "link": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/",
     "category": "copilot",
@@ -1179,10 +1255,11 @@
     "published_at": "2026-09-10T14:00:00Z",
     "display_date": "10. sep. 2026",
     "summary": "Create full-stack business apps through conversation, grounded in your data with app building in Copilot Cowork and Copilot Studio. The post Build apps in Copilot Cowork and Copilo...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_955260",
+    "id": "copilot_542116",
     "title": "PPCC 2026: Bringing AI and your business processes together",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/03/ppcc-2026-bringing-ai-and-your-business-processes-together/",
     "category": "copilot",
@@ -1194,10 +1271,11 @@
     "published_at": "2026-09-03T14:00:00Z",
     "display_date": "3. sep. 2026",
     "summary": "Every enterprise runs on business processes, but it's the people that provide judgment, manage exceptions, and often connect systems that were never designed to work together. The...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_9797983",
+    "id": "copilot_369138",
     "title": "Assigned Is Not Adopted: How to Increase Microsoft 365 Copilot Usage",
     "link": "https://stevecorey.com/increase-microsoft-365-copilot-adoption/",
     "category": "copilot",
@@ -1209,10 +1287,11 @@
     "published_at": "2026-09-02T08:00:00Z",
     "display_date": "2. sep. 2026",
     "summary": "Learn how to improve Microsoft 365 Copilot adoption by turning assigned licenses into useful, repeatable habits through access, relevance, repetition, and practical measurement.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_3331852",
+    "id": "copilot_4654949",
     "title": "The Copilot Value Maturity Model: A Five-Stage Path from Deployment to ROI",
     "link": "https://stevecorey.com/copilot-value-maturity-model/",
     "category": "copilot",
@@ -1225,10 +1304,11 @@
     "published_at": "2026-08-19T08:00:00Z",
     "display_date": "19. aug. 2026",
     "summary": "Explore the five stages of the Copilot Value Maturity Model and learn how organizations move from Microsoft 365 Copilot deployment to adoption, productivity, optimization, and meas...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_3833288",
+    "id": "copilot_2713775",
     "title": "You Know What an AI Agent Is. But What Is an Agent Harness?",
     "link": "https://stevecorey.com/ai-agent-vs-agent-harness/",
     "category": "copilot",
@@ -1240,10 +1320,11 @@
     "published_at": "2026-08-04T23:10:00Z",
     "display_date": "4. aug. 2026",
     "summary": "Learn the difference between an AI agent and an agent harness, how harnesses support planning and iterative work, and why the GitHub Copilot harness matters for Copilot Studio agen...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_4489921",
+    "id": "copilot_4402316",
     "title": "The next measure of AI momentum is work transformed",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
     "category": "copilot",
@@ -1255,10 +1336,11 @@
     "published_at": "2026-07-30T12:00:00Z",
     "display_date": "30. jul. 2026",
     "summary": "In yesterday’s earnings call, we shared that Microsoft 365 Copilot has surpassed 30 million paid seats, with net seat adds more than doubling quarter over quarter. The post The nex...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_2876270",
+    "id": "copilot_140173",
     "title": "Agent 365 Licensing Explained: What You Need to Know Before Deploying AI Agents",
     "link": "https://stevecorey.com/agent-365-licensing-explained/",
     "category": "copilot",
@@ -1271,10 +1353,11 @@
     "published_at": "2026-07-22T07:00:00Z",
     "display_date": "22. jul. 2026",
     "summary": "Learn how Agent 365 licensing works, what organizations need to know about AI agent governance, and answers to common pricing questions.",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_3784422",
+    "id": "copilot_8489140",
     "title": "Microsoft 365 Copilot Is Expensive - Here’s How to Keep Costs Under Control",
     "link": "https://stevecorey.com/microsoft-365-copilot-cost-management/",
     "category": "copilot",
@@ -1286,10 +1369,11 @@
     "published_at": "2026-07-08T08:00:00Z",
     "display_date": "8. jul. 2026",
     "summary": "Let’s just say it out loud: Microsoft 365 Copilot is not cheap. If you’re an IT admin or a decision-maker trying to figure out how to roll this out without blowing up your budget,...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
-    "id": "copilot_6685343",
+    "id": "copilot_912003",
     "title": "Copilot in Excel: Built for the era of Frontier Finance",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
     "category": "copilot",
@@ -1302,6 +1386,7 @@
     "published_at": "2026-06-25T12:00:00Z",
     "display_date": "25. jun. 2026",
     "summary": "Plenty of AI tools claim to be built for finance; Microsoft 365 Copilot in Excel is proving it in practice. The post Copilot in Excel: Built for the era of Frontier Finance appeare...",
-    "thumbnail": ""
+    "thumbnail": "",
+    "tldr_da": "Praktisk vejledning fra Microsoft Copilot Blog med fokus på Copilot i Excel til dataanalyse, formler og tidsbesparelse."
   }
 ]

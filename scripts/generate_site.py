@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES_FILE = ROOT / "sources.json"
 UPDATES_FILE = ROOT / "updates.json"
 VERSION_FILE = ROOT / "version.json"
+SUMMARIES_CACHE_FILE = ROOT / "summaries_cache.json"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -85,6 +86,72 @@ def extract_youtube_thumb(url: str) -> str:
 def format_date_da(dt: datetime) -> str:
     month_str = DANISH_MONTHS[dt.month - 1]
     return f"{dt.day}. {month_str} {dt.year}"
+
+def build_fallback_tldr(title: str, summary: str, cat: str, source: str, tags: list) -> str:
+    t_lower = title.lower()
+    s_lower = summary.lower()
+    
+    if "excel" in t_lower or "excel" in s_lower:
+        return f"Praktisk vejledning fra {source} med fokus på Copilot i Excel til dataanalyse, formler og tidsbesparelse."
+    elif "dashboard" in t_lower or "powerpoint" in t_lower:
+        return f"Vejledning fra {source} om opbygning af dashboards og præsentationer med Microsoft Copilot."
+    elif "copilot" in t_lower or cat == "copilot":
+        return f"Gennemgang fra {source} af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
+    elif "claude" in t_lower or cat == "claude":
+        if "research" in source.lower() or "research" in tags:
+            return f"Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
+        return f"Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
+    elif cat == "chatgpt":
+        if "video" in source.lower() or "youtube" in source.lower():
+            return f"Videodemonstration fra OpenAI med fokus på nye modelfunktioner og problemløsning med ChatGPT."
+        return f"Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
+    return f"Væsentlig opdatering fra {source} om de seneste fremskridt inden for kunstig intelligens."
+
+def get_danish_tldr(item: dict, cache: dict, allow_llm: bool = True) -> str:
+    item_id = item["id"]
+    if item_id in cache and cache[item_id] and len(cache[item_id]) > 15:
+        return cache[item_id]
+
+    title = item["title"]
+    summary = item.get("summary", "")
+    source = item.get("source", "")
+    cat = item.get("category", "")
+    tags = item.get("tags", [])
+
+    if allow_llm:
+        try:
+            prompt = (
+                f"Du er en skarp dansk AI-redaktør for ledere og specialister.\n"
+                f"Giv en ultrakort og præcis opsummering på 1-2 linjer på naturligt dansk af følgende:\n"
+                f"Titel: {title}\n"
+                f"Kilde: {source}\n"
+                f"Uddrag: {summary}\n\n"
+                f"Svar KUN med opsummeringen på dansk, uden overskrifter eller citationstegn:"
+            )
+            req_data = {
+                "model": "qwen2.5:14b",
+                "prompt": prompt,
+                "stream": False,
+                "options": {"temperature": 0.2, "num_predict": 85}
+            }
+            req = urllib.request.Request(
+                "http://192.168.68.62:11434/api/generate",
+                data=json.dumps(req_data).encode("utf-8"),
+                headers={"Content-Type": "application/json"}
+            )
+            with urllib.request.urlopen(req, timeout=8) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                ans = data.get("response", "").strip()
+                if ans and len(ans) > 20 and not re.search(r'[\u4e00-\u9fff]', ans):
+                    clean_ans = re.sub(r'^(TL;DR|Opsummering|Resum[eé]):\s*', '', ans, flags=re.I)
+                    cache[item_id] = clean_ans
+                    return clean_ans
+        except Exception:
+            pass
+
+    fallback = build_fallback_tldr(title, summary, cat, source, tags)
+    cache[item_id] = fallback
+    return fallback
 
 def main():
     if not SOURCES_FILE.exists():
@@ -159,6 +226,22 @@ def main():
 
     # Sort descending by published_at
     all_items.sort(key=lambda x: x["published_at"], reverse=True)
+
+    # Hent eller opret resumé-cache
+    cache = {}
+    if SUMMARIES_CACHE_FILE.exists():
+        try:
+            cache = json.loads(SUMMARIES_CACHE_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            cache = {}
+
+    print(f"Genererer/tilknytter danske TL;DR opsummeringer (tidligere cachet: {len(cache)})...")
+    for idx, item in enumerate(all_items):
+        allow_llm = (idx < 35) or (item["id"] in cache)  # Få fat i de 35 nyeste via LLM
+        item["tldr_da"] = get_danish_tldr(item, cache, allow_llm=allow_llm)
+
+    SUMMARIES_CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Gemt {len(cache)} resuméer i {SUMMARIES_CACHE_FILE}")
 
     print(f"Total unikke artikler/videoer indsamlet: {len(all_items)}")
 
