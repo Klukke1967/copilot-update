@@ -1152,7 +1152,97 @@
       transform: translateY(0);
       opacity: 1;
     }
+    /* Auth & Profile Styles */
+    .btn-auth-header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 7px 12px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-auth-header:hover {
+      background: var(--surface-subtle);
+      border-color: var(--border-hover);
+    }
+    .btn-auth-header.logged-in {
+      padding: 4px 10px 4px 5px;
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+      color: #166534;
+    }
+    .user-avatar-img {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 1px solid #86efac;
+    }
+    .user-avatar-placeholder {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: #0284c7;
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px;
+      background: var(--surface-subtle);
+      border-radius: var(--radius-sm);
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+    }
+    .profile-card img {
+      width: 56px;
+      height: 56px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 2px solid var(--copilot);
+    }
+    .profile-info strong {
+      display: block;
+      font-size: 1.05rem;
+      color: var(--text-main);
+    }
+    .profile-info span {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .cloud-sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #dcfce7;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      width: 100%;
+    }
   </style>
+
+  <!-- Firebase App & Services (v10 compat) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
 
@@ -1178,6 +1268,17 @@
       </div>
 
       <div class="header-actions">
+        <!-- Auth / Profile Button -->
+        <button id="btn-auth" class="btn-auth-header" onclick="handleAuthClick()" title="Log ind med Google">
+          <svg id="auth-google-icon" width="16" height="16" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+            <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+          </svg>
+          <span id="auth-btn-text">Log ind</span>
+        </button>
+
         <!-- Manual Reload Button (Klaus standard) -->
         <button id="btn-reload" class="icon-btn" title="Genindlæs seneste nyheder" onclick="manualReload()" aria-label="Genindlæs">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -1405,6 +1506,39 @@
     </div>
   </footer>
 
+  <!-- User Profile Modal -->
+  <div id="profile-modal" class="modal-backdrop" onclick="closeProfileModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3>👤 Min AI Profil</h3>
+        <button class="icon-btn" onclick="closeProfileModal()" style="width:34px; height:34px;">✕</button>
+      </div>
+
+      <div class="profile-card">
+        <img id="profile-avatar" src="" alt="Avatar" style="display:none;">
+        <div id="profile-avatar-placeholder" class="user-avatar-placeholder" style="width:56px; height:56px; font-size:1.4rem;">?</div>
+        <div class="profile-info">
+          <strong id="profile-name">Bruger</strong>
+          <span id="profile-email">user@...</span>
+        </div>
+      </div>
+
+      <div class="cloud-sync-badge">
+        <span>☁️</span>
+        <span>Sky-synkronisering aktiv (Firestore)</span>
+      </div>
+
+      <div style="font-size:0.88rem; color:var(--text-muted); margin-bottom:24px; line-height:1.5;">
+        Dine bogmærker, personlige noter og valgte interesser synkroniseres automatisk til din konto på tværs af computer, tablet og mobil.
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <button class="btn-submit-secondary" onclick="closeProfileModal()">Luk</button>
+        <button class="btn-submit-primary" onclick="handleLogout()" style="background:#dc2626;">Log ud</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Interests Preference Modal -->
   <div id="interests-modal" class="modal-backdrop" onclick="closeInterestsModal(event)">
     <div class="modal-content" onclick="event.stopPropagation()">
@@ -1510,6 +1644,229 @@
       }
     }
 
+    // Firebase Configuration & Services
+    const FIREBASE_CONFIG = {
+      apiKey: "AIzaSyCPACYEqhL7FWGs4fDkhGZ4NZ8t1N6QByk",
+      authDomain: "vinyl-vault-aeb8e.firebaseapp.com",
+      projectId: "vinyl-vault-aeb8e",
+      storageBucket: "vinyl-vault-aeb8e.firebasestorage.app",
+      messagingSenderId: "998424028679",
+      appId: "1:998424028679:web:08dbf1fd19b416d21e6ca2",
+      measurementId: "G-72FLS200V4"
+    };
+
+    let currentUser = null;
+    let auth = null;
+    let db = null;
+    let cloudListener = null;
+
+    function initFirebase() {
+      if (!window.firebase || !window.firebase.initializeApp) {
+        console.warn('Firebase SDK ikke indlæst');
+        return;
+      }
+      try {
+        if (!firebase.apps.length) {
+          firebase.initializeApp(FIREBASE_CONFIG);
+        }
+        auth = firebase.auth();
+        db = firebase.firestore();
+
+        // Listen for authentication changes
+        auth.onAuthStateChanged(async (user) => {
+          currentUser = user;
+          updateAuthUI(user);
+          if (user) {
+            await setupCloudSync(user);
+          } else {
+            if (cloudListener) {
+              cloudListener();
+              cloudListener = null;
+            }
+          }
+          updateCounts();
+          render();
+        });
+      } catch (err) {
+        console.warn('Firebase init fejl:', err);
+      }
+    }
+
+    function updateAuthUI(user) {
+      const btn = document.getElementById('btn-auth');
+      if (!btn) return;
+
+      if (user) {
+        btn.classList.add('logged-in');
+        let avatarHtml = '';
+        if (user.photoURL) {
+          avatarHtml = `<img src="${escapeHtml(user.photoURL)}" alt="Avatar" class="user-avatar-img">`;
+        } else {
+          const initial = (user.displayName || user.email || 'U')[0].toUpperCase();
+          avatarHtml = `<div class="user-avatar-placeholder">${initial}</div>`;
+        }
+        
+        const shortName = (user.displayName ? user.displayName.split(' ')[0] : (user.email ? user.email.split('@')[0] : 'Profil'));
+        btn.innerHTML = `${avatarHtml}<span>${escapeHtml(shortName)}</span>`;
+        btn.title = `Logget ind som ${user.email} (Klik for profil)`;
+      } else {
+        btn.classList.remove('logged-in');
+        btn.title = 'Log ind med Google';
+        btn.innerHTML = `
+          <svg id="auth-google-icon" width="16" height="16" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+            <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+          </svg>
+          <span id="auth-btn-text">Log ind</span>
+        `;
+      }
+    }
+
+    async function handleAuthClick() {
+      if (currentUser) {
+        openProfileModal();
+      } else {
+        if (!auth) {
+          showNotification('Firebase ikke forbundet endnu.');
+          return;
+        }
+        try {
+          const provider = new firebase.auth.GoogleAuthProvider();
+          await auth.signInWithPopup(provider);
+          showNotification('✅ Velkommen! Synkroniserer...');
+        } catch (err) {
+          console.error('Google login fejl:', err);
+          if (err.code === 'auth/unauthorized-domain') {
+            alert('Bemærk: Dette domæne skal tilføjes i Firebase Console under Authentication -> Settings -> Authorized Domains: ' + window.location.hostname);
+          } else if (err.code === 'auth/popup-blocked') {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            auth.signInWithRedirect(provider);
+          } else {
+            showNotification('Login fejl: ' + (err.message || err.code));
+          }
+        }
+      }
+    }
+
+    function openProfileModal() {
+      if (!currentUser) return;
+      document.getElementById('profile-name').textContent = currentUser.displayName || 'Google Bruger';
+      document.getElementById('profile-email').textContent = currentUser.email || '';
+      
+      const avatarImg = document.getElementById('profile-avatar');
+      const placeholder = document.getElementById('profile-avatar-placeholder');
+      if (currentUser.photoURL) {
+        avatarImg.src = currentUser.photoURL;
+        avatarImg.style.display = 'block';
+        placeholder.style.display = 'none';
+      } else {
+        avatarImg.style.display = 'none';
+        placeholder.style.display = 'flex';
+        placeholder.textContent = (currentUser.displayName || currentUser.email || 'K')[0].toUpperCase();
+      }
+
+      document.getElementById('profile-modal').classList.add('open');
+    }
+
+    function closeProfileModal(e) {
+      if (e && e.target && e.target.id !== 'profile-modal') return;
+      document.getElementById('profile-modal').classList.remove('open');
+    }
+
+    async function handleLogout() {
+      if (auth) {
+        await auth.signOut();
+        closeProfileModal();
+        showNotification('Logget ud. Data gemmes lokalt.');
+      }
+    }
+
+    // Cloud Sync Logic (Firestore)
+    async function setupCloudSync(user) {
+      if (!db) return;
+      const userDocRef = db.collection('ai_hub_users').doc(user.uid);
+
+      try {
+        const doc = await userDocRef.get();
+        if (doc.exists) {
+          const cloudData = doc.data();
+          const localBookmarks = getBookmarks();
+          const cloudBookmarks = cloudData.bookmarks || [];
+          const mergedBookmarks = mergeBookmarkLists(localBookmarks, cloudBookmarks);
+          saveBookmarks(mergedBookmarks);
+
+          if (cloudData.interests && Array.isArray(cloudData.interests) && cloudData.interests.length > 0) {
+            localStorage.setItem('ai_hub_interests', JSON.stringify(cloudData.interests));
+          }
+        } else {
+          await userDocRef.set({
+            email: user.email,
+            displayName: user.displayName,
+            bookmarks: getBookmarks(),
+            interests: getUserInterests(),
+            updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+          });
+        }
+
+        if (cloudListener) cloudListener();
+        cloudListener = userDocRef.onSnapshot((snapshot) => {
+          if (!snapshot || !snapshot.exists) return;
+          const data = snapshot.data();
+          if (data.bookmarks && Array.isArray(data.bookmarks)) {
+            try {
+              localStorage.setItem('ai_hub_bookmarks', JSON.stringify(data.bookmarks));
+            } catch (e) {}
+          }
+          if (data.interests && Array.isArray(data.interests)) {
+            localStorage.setItem('ai_hub_interests', JSON.stringify(data.interests));
+          }
+          updateCounts();
+          render();
+        });
+      } catch (err) {
+        console.warn('Cloud sync fejl:', err);
+      }
+    }
+
+    function mergeBookmarkLists(localList, cloudList) {
+      const map = new Map();
+      cloudList.forEach(item => map.set(item.id, item));
+      localList.forEach(item => {
+        if (!map.has(item.id)) {
+          map.set(item.id, item);
+        } else if (item.note && !map.get(item.id).note) {
+          map.get(item.id).note = item.note;
+        }
+      });
+      return Array.from(map.values());
+    }
+
+    async function saveBookmarksToCloud(list) {
+      if (!currentUser || !db) return;
+      try {
+        await db.collection('ai_hub_users').doc(currentUser.uid).set({
+          bookmarks: list,
+          updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+        }, { merge: true });
+      } catch (err) {
+        console.warn('Kunne ikke gemme bogmærker i skyen:', err);
+      }
+    }
+
+    async function saveInterestsToCloud(interests) {
+      if (!currentUser || !db) return;
+      try {
+        await db.collection('ai_hub_users').doc(currentUser.uid).set({
+          interests: interests,
+          updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+        }, { merge: true });
+      } catch (err) {
+        console.warn('Kunne ikke gemme interesser i skyen:', err);
+      }
+    }
+
     // Toast helper
     function showNotification(msg) {
       const toast = document.getElementById('notification-toast');
@@ -1548,6 +1905,7 @@
         return;
       }
       localStorage.setItem('ai_hub_interests', JSON.stringify(selected));
+      saveInterestsToCloud(selected);
       closeInterestsModal();
       showNotification('🎯 Interesser opdateret!');
       updateCounts();
@@ -1588,6 +1946,7 @@
       try {
         localStorage.setItem('ai_hub_bookmarks', JSON.stringify(list));
       } catch (e) {}
+      saveBookmarksToCloud(list);
     }
 
     function isBookmarked(id) {
@@ -2037,6 +2396,21 @@
       items.unshift(newResource);
       saveLocalResources(items);
 
+      // Cloud submission if logged in
+      if (currentUser && db) {
+        try {
+          db.collection('ai_hub_submissions').add({
+            ...newResource,
+            user_uid: currentUser.uid,
+            user_email: currentUser.email,
+            user_name: currentUser.displayName,
+            submitted_at: firebase.firestore.FieldValue.serverTimestamp()
+          });
+        } catch (err) {
+          console.warn('Sky-submission advarsel:', err);
+        }
+      }
+
       // Prepend to current feed
       allNews.unshift(newResource);
       updateCounts();
@@ -2132,6 +2506,7 @@
         currentFilter = hash;
       }
 
+      initFirebase();
       loadNewsData();
       checkVersion();
       renderUserResources();

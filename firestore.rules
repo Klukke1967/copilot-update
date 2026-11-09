@@ -1,0 +1,29 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 1. Vinyl Vault (bevarer adgang til vinyls)
+    match /vinyls/{vinylId} {
+      allow read, write: if true;
+    }
+
+    // 2. AI Hub brugerprofil, bogmærker, noter og interesser
+    match /ai_hub_users/{userId} {
+      allow read, create, update: if request.auth != null && request.auth.uid == userId;
+      allow delete: if false;
+    }
+
+    // 3. AI Hub brugerindsendte ressourcer / tips
+    match /ai_hub_submissions/{submissionId} {
+      allow create: if request.auth != null
+        && request.resource.data.user_uid == request.auth.uid;
+      allow read: if request.auth != null;
+      allow update, delete: if false;
+    }
+
+    // Fallback lukket for alt andet
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
