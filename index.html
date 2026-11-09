@@ -1815,25 +1815,36 @@
           if (!snapshot || !snapshot.exists) return;
           const data = snapshot.data();
           if (data.bookmarks && Array.isArray(data.bookmarks)) {
+            const local = getBookmarks();
+            const merged = mergeBookmarkLists(local, data.bookmarks);
             try {
-              localStorage.setItem('ai_hub_bookmarks', JSON.stringify(data.bookmarks));
+              localStorage.setItem('ai_hub_bookmarks', JSON.stringify(merged));
             } catch (e) {}
           }
-          if (data.interests && Array.isArray(data.interests)) {
+          if (data.interests && Array.isArray(data.interests) && data.interests.length > 0) {
             localStorage.setItem('ai_hub_interests', JSON.stringify(data.interests));
           }
           updateCounts();
           render();
+        }, (err) => {
+          console.warn('Firestore snapshot fejl (tjek regler):', err);
+          if (err && err.code === 'permission-denied') {
+            showNotification('⚠️ Firestore regler mangler at blive opdateret i Firebase Console');
+          }
         });
       } catch (err) {
         console.warn('Cloud sync fejl:', err);
+        if (err && err.code === 'permission-denied') {
+          showNotification('⚠️ Firestore regler mangler at blive opdateret i Firebase Console');
+        }
       }
     }
 
     function mergeBookmarkLists(localList, cloudList) {
       const map = new Map();
-      cloudList.forEach(item => map.set(item.id, item));
-      localList.forEach(item => {
+      (localList || []).forEach(item => { if (item && item.id) map.set(item.id, item); });
+      (cloudList || []).forEach(item => {
+        if (!item || !item.id) return;
         if (!map.has(item.id)) {
           map.set(item.id, item);
         } else if (item.note && !map.get(item.id).note) {
@@ -1852,6 +1863,9 @@
         }, { merge: true });
       } catch (err) {
         console.warn('Kunne ikke gemme bogmærker i skyen:', err);
+        if (err && err.code === 'permission-denied') {
+          showNotification('⚠️ Firestore regler mangler at blive opdateret i Firebase Console');
+        }
       }
     }
 
