@@ -31,6 +31,12 @@
       "feedUrl": "https://stevecorey.com/feed.xml"
     },
     {
+      "name": "Jeff Su (YouTube)",
+      "category": "copilot",
+      "type": "youtube",
+      "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwAnu01qlnVg1Ai2AbtTMaA"
+    },
+    {
       "name": "Anthropic News (Claude)",
       "category": "claude",
       "type": "article",

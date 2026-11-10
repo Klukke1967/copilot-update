@@ -71,6 +71,17 @@ def clean_text(html_text: str, max_len: int = 180) -> str:
         return text[:max_len].rstrip() + "..."
     return text
 
+def normalize_link(link: str) -> str:
+    if not link:
+        return ""
+    m = re.search(r"[?&]v=([a-zA-Z0-9_-]+)", link)
+    if m:
+        return f"https://www.youtube.com/watch?v={m.group(1)}"
+    m2 = re.search(r"/(?:shorts|embed|v)/([a-zA-Z0-9_-]+)", link)
+    if m2:
+        return f"https://www.youtube.com/shorts/{m2.group(1)}"
+    return link.split("?")[0].rstrip("/")
+
 def extract_youtube_thumb(url: str) -> str:
     if not url:
         return ""
@@ -194,7 +205,7 @@ def main():
                         continue
 
                     # Deduplication
-                    norm_link = link.split("?")[0].rstrip("/")
+                    norm_link = normalize_link(link)
                     if norm_link in seen_links:
                         continue
                     seen_links.add(norm_link)
