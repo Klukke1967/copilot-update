@@ -452,6 +452,20 @@
       color: #ffffff;
     }
 
+    .chip[data-target="prompts"] {
+      border-color: #fcd34d;
+      background: #fffbeb;
+      color: #92400e;
+    }
+    .chip[data-target="prompts"]:hover {
+      background: #fef3c7;
+      border-color: #f59e0b;
+    }
+    .chip[data-target="prompts"] .chip-count {
+      background: #f59e0b;
+      color: #ffffff;
+    }
+
     .card-tags {
       display: flex;
       flex-wrap: wrap;
@@ -1784,6 +1798,9 @@
         <button class="chip" data-target="video" onclick="filterBy('video')">
           🎬 Videoer <span class="chip-count" id="chip-count-video">0</span>
         </button>
+        <button class="chip" data-target="prompts" onclick="switchMainTab('prompts')">
+          💡 Prompts <span class="chip-count" id="chip-count-prompts-chip">150</span>
+        </button>
       </div>
     </div>
 
@@ -3050,6 +3067,8 @@
         if (!res.ok) throw new Error('Kunne ikke hente prompts.json');
         allPrompts = await res.json();
         if (tabCountPrompts) tabCountPrompts.textContent = allPrompts.length;
+        const promptChipCount = document.getElementById('chip-count-prompts-chip');
+        if (promptChipCount) promptChipCount.textContent = allPrompts.length;
         renderPromptDeptChips();
         renderPrompts();
       } catch (err) {
