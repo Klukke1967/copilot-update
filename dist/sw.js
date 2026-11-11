@@ -31,8 +31,8 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
 
-  // 1. version.json og updates.json skal ALTID være network-first / bypass cache
-  if (url.pathname.endsWith('/version.json') || url.pathname.endsWith('/updates.json')) {
+  // 1. version.json, updates.json og prompts.json skal ALTID være network-first / bypass cache
+  if (url.pathname.endsWith('/version.json') || url.pathname.endsWith('/updates.json') || url.pathname.endsWith('/prompts.json')) {
     event.respondWith(
       fetch(request, { cache: 'no-store' })
         .then(response => {

@@ -17,6 +17,22 @@
     "tldr_da": "Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
   },
   {
+    "id": "chatgpt_55a31f64",
+    "title": "ChatGPT Plus for veterans and servicemembers",
+    "link": "https://openai.com/index/chatgpt-plus-for-veterans",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-11T07:00:00Z",
+    "display_date": "11. nov. 2026",
+    "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
+    "thumbnail": "",
+    "tldr_da": "Over 20.000 veteraner og servicemedlemmer har klargjort et gratis år med ChatGPT Plus, som de bruger til at forberede sig på deres civile karrierer."
+  },
+  {
     "id": "chatgpt_bccf8a14",
     "title": "Introducing Businesses in ChatGPT in beta",
     "link": "https://www.youtube.com/watch?v=Z9k5oI3Paoc",
@@ -164,6 +180,23 @@
     "tldr_da": "ThinkYoung forskning og OpenAI-partnerskaber i uddannelse understreger vigtigheden af at støtte lærere, fremme AI-litteracitet og uafhængigt læring for at lukke det AI-baserede guidance-gap i uddannelse."
   },
   {
+    "id": "chatgpt_19892041",
+    "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+    "link": "https://openai.com/index/singapore-airlines-travel-work",
+    "category": "chatgpt",
+    "tags": [
+      "m365",
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-10T07:00:00Z",
+    "display_date": "10. nov. 2026",
+    "summary": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
+    "thumbnail": "",
+    "tldr_da": "Singapore Airlines anvender OpenAI teknologi for at forbedre kundestøtte, reiselivserensen og medarbejdereffektivitet, hvilket har givet en dobling af tilfredshedsniveauer for deres Kris chatbot."
+  },
+  {
     "id": "chatgpt_db3d3bbb",
     "title": "Work at the Frontier: AI’s effect on freelance work",
     "link": "https://openai.com/index/ai-effect-on-freelance-work",
@@ -210,6 +243,23 @@
     "summary": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
     "thumbnail": "",
     "tldr_da": "Anthropic, PBC har startet en roadshow for sin foreslåede offentlige tilbud af sin klasse A aktie."
+  },
+  {
+    "id": "chatgpt_191d65fd",
+    "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+    "link": "https://openai.com/index/cogent-security",
+    "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-09T23:00:00Z",
+    "display_date": "9. nov. 2026",
+    "summary": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
+    "thumbnail": "",
+    "tldr_da": "Cogent og OpenAI samarbejder til at udvikle cyber-sikringsløsninger, der bruger OpenAI-modeler kombineret med virksomhedscontext for at automatisere vedtagelse af sikkerhedsrisici."
   },
   {
     "id": "chatgpt_4f332da5",

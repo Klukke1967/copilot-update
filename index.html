@@ -1293,6 +1293,304 @@
       from { opacity: 0; transform: translateY(-3px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    /* Main Navigation Tabs */
+    .main-tabs-bar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 60px;
+      z-index: 40;
+    }
+    .tabs-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10px;
+      padding: 8px 16px;
+    }
+    .main-tab-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .main-tab-btn:hover {
+      background: var(--surface-subtle);
+      color: var(--text-main);
+    }
+    .main-tab-btn.active {
+      background: var(--copilot-bg);
+      color: var(--copilot);
+      border-color: var(--copilot-border);
+    }
+    .tab-badge {
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      background: var(--surface-subtle);
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+    .main-tab-btn.active .tab-badge {
+      background: var(--copilot);
+      color: #ffffff;
+    }
+    .tab-badge.highlight {
+      background: #f59e0b;
+      color: #ffffff;
+    }
+
+    /* 5 Pillars Hero Card */
+    .pillars-hero-card {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f8fafc 100%);
+      border: 1px solid #bae6fd;
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+    .pillars-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      background: #0284c7;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .pillars-hero-card h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #0c4a6e;
+      margin-bottom: 6px;
+    }
+    .pillars-hero-card p.subtitle {
+      color: #0369a1;
+      font-size: 0.92rem;
+      margin-bottom: 18px;
+      max-width: 850px;
+    }
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .pillar-item {
+      background: #ffffff;
+      border: 1px solid #e0f2fe;
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      display: flex;
+      gap: 12px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    .pillar-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #0284c7;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+    .pillar-content h4 {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+    .pillar-content p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+
+    /* Prompts Grid & Cards */
+    .prompts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+      margin-top: 16px;
+    }
+    @media (max-width: 640px) {
+      .prompts-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .prompt-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+    .prompt-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-hover);
+    }
+    .prompt-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .prompt-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .p-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+    .p-badge.dept {
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #e2e8f0;
+    }
+    .p-badge.type {
+      background: #ede9fe;
+      color: #6d28d9;
+    }
+    .p-badge.tool {
+      background: var(--copilot-bg);
+      color: var(--copilot);
+    }
+    .prompt-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+    .prompt-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    .prompt-box {
+      background: #0f172a;
+      color: #e2e8f0;
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      position: relative;
+      max-height: 220px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      border: 1px solid #1e293b;
+    }
+    .prompt-placeholder {
+      background: rgba(245, 158, 11, 0.25);
+      color: #fbbf24;
+      padding: 1px 4px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .prompt-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+    .prompt-actions-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .btn-copy-prompt {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: var(--radius-sm);
+      background: var(--copilot);
+      color: #ffffff;
+      border: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-copy-prompt:hover {
+      background: #0369a1;
+    }
+    .btn-copy-prompt.copied {
+      background: #10a37f !important;
+    }
+    .btn-toggle-pillars {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 6px 10px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+    }
+    .btn-toggle-pillars:hover {
+      background: var(--surface-subtle);
+      color: var(--text-main);
+    }
+    .prompt-pillars-detail {
+      display: none;
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      font-size: 0.8rem;
+      line-height: 1.45;
+    }
+    .prompt-pillars-detail.open {
+      display: block;
+    }
+    .pillar-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .pillar-row:last-child {
+      margin-bottom: 0;
+    }
+    .pillar-label {
+      font-weight: 700;
+      color: var(--text-main);
+      min-width: 90px;
+      flex-shrink: 0;
+    }
+    .pillar-val {
+      color: var(--text-muted);
+    }
   </style>
 
   <!-- Firebase App & Services (v10 compat) -->
@@ -1357,6 +1655,22 @@
     </div>
   </header>
 
+  <!-- Main Navigation Tabs -->
+  <div class="main-tabs-bar">
+    <div class="tabs-inner">
+      <button id="tab-btn-news" class="main-tab-btn active" onclick="switchMainTab('news')">
+        <span class="tab-icon">📰</span>
+        <span>Nyheder & Videoer</span>
+        <span class="tab-badge" id="tab-count-news">163</span>
+      </button>
+      <button id="tab-btn-prompts" class="main-tab-btn" onclick="switchMainTab('prompts')">
+        <span class="tab-icon">💡</span>
+        <span>Gode Prompts</span>
+        <span class="tab-badge highlight" id="tab-count-prompts">100</span>
+      </button>
+    </div>
+  </div>
+
   <!-- Off-canvas Burger Menu Drawer -->
   <div id="menu-backdrop" class="menu-backdrop" onclick="closeMenu()"></div>
   <div id="drawer" class="drawer" aria-label="Navigationsmenu">
@@ -1367,6 +1681,12 @@
       </button>
     </div>
     <div class="drawer-nav">
+      <div class="drawer-section-title">Prompt Hub</div>
+      <button class="drawer-item" onclick="switchMainTab('prompts'); closeMenu();">
+        <span class="item-label">💡 Gode Prompts (100)</span>
+        <span class="item-badge" style="background:#f59e0b; color:#fff;">100</span>
+      </button>
+
       <div class="drawer-section-title">Dit Feed</div>
       <button class="drawer-item active" data-category="all" onclick="selectFromMenu('all')">
         <span class="item-label">🌐 Alle nyheder</span>
@@ -1429,8 +1749,9 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Controls: Search & Chips -->
-    <div class="controls-wrapper">
+    <div id="news-view-container">
+      <!-- Controls: Search & Chips -->
+      <div class="controls-wrapper">
       <div class="search-box">
         <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="11" cy="11" r="8"></circle>
@@ -1542,6 +1863,86 @@
         <div id="user-resources-list" class="user-resource-list"></div>
       </div>
     </section>
+    </div> <!-- /news-view-container -->
+
+    <!-- Prompts View Section -->
+    <div id="prompts-view-container" style="display:none;">
+      <!-- 5-Pillars Framework Hero Card -->
+      <section class="pillars-hero-card">
+        <div class="pillars-header">
+          <span class="pillars-badge">PROMPT ARKITEKTUR</span>
+          <h2>De 5 Grundpiller for Effektive Copilot & AI Prompts</h2>
+          <p class="subtitle">
+            Kvaliteten af dit AI-output afgøres af promptens struktur. Brug de 5 faste elementer til at eliminere gætterier og få præcise, ledelsessikre svar i Microsoft 365, Claude og ChatGPT.
+          </p>
+        </div>
+        <div class="pillars-grid">
+          <div class="pillar-item">
+            <span class="pillar-num">1</span>
+            <div class="pillar-content">
+              <h4>🎯 1. Vær specifik & præcis</h4>
+              <p>Definer præcis hvad der skal løses, afgrænsning og scope. Undgå vage og åbne spørgsmål.</p>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">2</span>
+            <div class="pillar-content">
+              <h4>🏢 2. Giv kontekst (Baggrund)</h4>
+              <p>Angiv hvilke kilder der gælder: seneste mails, Teams-chats, regneark eller mødereferater.</p>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">3</span>
+            <div class="pillar-content">
+              <h4>👤 3. Tildel en rolle (Persona)</h4>
+              <p>Styr tonen: <em>"Optæd som min senior projektleder..."</em> eller <em>"Du er FP&A controller..."</em>.</p>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">4</span>
+            <div class="pillar-content">
+              <h4>📄 4. Definer output (Format)</h4>
+              <p>Fastlæg formen: tabel med kolonner, 4 punktopstillinger eller 1-sides executive memo.</p>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">5</span>
+            <div class="pillar-content">
+              <h4>🛡️ 5. Eksempler & Guardrails</h4>
+              <p>Giv et mini-eksempel og sæt hårde grænser: <em>"Opfind aldrig tal — marker ukendte med [VERIFICÉR]"</em>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Prompts Controls: Search & Department Chips -->
+      <div class="controls-wrapper">
+        <div class="search-box">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="prompt-search-input" placeholder="Søg i 100 prompts (fx 'budget', 'teams', 'variance', 'outlook', 'møde')..." oninput="onPromptSearchChange(this.value)" autocomplete="off">
+          <button id="clear-prompt-search" class="clear-search" onclick="clearPromptSearch()" title="Ryd søgning">✕</button>
+        </div>
+
+        <!-- Quick Department Filter Chips -->
+        <div class="filter-chips" id="prompt-dept-chips">
+          <!-- Dynamically injected -->
+        </div>
+      </div>
+
+      <!-- Prompts Status Banner -->
+      <div class="status-banner">
+        <span id="prompt-status-text">Indlæser prompts...</span>
+        <button id="btn-reset-prompt-filter" class="reset-filter-btn" style="display:none;" onclick="filterPromptsByDept('all')">Vis alle prompts</button>
+      </div>
+
+      <!-- Prompts Grid -->
+      <div id="prompts-grid" class="prompts-grid">
+        <!-- Dynamically injected -->
+      </div>
+    </div> <!-- /prompts-view-container -->
   </main>
 
   <!-- Footer -->
@@ -1651,7 +2052,14 @@
     let searchQuery = '';
     let currentAppVersion = '';
 
-    // Elements
+    // Prompts State
+    let currentMainTab = 'news';
+    let allPrompts = [];
+    let currentPromptDept = 'all';
+    let promptSearchQuery = '';
+
+    // Elements - News
+    const newsViewContainer = document.getElementById('news-view-container');
     const newsGrid = document.getElementById('news-grid');
     const statusText = document.getElementById('status-text');
     const resetFilterBtn = document.getElementById('btn-reset-filter');
@@ -1661,6 +2069,19 @@
     const menuBackdrop = document.getElementById('menu-backdrop');
     const reloadBtn = document.getElementById('btn-reload');
     const updateToast = document.getElementById('update-toast');
+
+    // Elements - Prompts & Main Tabs
+    const promptsViewContainer = document.getElementById('prompts-view-container');
+    const tabBtnNews = document.getElementById('tab-btn-news');
+    const tabBtnPrompts = document.getElementById('tab-btn-prompts');
+    const tabCountNews = document.getElementById('tab-count-news');
+    const tabCountPrompts = document.getElementById('tab-count-prompts');
+    const promptsGrid = document.getElementById('prompts-grid');
+    const promptStatusText = document.getElementById('prompt-status-text');
+    const promptSearchInput = document.getElementById('prompt-search-input');
+    const clearPromptSearchBtn = document.getElementById('clear-prompt-search');
+    const promptDeptChips = document.getElementById('prompt-dept-chips');
+    const btnResetPromptFilter = document.getElementById('btn-reset-prompt-filter');
 
     // Drawer / Menu
     function toggleMenu() {
@@ -2365,6 +2786,7 @@
         // Merge with local user submissions
         const localItems = getLocalResources();
         allNews = [...localItems, ...data];
+        if (tabCountNews) tabCountNews.textContent = allNews.length;
 
         updateCounts();
         render();
@@ -2587,16 +3009,261 @@
       window.location.href = `mailto:klaus.kryger@gmail.com?subject=${subject}&body=${body}`;
     }
 
+    // ==========================================
+    // PROMPTS HUB LOGIC
+    // ==========================================
+    function switchMainTab(tab) {
+      currentMainTab = tab;
+      if (tab === 'prompts') {
+        tabBtnNews.classList.remove('active');
+        tabBtnPrompts.classList.add('active');
+        newsViewContainer.style.display = 'none';
+        promptsViewContainer.style.display = 'block';
+        window.location.hash = 'prompts';
+        if (allPrompts.length === 0) {
+          loadPromptsData();
+        } else {
+          renderPrompts();
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        tabBtnPrompts.classList.remove('active');
+        tabBtnNews.classList.add('active');
+        promptsViewContainer.style.display = 'none';
+        newsViewContainer.style.display = 'block';
+        if (window.location.hash === '#prompts') {
+          history.pushState(null, null, ' ');
+        }
+      }
+    }
+
+    async function loadPromptsData() {
+      try {
+        const res = await fetch('prompts.json?t=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('Kunne ikke hente prompts.json');
+        allPrompts = await res.json();
+        if (tabCountPrompts) tabCountPrompts.textContent = allPrompts.length;
+        renderPromptDeptChips();
+        renderPrompts();
+      } catch (err) {
+        console.error('Fejl ved indlæsning af prompts:', err);
+        if (promptStatusText) promptStatusText.textContent = 'Kunne ikke indlæse prompts lige nu.';
+      }
+    }
+
+    function renderPromptDeptChips() {
+      if (!promptDeptChips) return;
+      const counts = { all: allPrompts.length };
+      allPrompts.forEach(p => {
+        const d = p.department_da || p.department || 'Andet';
+        counts[d] = (counts[d] || 0) + 1;
+      });
+
+      const depts = [
+        { id: 'all', label: 'Alle prompts' },
+        { id: 'Ledelse & Projektledelse', label: '💼 Ledelse & PM' },
+        { id: 'Økonomi & Finans', label: '📊 Økonomi & Finans' },
+        { id: 'Power User (M365)', label: '⚡ Power User (M365)' },
+        { id: 'Outlook & Mail-styring', label: '📬 Outlook & Mail' },
+        { id: 'IT & Drift', label: '🛠️ IT & Drift' },
+        { id: 'Salg & Forretningsudvikling', label: '🎯 Salg & Kunder' },
+        { id: 'Marketing & Kommunikation', label: '📢 Marketing' },
+        { id: 'HR & Personale', label: '👥 HR & Personale' },
+        { id: 'Indkøb & Kontrakter', label: '📦 Indkøb' },
+        { id: 'Kundesucces & Support', label: '🤝 Kundesupport' }
+      ];
+
+      let html = '';
+      depts.forEach(dept => {
+        const count = counts[dept.id] || 0;
+        if (count > 0 || dept.id === 'all') {
+          const activeClass = (currentPromptDept === dept.id) ? 'active' : '';
+          html += `
+            <button class="chip ${activeClass}" data-dept="${dept.id}" onclick="filterPromptsByDept('${dept.id}')">
+              ${dept.label} <span class="chip-count">${count}</span>
+            </button>
+          `;
+        }
+      });
+      promptDeptChips.innerHTML = html;
+    }
+
+    function filterPromptsByDept(dept) {
+      currentPromptDept = dept;
+      renderPromptDeptChips();
+      renderPrompts();
+    }
+
+    function onPromptSearchChange(val) {
+      promptSearchQuery = val.trim().toLowerCase();
+      clearPromptSearchBtn.classList.toggle('visible', promptSearchQuery.length > 0);
+      renderPrompts();
+    }
+
+    function clearPromptSearch() {
+      promptSearchInput.value = '';
+      promptSearchQuery = '';
+      clearPromptSearchBtn.classList.remove('visible');
+      renderPrompts();
+      promptSearchInput.focus();
+    }
+
+    function renderPrompts() {
+      if (!promptsGrid) return;
+
+      const filtered = allPrompts.filter(item => {
+        if (currentPromptDept !== 'all') {
+          if ((item.department_da || item.department) !== currentPromptDept) return false;
+        }
+        if (promptSearchQuery) {
+          const matchTitle = (item.title || '').toLowerCase().includes(promptSearchQuery);
+          const matchDesc = (item.description || '').toLowerCase().includes(promptSearchQuery);
+          const matchPrompt = (item.prompt || '').toLowerCase().includes(promptSearchQuery);
+          const matchDept = (item.department_da || '').toLowerCase().includes(promptSearchQuery);
+          const matchTask = (item.task_type_da || '').toLowerCase().includes(promptSearchQuery);
+          const matchPersona = (item.pillars?.persona || '').toLowerCase().includes(promptSearchQuery);
+          if (!matchTitle && !matchDesc && !matchPrompt && !matchDept && !matchTask && !matchPersona) return false;
+        }
+        return true;
+      });
+
+      // Update status text
+      let deptLabel = currentPromptDept === 'all' ? 'alle områder' : currentPromptDept;
+      if (promptSearchQuery) {
+        promptStatusText.innerHTML = `Fandt <strong>${filtered.length}</strong> prompt(s) for "<em>${escapeHtml(promptSearchQuery)}</em>" i ${deptLabel}`;
+        btnResetPromptFilter.style.display = 'inline';
+      } else if (currentPromptDept !== 'all') {
+        promptStatusText.innerHTML = `Viser <strong>${filtered.length}</strong> prompt(s) for <strong>${deptLabel}</strong>`;
+        btnResetPromptFilter.style.display = 'inline';
+      } else {
+        promptStatusText.innerHTML = `Viser alle <strong>${filtered.length}</strong> prompts`;
+        btnResetPromptFilter.style.display = 'none';
+      }
+
+      if (filtered.length === 0) {
+        promptsGrid.innerHTML = `
+          <div class="empty-state" style="grid-column: 1/-1;">
+            <h3>Ingen prompts fundet</h3>
+            <p>Prøv et andet søgeord eller vælg en anden afdeling i filteret ovenfor.</p>
+          </div>
+        `;
+        return;
+      }
+
+      promptsGrid.innerHTML = filtered.map(item => {
+        const highlightedPrompt = escapeHtml(item.prompt).replace(
+          /(\[[A-Z0-9_\s\/-]+\])/g,
+          '<span class="prompt-placeholder">$1</span>'
+        );
+
+        const pillars = item.pillars || {};
+
+        return `
+          <article class="prompt-card" id="card-${item.id}">
+            <div class="prompt-card-top">
+              <div class="prompt-badges">
+                <span class="p-badge dept">🏢 ${escapeHtml(item.department_da || item.department)}</span>
+                <span class="p-badge type">🎯 ${escapeHtml(item.task_type_da || item.task_type)}</span>
+                <span class="p-badge tool">🔷 ${escapeHtml(item.tool || 'Copilot M365')}</span>
+              </div>
+            </div>
+
+            <h3 class="prompt-title">${escapeHtml(item.title)}</h3>
+            <p class="prompt-desc">${escapeHtml(item.description)}</p>
+
+            <div class="prompt-box"><code>${highlightedPrompt}</code></div>
+
+            <div class="prompt-footer">
+              <div class="prompt-actions-row">
+                <button class="btn-copy-prompt" onclick="copyPromptText('${item.id}', this)" title="Kopiér den fulde prompt til udklipsholderen">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Kopiér prompt</span>
+                </button>
+
+                <button class="btn-toggle-pillars" onclick="togglePillarsDetail('${item.id}', this)">
+                  <span>🔍 5-trins analyse</span>
+                  <span class="tldr-arrow">▼</span>
+                </button>
+              </div>
+
+              <div class="prompt-pillars-detail" id="pillars-${item.id}">
+                <div class="pillar-row">
+                  <span class="pillar-label">👤 Persona:</span>
+                  <span class="pillar-val">${escapeHtml(pillars.persona || 'AI Assistent')}</span>
+                </div>
+                <div class="pillar-row">
+                  <span class="pillar-label">🏢 Kontekst:</span>
+                  <span class="pillar-val">${escapeHtml(pillars.context || 'Workspace data')}</span>
+                </div>
+                <div class="pillar-row">
+                  <span class="pillar-label">📄 Format:</span>
+                  <span class="pillar-val">${escapeHtml(pillars.format || 'Struktureret')}</span>
+                </div>
+                <div class="pillar-row">
+                  <span class="pillar-label">🛡️ Guardrails:</span>
+                  <span class="pillar-val">${escapeHtml(pillars.guardrails || 'Ingen gætterier')}</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function copyPromptText(id, btn) {
+      const item = allPrompts.find(p => p.id === id);
+      if (!item) return;
+
+      navigator.clipboard.writeText(item.prompt).then(() => {
+        const originalText = btn.innerHTML;
+        btn.classList.add('copied');
+        btn.innerHTML = `
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          <span>Kopieret!</span>
+        `;
+        showNotification('Prompt kopieret til udklipsholder!');
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          btn.innerHTML = originalText;
+        }, 2000);
+      }).catch(err => {
+        console.warn('Kunne ikke kopiere prompt:', err);
+      });
+    }
+
+    function togglePillarsDetail(id, btn) {
+      const detailEl = document.getElementById('pillars-' + id);
+      if (!detailEl) return;
+      const isOpen = detailEl.classList.contains('open');
+      if (isOpen) {
+        detailEl.classList.remove('open');
+        btn.querySelector('span:first-child').textContent = '🔍 5-trins analyse';
+        btn.querySelector('.tldr-arrow').style.transform = 'rotate(0deg)';
+      } else {
+        detailEl.classList.add('open');
+        btn.querySelector('span:first-child').textContent = '✕ Skjul analyse';
+        btn.querySelector('.tldr-arrow').style.transform = 'rotate(180deg)';
+      }
+    }
+
     // Startup & Service Worker
     window.addEventListener('DOMContentLoaded', () => {
-      // Check URL hash for filter (#copilot, #claude, #chatgpt, #bookmarks, #foryou, #tag:...)
+      // Check URL hash for filter or view (#prompts, #copilot, etc.)
       const hash = window.location.hash.replace('#', '').toLowerCase();
-      if (['copilot', 'claude', 'chatgpt', 'video', 'bookmarks', 'foryou'].includes(hash) || hash.startsWith('tag:')) {
+      if (hash === 'prompts') {
+        switchMainTab('prompts');
+      } else if (['copilot', 'claude', 'chatgpt', 'video', 'bookmarks', 'foryou'].includes(hash) || hash.startsWith('tag:')) {
         currentFilter = hash;
       }
 
       initFirebase();
       loadNewsData();
+      loadPromptsData();
       checkVersion();
       renderUserResources();
 

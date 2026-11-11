@@ -1,0 +1,1702 @@
+[
+  {
+    "id": "prompt_001",
+    "title": "Catch up on month-end close",
+    "department": "Finance",
+    "department_da": "Økonomi & Finans",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack finance.md (Month-End Close Prep). Coordination only: every figure must be confirmed in the GL, Copilot does not connect to the ERP.",
+    "prompt": "Catch me up on the month-end close for [MONTH]. Search my recent emails and Teams chats and pull together: open items and pending journal entries that people mentioned, accruals or provisions being discussed, late information or blockers from other teams, and anything flagged as a risk to the timetable. Give me a short close-prep checklist grouped by owner. Work only from what is actually in my messages, do not invent figures or dates, and any number you mention is for context only and must be confirmed in the GL.",
+    "pillars": {
+      "persona": "FP&A Controller / Finansiel Analytiker",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Overskuelig tabel med relevante kolonner og nøgletal.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_002",
+    "title": "Draft AR collections follow-up",
+    "department": "Finance",
+    "department_da": "Økonomi & Finans",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack finance.md (AR / Collections Context). Confirm balances in the ledger; Copilot summaries may be stale. No payment or write-off decisions.",
+    "prompt": "For the account [CUSTOMER NAME], search my emails for the collections history and summarize: invoices and amounts referenced, any promises to pay and the dates given, disputes or queries raised, and the last contact and its outcome. Keep it to what is actually in the correspondence, write 'not found' where something is missing, and do not invent balances. This is to prepare my follow-up, so confirm all balances in the ledger before I act on them.",
+    "pillars": {
+      "persona": "FP&A Controller / Finansiel Analytiker",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_003",
+    "title": "Build a variance story draft",
+    "department": "Finance",
+    "department_da": "Økonomi & Finans",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack finance.md (Variance Story Draft). Narrative only: no calculations or sign-off. Drivers tagged 'to confirm', figures verified against the GL.",
+    "prompt": "Act as my FP&A drafting assistant. I have a [FAVOURABLE / ADVERSE] variance of [AMOUNT] in [COST LINE OR AREA] and I want a plain-language explanation I can refine.\n\nGround your draft only in the emails, meeting notes, and documents I provide or that you can find in my workspace on this topic. Work strictly from what is there. Do not invent drivers, names, figures, or causes. Where the source does not say, write 'not stated in the material' or mark it [VERIFY]. Never present an assumption as a confirmed driver.\n\nStructure the draft as:\n1. One-line summary of the variance in plain English.\n2. Likely drivers, each tagged as one-off or recurring, with a short note of where in the material it came from.\n3. What the business said about the cause, quoting or paraphrasing the source.\n4. Open questions and items to confirm, each marked 'to confirm with [OWNER]'.\n\nThis is a narrative draft for me to verify. It does not calculate, finalize, or sign off the variance. The figures and the root cause are mine to confirm against the system of record before this is used or shared. Do not send anything.",
+    "pillars": {
+      "persona": "FP&A drafting assistant",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_004",
+    "title": "Assemble an exec pre-read",
+    "department": "Finance",
+    "department_da": "Økonomi & Finans",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack finance.md (Executive Financial Pre-Read). Every figure sourced or marked [VERIFY]; draft for review, no authoritative numbers, no approvals.",
+    "prompt": "Act as my finance reporting assistant and assemble a one-page pre-read for the [MEETING NAME] on [DATE], drawing from the recent reports, emails, and decks in my workspace on this topic.\n\nGround everything only in that existing material. Work strictly from what is there. Do not invent headline numbers, names, dates, or movements. Cite the source document for each figure you include. Where a figure is not yet confirmed in the source, mark it [VERIFY]. If something an attendee will expect is missing, list it as a gap rather than filling it in.\n\nStructure the pre-read as:\n1. Headline results, as reported, each with its source cited.\n2. Key movements and the reason given for each, in plain language.\n3. Risks and decisions needed at the meeting.\n4. Open actions carried over from last time and their status.\n\nKeep it to one page, factual, no spin. This is a draft for me to review and verify before circulating. It does not produce authoritative numbers or approve anything. Do not send it.",
+    "pillars": {
+      "persona": "finance reporting assistant and assemble a one-page pre-read for the [MEETING NAME] on [DATE]",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_005",
+    "title": "Prep an audit request response",
+    "department": "Finance",
+    "department_da": "Økonomi & Finans",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack finance.md (Audit Request Response Prep). Prep only: formal evidence from official systems, response requires finance sign-off before reaching auditors.",
+    "prompt": "Act as my audit-support assistant. We have received an audit request on [TOPIC] and I want a response outline I can build on.\n\nSearch my workspace for the relevant policies and process notes, prior responses on similar items, where supporting evidence is likely held, and any open issues previously raised on this. Ground the outline only in what you actually find. Do not invent policy clauses, dates, document names, or evidence locations. Where you cannot find something, write \"not found\" and list it as an open item to track down, marked [VERIFY], rather than guessing.\n\nStructure the output as:\n1. Restated understanding of what the auditors are asking for.\n2. Draft response points, each with a pointer to where the supporting evidence is likely held.\n3. Relevant policies or process notes found, cited.\n4. Open items and evidence still to locate.\n\nFormal audit evidence must come from the official systems, not from this summary. This is a preparation draft only. The response must be reviewed and signed off by finance before anything goes to the auditors. Do not send it.",
+    "pillars": {
+      "persona": "audit-support assistant",
+      "context": "Fremlagte rapporter, mødereferater og PowerPoint-slides i workspace.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_006",
+    "title": "Find an HR policy",
+    "department": "HR",
+    "department_da": "HR & Personale",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack hr-people.md (Policy Research / FAQ). Summary only: verify current policy version, route edge cases to HR, no interpretation or determinations.",
+    "prompt": "Search SharePoint for HR policies related to [TOPIC, e.g. remote work or leave of absence]. List the policy documents you find, their effective dates if stated, and a short summary of the key provisions of each. Work only from the documents you actually find, do not paraphrase beyond what they say, and do not interpret edge cases. I need this to answer an employee question and I will verify the current policy version before I respond.",
+    "pillars": {
+      "persona": "HR Partner / Organisationskonsulent",
+      "context": "Fremlagte rapporter, mødereferater og PowerPoint-slides i workspace.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_007",
+    "title": "Draft an interview question set",
+    "department": "HR",
+    "department_da": "HR & Personale",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack hr-people.md (Interview Question Set). Interviewer aid only: no scoring, ranking, or hiring decisions; those stay with the panel.",
+    "prompt": "From this job description, generate a competency-based interview set: [PASTE JOB DESCRIPTION]. For each key competency, give 2 to 3 behavioural questions and a follow-up probe, plus a short note on what a strong versus a weak answer looks like. Keep questions job-relevant and non-discriminatory. This is for the interviewer to use. It does not score, rank, or decide on any candidate. The scoring and the hiring decision stay with the panel.",
+    "pillars": {
+      "persona": "HR Partner / Organisationskonsulent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_008",
+    "title": "Draft a job description",
+    "department": "HR",
+    "department_da": "HR & Personale",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack hr-people.md (Job Description Draft). Inclusive-language draft only, gaps marked [TBC]; hiring manager reviews and owns, no hiring commitment.",
+    "prompt": "Act as my recruiting drafting assistant and write a job description for [ROLE] from this brief: [PASTE BRIEF].\n\nGround the description only in the brief I provide and any role information in my workspace. Work strictly from what is there. Do not invent responsibilities, qualifications, salary figures, reporting lines, or benefits that are not in the source. Where a standard section is missing from the brief, mark it [TBC] rather than filling it in.\n\nStructure the draft as:\n1. Role purpose in two or three sentences.\n2. Key responsibilities.\n3. Requirements, split into must-have and nice-to-have.\n4. Our EVP and what makes the role attractive, only using points present in the source.\n\nUse inclusive, plain language. Avoid gendered, age-coded, or exclusionary terms. Label the whole thing 'DRAFT, for hiring manager review.' This prepares a draft for a human to review and own. It does not post the role or make any hiring commitment. Do not send or publish it.",
+    "pillars": {
+      "persona": "recruiting drafting assistant and write a job description for [ROLE] from this brief: [PASTE BRIEF]",
+      "context": "Fremlagte rapporter, mødereferater og PowerPoint-slides i workspace.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_009",
+    "title": "Summarize engagement themes",
+    "department": "HR",
+    "department_da": "HR & Personale",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack hr-people.md (Engagement Survey Theme Summary). Neutral themes only, anonymized, no attribution; action planning and people decisions stay human.",
+    "prompt": "Act as my people-insights assistant and summarize the themes in the open-text comments I provide or reference: [PASTE OR REFERENCE COMMENTS].\n\nWork strictly from the comments themselves. Do not invent themes, do not exaggerate how common something is, and do not attribute any comment to a named individual. If a sentiment appears only once, say so rather than presenting it as a pattern. Where a topic is not in the comments, write \"not found\" rather than inferring it, and mark anything ambiguous [VERIFY].\n\nStructure the summary as:\n1. Top recurring themes, each with a rough sense of how often it appears.\n2. Positive signals worth noting.\n3. Concerns or frustrations raised.\n4. A few notable verbatim examples, anonymized and stripped of any identifying detail.\n\nKeep it neutral and factual. This is input for the people team to discuss, not a conclusion about any manager, team, or person, and not an action plan. Action planning and any people decisions stay with the human team. This is a draft for my review. Do not send it.",
+    "pillars": {
+      "persona": "people-insights assistant and summarize the themes in the open-text comments I provide or reference: [PASTE OR REFERENCE COMMENTS]",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Overskuelig tabel med relevante kolonner og nøgletal.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_010",
+    "title": "Build an onboarding plan",
+    "department": "HR",
+    "department_da": "HR & Personale",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack hr-people.md (Onboarding Plan Builder). Practical draft, manager-input items [TBC]; no performance, objective-setting, or people decisions.",
+    "prompt": "Act as my onboarding assistant and build a 30/60/90-day onboarding plan for a new [ROLE] starting [DATE]: [PASTE CONTEXT].\n\nGround the plan in the role context I provide and any relevant onboarding material in my workspace. Work from what is there. Do not invent system names, contacts, training courses, or policies that are not in the source. Where you do not have the detail, leave a clearly marked placeholder rather than guessing.\n\nStructure the plan as:\n1. Pre-arrival setup, things to arrange before day one.\n2. Week one essentials.\n3. Days 1 to 30, key people to meet and first goals.\n4. Days 31 to 60 and 61 to 90, ramp-up goals and check-in points.\n\nMake it practical and specific. Mark anything that needs the manager's input as [TBC]. This is a draft plan for the manager and the new hire to adapt. It does not assign work, set objectives, or make any commitment on the person's behalf. This is a draft for me to review. Do not send it.",
+    "pillars": {
+      "persona": "onboarding assistant and build a 30/60/90-day onboarding plan for a new [ROLE] starting [DATE]: [PASTE CONTEXT]",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_011",
+    "title": "Watch contract renewals",
+    "department": "Procurement",
+    "department_da": "Indkøb & Kontrakter",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack procurement-vendor.md (Contract Renewal & Expiry Watch). Action list only, uncertainties flagged 'verify in contract'; no renew/re-tender recommendation.",
+    "prompt": "From our contract register or repository in SharePoint, list supplier contracts with renewals or expiries in the next [TIMEFRAME]. For each, give the supplier and contract, the expiry or renewal date, the notice deadline, whether it auto-renews (Yes / No / Unknown), and the owner. Work only from what the documents actually state, and mark anything unclear 'verify in contract'. Sort by soonest deadline. This is an action list for me to review, not a recommendation to renew or re-tender, and it commits to nothing.",
+    "pillars": {
+      "persona": "Indkøbs- & Kontraktforhandler",
+      "context": "Fremlagte rapporter, mødereferater og PowerPoint-slides i workspace.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_012",
+    "title": "Draft a supplier message",
+    "department": "Procurement",
+    "department_da": "Indkøb & Kontrakter",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack procurement-vendor.md (Supplier Communication Draft). Draft only, no price/award/volume commitment; human reviews and sends.",
+    "prompt": "Draft a [RFI INVITATION / CLARIFICATION REQUEST / UNSUCCESSFUL-BIDDER NOTICE / ONBOARDING REQUEST] to [SUPPLIER]: [CONTEXT]. Keep it professional and neutral. Make no price, award, or volume commitment of any kind. For a decline, keep it courteous and non-specific on the reasons. Use only the facts I provide, do not invent details, and mark anything you are unsure of [VERIFY]. This is a draft for me to review and send myself. Do not send it.",
+    "pillars": {
+      "persona": "Indkøbs- & Kontraktforhandler",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_013",
+    "title": "Compare supplier responses",
+    "department": "Procurement",
+    "department_da": "Indkøb & Kontrakter",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack procurement-vendor.md (Supplier Response Comparison Prep). Matrix from supplier wording only; no scoring, ranking, or award, those stay with the panel.",
+    "prompt": "Act as my bid-comparison assistant. Organize the supplier responses I reference into a comparison matrix against our requirements: [REFERENCE THE RESPONSES AND REQUIREMENTS].\n\nGround every cell only in what the suppliers actually wrote and what our requirements actually say. Work strictly from the source documents. Do not infer capabilities a supplier did not claim, do not fill blanks, and do not soften or sharpen what they said. Quote or cite the supplier's own wording for each point. Where a supplier did not respond to a requirement, write \"not found\" and mark it clearly as a gap or non-response. Mark anything ambiguous [VERIFY].\n\nStructure the output as a matrix:\n1. One row per requirement, one column per supplier.\n2. In each cell, what that supplier offered, quoting or citing their response.\n3. A 'gaps' column listing where each supplier is silent or non-compliant.\n4. Below the matrix, a list of clarification questions to raise with each supplier.\n\nThis prepares the evaluation panel's review. It does not score, weight, rank, recommend, or select a winner. Scoring and the award decision stay with the panel under your procurement governance. This is a draft for the panel to verify.",
+    "pillars": {
+      "persona": "bid-comparison assistant",
+      "context": "Fremlagte rapporter, mødereferater og PowerPoint-slides i workspace.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_014",
+    "title": "Prep a negotiation brief",
+    "department": "Procurement",
+    "department_da": "Indkøb & Kontrakter",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack procurement-vendor.md (Negotiation Prep Brief). Prep only, figures verified against system of record; no mandate, price recommendation, or commitment.",
+    "prompt": "Act as my negotiation-prep assistant for the negotiation with [SUPPLIER] on [SCOPE].\n\nGather from my emails, documents, and workspace: the history of prior pricing, terms, and concessions; our spend and dependence on them and their dependence on us; issues and asks each side has raised; and any market or alternative-supplier signals mentioned internally. Ground everything only in what is actually in our records. Do not invent prices, terms, market data, or quotes. Where a figure or fact is not in the source, write 'not found in our records' or mark it [VERIFY]. Confirm any figure against the system of record before relying on it.\n\nStructure the brief as:\n1. Relationship and spend snapshot, sourced.\n2. History of pricing, terms, and concessions.\n3. Leverage points, ours and theirs.\n4. Open issues and likely asks from each side.\n5. Suggested talking points and questions to ask.\n\nThis is preparation only. It is not a negotiating mandate, a price recommendation, or an offer, and it commits to nothing. Setting targets, agreeing terms, and any commitment stay with me under our procurement authority. This is a draft for me to review. Do not send it.",
+    "pillars": {
+      "persona": "negotiation-prep assistant for the negotiation with [SUPPLIER] on [SCOPE]",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_015",
+    "title": "Prep a vendor scorecard",
+    "department": "Procurement",
+    "department_da": "Indkøb & Kontrakter",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "Source pack procurement-vendor.md (Vendor Scorecard Prep). Evidence-only structure with ratings left blank; the reviewer sets ratings using system data.",
+    "prompt": "Act as my vendor-review assistant. For [SUPPLIER], gather from my emails, documents, and notes the performance signals over [PERIOD].\n\nGround everything only in what those sources actually say. Do not invent incidents, metrics, dates, or quotes. Where you have no evidence for a criterion, write 'no evidence found in the material' rather than guessing. Attribute each point to where it came from so a reviewer can check it.\n\nOrganize the output as a scorecard structure:\n1. Delivery and on-time performance, with the evidence found.\n2. Quality and any NCR references, with evidence.\n3. Responsiveness and relationship notes, with evidence.\n4. Commercial and value points, with evidence.\n5. An 'evidence gaps' note listing criteria where the record is thin.\n\nLeave the rating cells blank. Do not assign scores, ratings, or an overall verdict. The ratings are the reviewer's decision, supported by authoritative system data, not by this summary. Note that figures here may be stale and must be confirmed against the system of record. This is a draft for the reviewer to complete and verify.",
+    "pillars": {
+      "persona": "vendor-review assistant",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_016",
+    "title": "Account Briefing Pack",
+    "department": "Sales",
+    "department_da": "Salg & Forretningsudvikling",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "PIN: From sales-business-development.md (Account Research Summary). Reminder: research and brief only; AEs close. No pricing/discount/forecast or CRM writes.",
+    "prompt": "Act as my account research assistant and prepare a pre-call briefing on [Account Name] so I walk into the call fully prepared.\n\nSearch my emails, Teams chats, and SharePoint files for everything connected to this account: threads with their team, internal discussions about them, meeting notes, and shared documents.\n\nGrounding and accuracy rules:\n- Work only from what is actually in my data. Do not add general knowledge about the company or industry.\n- If a section has no supporting evidence, write \"not found\" instead of guessing or filling a plausible blank.\n- Never invent stakeholder names, job titles, dates, deal sizes, or commitments. If you are unsure whether a detail is right, mark it [VERIFY] and note where you saw it.\n- When you state something, point to the source (for example, \"per email from [name], March 4\").\n\nOrganize the briefing under these numbered headings:\n1. Account snapshot: what they do and our current relationship, in two or three lines\n2. Key stakeholders and their roles, plus who is the main point of contact\n3. Recent interactions and meetings, most recent first, with dates where stated\n4. Open opportunities or deals discussed\n5. Pain points and challenges they raised, in their own words where possible\n6. Competitive mentions and what was said\n7. Commitments made by either side, and who owns each\n8. Open questions and gaps for me to resolve before the call\n\nKeep it factual and skimmable. Do not score, rank, or qualify the account, and do not make pricing, discount, or forecast statements: those live in our CRM and are mine to decide. Copilot researches, I close.\n\nThis is a draft briefing for me to verify against the source threads. Do not send anything to anyone.",
+    "pillars": {
+      "persona": "account research assistant and prepare a pre-call briefing on [Account Name] so I walk into the call fully prepared",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_017",
+    "title": "Outreach Email Draft",
+    "department": "Sales",
+    "department_da": "Salg & Forretningsudvikling",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From sales-business-development.md (Outreach Sequence Draft). Reminder: draft for human edit before sending; no compliance-sensitive or do-not-contact outreach.",
+    "prompt": "Draft a personalized cold outreach email to [Contact Name], [Title] at [Company Name]. Tie it to their industry, [Industry], and a likely pain point for their role, and connect it to how we help similar companies. Keep it under 150 words, professional, with one clear call to action. Leave placeholders for anything I should personalize. This is a draft for me to edit and verify before sending. Do not send it.",
+    "pillars": {
+      "persona": "B2B Sales Account Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_018",
+    "title": "Deal Progress Recap",
+    "department": "Sales",
+    "department_da": "Salg & Forretningsudvikling",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From sales-business-development.md (Deal Progress Summary). Reminder: summarize only; no forecast commit, scoring, or pricing figures. CRM is source of truth.",
+    "prompt": "Act as my pipeline-prep assistant and recap the [Deal Name] opportunity with [Account Name] so I am ready for my pipeline review.\n\nSearch my emails and Teams for all correspondence on this deal: customer threads, internal strategy chats, and any notes shared about it.\n\nGrounding and accuracy rules:\n- Use only what is in my data. Do not infer a stage or status that is not supported by the messages.\n- If a field has no evidence, write \"not found\" rather than assuming.\n- Do not invent decision-maker names, dates, or numbers. Flag anything ambiguous as [VERIFY] with the source.\n- Do not include specific pricing figures. Refer to pricing only as \"discussed\", \"pending\", or \"TBD\". Pull the figures from the CRM yourself later.\n\nSummarize under these numbered headings:\n1. Where the deal stands: the current stage and the next steps that were actually discussed\n2. Decision makers and influencers named, each with their stated position or sentiment\n3. Objections and concerns raised, and how each was answered (or mark it \"open\")\n4. Timeline expectations and key dates mentioned\n5. Competitive threats referenced and what was said\n6. Risks and blockers slowing the deal\n7. What I need to confirm or chase before the review\n\nKeep it tight and evidence-based, citing the thread for each major point. Do not forecast, commit, score, or register this deal: the CRM is the source of truth and the call is mine to make. Copilot summarizes, I decide.\n\nThis is a draft recap for me to verify. Do not send it anywhere.",
+    "pillars": {
+      "persona": "pipeline-prep assistant and recap the [Deal Name] opportunity with [Account Name] so I am ready for my pipeline review",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_019",
+    "title": "Follow-up Nudge",
+    "department": "Sales",
+    "department_da": "Salg & Forretningsudvikling",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From sales-business-development.md (Meeting Request Follow-up). Reminder: draft for human edit before sending; not pushy; no commitments.",
+    "prompt": "Draft a short, respectful follow-up to [Contact Name], who has not replied to my last message. Reference my original topic, add one new angle or value point, and offer flexible options. Keep it brief and not pushy. This is attempt [2 or 3], so adjust the tone. Draft only, for me to edit before sending.",
+    "pillars": {
+      "persona": "B2B Sales Account Strateg",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_020",
+    "title": "Competitive Mentions",
+    "department": "Sales",
+    "department_da": "Salg & Forretningsudvikling",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From sales-business-development.md (Competitive Intelligence Search). Reminder: internal research only, human validates; no invented claims; verify with current intel.",
+    "prompt": "Search my emails and files for mentions of [Competitor Name] in relation to [Account Name]. Pull together what the prospect said, any feature or pricing comparisons mentioned, and why we won or lost against them before. Use only what is in my data and write \"not found\" for gaps. Do not invent details. This is research for me to validate against current intel, not a final assessment.",
+    "pillars": {
+      "persona": "B2B Sales Account Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_021",
+    "title": "Campaign Feedback Recap",
+    "department": "Marketing",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From marketing-communications.md (Campaign Performance Summary). Reminder: qualitative only; hard metrics from analytics, not Copilot; no invented results.",
+    "prompt": "Act as my marketing assistant and pull together the qualitative feedback on the [Campaign Name] campaign so I can prepare for my campaign review.\n\nSearch my emails and Teams for discussions about this campaign: stakeholder reactions, internal debriefs, and any feedback forwarded to me.\n\nGrounding and accuracy rules:\n- Work only from what is in my messages. Do not add outside knowledge or assumed results.\n- If a topic was not discussed, write \"not found\" rather than filling it in.\n- Do not invent quotes, names, metrics, or outcomes. Keep quotes verbatim where you find them and attribute each only to the person who said it.\n- Mark anything unclear or second-hand as [VERIFY] with the source thread.\n\nOrganize under these numbered headings:\n1. Stated goals and KPIs that were mentioned for the campaign\n2. Qualitative feedback received, grouped as positive and as critical\n3. Issues or challenges raised, noting who raised each\n4. Optimization ideas and suggestions\n5. Stakeholder reactions and sentiment\n6. Open questions and follow-ups\n\nKeep it factual and easy to scan, with a source note next to each major point. Do not report, estimate, or judge actual campaign performance: hard metrics come from our analytics platform, not from email, and the read on results is mine to make. Copilot drafts, I refine.\n\nThis is a draft summary for me to verify. Do not send it to anyone.",
+    "pillars": {
+      "persona": "marketing assistant and pull together the qualitative feedback on the [Campaign Name] campaign so I can prepare for my campaign review",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_022",
+    "title": "Blog Outline Starter",
+    "department": "Marketing",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From marketing-communications.md (Blog Post Outline). Reminder: outline only; human expands and fact-checks; no medical/financial claims or final SEO.",
+    "prompt": "Draft a blog post outline on [Topic] tied to our [Product or Service]. Include three headline options, an intro hook, the main sections with key points under each, and a couple of call-to-action ideas, with [Target Keyword] in mind. Keep claims general where you are unsure and mark anything to verify as [VERIFY]. This is a starting outline for me to expand and fact-check.",
+    "pillars": {
+      "persona": "Content & Kampagne Strateg",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_023",
+    "title": "Social Post Variations",
+    "department": "Marketing",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From marketing-communications.md (Social Media Copy Draft). Reminder: draft for human review; verify facts; no invented stats; check brand and trademark.",
+    "prompt": "Draft three social media post variations for [Platform] about [Topic or Announcement]. Give each a different angle, fit the platform length, and add hashtag and call-to-action options. Match our brand voice based on previous posts. Do not invent stats, claims, or quotes. This is a draft for me to refine and add visuals before posting.",
+    "pillars": {
+      "persona": "Content & Kampagne Strateg",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_024",
+    "title": "Marketing Brief Draft",
+    "department": "Marketing",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From marketing-communications.md (Marketing Brief Draft). Reminder: draft only, mark gaps; no budget approval, spend allocation, or final messaging.",
+    "prompt": "Act as my marketing assistant and draft a marketing brief for [Project/Campaign Name] from the discussions we have already had.\n\nSearch my emails and Teams for context on this project: kickoff threads, stakeholder input, and any planning notes.\n\nGrounding and accuracy rules:\n- Build the brief only from what was actually discussed. Do not pad it with generic best-practice filler.\n- Where something was not agreed or not mentioned, write \"not found\" or \"to confirm\" rather than inventing it.\n- Do not invent budget figures, audience details, names, deadlines, or approved messaging.\n- Mark every assumption or inferred point as [VERIFY] and note where it came from.\n\nStructure the brief under these numbered headings:\n1. Background and objectives discussed\n2. Target audience as described in the threads\n3. Key messages agreed, quoting the source where possible\n4. Channels suggested\n5. Timeline references and any dates mentioned\n6. Budget considerations mentioned, clearly labeled \"as discussed, not approved\"\n7. Open decisions and who owns each\n\nAt the top, add a one-line note flagging which sections are confirmed versus still open, so I can see the gaps at a glance. Do not approve budget, allocate spend, finalize messaging, or commit the plan: those are decisions for me and the stakeholders. Copilot drafts, marketers refine.\n\nThis is a draft brief for me to verify and finalize with stakeholders. Do not send it.",
+    "pillars": {
+      "persona": "marketing assistant and draft a marketing brief for [Project/Campaign Name] from the discussions we have already had",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_025",
+    "title": "Internal Announcement",
+    "department": "Marketing",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From marketing-communications.md (Internal Announcement Draft). Reminder: draft for HR/leadership review; not an official statement; verify before sending.",
+    "prompt": "Draft an internal announcement about [Topic] for [audience: all employees or a specific team]. Include a clear headline, the key message (what and why), the impact on employees, next steps, and who to contact with questions. Keep the tone [formal or conversational] for our culture. This is a draft for me to review with HR or leadership before sending.",
+    "pillars": {
+      "persona": "Content & Kampagne Strateg",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_026",
+    "title": "Customer Health Recap",
+    "department": "Customer Success",
+    "department_da": "Kundesucces & Support",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "PIN: From customer-success-support.md (Customer Health Summary). Reminder: qualitative only; no health score, churn, or renewal forecast. CS platform owns metrics.",
+    "prompt": "Act as my customer success assistant and prepare an account-review recap on [Customer Name] so I have the full relationship context in one place.\n\nSearch my emails and Teams for all recent interactions with this customer: support threads, check-ins, escalations, and internal discussions about the account.\n\nGrounding and accuracy rules:\n- Ground every point only in what you find in my data. Do not infer satisfaction or risk that the messages do not support.\n- If a topic was not discussed, write \"not found\".\n- Do not invent contacts, dates, sentiment, or renewal figures. Quote brief evidence for tone and sentiment rather than asserting it.\n- Mark anything ambiguous as [VERIFY] with the source.\n\nSummarize under these numbered headings:\n1. Recent conversations and their tone, with a short quote as evidence\n2. Issues or concerns the customer raised\n3. Feature requests and product feedback\n4. Adoption or usage discussions (qualitative only)\n5. Renewal or expansion mentions\n6. Escalations and risk signals, with the specific evidence for each\n7. Follow-ups and commitments I made that are still open\n\nKeep it factual with no speculation beyond what the messages support. Do not calculate a health score, predict churn, or forecast the renewal: those come from our CS platform and are mine to judge. Copilot monitors, I build the relationship.\n\nThis is a draft recap for me to verify. Do not send it to the customer or anyone else.",
+    "pillars": {
+      "persona": "customer success assistant and prepare an account-review recap on [Customer Name] so I have the full relationship context in one place",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_027",
+    "title": "Support Update Email",
+    "department": "Customer Success",
+    "department_da": "Kundesucces & Support",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From customer-success-support.md (Customer Communication Draft). Reminder: draft for human review; no SLA commitments or invented resolution dates.",
+    "prompt": "Draft an update email to [Customer Name] about their support case [Case Reference]. Acknowledge the issue, give the current status and the next steps being taken, and an expected timeline, with a brief apology if appropriate. Keep it professional and empathetic. Use only confirmed status: do not invent a resolution date or commit to one. This is a draft for me to review before sending.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_028",
+    "title": "Renewal Prep Notes",
+    "department": "Customer Success",
+    "department_da": "Kundesucces & Support",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From customer-success-support.md (Renewal Preparation). Reminder: context only; no forecast, term commitment, or pricing approval. Contract details in CRM/legal.",
+    "prompt": "Act as my renewals-prep assistant and gather the context I need on [Customer Name]'s upcoming renewal before I start renewal planning.\n\nSearch my emails and Teams for all discussions tied to this renewal: pricing talk, value conversations, concerns, and any internal notes about the account.\n\nGrounding and accuracy rules:\n- Use only what is in my data. Do not assume terms or positions that the messages do not show.\n- If a point was not discussed, write \"not found\".\n- Do not invent contract terms, prices, dates, or decision-maker positions.\n- Refer to pricing only as \"discussed\", never as a specific figure: I will pull the real numbers from the CRM.\n- Mark anything unclear as [VERIFY] with the source thread.\n\nCompile under these numbered headings:\n1. Contract terms mentioned, labeled \"as discussed\"\n2. Value realized and outcomes the customer referenced\n3. Concerns or objections raised, and whether each is open or addressed\n4. Competitive mentions and what was said\n5. Decision makers and their stated positions\n6. Timeline and key dates mentioned\n7. Open items I need to confirm before planning\n\nKeep it evidence-based, with a source note for each major point. Do not forecast the renewal, commit to terms, score the account, or approve pricing: actual contract details live in the CRM, and those decisions are mine and legal's. Copilot tracks, I own the relationship.\n\nThis is a draft for me to verify. Do not send it anywhere.",
+    "pillars": {
+      "persona": "renewals-prep assistant and gather the context I need on [Customer Name]'s upcoming renewal before I start renewal planning",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_029",
+    "title": "Handoff Brief",
+    "department": "Customer Success",
+    "department_da": "Kundesucces & Support",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From customer-success-support.md (Handoff Documentation). Reminder: factual handover only; no contract, pricing, renewal, or compliance decisions.",
+    "prompt": "Act as my transition assistant and compile a handoff brief for [Account Name], which I am moving to a new account manager, so nothing gets lost in the handover.\n\nSearch my emails, Teams, and shared files for the relationship history with this account: contacts, initiatives, open issues, and key milestones.\n\nGrounding and accuracy rules:\n- Build the brief only from what you find. Do not fill gaps with assumptions.\n- If something is missing, write \"not found\" rather than guessing.\n- Do not invent contacts, dates, commitments, or status.\n- Mark anything uncertain or second-hand as [VERIFY] with the source.\n\nStructure the brief under these numbered headings:\n1. Account snapshot: who they are and the state of the relationship, in a few lines\n2. Key contacts and current relationship status (champion, neutral, or strained, with evidence)\n3. Ongoing initiatives and where each one stands\n4. Open issues and concerns\n5. Upcoming milestones such as renewals and QBRs, with dates where stated\n6. Historical context: notable wins and challenges\n7. Commitments I made that are still open, with owners and due dates if known\n8. My handover notes and the open questions the new owner should pick up\n\nMake it complete enough that someone new could run the account from it, but keep it factual. Do not make contract, pricing, renewal, or compliance decisions: those stay with the new owner and the relevant systems. Copilot tracks, the account manager owns the relationship.\n\nThis is a draft handoff for me to verify before I share it. Do not send it automatically.",
+    "pillars": {
+      "persona": "transition assistant and compile a handoff brief for [Account Name]",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Overskuelig tabel med relevante kolonner og nøgletal.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_030",
+    "title": "Similar Issue Finder",
+    "department": "Customer Success",
+    "department_da": "Kundesucces & Support",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From customer-success-support.md (Similar Issue Search). Reminder: research to inform troubleshooting; not a confirmed fix; no ticket resolution or KB writes.",
+    "prompt": "Search my emails and Teams for previous discussions about [Issue Type or Error]. Find how we resolved similar issues before, any workarounds that worked, root causes identified, who handled them, and any documentation created. Use only what is in my data and write \"not found\" for gaps. Do not invent fixes. This is research to inform my current troubleshooting, not a confirmed solution.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_031",
+    "title": "Weekly status report draft",
+    "department": "Project Management",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "PIN: From project-leadership.md (Weekly Status Synthesis). Guardrail: Copilot aggregates, the PM verifies and finalizes; no figures invented, no sign-off.",
+    "prompt": "Act as my project reporting assistant. Review my emails, Teams messages, and meeting notes from the past week related to [Project Name]. Work only from what is actually in those communications. If something is not stated, write \"not found\" or [VERIFY] rather than guessing, and never invent names, dates, figures, or decisions.\n\nProduce a draft weekly status report with these sections, in this order:\n1. Progress highlights: what got done this week.\n2. Key issues raised: each with who raised it and when.\n3. Decisions made or still pending.\n4. Risks or concerns mentioned, with the source.\n5. Client or stakeholder feedback.\n6. Actions assigned and their current status.\n\nFlag any area where the information seems incomplete or where two messages conflict, so I can chase it down. Keep the tone factual and plain. Do not calculate budget, schedule, or earned value figures, and do not assess severity or approve anything. This is a draft for me to verify, edit, and finalize. Do not send it.",
+    "pillars": {
+      "persona": "project reporting assistant",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_032",
+    "title": "Risk and issue sweep",
+    "department": "Project Management",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From project-leadership.md (Risk and Issue Surfacing). Guardrail: surfaces from comms only; PM assesses severity and decides the register. No scoring or ranking.",
+    "prompt": "Act as my project risk assistant. Review the project correspondence for [Project Name] from the past 2 weeks across my emails and Teams. Work only from what is written in those messages. If a detail is not stated, write \"not found\" or [VERIFY], and never invent names, dates, amounts, or causes.\n\nIdentify and group anything that reads as a risk, issue, or early warning:\n1. Problems, blockers, or things flagged as going wrong.\n2. Schedule or cost concerns that people raised.\n3. Quality or safety worries.\n4. Resource constraints (people, equipment, vendor capacity).\n5. Stakeholder or client escalations.\n\nFor each item, give: a one-line description, who raised it, the date, and a short quote or paraphrase of the source so I can find it. Do not score, rank, or prioritize the risks, and do not decide what goes into the risk register. I will assess severity and decide what to log. This is a draft for me to review and verify, not a final risk assessment. Do not send it anywhere.",
+    "pillars": {
+      "persona": "project risk assistant",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_033",
+    "title": "Decision log reconstruction",
+    "department": "Project Management",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From project-leadership.md (Decision Log Research). Guardrail: reconstructs from comms to cross-check formal records; never invents decisions or approves anything.",
+    "prompt": "Act as my project decision-log assistant. Search my emails and Teams for decisions made on [Project Name] about [topic area, for example \"design freeze\" or \"contractor selection\"]. Work only from what the messages actually say. Where the record is thin, write \"not found\" or [VERIFY], and never invent a decision, a date, a name, or an outcome.\n\nFor each decision you can find, list:\n1. What was decided (in plain words).\n2. When it was decided, approximately, with the date of the source message.\n3. Who was involved or who signed off, as named in the messages.\n4. Any conditions, caveats, or follow-up actions attached to it.\n5. The source: a short quote or the message subject so I can locate it.\n\nIf two messages seem to contradict each other on the same decision, show both and flag the conflict rather than picking one. Do not approve, re-open, or interpret the merits of any decision. I will verify this against our formal decision register and meeting minutes. This is a draft for my verification only.",
+    "pillars": {
+      "persona": "project decision-log assistant",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_034",
+    "title": "Cost variance narrative",
+    "department": "Project Management",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From project-leadership.md (Cost Variance Narrative). Guardrail: narrates discussion only; all numbers come from the cost system, never calculated by Copilot.",
+    "prompt": "Act as my cost-reporting assistant. Search my emails and Teams messages for discussions about cost variances on [Project Name]. Work only from what people actually wrote. If an explanation or area is not mentioned, write \"not found\" or [VERIFY], and never invent figures, percentages, cost codes, or causes.\n\nDraft the narrative section of a cost report covering:\n1. Variance explanations that have been given, with who gave them.\n2. Cost codes or areas mentioned as over or under, exactly as named in the messages.\n3. Corrective actions that were discussed.\n4. Forecast concerns that were raised.\n5. Any item where the explanation is unclear or contested, flagged as [VERIFY].\n\nDo not calculate or estimate any variance amount, percentage, earned value metric, or forecast. I will add the actual numbers from our cost system; leave clearly marked placeholders like [INSERT FIGURE FROM COST SYSTEM] where a number belongs. This is a narrative draft for me to verify against the official cost data before anyone sees it. Do not send it.",
+    "pillars": {
+      "persona": "cost-reporting assistant",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_035",
+    "title": "Stakeholder meeting prep",
+    "department": "Project Management",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From project-leadership.md (Stakeholder Meeting Prep - PM). Guardrail: prep notes from comms only; no invented commitments; for the PM's prep.",
+    "prompt": "I have a meeting with [Stakeholder Name] about [Project Name] tomorrow. Based on our recent correspondence in my emails and Teams, prepare briefing notes covering: what topics they are likely to raise, recent questions of theirs that still need follow-up, any unresolved issues or complaints, and positive developments I can highlight. Use only what is in the messages, mark anything missing as [VERIFY], and do not invent commitments. This is for my preparation only.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_036",
+    "title": "Decision context research",
+    "department": "Project Management",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From project-leadership.md (Decision Context Research). Guardrail: compiles context only; Copilot informs, the leader decides; no recommendation.",
+    "prompt": "I need to make a decision about [topic]. Search my emails, Teams, and files for context and compile: previous discussions on this topic, options that have already been considered, recommendations my team has made, and risks or concerns that were raised. Use only what is actually there and mark gaps as [VERIFY]. Do not recommend a choice or make the decision. Present this as background for my decision-making.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_037",
+    "title": "Change order email scan",
+    "department": "Project Management",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From project-leadership.md (Change Order History). Guardrail: surfaces informal mentions to cross-check the register; no approval, no invented figures.",
+    "prompt": "Find all emails and documents related to change orders on [Project Name] from [date range]. For each change order mentioned, list: the change order reference if one is stated, a brief description of the scope change, the status discussed (pending, approved, or rejected), and any cost or schedule impact mentioned. Use only what the messages say, mark anything unstated as [VERIFY], and do not invent references or amounts. I need this to cross-reference against our formal change register; it does not approve anything.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_038",
+    "title": "Incident post-mortem timeline",
+    "department": "IT",
+    "department_da": "IT & Drift",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From it-service-desk.md (Post-Incident Review Prep). Guardrail: factual blameless timeline only; no fault, no root cause, no conclusions. Team decides.",
+    "prompt": "Act as my post-incident review assistant. For the incident on [date / system], gather from my emails and Teams a factual, blameless timeline. Work only from what the messages actually say. Where a time, action, or owner is not recorded, write \"not found\" or [VERIFY], and never invent a time, a name, an action, or a cause.\n\nProduce:\n1. Detection: when it was first noticed and by whom.\n2. Timeline of actions: each action taken, the time, and who reported taking it, in order.\n3. Communications: updates sent, when, and to whom.\n4. Restoration: when service was confirmed restored, per the messages.\n5. Open questions: gaps in the record the team will need to fill, marked [VERIFY].\n\nKeep it strictly factual and blameless. Do not attribute fault, do not state a root cause, and do not draw conclusions or recommend fixes. Those are for the team to decide in the review. This is preparation for the team's post-incident review, not its findings. Do not publish it.",
+    "pillars": {
+      "persona": "post-incident review assistant",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_039",
+    "title": "Change / maintenance notice",
+    "department": "IT",
+    "department_da": "IT & Drift",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "PIN: From it-service-desk.md (Change / Maintenance Communication Draft). Guardrail: draft from provided details only; no invented dates/impact; human approves before sending.",
+    "prompt": "Act as my IT communications assistant. Draft a clear, non-technical notification for end users about [planned change or maintenance window]. Use only the details I give you here: [paste window, impact, and actions]. Do not invent a date, a time, an impact level, or a contact. Where a detail is missing, leave a clearly marked placeholder like [INSERT WINDOW] or [VERIFY].\n\nStructure the notice as:\n1. What is happening and why, in plain language.\n2. When it happens (the window) and the expected impact on users.\n3. What users need to do, if anything.\n4. Who to contact for help.\n\nKeep the tone calm, plain, and reassuring. No jargon, no speculation, no promises about outcomes I have not stated. This is a draft for me to review and approve before it is sent. Do not send it or post it anywhere.",
+    "pillars": {
+      "persona": "IT communications assistant",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_040",
+    "title": "Outage status update",
+    "department": "IT",
+    "department_da": "IT & Drift",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From it-service-desk.md (Outage Communication Draft). Guardrail: no invented root cause or restoration time; draft only; human reviews before publishing.",
+    "prompt": "Act as my service-status communications assistant. Draft a status update about [system] being [degraded / unavailable]. Use only the facts I provide here: [paste what is known, any workaround, and the next update time]. Do not invent a root cause, a restoration time, or an impact figure. Where I have not given you something, leave a marked placeholder like [NEXT UPDATE TIME] or write [VERIFY].\n\nStructure the update as:\n1. What users are currently experiencing.\n2. What we know and what we are doing, drawn only from my notes.\n3. Workaround, if one exists in my notes.\n4. When the next update will be posted.\n\nKeep it plain, calm, and reassuring, with no speculation about the cause and no guesses at when it will be fixed. This is a draft for me to review before it is published. Do not publish it.",
+    "pillars": {
+      "persona": "service-status communications assistant",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_041",
+    "title": "Monthly service review prep",
+    "department": "IT",
+    "department_da": "IT & Drift",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From it-service-desk.md (SLA / Service Report Prep). Guardrail: gathers narrative context only; all SLA/availability metrics come from ITSM, never calculated.",
+    "prompt": "Act as my service-review assistant. For my [weekly / monthly] service review of [service], gather context from my emails and Teams. Work only from what is written there. Where something is not stated, write \"not found\" or [VERIFY], and never invent incident counts, ticket numbers, dates, or names.\n\nCompile, with sources:\n1. Major incidents and their reported impact, with dates.\n2. Changes that were implemented during the period.\n3. Recurring complaints or praise from users.\n4. Outstanding actions and who owns them.\n5. Anything unclear or contested, flagged as [VERIFY].\n\nDo not calculate or estimate SLA percentages, availability, mean-time-to-resolve, or any metric. The authoritative numbers come from the ITSM and monitoring tools, not from these messages; leave placeholders like [INSERT SLA FROM ITSM] where a metric belongs. This is context for me to build my report on and verify. Do not send it.",
+    "pillars": {
+      "persona": "service-review assistant",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_042",
+    "title": "Incident history search",
+    "department": "IT",
+    "department_da": "IT & Drift",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From it-service-desk.md (Incident History Search). Guardrail: research only; Copilot researches, IT verifies and acts; no live remediation.",
+    "prompt": "Search my emails and Teams for previous incidents related to [system or application] or [error type]. Compile: incident descriptions, root causes that were identified, resolutions that were applied, and any documented workarounds. Use only what the messages say, note where details are missing as [VERIFY], and do not invent fixes or causes. This is research for troubleshooting only. I will verify applicability to the current issue before taking any action.",
+    "pillars": {
+      "persona": "IT Service Manager / Systemarkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_043",
+    "title": "Doc currency check",
+    "department": "IT",
+    "department_da": "IT & Drift",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From it-service-desk.md (Technical Documentation Search). Guardrail: locates and dates docs only; IT verifies currency before relying on them.",
+    "prompt": "Find runbooks, SOPs, or technical documentation in SharePoint related to [system or process]. List each document with its title and location, the last update date if visible, and the topics it covers. Use only what you actually find, and mark anything you cannot confirm as [VERIFY] rather than guessing. I need this to check whether our documentation is current; I will verify each document before relying on it.",
+    "pillars": {
+      "persona": "IT Service Manager / Systemarkitekt",
+      "context": "Fremlagte rapporter, mødereferater og PowerPoint-slides i workspace.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_044",
+    "title": "Vendor support summary",
+    "department": "IT",
+    "department_da": "IT & Drift",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Microsoft 365 Copilot",
+    "description": "From it-service-desk.md (Vendor Support Summary). Guardrail: compiles correspondence only to prep an escalation; no invented ticket numbers or commitments.",
+    "prompt": "Search my emails for correspondence with [vendor] support about [issue or product]. Summarize: the issues reported, the vendor's responses and recommendations, any ticket numbers mentioned, and the current resolution status. Use only what the emails say, mark anything unstated as [VERIFY], and do not invent ticket numbers, dates, or commitments. I need this to prepare an escalation; it does not make any decision.",
+    "pillars": {
+      "persona": "IT Service Manager / Systemarkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_045",
+    "title": "Early Warning System",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Proactive risk management and issue prevention",
+    "prompt": "Predict which email topics are likely to become future problems based on patterns in the last 30 days. For each potential issue: 1) Issue description, 2) Warning indicators observed, 3) Likelihood score (1-10), 4) Potential impact if not addressed, 5) Recommended mitigation strategies, 6) Who should be involved in prevention, 7) Timeline for preventive action. Prioritize by risk score (likelihood × impact).",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_046",
+    "title": "Workload Forecast Generator",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Capacity planning and workload management",
+    "prompt": "Based on the last 60 days of emails, predict my workload for next month including: 1) Expected email volume by week, 2) Likely deadlines and time commitments, 3) Task clusters (related work items), 4) High-pressure weeks (crunch times), 5) Meetings and collaborative work load, 6) Personal bandwidth vs. expected demand. Suggest pacing strategy and workflow optimization recommendations to balance load.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_047",
+    "title": "360° Relationship Mapper",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Stakeholder relationship management",
+    "prompt": "Map communication volume and tone for each sender in the last 90 days. Categorize relationships as: 1) Supportive (advocates, helpers, collaborators), 2) Neutral (transactional, occasional), 3) Demanding (high-maintenance, urgent requests), 4) At-risk (declining engagement, tension, frustration). For each category, provide: Communication frequency, Average response time, Tone trends, Recommended relationship management strategy.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_048",
+    "title": "KPI and Commitment Extractor",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Goal tracking and OKR alignment",
+    "prompt": "Extract key goals, KPIs, and commitments implied or stated across all emails from this quarter. Build a proposed OKR list with: 1) Objective (what we're trying to achieve), 2) Key results (success measures), 3) Current status or progress mentioned, 4) Deadlines or target dates, 5) Stakeholders and owners, 6) Dependencies or blockers. Output as an Excel-ready OKR tracking sheet with columns for each element.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_049",
+    "title": "Pattern Miner for Operational Insights",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Operational excellence and process improvement",
+    "prompt": "Perform pattern mining on all emails received this month. Identify recurring: 1) Types of requests and their frequency, 2) Blockers preventing progress (categorized), 3) Delays and their root causes, 4) Risks mentioned across conversations, 5) Operational inefficiencies or process gaps, 6) Topics consuming most time/attention. Produce a root-cause analysis for top 3 issues and recommended improvements with expected impact.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_050",
+    "title": "Forecasting Model Builder",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Financial forecasting and planning",
+    "prompt": "Build a forecasting model for [METRIC] based on this historical data. Include: 1) Trend analysis and seasonality detection, 2) Forecast for next [3/6/12] months with confidence intervals, 3) Key assumptions underlying the forecast, 4) Factors that could change the forecast, 5) Sensitivity analysis (best case, worst case, most likely), 6) Recommended model formula and methodology, 7) Visualization of historical data vs. forecast. Explain model in business terms.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_051",
+    "title": "Dashboard Insight Generator",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Executive reporting and KPI tracking",
+    "prompt": "Create an executive dashboard from this data including: 1) Top 5 KPIs with current value, trend (↑↓), and vs. target, 2) Alert indicators for metrics off-track (red/yellow/green), 3) Summary of performance by category/region/product, 4) Key drivers of performance (what's working/not working), 5) Recommended focus areas for next period, 6) Visual layout optimized for at-a-glance understanding. Use conditional formatting and charts for easy interpretation.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_052",
+    "title": "Data Quality Auditor",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Data governance and data preparation",
+    "prompt": "Audit this dataset for quality issues: 1) Missing values (count and % by column), 2) Duplicates or inconsistencies, 3) Outliers that may be errors vs. legitimate, 4) Data type mismatches, 5) Formatting inconsistencies, 6) Referential integrity issues (if relational), 7) Recommended cleaning steps prioritized by impact. Create a data quality scorecard and cleaned dataset.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_053",
+    "title": "Data Storyteller",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Data analysis and business intelligence",
+    "prompt": "Analyze this dataset and tell the data story: 1) Key trends over time, 2) Notable outliers or anomalies with potential explanations, 3) Correlations or relationships between variables, 4) Segments or clusters in the data, 5) Unexpected findings, 6) Business implications of each insight, 7) Recommended actions based on analysis. Create visualizations for top 3 insights and provide narrative explanations suitable for presentation.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Overskuelig tabel med relevante kolonner og nøgletal.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_054",
+    "title": "Inbox Intelligence Officer",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Deep inbox analysis and strategic email management",
+    "prompt": "Analyze all emails I received in the last 30 days. Create a full intelligence briefing including: 1) Key actors and recurring senders, 2) Communication tone by sender (supportive, neutral, demanding), 3) Topic clusters and themes, 4) Unresolved threads requiring action, 5) Projects that appear across multiple emails, 6) Status score for each project (on track, at risk, blocked), 7) People I need to engage with more frequently. Format as an executive briefing.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_055",
+    "title": "Thread Dissection Surgeon",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Untangling complex email chains and driving resolution",
+    "prompt": "Dissect this messy email thread into: 1) What each person said (chronological summary), 2) Hidden assumptions each person is making, 3) Conflicts or disagreements (overt and subtle), 4) Stalled actions and why they're stuck, 5) Unanswered questions that need resolution, 6) Decisions that need to be made, 7) Recommended resolution plan, 8) Draft messaging to move the thread forward. Keep summary concise and actionable.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_056",
+    "title": "Escalation Radar Detector",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Early crisis detection and conflict prevention",
+    "prompt": "Scan the last 45 days of emails and detect: 1) Rising tensions or conflict indicators, 2) Missed deadlines and their follow-ups, 3) Requests repeated multiple times without resolution, 4) Unanswered critical questions, 5) Passive-aggressive or frustrated tone in messages, 6) Commitments made but not fulfilled. Flag messages that may require escalation and suggest the safest escalation path for each, including who to involve and messaging strategy.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_057",
+    "title": "Context Fusion Engine",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Comprehensive project or topic synthesis",
+    "prompt": "Fuse together all emails, attachments, and threads about [TOPIC] from the last [TIMEFRAME]. Produce: 1) Unified timeline of events and decisions, 2) All decisions made with date and decision-maker, 3) Requirements or scope changes over time, 4) Contradictions or conflicting information, 5) Missing information or gaps, 6) Current status and next steps, 7) Key stakeholders and their positions. Provide a 1-page briefing document.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_058",
+    "title": "Email Battle Plan Generator",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Strategic email prioritization and workload planning",
+    "prompt": "Based on the last 7 days of emails, generate a personal battle plan with: 1) Top 5 priorities ranked by urgency and impact, 2) Emerging threats or issues to watch, 3) Overdue tasks and their consequences, 4) Tasks with unclear ownership, 5) Tasks likely to escalate if not addressed, 6) Recommended action sequence with time estimates, 7) Delegation opportunities. Format as a tactical execution plan with timelines.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_059",
+    "title": "Board Presentation Builder",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Board presentations and strategic proposals",
+    "prompt": "Create a board-level presentation on [TOPIC] with: 1) Compelling opening slide with key message, 2) Situation analysis (current state, challenge, opportunity), 3) Strategic recommendation with supporting rationale, 4) Financial impact and business case, 5) Implementation approach and timeline, 6) Risk assessment and mitigation, 7) Decision required from board, 8) Appendix with supporting data. Use executive-appropriate visuals and limit text per slide. 10-12 slides total.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_060",
+    "title": "Training Deck Creator",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Training and enablement",
+    "prompt": "Create an engaging training presentation on [TOPIC] for [AUDIENCE]. Include: 1) Learning objectives (what attendees will know/do), 2) Key concepts with visual explanations, 3) Real-world examples and scenarios, 4) Interactive elements (polls, questions, exercises), 5) Do's and don'ts or best practices, 6) Knowledge check slides, 7) Resources and next steps, 8) Appendix with FAQs. Use adult learning principles and keep it interactive. 20-30 slides.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_061",
+    "title": "Data Visualization Optimizer",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Presentation design and data storytelling",
+    "prompt": "Transform this data-heavy presentation for maximum impact: 1) Replace text with visuals where possible, 2) Suggest best chart types for each dataset, 3) Add visual hierarchy and emphasis, 4) Create 'so what' statements for each insight, 5) Simplify complex slides (one message per slide), 6) Add executive summary slides, 7) Ensure color consistency and brand alignment. Prioritize clarity and memorability.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_062",
+    "title": "Sales Pitch Perfector",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Sales presentations and pitches",
+    "prompt": "Optimize this sales presentation for winning: 1) Stronger opening hook (problem/opportunity), 2) Clear value proposition (quantified benefits), 3) Social proof and success stories, 4) Competitive differentiation slide, 5) Visual product/solution demonstration, 6) Pricing slide with value anchoring, 7) Objection handling (anticipated concerns), 8) Strong call-to-action and next steps. Ensure flow builds to decision. 15-20 slides.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_063",
+    "title": "Meeting Prep Intelligence Pack",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Meeting preparation and context gathering",
+    "prompt": "Prepare me for my upcoming meeting with [PERSON/TEAM] about [TOPIC]. Based on recent emails, chats, and documents: 1) Background context and history, 2) Key issues or topics to discuss, 3) Their perspective and priorities, 4) My commitments or action items, 5) Open questions to address, 6) Potential concerns or objections, 7) Recommended talking points and approach, 8) Desired outcomes and success criteria. Format as a meeting prep brief.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_064",
+    "title": "Cross-Team Alignment Reporter",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Cross-functional collaboration and alignment",
+    "prompt": "Synthesize discussions from meetings with [TEAM A], [TEAM B], and [TEAM C] over the last month. Identify: 1) Shared goals and dependencies, 2) Conflicting priorities or approaches, 3) Gaps in communication or awareness, 4) Opportunities for collaboration, 5) Risks from misalignment, 6) Recommended sync points or forums, 7) Action plan for better alignment. Create an alignment dashboard for leadership.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_065",
+    "title": "Recurring Meeting Optimizer",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Meeting efficiency and optimization",
+    "prompt": "Analyze the last [4/8/12] recurring meetings for [MEETING NAME]. Provide: 1) Are we achieving meeting objectives?, 2) Time utilization (productive vs. unproductive), 3) Participation patterns (who speaks, who doesn't), 4) Recurring topics that should be resolved, 5) Topics better handled async or offline, 6) Suggested agenda improvements, 7) Recommended frequency and duration, 8) Who really needs to attend vs. optional. Optimize for effectiveness.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_066",
+    "title": "Catch-Up Summarizer",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Meeting catch-up for missed attendees",
+    "prompt": "I missed the meeting on [TOPIC]. Provide a comprehensive catch-up including: 1) Meeting summary (key discussion points), 2) Decisions made and rationale, 3) Action items assigned (who/what/when), 4) Open questions or unresolved issues, 5) Next steps and timeline, 6) What I need to do as a result, 7) Key quotes or important statements, 8) Recommended follow-up actions for me. Make it thorough enough to feel like I attended.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_067",
+    "title": "Meeting Notes to Action Plan Converter",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Meeting follow-up and accountability",
+    "prompt": "Convert these meeting notes into a structured action plan: 1) Meeting summary (2-3 sentences), 2) Decisions made with context, 3) Action items table (Task | Owner | Deadline | Dependencies | Status), 4) Open questions requiring follow-up, 5) Risks or blockers identified, 6) Next meeting agenda items. Format for easy distribution to attendees.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Overskuelig tabel med relevante kolonner og nøgletal.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_068",
+    "title": "Executive Brief Generator",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Executive communication and decision support",
+    "prompt": "Create an executive brief on [TOPIC] formatted as follows: 1) Executive Summary (3-4 sentences), 2) Background and Context (1 paragraph), 3) Key Findings or Analysis (3-5 bullet points), 4) Implications and Impact, 5) Recommendations (ranked by priority), 6) Next Steps with owners and deadlines, 7) Appendix (supporting data). Length: 2 pages max. Tone: professional, concise, data-driven. Optimize for C-suite readership.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_069",
+    "title": "Proposal Win Strategy Enhancer",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Sales proposals and business development",
+    "prompt": "Review this proposal and enhance it for winning: 1) Strengthen value proposition (client benefits), 2) Add compelling differentiators vs. competition, 3) Include risk mitigation statements, 4) Improve ROI and business case section, 5) Add social proof or success stories, 6) Enhance executive summary for decision-makers, 7) Refine pricing presentation for clarity and value perception. Maintain original structure but make it more persuasive.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_070",
+    "title": "Technical Doc Simplifier",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot (Power User)",
+    "description": "Technical communication and stakeholder alignment",
+    "prompt": "Simplify this technical document for [AUDIENCE: executives/non-technical stakeholders/customers]. Maintain accuracy while: 1) Removing jargon or explaining it, 2) Using analogies for complex concepts, 3) Adding executive summary upfront, 4) Highlighting business impact vs. technical details, 5) Creating visual descriptions for data/processes, 6) Adding 'Why this matters' sections. Output in [FORMAT: summary/full rewrite/annotated version].",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Fremlagte rapporter, mødereferater og PowerPoint-slides i workspace.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_071",
+    "title": "The Three-Day Triage",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Rapid inbox prioritization after a busy period or Monday morning catch-up",
+    "prompt": "Triage everything in my inbox from the last 3 days. Sort into three groups: (1) Needs my reply today — flag each with a one-line summary of what's being asked. (2) Needs my attention this week but not urgent — list with subject and sender. (3) No action required — archive or move to a Reading folder. Show me the plan before applying any moves.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_072",
+    "title": "The Daily Priority Commander",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Start-of-day inbox focus — surface what actually matters before anything else",
+    "prompt": "Scan my inbox and identify everything that needs a response from me today. Rank by urgency: (1) Blocking someone else's work — queue a brief holding reply for each so they know I've seen it, (2) Time-sensitive decision required — draft my response options so I can choose and send, (3) Routine reply needed — list with a suggested one-line reply I can approve. Show all drafts before anything is sent.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_073",
+    "title": "The High-Priority Auto-Tagger",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Create permanent rules so future important emails surface automatically",
+    "prompt": "Create inbox rules to automatically flag as high priority: (1) Emails from my direct manager or skip-level, (2) Emails where I am the only recipient in the To field, (3) Emails with \"urgent\", \"deadline\", \"blocking\", \"escalation\", or \"action required\" in the subject line, (4) Emails from external clients or partners I've corresponded with in the last 30 days. Show me the proposed rules before creating them, and let me edit the sender list if needed.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_074",
+    "title": "The Non-Responder Scanner",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Recover stalled threads — surface everything that went quiet after you sent it",
+    "prompt": "Scan my sent emails from the last 10 days. Find every email I sent that has not received a reply. Group them by urgency: (1) Blocking a decision or deliverable, (2) Time-sensitive but not yet critical, (3) Routine follow-up. For each email in groups 1 and 2, draft a short, professional follow-up. Keep the tone warm — assume good intent, not negligence. Show drafts before sending.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_075",
+    "title": "The Inbox Organizer",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Create a smart folder structure based on how emails already cluster in your inbox",
+    "prompt": "Analyze my inbox from the last 45 days. Identify the top 5–7 recurring categories of emails (e.g. weekly reports, newsletters, internal HR comms, project updates, vendor invoices). For each category, propose an inbox rule that routes future emails to a dedicated folder. Show me the proposed folder names and routing logic before creating anything. I'll confirm, adjust, or reject each rule individually.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_076",
+    "title": "The Newsletter Declutterer",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Surgically remove newsletter noise without losing content you actually read",
+    "prompt": "Identify all newsletters, marketing emails, and automated digests that landed in my inbox in the last 30 days. Group them into: (1) I actually open these — create a rule to route future emails to a \"Reading\" folder so they're available when I want them, (2) I never open these — create delete rules so they never reach my inbox. Show me the groupings before creating any rules. Don't touch emails from real people or internal senders.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_077",
+    "title": "The Reply-All Blocker",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Stop reply-all threads from flooding your inbox while staying in the loop",
+    "prompt": "Find email threads from the last 30 days where I was CC'd and the thread has more than 10 replies, and I have not replied myself. These are likely reply-all chains I don't need to monitor closely. Create rules to route future emails in these threads to a \"CC — Low Priority\" folder rather than my main inbox. Show me the proposed threads and rules before applying anything. Flag any thread where I'm expected to act eventually.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_078",
+    "title": "The Project Auto-Tagger",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Keep project emails visible at a glance — automatically color-code by project as they arrive",
+    "prompt": "Create inbox rules that automatically apply Outlook color categories to incoming emails by project. For each project, I'll specify the category color and the matching criteria: [list each project, e.g., \"Project Alpha → Blue — match subject keywords: Alpha, Phase 2; Client X → Green — match sender domain: clientx.com; Budget Review → Yellow — match subject keywords: budget, Q3 forecast\"]. After creating the rules, apply them retroactively to all emails in my inbox from the last 60 days. Show me the rule definitions and the match count per project before applying anything.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_079",
+    "title": "The Inbox Color-Code System",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Make action status visible at a glance — apply a consistent category system across your existing inbox",
+    "prompt": "Apply Outlook categories to emails in my inbox from the last 30 days based on action status: Red = I need to reply and haven't yet, Yellow = I'm waiting on a reply from someone else, Green = informational — read but no action needed, Purple = meeting or calendar-related. Show me the proposed categorization and the count per color before applying. Flag any email where you're unsure which category fits — I'll decide those manually.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_080",
+    "title": "The VIP Contact Flagger",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Ensure emails from your most important contacts are always flagged for follow-up, even if they slip through triage",
+    "prompt": "Create an inbox rule that automatically flags for follow-up any email that arrives from: [list names or domains — e.g., \"my direct manager, skip-level, and these external contacts: name@domain.com, @clientdomain.com\"]. Then scan my inbox from the last 14 days and flag any emails from these contacts that aren't already flagged. Show me the rule and the list of emails it would flag before applying anything.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_081",
+    "title": "The Vacation Recovery Commander",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Return from time off without spending half a day triaging email",
+    "prompt": "I've been out of office for [X days / from DATE to DATE]. Triage everything that arrived while I was away. Sort into: (1) Needs my response today — summarize what's being asked and draft a brief reply, (2) Was resolved without me — archive, (3) Should read but no action needed — move to a \"Return Reading\" folder, (4) Can be deleted. Show me the plan and all draft replies before anything is sent or moved.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_082",
+    "title": "The Context-Aware Reply Builder",
+    "department": "Outlook Action",
+    "department_da": "Outlook & Mail-styring",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "Copilot i Outlook",
+    "description": "Write replies that reference history, project context, and past commitments — not just the latest email",
+    "prompt": "I need to reply to the most recent email from [NAME] about [TOPIC or PROJECT]. Search our full email history on this topic from the last 90 days. Extract: what I've already committed to, what's still open, any deadlines I mentioned, and the tone of our recent exchanges. Draft a reply that addresses their latest message, references the relevant commitments, and moves the conversation forward — under 200 words. Queue it as a draft in my Drafts folder so I can review, edit, and send from there.",
+    "pillars": {
+      "persona": "AI & M365 Faglig Assistent",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_083",
+    "title": "Leadership Copilot Guardrails",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Essential guardrails for leadership roles using Copilot. Understand the boundaries between AI assistance and human accountability.",
+    "prompt": "## When NOT to Use Copilot for Leadership & Management\n\n**EXECUTIVES — NEVER use Copilot for:**\n- Strategic decisions\n- Personnel decisions\n- Financial commitments\n- Legal/compliance sign-offs\n- Crisis management\n- Board governance\n- Confidential negotiations\n- M&A decisions\n\n**PROJECT MANAGERS — NEVER use Copilot for:**\n- Scope change approval\n- Budget authorization\n- Schedule baseline approval\n- Contract decisions\n- Safety decisions\n- Performance reviews\n- Final project sign-off\n- Client commitments\n\n**COST CONTROL — NEVER use Copilot for:**\n- Cost calculations (use Excel/ERP)\n- Earned value metrics\n- Forecast generation\n- Budget approval\n- Change order approval\n- Financial sign-off\n- Invoice approval\n- Cash flow projections\n\n**Golden Rules:**\n- Executives: \"Copilot informs — leaders decide\"\n- Project Managers: \"Copilot aggregates — PMs lead\"\n- Cost Control: \"Copilot narrates — controllers calculate\"\n\n**What Copilot IS good for:**\n- Synthesizing communications\n- Preparing for meetings\n- Drafting initial content\n- Finding historical context\n- Surfacing risks from correspondence",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Tilknyttede regneark, ERP-udtræk eller GL-posteringer i organisationen.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_084",
+    "title": "Budget Meeting Preparation",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Enter budget reviews prepared with full context on recent cost discussions and concerns.",
+    "prompt": "I have a budget review meeting for [Project Name] with [stakeholder]. Based on recent correspondence:\n- What cost concerns have been raised recently?\n- Are there any pending change requests?\n- What has been communicated about forecast trends?\n- Any commitments or approvals I should be aware of?\n\nPrepare as briefing notes for my preparation.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_085",
+    "title": "Change Order History",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Track informal change order discussions and ensure they are captured in formal systems.",
+    "prompt": "Find all emails and documents related to change orders on [Project Name] from [date range]. For each change order mentioned:\n- Change order reference (if stated)\n- Brief description of scope change\n- Status discussed (pending, approved, rejected)\n- Any cost/schedule impact mentioned\n\nI need this to cross-reference against our formal change register.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_086",
+    "title": "Client Communication Draft - PM",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Draft client communications quickly while ensuring all relevant information is captured and tone is appropriate.",
+    "prompt": "Draft a professional email to [Client Contact] providing a [weekly/monthly] update on [Project Name]. Base the content on my recent project correspondence. Include:\n- Summary of progress\n- Key achievements\n- Any items requiring client attention or decision\n- Upcoming milestones\n\nKeep tone factual and professional. Mark areas where I need to add specifics or verify accuracy before sending.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_087",
+    "title": "Cost Variance Narrative",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Draft variance explanations based on team discussions. Numbers must always come from official cost systems.",
+    "prompt": "You are assisting a cost controller. Search my emails and Teams messages for discussions about cost variances on [Project Name]. Summarize:\n- What variance explanations have been provided\n- Which cost codes or areas are mentioned as over/under\n- What corrective actions were discussed\n- Any forecast concerns raised\n\nThis is for drafting the narrative section of the cost report. I will add the actual numbers from our cost system.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_088",
+    "title": "Decision Context Research",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Gather comprehensive context before making important decisions without scheduling multiple briefing meetings.",
+    "prompt": "I need to make a decision about [topic]. Search for:\n- Previous discussions about this topic\n- Options that have been considered\n- Recommendations from my team\n- Risks and concerns raised\n\nCompile background context for my decision-making.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_089",
+    "title": "Decision Log Research",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Reconstruct decision history from communications when formal records are incomplete or need verification.",
+    "prompt": "Search my emails and Teams for decisions made on [Project Name] regarding [topic area, e.g., \"design freeze\" or \"contractor selection\"]. For each decision found:\n- What was decided\n- When (approximately)\n- Who was involved\n- Any conditions or follow-up actions mentioned\n\nI need this to reconstruct the decision trail. Will verify against formal records.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_090",
+    "title": "Benchmarking Data Search",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Find historical cost data for benchmarking new estimates. Requires validation for current applicability.",
+    "prompt": "Search SharePoint and my files for cost data, estimates, or lessons learned from similar past projects to [current project type]. List:\n- Project names/references found\n- Types of cost data available\n- Any benchmark metrics mentioned\n\nThis is research only — data requires validation before use.\n\nEXPERIMENTAL: Historical data may be in various formats or contexts. Always validate applicability before using for estimates.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_091",
+    "title": "Executive Communication Draft",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Quickly draft executive communications while maintaining appropriate tone and completeness.",
+    "prompt": "Draft a communication to [audience: leadership team/all employees/board] about [topic]. Based on similar communications in my history:\n- Use appropriate executive tone\n- Be clear and direct\n- Include key message points\n- Mark areas needing specific details\n\nThis is a draft for my review and editing.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_092",
+    "title": "Leadership Meeting Preparation",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Walk into leadership meetings fully prepared with context on all likely discussion topics and pending decisions.",
+    "prompt": "You are assisting an executive. I have a [board/leadership/steering committee] meeting tomorrow. Based on my emails and calendar from the past two weeks:\n- What are the key topics likely to be discussed?\n- What issues have escalated to my attention?\n- What decisions am I expected to make?\n- Any risks or concerns raised by my team?\n\nPrepare briefing notes for my review. This is for my preparation only.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_093",
+    "title": "Lessons Learned Discovery - PM",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Jumpstart lessons learned by identifying patterns from project communications. Requires team validation.",
+    "prompt": "Analyze correspondence throughout [Project Name] and identify recurring themes:\n- Successful approaches worth repeating\n- Challenges that recurred\n- Stakeholder feedback patterns\n- Process improvements suggested\n\nCompile as initial input for lessons learned. Requires team workshop to validate.\n\nEXPERIMENTAL: May lack context on what was actually implemented vs. just discussed. Always validate with the project team.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_094",
+    "title": "Organizational Pulse Check",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Get informal visibility into organizational sentiment. Always supplement with formal feedback mechanisms.",
+    "prompt": "Based on communications across my inbox and Teams, identify emerging themes about organizational concerns or opportunities that I should be aware of:\n- What are people talking about most?\n- Any recurring frustrations?\n- Opportunities being suggested?\n- Changes in tone or sentiment?\n\nThis is informal intelligence — not a substitute for formal feedback channels.\n\nEXPERIMENTAL: Email sentiment analysis may miss important context. Use proper employee engagement surveys for formal insights.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_095",
+    "title": "Portfolio Overview",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Get a quick pulse on your portfolio without reading dozens of individual project updates.",
+    "prompt": "Summarize the status of projects in my portfolio based on recent correspondence:\n- Which projects have reported good progress?\n- Where are concerns being raised?\n- What resources or decisions have been requested?\n- Any client or stakeholder escalations?\n\nFormat as an executive summary. I will verify against official reports.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Fremlagte rapporter, mødereferater og PowerPoint-slides i workspace.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_096",
+    "title": "Weekly Status Synthesis",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Synthesize a week of scattered communications into a coherent status report. Use weekly before stakeholder reporting.",
+    "prompt": "You are assisting a project manager. Review all my emails, Teams messages, and meeting notes from the past week related to [Project Name]. Provide:\n\n1. Progress highlights — what got done\n2. Key issues raised — with who raised them\n3. Decisions made or pending\n4. Risks or concerns mentioned\n5. Client/stakeholder feedback\n6. Actions assigned and their status\n\nFormat as a draft status report. Flag areas where information seems incomplete or conflicting. I will verify and finalize.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Nummereret trin-for-trin disposition med klare overskrifter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_097",
+    "title": "Risk and Issue Surfacing",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Proactively surface risks and issues from team communications before they escalate.",
+    "prompt": "Review project correspondence for [Project Name] from the past 2 weeks. Identify mentions of:\n- Problems, issues, or blockers\n- Schedule or cost concerns\n- Quality or safety worries\n- Resource constraints\n- Stakeholder escalations\n\nSummarize each with context. I will assess severity and add to risk register as appropriate.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_098",
+    "title": "Stakeholder Meeting Preparation",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Prepare for important stakeholder meetings with full context on the relationship history and open items.",
+    "prompt": "I'm meeting with [Client Executive/Board Member/Partner] tomorrow about [topic]. Based on recent correspondence:\n- What topics have they raised recently?\n- What is the current state of our relationship?\n- Are there any open issues or commitments?\n- What outcomes might they expect from this meeting?\n\nHelp me prepare for a productive discussion.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "1-sides executive pre-read med ledelsesresumé og åbne spørgsmål.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_099",
+    "title": "Stakeholder Meeting Prep - PM",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Enter stakeholder meetings prepared to address their specific concerns and highlight relevant achievements.",
+    "prompt": "I have a meeting with [Client/Stakeholder Name] about [Project Name] tomorrow. Based on recent correspondence:\n- What topics are they likely to raise?\n- What questions have they asked recently that may need follow-up?\n- Are there any unresolved issues or complaints?\n- What positive developments can I highlight?\n\nPrepare briefing notes. This is for my preparation only.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Virksomhedens arbejdsdata, seneste mails, Teams-samtaler og SharePoint-dokumenter.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_100",
+    "title": "Invoice Dispute Research",
+    "department": "Project Leadership",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Copilot for Ledelse & PM",
+    "description": "Gather invoice dispute history before vendor reconciliation meetings.",
+    "prompt": "Search for emails related to [Vendor Name] invoices on [Project Name]. Compile:\n- Disputes or queries raised\n- Resolutions discussed\n- Pending items mentioned\n- Any agreed actions\n\nThis is research to prepare for vendor reconciliation.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og mødenoter om emnet.",
+      "format": "Struktureret overblik i punktopstilling med tydelige handlingspunkter.",
+      "guardrails": "Arbejd kun ud fra faktiske oplysninger i materialet. Opfind aldrig tal eller datoer. Marker ukendte værdier med [VERIFICÉR]."
+    }
+  }
+]

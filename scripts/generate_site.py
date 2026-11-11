@@ -312,7 +312,7 @@ def main():
     dist_dir = ROOT / "dist"
     if dist_dir.exists():
         import shutil
-        for fname in ["updates.json", "version.json", "index.html", "manifest.json", "icon.svg", "sw.js", "CNAME"]:
+        for fname in ["updates.json", "version.json", "prompts.json", "index.html", "manifest.json", "icon.svg", "sw.js", "CNAME"]:
             src = ROOT / fname
             if src.exists():
                 shutil.copy2(src, dist_dir / fname)
