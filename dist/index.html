@@ -1336,6 +1336,12 @@
       display: flex;
       gap: 10px;
       padding: 8px 16px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .tabs-inner::-webkit-scrollbar {
+      display: none;
     }
     .main-tab-btn {
       display: inline-flex;
@@ -1349,6 +1355,8 @@
       font-size: 0.92rem;
       font-weight: 600;
       cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
       transition: all 0.2s ease;
     }
     .main-tab-btn:hover {
@@ -1550,7 +1558,8 @@
     .prompt-actions-row {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
+      flex-wrap: wrap;
       gap: 8px;
     }
     .btn-copy-prompt {
@@ -1618,6 +1627,104 @@
     }
     .pillar-val {
       color: var(--text-muted);
+    }
+
+    /* Mobile Enhancements for Skills & Prompts */
+    @media (max-width: 640px) {
+      .tabs-inner {
+        padding: 6px 12px;
+        gap: 6px;
+      }
+      .main-tab-btn {
+        padding: 7px 12px;
+        font-size: 0.82rem;
+      }
+      .tab-badge {
+        padding: 1px 6px;
+        font-size: 0.7rem;
+      }
+      .pillars-hero-card {
+        padding: 16px 14px;
+        margin-bottom: 16px;
+      }
+      .pillars-hero-card h2 {
+        font-size: 1.15rem;
+        line-height: 1.3;
+      }
+      .pillars-hero-card p.subtitle {
+        font-size: 0.82rem;
+        line-height: 1.4;
+        margin-bottom: 12px;
+      }
+      .pillars-grid {
+        gap: 8px;
+        grid-template-columns: 1fr;
+      }
+      .pillar-item {
+        padding: 10px;
+        gap: 10px;
+      }
+      .pillar-num {
+        width: 24px;
+        height: 24px;
+        font-size: 0.75rem;
+      }
+      .pillar-content h4 {
+        font-size: 0.82rem;
+      }
+      .pillar-content p {
+        font-size: 0.75rem;
+      }
+      .pillars-hero-card a.btn-copy-prompt {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .prompts-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .prompt-card {
+        padding: 14px;
+        gap: 10px;
+      }
+      .prompt-title {
+        font-size: 0.98rem;
+        word-break: break-word;
+      }
+      .prompt-desc {
+        font-size: 0.82rem;
+        line-height: 1.4;
+      }
+      .prompt-box {
+        padding: 10px 12px;
+        font-size: 0.75rem;
+        max-height: 140px;
+        word-break: break-word;
+      }
+      .prompt-actions-row {
+        gap: 6px;
+      }
+      .prompt-actions-row .btn-copy-prompt {
+        flex: 1 1 calc(50% - 4px);
+        min-width: 110px;
+        padding: 8px 10px;
+        font-size: 0.78rem;
+        justify-content: center;
+        text-align: center;
+      }
+      .prompt-actions-row .btn-toggle-pillars {
+        flex: 1 1 100%;
+        padding: 7px 10px;
+        font-size: 0.78rem;
+        justify-content: center;
+        text-align: center;
+      }
+      .chip {
+        padding: 6px 12px;
+        font-size: 0.82rem;
+      }
     }
   </style>
 
