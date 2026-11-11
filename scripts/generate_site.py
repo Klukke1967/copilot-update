@@ -312,10 +312,16 @@ def main():
     dist_dir = ROOT / "dist"
     if dist_dir.exists():
         import shutil
-        for fname in ["updates.json", "version.json", "prompts.json", "index.html", "manifest.json", "icon.svg", "sw.js", "CNAME"]:
+        for fname in ["updates.json", "version.json", "prompts.json", "skills.json", "skills.zip", "index.html", "manifest.json", "icon.svg", "sw.js", "CNAME"]:
             src = ROOT / fname
             if src.exists():
                 shutil.copy2(src, dist_dir / fname)
+        # Synkroniser hele skills/ mappen
+        if (ROOT / "skills").exists():
+            dest_skills = dist_dir / "skills"
+            if dest_skills.exists():
+                shutil.rmtree(dest_skills)
+            shutil.copytree(ROOT / "skills", dest_skills)
         print("Synkroniseret filer til dist/")
 
 if __name__ == "__main__":

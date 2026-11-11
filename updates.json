@@ -33,6 +33,135 @@
     "tldr_da": "Over 20.000 veteraner og servicemedlemmer har klargjort et gratis år med ChatGPT Plus, som de bruger til at forberede sig på deres civile karrierer."
   },
   {
+    "id": "chatgpt_227e6660",
+    "title": "Building with GPT-Live and Image Generation | DevDay 2026",
+    "link": "https://www.youtube.com/watch?v=jDxKzlGLCas",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T00:24:08Z",
+    "display_date": "11. nov. 2026",
+    "summary": "See GPT-Live brainstorm, play games, and create images while coordinating work in the background. Learn to add voice to agents and design for delegation, latency, interruptions, an...",
+    "thumbnail": "https://img.youtube.com/vi/jDxKzlGLCas/hqdefault.jpg",
+    "tldr_da": "På DevDay 2026 præsenterer OpenAI GPT-Live, en teknologi der tillader brainstorming, spilspil, og billedeoprettelse, samtidig med at den koordinerer arbejde i baggrunden. Se demonstrationer af, hvordan man tilføjer stemme til agenter og designe systemer til delegation, for"
+  },
+  {
+    "id": "chatgpt_5450c898",
+    "title": "Build What’s Next on the ChatGPT Platform with Plugins | DevDay 2026",
+    "link": "https://www.youtube.com/watch?v=pIW_8VyvCuQ",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T00:24:08Z",
+    "display_date": "11. nov. 2026",
+    "summary": "Bring your tools, knowledge, and interfaces into ChatGPT and Codex with plugin extensions. Through live demos, learn how to turn an idea into a useful experience, share it, and rea...",
+    "thumbnail": "https://img.youtube.com/vi/pIW_8VyvCuQ/hqdefault.jpg",
+    "tldr_da": "Videodemonstration fra OpenAI med fokus på nye modelfunktioner og problemløsning med ChatGPT."
+  },
+  {
+    "id": "chatgpt_ee42de0c",
+    "title": "Sites and the Next Generation of Web Apps | DevDay 2026",
+    "link": "https://www.youtube.com/watch?v=QRm7VNMnurA",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T00:24:07Z",
+    "display_date": "11. nov. 2026",
+    "summary": "Turn an idea into an interactive web experience with Astra, ChatGPT Sites, and WebMCP. Learn how to build new kinds of interfaces alongside your colleagues and agents.",
+    "thumbnail": "https://img.youtube.com/vi/QRm7VNMnurA/hqdefault.jpg",
+    "tldr_da": "Lær at omsætte ideer til interaktive weboplevelser med Astra, ChatGPT Sites og WebMCP. Del dydebegreb om nye webapplikationer med kolleger og intelligente agenters støtte."
+  },
+  {
+    "id": "chatgpt_85cb5fec",
+    "title": "What Will You Build With Coding Agents That Don’t Quit? | DevDay 2026",
+    "link": "https://www.youtube.com/watch?v=U1IVZy9FhVQ",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T00:24:07Z",
+    "display_date": "11. nov. 2026",
+    "summary": "Learn from a Codex run that spent over 1,000 hours keeping builds and tests passing. Explore how to choose recurring tasks, improve feedback, manage token budgets, and decide when...",
+    "thumbnail": "https://img.youtube.com/vi/U1IVZy9FhVQ/hqdefault.jpg",
+    "tldr_da": "I OpenAI's YouTube-video fra DevDay 2026 beskrives en Codex-runde, der over 1.000 timer har opretholdt passende bygge- og testprocedurer. Videoen handler om at vælge gentagne opgaver, forbedre feedback, administrere tokenbudgetter og beslutte tidspunkter for handlinger."
+  },
+  {
+    "id": "chatgpt_9a6badb3",
+    "title": "Harness-as-a-Service: Building with the Agents API | DevDay 2026",
+    "link": "https://www.youtube.com/watch?v=b7l_Dhe1h8M",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T00:24:07Z",
+    "display_date": "11. nov. 2026",
+    "summary": "Build with the Codex harness through the Agents API. Learn how to run agents in your environment, keep long-running tasks going, and understand which infrastructure OpenAI manages.",
+    "thumbnail": "https://img.youtube.com/vi/b7l_Dhe1h8M/hqdefault.jpg",
+    "tldr_da": "På DevDay 2026 præsenteres for, hvordan man bruger OpenAI's Agents API til at bygge på Codex-træk, kørere agenter i sin egen miljø og holder langvarige opgaver i live, mens man forstår hvilket infrastruktur OpenAI administrerer."
+  },
+  {
+    "id": "chatgpt_c0c23dba",
+    "title": "Codex Security: From Vulnerability to Verified Fix | DevDay 2026",
+    "link": "https://www.youtube.com/watch?v=gUQN7juxvVI",
+    "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T00:24:07Z",
+    "display_date": "11. nov. 2026",
+    "summary": "Find and fix vulnerabilities with OpenAI’s cyber models and open-source CLI and SDK. Learn to scan large codebases, catch issues in pull requests, and verify fixes, drawing on Open...",
+    "thumbnail": "https://img.youtube.com/vi/gUQN7juxvVI/hqdefault.jpg",
+    "tldr_da": "OpenAI præsenterer cybermodeller, CLI og SDK til at identificere og rette op på sikkerhedsrisici i kodesetninger, scanne store kodesamlinger og kontrollere rettelser i pull requests."
+  },
+  {
+    "id": "chatgpt_74f96650",
+    "title": "What Comes After Loops?: Deep Dive Into Agentic Architecture | DevDay 2026",
+    "link": "https://www.youtube.com/watch?v=nAubbmlhPfI",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T00:24:07Z",
+    "display_date": "11. nov. 2026",
+    "summary": "Trace the evolution from simple agent loops to collaborating agents. Explore the design choices and model advances behind that shift, and take a closer look at what comes next.",
+    "thumbnail": "https://img.youtube.com/vi/nAubbmlhPfI/hqdefault.jpg",
+    "tldr_da": "Videoen fra DevDay 2026 på YouTube af OpenAI følger evolutionen fra enkelte agentloop til samarbejdende agenter og undersøger fremtidige designvalg og modeludviklinger."
+  },
+  {
+    "id": "chatgpt_45882204",
+    "title": "Answering your questions about GPT-Live",
+    "link": "https://www.youtube.com/watch?v=5YXlrzC_RYE",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-10T20:10:08Z",
+    "display_date": "10. nov. 2026",
+    "summary": "We’re answering the internet’s questions about GPT-Live, starting with how it’s different from earlier voice models and what developers are using it for. Already building with GPT-...",
+    "thumbnail": "https://img.youtube.com/vi/5YXlrzC_RYE/hqdefault.jpg",
+    "tldr_da": "OpenAI besvarer internettets spørgsmål om GPT-Live, herunder hvordan det forskelser fra tidligere lydmodeller og hvilke udviklere bruger det til."
+  },
+  {
     "id": "chatgpt_bccf8a14",
     "title": "Introducing Businesses in ChatGPT in beta",
     "link": "https://www.youtube.com/watch?v=Z9k5oI3Paoc",
