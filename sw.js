@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ai-hub-v2';
+const CACHE_NAME = 'ai-hub-v3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
