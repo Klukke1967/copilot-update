@@ -1609,7 +1609,7 @@
   <!-- Header -->
   <header>
     <div class="header-container">
-      <div class="brand" onclick="filterBy('all')">
+      <div class="brand" onclick="goToFrontpage()" style="cursor:pointer;" title="Gå til forsiden">
         <div class="brand-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
@@ -3012,6 +3012,13 @@
     // ==========================================
     // PROMPTS HUB LOGIC
     // ==========================================
+    function goToFrontpage() {
+      switchMainTab('news');
+      filterBy('all');
+      clearSearch();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     function switchMainTab(tab) {
       currentMainTab = tab;
       if (tab === 'prompts') {
