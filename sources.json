@@ -37,6 +37,12 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwAnu01qlnVg1Ai2AbtTMaA"
     },
     {
+      "name": "Scott Brant - Your365Coach (YouTube)",
+      "category": "copilot",
+      "type": "youtube",
+      "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-Iu-wRWwWX8NjVRxDnW8JA"
+    },
+    {
       "name": "Anthropic News (Claude)",
       "category": "claude",
       "type": "article",

@@ -99,6 +99,19 @@ def format_date_da(dt: datetime) -> str:
     month_str = DANISH_MONTHS[dt.month - 1]
     return f"{dt.day}. {month_str} {dt.year}"
 
+def fetch_url_with_retry(url: str, max_retries: int = 5) -> bytes:
+    last_err = None
+    for attempt in range(max_retries):
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                if resp.status == 200:
+                    return resp.read()
+        except Exception as e:
+            last_err = e
+            time.sleep(0.4 * (attempt + 1))
+    raise last_err or Exception(f"Kunne ikke hente {url}")
+
 def build_fallback_tldr(title: str, summary: str, cat: str, source: str, tags: list) -> str:
     t_lower = title.lower()
     s_lower = summary.lower()
@@ -192,61 +205,74 @@ def main():
 
         print(f"Henter {name} ({cat})...")
         try:
-            req = urllib.request.Request(feed_url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=12) as resp:
-                content = resp.read()
-                feed = feedparser.parse(content)
+            content = fetch_url_with_retry(feed_url, max_retries=5)
+            feed = feedparser.parse(content)
 
-                entries = feed.entries[:15]
-                for e in entries:
-                    link = getattr(e, "link", "").strip()
-                    title = getattr(e, "title", "").strip()
-                    if not link or not title:
-                        continue
+            entries = feed.entries[:15]
+            for e in entries:
+                link = getattr(e, "link", "").strip()
+                title = getattr(e, "title", "").strip()
+                if not link or not title:
+                    continue
 
-                    # Deduplication
-                    norm_link = normalize_link(link)
-                    if norm_link in seen_links:
-                        continue
-                    seen_links.add(norm_link)
+                # Deduplication
+                norm_link = normalize_link(link)
+                if norm_link in seen_links:
+                    continue
+                seen_links.add(norm_link)
 
-                    # Date parsing
-                    parsed_time = getattr(e, "published_parsed", None) or getattr(e, "updated_parsed", None)
-                    if parsed_time:
-                        dt = datetime.fromtimestamp(time.mktime(parsed_time), tz=timezone.utc)
-                    else:
-                        dt = datetime.now(timezone.utc)
+                # Date parsing
+                parsed_time = getattr(e, "published_parsed", None) or getattr(e, "updated_parsed", None)
+                if parsed_time:
+                    dt = datetime.fromtimestamp(time.mktime(parsed_time), tz=timezone.utc)
+                else:
+                    dt = datetime.now(timezone.utc)
 
-                    iso_date = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
-                    formatted_date = format_date_da(dt)
+                iso_date = dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+                formatted_date = format_date_da(dt)
 
-                    # Summary & thumbnail
-                    raw_summary = getattr(e, "summary", "") or getattr(e, "description", "")
-                    summary = clean_text(raw_summary)
+                # Summary & thumbnail
+                raw_summary = getattr(e, "summary", "") or getattr(e, "description", "")
+                summary = clean_text(raw_summary)
 
-                    is_youtube = ("youtube.com" in link) or ("youtu.be" in link) or (item_type == "youtube")
-                    thumb = extract_youtube_thumb(link) if is_youtube else ""
-                    tags = classify_tags(title, summary, cat, name)
-                    item_hash = hashlib.md5(norm_link.encode("utf-8")).hexdigest()[:8]
+                is_youtube = ("youtube.com" in link) or ("youtu.be" in link) or (item_type == "youtube")
+                thumb = extract_youtube_thumb(link) if is_youtube else ""
+                tags = classify_tags(title, summary, cat, name)
+                item_hash = hashlib.md5(norm_link.encode("utf-8")).hexdigest()[:8]
 
-                    all_items.append({
-                        "id": f"{cat}_{item_hash}",
-                        "title": title,
-                        "link": link,
-                        "category": cat,
-                        "tags": tags,
-                        "source": name,
-                        "type": "youtube" if is_youtube else "article",
-                        "published_at": iso_date,
-                        "display_date": formatted_date,
-                        "summary": summary,
-                        "thumbnail": thumb
-                    })
+                all_items.append({
+                    "id": f"{cat}_{item_hash}",
+                    "title": title,
+                    "link": link,
+                    "category": cat,
+                    "tags": tags,
+                    "source": name,
+                    "type": "youtube" if is_youtube else "article",
+                    "published_at": iso_date,
+                    "display_date": formatted_date,
+                    "summary": summary,
+                    "thumbnail": thumb
+                })
         except Exception as ex:
             print(f"Fejl ved {name} ({feed_url}): {ex}")
 
-    # Sort descending by published_at
-    all_items.sort(key=lambda x: x["published_at"], reverse=True)
+    # Indlæs eksisterende nyheder, så vi aldrig mister historik hvis et feed fejler midlertidigt
+    existing_items_map = {}
+    if UPDATES_FILE.exists():
+        try:
+            prev_data = json.loads(UPDATES_FILE.read_text(encoding="utf-8"))
+            for item in prev_data:
+                existing_items_map[item["id"]] = item
+        except Exception:
+            pass
+
+    # Flet nye items ind
+    for item in all_items:
+        existing_items_map[item["id"]] = item
+
+    merged_items = list(existing_items_map.values())
+    merged_items.sort(key=lambda x: x["published_at"], reverse=True)
+    all_items = merged_items[:200]
 
     # Hent eller opret resumé-cache
     cache = {}

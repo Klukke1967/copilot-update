@@ -1,5 +1,22 @@
 [
   {
+    "id": "chatgpt_49cf590d",
+    "title": "Gilbert + Tobin rethinks the business of law with AI",
+    "link": "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "category": "chatgpt",
+    "tags": [
+      "m365",
+      "leadership"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-11T23:00:00Z",
+    "display_date": "11. nov. 2026",
+    "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+    "thumbnail": "",
+    "tldr_da": "Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
+  },
+  {
     "id": "chatgpt_bccf8a14",
     "title": "Introducing Businesses in ChatGPT in beta",
     "link": "https://www.youtube.com/watch?v=Z9k5oI3Paoc",
@@ -14,6 +31,22 @@
     "summary": "Now in beta: Businesses in ChatGPT. Claim your business, manage your information, and get insights on how people engage with you. With Business Hub, verified businesses can update...",
     "thumbnail": "https://img.youtube.com/vi/Z9k5oI3Paoc/hqdefault.jpg",
     "tldr_da": "I beta-udgivelse: Firmaer i ChatGPT. Be dig for dit firma, administrer information og få indsigt i, hvordan folk interagerer med dig. Verificerede virksomheder kan updatere via Business Hub."
+  },
+  {
+    "id": "copilot_5054266e",
+    "title": "9 NEW Microsoft Teams and Copilot Updates for 2026!",
+    "link": "https://www.youtube.com/watch?v=UKPuoOyPgAQ",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-10T15:30:05Z",
+    "display_date": "10. nov. 2026",
+    "summary": "👉 Get practical Microsoft 365 Copilot and Teams training with step-by-step guidance: https://www.your365coach.co.uk/your-365-coach-learning-academy Microsoft Teams is getting nine...",
+    "thumbnail": "https://img.youtube.com/vi/UKPuoOyPgAQ/hqdefault.jpg",
+    "tldr_da": "Scott Brant fra Your365Coach præsenterer på YouTube nogle praktiske opdateringer for Microsoft Teams og Copilot i 2026, med trinfor trin-undervisning på deres kursusside."
   },
   {
     "id": "chatgpt_bc83d7f5",
@@ -97,6 +130,22 @@
     "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
     "thumbnail": "",
     "tldr_da": "OpenAI Academy tilbyder gratis ChatGPT-workshops til omsorgspersoner i fem amerikanske byer, hvorefter de får praktiske AI-færdigheder for dagliglivet."
+  },
+  {
+    "id": "chatgpt_bde62bed",
+    "title": "Introducing Businesses in ChatGPT",
+    "link": "https://openai.com/index/introducing-businesses-chatgpt",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-10T09:00:00Z",
+    "display_date": "10. nov. 2026",
+    "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+    "thumbnail": "",
+    "tldr_da": "ChatGPT introducerer mulighed for at administrere og få oversigt over virksomhedsinformation, samt omsætte interesse til handling inden for platformen."
   },
   {
     "id": "chatgpt_7f83c7f8",
@@ -689,6 +738,22 @@
     "tldr_da": "David Fortin deler tips og tricks for at rengøre uddannet data i Excel med Copilot, herunder et gratis PDF med 100 brugte prompter og en fuld video tutoriel."
   },
   {
+    "id": "copilot_b29d1116",
+    "title": "How to Build Amazing PowerPoint Presentations with Copilot",
+    "link": "https://www.youtube.com/watch?v=NiKlxZrPFZ8",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-02T17:56:41Z",
+    "display_date": "2. nov. 2026",
+    "summary": "👉 Master Microsoft 365 Copilot and create better presentations faster with practical, step-by-step training with us via https://www.your365coach.co.uk/ Microsoft 365 Copilot in Pow...",
+    "thumbnail": "https://img.youtube.com/vi/NiKlxZrPFZ8/hqdefault.jpg",
+    "tldr_da": "Scott Brant fra Your365Coach viser, hvordan man effektivt bruger Microsoft 365 Copilot til at skabe bedre PowerPoint-præsentationer hurtigere."
+  },
+  {
     "id": "copilot_5fc2cd00",
     "title": "How to Use the New SharePoint FAQ Web Part with Copilot",
     "link": "https://www.youtube.com/watch?v=VI4NIsOArUw",
@@ -1013,6 +1078,22 @@
     "summary": "What do you want me to create with Copilot Code?",
     "thumbnail": "https://img.youtube.com/vi/7n4uLMzmemQ/hqdefault.jpg",
     "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
+  },
+  {
+    "id": "copilot_1daeed6b",
+    "title": "Easily Create Apps with the NEW Copilot Code in Minutes!",
+    "link": "https://www.youtube.com/watch?v=0-vgKQ4OVC8",
+    "category": "copilot",
+    "tags": [
+      "developer"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-10-26T17:48:26Z",
+    "display_date": "26. okt. 2026",
+    "summary": "👉 Build practical Microsoft 365 Copilot skills and learn how to turn AI ideas into real workplace solutions with the Your 365 Coach Academy: https://www.your365coach.co.uk/your-365...",
+    "thumbnail": "https://img.youtube.com/vi/0-vgKQ4OVC8/hqdefault.jpg",
+    "tldr_da": "Scott Brant fra Your365Coach viser på YouTube, hvordan man hurtigt skaber apps med nyt Copilot Code og omsetter AI-ideer til virksomhedsløsninger med Microsoft 365."
   },
   {
     "id": "copilot_4820f07b",
@@ -1519,6 +1600,23 @@
     "tldr_da": "Jeff Su forklarer klart og nemt, hvad personal agents er, og tilbyder en gratis nyhedsbrevserie om AI-essentielle emner."
   },
   {
+    "id": "copilot_eb40374a",
+    "title": "How to Create Amazing Dashboards with Microsoft Copilot!",
+    "link": "https://www.youtube.com/watch?v=5rOUDRRCJXM",
+    "category": "copilot",
+    "tags": [
+      "m365",
+      "developer"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-10-12T15:30:28Z",
+    "display_date": "12. okt. 2026",
+    "summary": "In this video, we will see how we can build interactive HTML dashboards from Excel and Microsoft Lists using Microsoft 365 Copilot, without writing any code or purchasing additiona...",
+    "thumbnail": "https://img.youtube.com/vi/5rOUDRRCJXM/hqdefault.jpg",
+    "tldr_da": "I denne video viser Scott Brant, hvordan man kan opbygge interaktive HTML-dashboarder fra Excel og Microsoft Lists med Microsoft 365 Copilot, uden at skrive kode eller købe ekstra software."
+  },
+  {
     "id": "copilot_2ac7abd3",
     "title": "6 New Microsoft OneNote Features + Copilot Notebooks for ALL! (Fall 2026)",
     "link": "https://www.youtube.com/watch?v=I8JS7iFaqJc",
@@ -1636,6 +1734,22 @@
     "tldr_da": "Mike Tholfsen præsenterer i et videoindlæg 11 nye funktioner og forbedringer i Windows 11 26H2, herunder nogle længere tid ønskede ændringer, der gør daglige opgaver lettere."
   },
   {
+    "id": "copilot_bde36b3a",
+    "title": "The NEW Microsoft Copilot: Everything You Need to Know",
+    "link": "https://www.youtube.com/watch?v=aYST3nR_CyY",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-10-05T14:30:25Z",
+    "display_date": "5. okt. 2026",
+    "summary": "Microsoft Copilot is changing again, but this is much more than another interface update. In this video, we explore the redesigned Copilot app and the new experiences that could re...",
+    "thumbnail": "https://img.youtube.com/vi/aYST3nR_CyY/hqdefault.jpg",
+    "tldr_da": "I denne video undersøger Scott Brant de nye funktioner og omdesignede app i Microsoft Copilot, der bringer helt nye oplevelser."
+  },
+  {
     "id": "copilot_01cf6677",
     "title": "5 AI Agent Use Cases Every Sales Team Needs",
     "link": "https://www.youtube.com/watch?v=_aJMVE2FYI4",
@@ -1667,6 +1781,22 @@
     "summary": "Microsoft Copilot is getting a major upgrade with a brand-new Super App experience. 🚀 In this video, I’ll give you a first look at the redesigned Copilot and walk through the bigge...",
     "thumbnail": "https://img.youtube.com/vi/y0myWtHap6Y/hqdefault.jpg",
     "tldr_da": "Mike Tholfsen fra Microsoft præsentere i et nyt videoer en omfangrige opgradering af Microsoft Copilot, der introducerer en helt ny Super App-oplevelse."
+  },
+  {
+    "id": "copilot_6790947e",
+    "title": "How to Let Copilot Help Plan Your Week in Seconds!",
+    "link": "https://www.youtube.com/shorts/C-9uj4qLyKc",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-10-01T15:31:45Z",
+    "display_date": "1. okt. 2026",
+    "summary": "In this Short, we will see how we can use Copilot Chat and WorkIQ to help you focus on the tasks you need to, first. We also then transform the Prompt into a Scheduled Prompts in C...",
+    "thumbnail": "https://img.youtube.com/vi/C-9uj4qLyKc/hqdefault.jpg",
+    "tldr_da": "I denne video viser Scott Brant, hvordan du bruger Copilot Chat og WorkIQ for at planlægge din uge effektivt og fokusere på vigtige opgaver. Han demonstrerer også, hvordan du omdanner forespørgsler til planlagte forespørgsler i C...."
   },
   {
     "id": "copilot_fa607c5d",
@@ -1747,6 +1877,22 @@
     "summary": "📦 Try Dropbox in ChatGPT with your team: https://bit.ly/jeffsudropbox Every downloaded PDF becomes another file to rename and another folder to choose. In this video, I show you ho...",
     "thumbnail": "https://img.youtube.com/vi/peP_o66u-vM/hqdefault.jpg",
     "tldr_da": "I denne video viser Jeff Su, hvordan man kan spare tid på filorganisering ved at bruge Dropbox i ChatGPT med sin hold, og hvordan hvert nedlastet PDF kan føre til flere filer og mapper at administrere."
+  },
+  {
+    "id": "copilot_17326b32",
+    "title": "What's NEW in Microsoft Copilot for September 2026!",
+    "link": "https://www.youtube.com/watch?v=ljFPELod748",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-09-28T15:53:09Z",
+    "display_date": "28. sep. 2026",
+    "summary": "👉 Master Microsoft 365 Copilot faster and learn how to use powerful features like Copilot in real-world scenarios. Explore training, workshops, and expert guidance here: https://ww...",
+    "thumbnail": "https://img.youtube.com/vi/ljFPELod748/hqdefault.jpg",
+    "tldr_da": "Scott Brant fra Your365Coach præsenterer på YouTube de nyeste funktioner i Microsoft Copilot for september 2026, herunder hurtig mastery og anvendelse i virkelige scenarier, samt tilbud om training og workshops."
   },
   {
     "id": "copilot_33421bda",
@@ -1945,6 +2091,22 @@
     "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
+    "id": "copilot_cfbadbf5",
+    "title": "How Copilot's NEW Vision Will Transform How We All Work...",
+    "link": "https://www.youtube.com/watch?v=9DKto0fuMEk",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-09-14T15:30:34Z",
+    "display_date": "14. sep. 2026",
+    "summary": "👉 Master Microsoft 365 Copilot faster and learn how to use powerful features like Copilot Vision in real-world scenarios. Explore training, workshops, and expert guidance here: htt...",
+    "thumbnail": "https://img.youtube.com/vi/9DKto0fuMEk/hqdefault.jpg",
+    "tldr_da": "Scott Brant fra Your365Coach præsenterer på YouTube, hvordan man effektivt lærer at bruge Microsoft 365 Copilot og nye funktioner som Copilot Vision i virkelige scenarier."
+  },
+  {
     "id": "copilot_e4a62e1b",
     "title": "ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/09/10/espc-2026-is-coming-to-amsterdam-bringing-microsoft-and-the-community-together/",
@@ -1975,6 +2137,22 @@
     "summary": "Create full-stack business apps through conversation, grounded in your data with app building in Copilot Cowork and Copilot Studio. The post Build apps in Copilot Cowork and Copilo...",
     "thumbnail": "",
     "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
+  },
+  {
+    "id": "copilot_9eea1c65",
+    "title": "How I Save Hours Using These 5 Microsoft Copilot Agents!",
+    "link": "https://www.youtube.com/watch?v=CcLjASl-C6A",
+    "category": "copilot",
+    "tags": [
+      "developer"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-09-07T14:00:37Z",
+    "display_date": "7. sep. 2026",
+    "summary": "Granola is the AI notepad for professionals in back-to-back meetings. Try it in your next meeting via https://www.granola.ai?via=scott-brant With thousands of AI agents now availab...",
+    "thumbnail": "https://img.youtube.com/vi/CcLjASl-C6A/hqdefault.jpg",
+    "tldr_da": "Videoen fra Scott Brant præsenterer 5 Microsoft Copilot agenter, som kan spare tid, og introducerer Granola, en AI-notatblok for professionelle møtesser."
   },
   {
     "id": "copilot_32905b95",
@@ -2041,6 +2219,22 @@
     "tldr_da": "Jeff Su præsenterer på YouTube, hvordan man effektivt bruger ChatGPT gennem en hurtig guide, der undgår almindeligheder som at bare stille spørgsmål som til en almindelig chatbot."
   },
   {
+    "id": "copilot_d5bf02ef",
+    "title": "7 NEW Microsoft Copilot Updates for August 2026!",
+    "link": "https://www.youtube.com/watch?v=o9gd_CoG-us",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-08-24T13:30:39Z",
+    "display_date": "24. aug. 2026",
+    "summary": "👉 Want to master Microsoft Copilot? See how me and the team can help you at https://www.your365coach.co.uk/ Microsoft Copilot has received another wave of updates, and some of them...",
+    "thumbnail": "https://img.youtube.com/vi/o9gd_CoG-us/hqdefault.jpg",
+    "tldr_da": "Scott Brant fra Your365Coach præsenterer på YouTube 7 nye opdateringer til Microsoft Copilot fra august 2026 og tilbyder hjælp til at mastere Copilot på sin hjemmeside."
+  },
+  {
     "id": "copilot_7b317065",
     "title": "The Copilot Value Maturity Model: A Five-Stage Path from Deployment to ROI",
     "link": "https://stevecorey.com/copilot-value-maturity-model/",
@@ -2056,6 +2250,22 @@
     "summary": "Explore the five stages of the Copilot Value Maturity Model and learn how organizations move from Microsoft 365 Copilot deployment to adoption, productivity, optimization, and meas...",
     "thumbnail": "",
     "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
+  },
+  {
+    "id": "copilot_f8a7cd75",
+    "title": "Copilot Chat, Copilot Notebooks or Copilot Agents? Here’s What to Use & When…",
+    "link": "https://www.youtube.com/watch?v=I_Bc7nVv0II",
+    "category": "copilot",
+    "tags": [
+      "developer"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-08-18T15:30:38Z",
+    "display_date": "18. aug. 2026",
+    "summary": "Granola is the AI notepad for professionals in back-to-back meetings. Try it in your next meeting via https://www.granola.ai?via=scott-brant Microsoft 365 Copilot now gives you mul...",
+    "thumbnail": "https://img.youtube.com/vi/I_Bc7nVv0II/hqdefault.jpg",
+    "tldr_da": "Videoen fra Scott Brant på YouTube diskuterer, hvornår man skal bruge Microsoft 365 Copilot Chat, Copilot Notebooks eller Copilot Agents og introducerer Granola som en AI-notatblok for professionelle i mødefulde dage."
   },
   {
     "id": "copilot_140ff1aa",
@@ -2074,6 +2284,22 @@
     "tldr_da": "Jeff Su deler på YouTube om sin AI, der husker alt, og tilbyder rabat på sine servicepakker for nye brugere."
   },
   {
+    "id": "copilot_5eaf6c5c",
+    "title": "How to Use Copilot Chat Better Than 99% of People!",
+    "link": "https://www.youtube.com/watch?v=vbvyaDNNcp4",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-08-11T15:38:29Z",
+    "display_date": "11. aug. 2026",
+    "summary": "Granola is the AI notepad for professionals in back-to-back meetings. Try in your next Teams meeting via https://www.granola.ai?via=scott-brant Most people have access to Microsoft...",
+    "thumbnail": "https://img.youtube.com/vi/vbvyaDNNcp4/hqdefault.jpg",
+    "tldr_da": "Scott Brant fra Your365Coach præsenterer på YouTube, hvordan man bedst kan bruge Copilot Chat sammen med Granola, en AI-notatblok til professionelle, der har møder på trapper. Prøv Granola i din næste Teams-mødevedtægt på https://www.granola.ai?via=scott-brant."
+  },
+  {
     "id": "copilot_739b9519",
     "title": "You Know What an AI Agent Is. But What Is an Agent Harness?",
     "link": "https://stevecorey.com/ai-agent-vs-agent-harness/",
@@ -2090,6 +2316,22 @@
     "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
+    "id": "copilot_3abe7f7a",
+    "title": "Claude is Hiding in Copilot... Here’s How to Actually Use It!",
+    "link": "https://www.youtube.com/watch?v=96VHcy4OYQc",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-08-04T15:21:47Z",
+    "display_date": "4. aug. 2026",
+    "summary": "👉 Build your Microsoft 365 Copilot skills faster with expert-led training and practical guidance at https://www.your365coach.co.uk/your-365-coach-learning-academy Did you know that...",
+    "thumbnail": "https://img.youtube.com/vi/96VHcy4OYQc/hqdefault.jpg",
+    "tldr_da": "Scott Brant fra Your365Coach viser på YouTube, hvordan man effektivt bruger Microsoft 365 Copilot, og tilbyder ekspertundervisning gennem sin læringsskole."
+  },
+  {
     "id": "copilot_d195886a",
     "title": "The next measure of AI momentum is work transformed",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
@@ -2104,6 +2346,22 @@
     "summary": "In yesterday’s earnings call, we shared that Microsoft 365 Copilot has surpassed 30 million paid seats, with net seat adds more than doubling quarter over quarter. The post The nex...",
     "thumbnail": "",
     "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
+  },
+  {
+    "id": "copilot_8dbe7c18",
+    "title": "Copilot Just Turned My Outlook Into an Executive Assistant!",
+    "link": "https://www.youtube.com/watch?v=ienMotF6SC8",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-07-27T15:30:02Z",
+    "display_date": "27. jul. 2026",
+    "summary": "👉 Build your Microsoft 365 Copilot skills faster with expert-led training and practical guidance at https://www.your365coach.co.uk/your-365-coach-learning-academy Most people use M...",
+    "thumbnail": "https://img.youtube.com/vi/ienMotF6SC8/hqdefault.jpg",
+    "tldr_da": "Scott Brant fra Your365Coach viser på YouTube, hvordan Microsoft 365 Copilot kan forvandle Outlook til en eksekutiv hjælper, og tilbyder ekspertråd og praktisk vejledning på deres hjemmeside."
   },
   {
     "id": "copilot_9ff97819",
@@ -2137,6 +2395,22 @@
     "summary": "✅ Grab my free Cowork Toolkit - https://coworkacademy.ai/toolkit?utm_source=youtube&amp;utm_medium=video&amp;utm_campaign=v207 ⏭️ Want to skip ahead? Grab my entire Cowork system:...",
     "thumbnail": "https://img.youtube.com/vi/VeWf0l4ci6Y/hqdefault.jpg",
     "tldr_da": "Jeff Su på YouTube præsenterer en nem guide til at blive ekspert i Claude Design i kun 14 minutter, og tilbyder en gratis værktøjskasse for kollegieforedrag."
+  },
+  {
+    "id": "copilot_8ae6aa41",
+    "title": "The Easiest Way To Build a Copilot Agent in Minutes!",
+    "link": "https://www.youtube.com/watch?v=f6FDToNoLZA",
+    "category": "copilot",
+    "tags": [
+      "developer"
+    ],
+    "source": "Scott Brant - Your365Coach (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-07-20T15:30:28Z",
+    "display_date": "20. jul. 2026",
+    "summary": "👉 Build your Microsoft 365 Copilot skills faster with expert-led training and practical guidance at https://www.your365coach.co.uk/your-365-coach-learning-academy Want to build a M...",
+    "thumbnail": "https://img.youtube.com/vi/f6FDToNoLZA/hqdefault.jpg",
+    "tldr_da": "Scott Brant fra Your365Coach viser på YouTube, hvordan du hurtigt og nemt kan opbygge dine færdigheder med Microsoft 365 Copilot gennem ekspertundervisning og praktisk rådgivning på deres hjemmeside."
   },
   {
     "id": "copilot_070375e5",
