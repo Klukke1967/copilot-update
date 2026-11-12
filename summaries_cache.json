@@ -177,5 +177,11 @@
   "chatgpt_9a6badb3": "På DevDay 2026 præsenteres for, hvordan man bruger OpenAI's Agents API til at bygge på Codex-træk, kørere agenter i sin egen miljø og holder langvarige opgaver i live, mens man forstår hvilket infrastruktur OpenAI administrerer.",
   "chatgpt_c0c23dba": "OpenAI præsenterer cybermodeller, CLI og SDK til at identificere og rette op på sikkerhedsrisici i kodesetninger, scanne store kodesamlinger og kontrollere rettelser i pull requests.",
   "chatgpt_74f96650": "Videoen fra DevDay 2026 på YouTube af OpenAI følger evolutionen fra enkelte agentloop til samarbejdende agenter og undersøger fremtidige designvalg og modeludviklinger.",
-  "chatgpt_45882204": "OpenAI besvarer internettets spørgsmål om GPT-Live, herunder hvordan det forskelser fra tidligere lydmodeller og hvilke udviklere bruger det til."
+  "chatgpt_45882204": "OpenAI besvarer internettets spørgsmål om GPT-Live, herunder hvordan det forskelser fra tidligere lydmodeller og hvilke udviklere bruger det til.",
+  "chatgpt_b35fd64c": "Videodemonstration fra OpenAI med fokus på nye modelfunktioner og problemløsning med ChatGPT.",
+  "chatgpt_1f7f81b0": "Lær, hvordan du kan integrere sikkerhedsrevisioner i ditt pull request-arbejdsflade med Codex Security. Se gennem forbindelse til GitHub, foreslag til revision og gennemgang af ændringer.",
+  "chatgpt_cf752b12": "ChatGPT Images giver mulighed for at skabe og redigere billeder direkte i ChatGPT ved at omsætte simple tekstsammensætninger til originale billeder.",
+  "chatgpt_975a5840": "I denne YouTube-video fra OpenAI får du en guide til at installere og anvende Codex Security, fra at udføre din første scan over at generere en rettelserpatch.",
+  "copilot_3685eb23": "Bloggen diskuterer brug af rollespecifikke agenter og Copilot Studio for at optimere AI-integration og argumenterer for at justere AI-løsninger til de specifikke behov de skal opfylde.",
+  "chatgpt_cc75dd11": "JioStar's Vijay Seshadri fra OpenAI beskæftiger sig med AI-forskning på skala med 500 millioner brugere, deler erfaringer med evalueringer, sikkerhedsregler og implementering i produktion."
 }

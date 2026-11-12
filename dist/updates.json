@@ -17,6 +17,74 @@
     "tldr_da": "Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
   },
   {
+    "id": "chatgpt_b35fd64c",
+    "title": "How to request and enable Daybreak Blue",
+    "link": "https://www.youtube.com/watch?v=NS220dAaRMo",
+    "category": "chatgpt",
+    "tags": [
+      "m365",
+      "leadership",
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T20:10:28Z",
+    "display_date": "11. nov. 2026",
+    "summary": "Learn how to request access to Daybreak Blue and enable it for your workspace and API organization. This walkthrough covers business verification, workspace permissions, role-based...",
+    "thumbnail": "https://img.youtube.com/vi/NS220dAaRMo/hqdefault.jpg",
+    "tldr_da": "Videodemonstration fra OpenAI med fokus på nye modelfunktioner og problemløsning med ChatGPT."
+  },
+  {
+    "id": "chatgpt_1f7f81b0",
+    "title": "How to enable PR security reviews with Codex Security",
+    "link": "https://www.youtube.com/watch?v=vdBDMj2UhDg",
+    "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T20:10:24Z",
+    "display_date": "11. nov. 2026",
+    "summary": "Bring security reviews into your pull request workflow with Codex Security. Learn how to check your GitHub connection, request a review, work through a fix, and review the change a...",
+    "thumbnail": "https://img.youtube.com/vi/vdBDMj2UhDg/hqdefault.jpg",
+    "tldr_da": "Lær, hvordan du kan integrere sikkerhedsrevisioner i ditt pull request-arbejdsflade med Codex Security. Se gennem forbindelse til GitHub, foreslag til revision og gennemgang af ændringer."
+  },
+  {
+    "id": "chatgpt_cf752b12",
+    "title": "ChatGPT Images: Three Ways to Get Started",
+    "link": "https://www.youtube.com/watch?v=CrrpfvbNyMw",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T20:10:10Z",
+    "display_date": "11. nov. 2026",
+    "summary": "ChatGPT Images lets you create new images and edit existing images directly inside ChatGPT. Turn plain-language prompts into original images, explore different visual directions. I...",
+    "thumbnail": "https://img.youtube.com/vi/CrrpfvbNyMw/hqdefault.jpg",
+    "tldr_da": "ChatGPT Images giver mulighed for at skabe og redigere billeder direkte i ChatGPT ved at omsætte simple tekstsammensætninger til originale billeder."
+  },
+  {
+    "id": "chatgpt_975a5840",
+    "title": "How to run your first Codex Security scan",
+    "link": "https://www.youtube.com/watch?v=hUhr0JiVZZs",
+    "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-11T20:10:05Z",
+    "display_date": "11. nov. 2026",
+    "summary": "Get started with Codex Security, from installing the plugin to running your first scan. Learn how to select a repository, add context, review findings, and generate a patch. Then f...",
+    "thumbnail": "https://img.youtube.com/vi/hUhr0JiVZZs/hqdefault.jpg",
+    "tldr_da": "I denne YouTube-video fra OpenAI får du en guide til at installere og anvende Codex Security, fra at udføre din første scan over at generere en rettelserpatch."
+  },
+  {
     "id": "chatgpt_55a31f64",
     "title": "ChatGPT Plus for veterans and servicemembers",
     "link": "https://openai.com/index/chatgpt-plus-for-veterans",
@@ -31,6 +99,22 @@
     "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
     "thumbnail": "",
     "tldr_da": "Over 20.000 veteraner og servicemedlemmer har klargjort et gratis år med ChatGPT Plus, som de bruger til at forberede sig på deres civile karrierer."
+  },
+  {
+    "id": "copilot_3685eb23",
+    "title": "Role-Specific Agents, Copilot Studio, and the Case for Right-Sizing AI",
+    "link": "https://stevecorey.com/role-specific-agents-and-the-case-for-right-sizing-ai/",
+    "category": "copilot",
+    "tags": [
+      "developer"
+    ],
+    "source": "Steve Corey Insights (Blog)",
+    "type": "article",
+    "published_at": "2026-11-11T07:00:00Z",
+    "display_date": "11. nov. 2026",
+    "summary": "",
+    "thumbnail": "",
+    "tldr_da": "Bloggen diskuterer brug af rollespecifikke agenter og Copilot Studio for at optimere AI-integration og argumenterer for at justere AI-løsninger til de specifikke behov de skal opfylde."
   },
   {
     "id": "chatgpt_227e6660",
@@ -146,6 +230,22 @@
     "tldr_da": "Videoen fra DevDay 2026 på YouTube af OpenAI følger evolutionen fra enkelte agentloop til samarbejdende agenter og undersøger fremtidige designvalg og modeludviklinger."
   },
   {
+    "id": "chatgpt_cc75dd11",
+    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+    "link": "https://openai.com/index/jiostar-vijay-seshadri",
+    "category": "chatgpt",
+    "tags": [
+      "research"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-10T23:00:00Z",
+    "display_date": "10. nov. 2026",
+    "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
+    "thumbnail": "",
+    "tldr_da": "JioStar's Vijay Seshadri fra OpenAI beskæftiger sig med AI-forskning på skala med 500 millioner brugere, deler erfaringer med evalueringer, sikkerhedsregler og implementering i produktion."
+  },
+  {
     "id": "chatgpt_45882204",
     "title": "Answering your questions about GPT-Live",
     "link": "https://www.youtube.com/watch?v=5YXlrzC_RYE",
@@ -246,7 +346,7 @@
   },
   {
     "id": "copilot_244bda62",
-    "title": "Top 6 AI Productivity Tips for Work!",
+    "title": "6 Insanely Practical AI Tips (in 18 minutes)",
     "link": "https://www.youtube.com/watch?v=9Hwanevuhd8",
     "category": "copilot",
     "tags": [
