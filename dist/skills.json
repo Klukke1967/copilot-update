@@ -204,10 +204,82 @@
     "file_name": "SKILL.md"
   },
   {
+    "id": "skill_excel-copilot-financials",
+    "name": "excel-copilot-financials",
+    "title": "Excel Copilot Financial Statements Builder (Balance Sheet & P&L)",
+    "category": "📊 Excel & Finans",
+    "description": "Use when the user asks to create, build, or refresh a linked Balance Sheet and Profit and Loss (Income Statement) from a trial balance table in Excel.",
+    "source": "Enterprise Agent Library",
+    "source_url": "https://copilot.vinverdenenrundt.dk",
+    "version": "1.1.0",
+    "platforms": [
+      "excel",
+      "m365",
+      "windows",
+      "macos"
+    ],
+    "raw_content": "---\nname: excel-copilot-financials\ndescription: Use when the user asks to create, build, or refresh a linked Balance Sheet and Profit and Loss (Income Statement) from a trial balance table in Excel.\nversion: 1.1.0\nauthor: Excel University & Nous Research\nlicense: MIT\nplatforms: [excel, m365, windows, macos]\nmetadata:\n  category: \"Excel & Finans\"\n  tags: [excel, copilot, finance, trial-balance, balance-sheet, pnl, structured-references]\n---\n\n# Financials Builder (Excel Copilot)\nCustom Skill for Microsoft 365 Copilot in Excel: Balance Sheet + Profit and Loss Builder.\n\nUse this skill whenever you need to transform a raw Trial Balance table into a standardized, presentation-ready Balance Sheet and Income Statement (P&L) with automated verification checks.\n\n## When to Use This Skill\nInvoke this skill in the Excel Copilot chat pane using `@financials` or standard prompting:\n- `@financials create a balance sheet and income statement`\n- `@financials build financial statements from this trial balance`\n- `@financials refresh financial statements after trial balance update`\n\n## Source Data Requirements\nThe source worksheet must contain an official Excel Table (`Ctrl+T`) prefixed with `tbl_` (e.g. `tbl_GL` or `tbl_TrialBalance`) with the following explicit columns:\n- `AcctNum`: Account number (e.g., 1000, 2000, 4000, 5000)\n- `AcctName`: Descriptive account name (e.g., Checking account, Accounts Payable, Revenue)\n- `Type`: High-level classification (`Asset`, `Liability`, `Equity`, `Income`, `Expense`)\n- `Nature`: Debit or Credit convention (`DR` or `CR`)\n- `Bsheet`: Balance sheet line-item mapping tag (e.g., `Cash and Cash Equivalents`, `Accounts Receivable`, `Inventory`, `Fixed Assets`, `Accounts Payable`, `Loans`, `Retained Earnings`)\n- `PL`: Profit & Loss line-item mapping tag (e.g., `Revenue`, `Cost of Goods Sold`, `Payroll`, `Office Supplies`, `Sales and Marketing`)\n- `Amount`: Net balance amount (positive for Debit, negative for Credit, or standard net convention)\n\n## Execution Rules & Guidelines\n1. **Never Hard-Code Row Numbers:** All calculations MUST use structured table references (e.g., `=SUMIFS(tbl_GL[Amount], tbl_GL[PL], D5)`).\n2. **Never Wrap Statements in Tables:** Output statements must be formatted as clean financial reporting ranges with standard indentation, not wrapped in Excel tables.\n3. **Structured Reference Syntax:**\n   - Revenue: `=-SUMIFS(tbl_GL[Amount], tbl_GL[PL], D5)`\n   - Cost of Goods Sold: `=SUMIFS(tbl_GL[Amount], tbl_GL[PL], D6)`\n   - Gross Profit: `=Revenue - COGS`\n   - Net Income: `=Gross_Profit - Operating_Expenses`\n4. **Link Net Income into Equity:** The Balance Sheet MUST link current period Net Income directly from the Income Statement (`='Income Statement'!E14`).\n5. **Automated Balance Check:** A dedicated `Balance Check` row must be added at the bottom calculating `=Total_Assets - (Total_Liabilities + Total_Equity)`. The result must evaluate to `0`.\n\n## Output Sheet Layout\nCreate a new worksheet named `Financial Statements` (or `Financial Statements 2` if already present):\n- **Title Block:** Cell `A1` with report title in 18pt bold, cell `B2` with company name in 14pt plain.\n- **Number Formatting:** Format all currency as `#,##0` (no currency symbol, no decimals). Negative numbers in parentheses `(#,##0)`.\n- **Row Architecture:**\n  - `Assets`: Cash, A/R, Inventory, Prepaids, Fixed Assets -> Subtotal `Total Assets` (single top border, double bottom accounting border).\n  - `Liabilities`: Accounts Payable, Accrued Expenses, Short/Long-term Debt -> Subtotal `Total Liabilities`.\n  - `Equity`: Retained Earnings, Current Period Net Income -> Subtotal `Total Equity`.\n  - `Total Liabilities and Equity`: Single top border, double bottom accounting border.\n  - `Integrity Verification`: Cell formula confirming `Balance Check == 0`.\n\n## Installation into OneDrive for Copilot in Excel\nTo use this skill natively inside Microsoft 365 Excel:\n1. Open your personal or corporate OneDrive.\n2. Navigate to: `Documents > Copilot > Microsoft Excel > skills`\n3. Create a subfolder named `financials`\n4. Save this file as `SKILL.md` inside that folder.\n5. In Excel, open Copilot -> **Manage Skills** -> toggle on **financials**.\n",
+    "file_name": "SKILL.md"
+  },
+  {
+    "id": "skill_excel-copilot-rules-architect",
+    "name": "excel-copilot-rules-architect",
+    "title": "Excel Copilot .Rules Sheet Architecture & Behavior",
+    "category": "📊 Excel & Finans",
+    "description": "Use when creating, auditing, or standardizing workbook-scoped .Rules worksheets to control Excel Copilot behavior, formatting, and formulas.",
+    "source": "Enterprise Agent Library",
+    "source_url": "https://copilot.vinverdenenrundt.dk",
+    "version": "1.0.0",
+    "platforms": [
+      "excel",
+      "m365",
+      "windows",
+      "macos"
+    ],
+    "raw_content": "---\nname: excel-copilot-rules-architect\ndescription: Use when creating, auditing, or standardizing workbook-scoped .Rules worksheets to control Excel Copilot behavior, formatting, and formulas.\nversion: 1.0.0\nauthor: Excel University & Nous Research\nlicense: MIT\nplatforms: [excel, m365, windows, macos]\nmetadata:\n  category: \"Excel & Finans\"\n  tags: [excel, copilot, rules, standards, tables, formulas, formatting, style-guide]\n---\n\n# Excel Copilot .Rules Architect\nStandardized Workbook Governance & Behavior Control for Microsoft 365 Copilot in Excel.\n\nUse this skill when you want to establish firm, predictable guidelines for how Excel Copilot formats numbers, builds formulas, structures tables, and presents financial data.\n\n## Why Use a .Rules Sheet?\nWithout explicit instructions, Excel Copilot improvises. A dedicated `.Rules` worksheet provides workbook-scoped guardrails that override generic AI defaults and guarantee that every generated column, summary, or report conforms to your corporate reporting standards.\n\n## Mandatory Technical Requirements for Excel Copilot\n1. **Sheet Name:** The sheet must be named exactly `.Rules` (with the leading period).\n2. **Column A Placement:** All rules must be written in Column A. Sections can be defined using bold category headers (e.g., `Formatting`, `Formulas`, `Reports`, `Style Guide`).\n3. **Visibility:** The `.Rules` worksheet MUST remain visible. If hidden, Copilot ignores it and falls back to global generic defaults.\n4. **Natural Language Syntax:** Write rules as imperative statements (\"Prefer X over Y\", \"Never merge cells\", \"Format currency as...\").\n\n## Recommended Core Rule Template (Column A)\n\n```text\nRules for this workbook\n[Company Name / Department Standard]\n\nFormatting\n- Format currency as #,##0 (no symbol, no decimals unless specifically requested).\n- Format negative numbers with parentheses: (#,##0).\n- Format percentage columns as 0.0% or 0%.\n- Store table-like ranges in official Ctrl+T tables prefixed with tbl_.\n- Never merge cells; if centering text over multiple cells is required, use Center Across Selection instead of Merge & Center.\n- Avoid full cell fills and heavy dark borders; prefer subtle zebra striping (#F8FAFC) and light horizontal dividers (#E2E8F0).\n- Align text columns to the left, numeric data to the right, and dates/codes to the center.\n\nFormulas\n- Prefer XLOOKUP over VLOOKUP or INDEX/MATCH.\n- Prefer SUMIFS over SUMIF or nested IF statements when building aggregated summaries.\n- Always use structured table references (e.g., =[@Actual]-[@Budget]) instead of hard-coded cell coordinates when calculating within tables.\n- Prefer modern dynamic array functions (FILTER, UNIQUE, SORT, XLOOKUP, LET) over legacy array formulas (CSE).\n- When writing complex calculations, break steps down or use LET() for clarity.\n\nReports\n- Prefer PivotTables for multidimensional summaries and cross-tabulations.\n- When generating formula-based financial reports, place summaries on dedicated reporting worksheets separate from raw data tables.\n- Always include a data validation or reconciliation row (e.g., Out of Balance check) on financial reports.\n\nStyle Guide\n- Cell A1 is always the worksheet title (18-point bold, Primary Dark #0F172A).\n- Cell B2 is company/organization name (12-point plain, #64748B).\n- Primary accent color: #0284C7 (Blue) or #006633 (Corporate Green).\n- Subtotal rows use a single top thin border; Grand Total rows use a single top thin border and double bottom accounting border.\n```\n\n## How to Prompt Copilot with Rules Active\nOnce the `.Rules` sheet is in place, prompts can remain concise because the rules handle formatting and structure:\n- `\"Clean and format the GL sample\"`\n- `\"Add a Variance column comparing Actual to Budget and verify math\"`\n- `\"Build a monthly department expense summary\"`\n",
+    "file_name": "SKILL.md"
+  },
+  {
+    "id": "skill_excel-gl-variance-analyzer",
+    "name": "excel-gl-variance-analyzer",
+    "title": "Excel General Ledger & Budget Variance Analyzer",
+    "category": "📊 Excel & Finans",
+    "description": "Use when analyzing General Ledger data, calculating budget variances, formatting variance columns, and performing automated reconciliation checks in Excel.",
+    "source": "Enterprise Agent Library",
+    "source_url": "https://copilot.vinverdenenrundt.dk",
+    "version": "1.0.0",
+    "platforms": [
+      "excel",
+      "m365",
+      "windows",
+      "macos"
+    ],
+    "raw_content": "---\nname: excel-gl-variance-analyzer\ndescription: Use when analyzing General Ledger data, calculating budget variances, formatting variance columns, and performing automated reconciliation checks in Excel.\nversion: 1.0.0\nauthor: Excel University & Nous Research\nlicense: MIT\nplatforms: [excel, m365, windows, macos]\nmetadata:\n  category: \"Excel & Finans\"\n  tags: [excel, copilot, general-ledger, variance-analysis, budget, actual, accounting]\n---\n\n# Excel GL Variance Analyzer\nAutomated General Ledger Analysis & Variance Modeling for Microsoft 365 Copilot in Excel.\n\nUse this skill when analyzing financial datasets containing Actuals, Budgets, and Forecasts to produce standardized variance reports, conditional alert formatting, and audit verifications.\n\n## Core Capabilities\n- Converts unformatted GL ranges into structured Excel tables (`tbl_GL`).\n- Standardizes account descriptions (Proper Case, trims leading/trailing spaces).\n- Adds calculated Variance (`=[@Actual]-[@Budget]`) and Variance % (`=IFERROR([@Variance]/[@Budget], 0)`).\n- Applies financial conditional formatting (Red for unfavorable variance, Green for favorable, Gray for neutral).\n- Performs automated row-by-row and subtotal verification passes.\n\n## Procedural Workflow\n1. **Validation & Table Conversion:**\n   Verify whether data is already in an official Excel Table. If not, convert via `Ctrl+T` and name it `tbl_GL` or `tbl_BudgetVariance`.\n2. **Account Standardization:**\n   Standardize inconsistent account name capitalization (e.g. changing `office SUPPLIES` to `Office Supplies`) using `=PROPER(TRIM([@AccountName]))`.\n3. **Variance Logic:**\n   - For Expense accounts: `Variance = Budget - Actual` (Positive = Under budget / Favorable).\n   - For Revenue accounts: `Variance = Actual - Budget` (Positive = Over budget / Favorable).\n   - Alternatively, follow standard financial reporting convention (`Variance = Actual - Budget`) with explicit column header naming: `Variance (Act - Bud)`.\n4. **Formatting Standards:**\n   - Format numeric columns (`Actual`, `Budget`, `Variance`) as `#,##0` with negative numbers in parentheses `(#,##0)`.\n   - Format `Variance %` as `0.0%`.\n   - Highlight negative variances exceeding a specified threshold (e.g. > 10% or > $5,000) using soft red fill (`#FEE2E2`) and dark red text (`#991B1B`).\n5. **Reconciliation Summary:**\n   Insert a total summary row (`Table Design > Total Row`) showing sum of Actuals, sum of Budgets, net Variance, and aggregate Variance %.\n\n## Prompt Examples\n- `\"Add a Variance column to tbl_GL calculated as [@Actual]-[@Budget] and format as currency #,##0\"`\n- `\"Identify the top 5 expense accounts with unfavorable variance compared to budget\"`\n- `\"Group variance by Department and show both total dollar variance and percentage deviation\"`\n",
+    "file_name": "SKILL.md"
+  },
+  {
+    "id": "skill_excel-copilot-clean-and-transform",
+    "name": "excel-copilot-clean-and-transform",
+    "title": "Excel Data Cleaner, Table Staging & Transformation",
+    "category": "📊 Excel & Finans",
+    "description": "Use when cleaning messy Excel data, removing duplicate records, splitting text columns, standardizing formats, and establishing official Excel tables.",
+    "source": "Enterprise Agent Library",
+    "source_url": "https://copilot.vinverdenenrundt.dk",
+    "version": "1.0.0",
+    "platforms": [
+      "excel",
+      "m365",
+      "windows",
+      "macos"
+    ],
+    "raw_content": "---\nname: excel-copilot-clean-and-transform\ndescription: Use when cleaning messy Excel data, removing duplicate records, splitting text columns, standardizing formats, and establishing official Excel tables.\nversion: 1.0.0\nauthor: Excel University & Nous Research\nlicense: MIT\nplatforms: [excel, m365, windows, macos]\nmetadata:\n  category: \"Excel & Finans\"\n  tags: [excel, copilot, data-cleaning, text-to-columns, deduplication, xlookup, data-types]\n---\n\n# Excel Data Cleaner & Transformer\nRobust Pre-Processing & Data Cleansing Framework for Microsoft 365 Copilot in Excel.\n\nUse this skill when preparing raw, messy, or externally exported datasets (from ERPs, CRMs, or accounting systems) before running financial analysis or generating reports.\n\n## What this skill covers\n- Identifying and eliminating blank rows, phantom spaces, and duplicate records.\n- Standardizing casing, date formats (ISO `YYYY-MM-DD` or Danish `DD-MM-YYYY`), and numeric types.\n- Parsing concatenated fields (e.g., `5100 - Office Supplies` -> `AcctNum` = `5100`, `AcctName` = `Office Supplies`).\n- Converting unstructured ranges into official Excel Tables (`Ctrl+T`) with validated column types.\n- Applying modern dynamic lookup formulas (`XLOOKUP`, `FILTER`, `UNIQUE`) to cross-reference master data.\n\n## Standard Cleansing Checklist\n1. **Single Header Row Verification:**\n   Ensure exactly one header row exists. Remove repeated headers, title blocks, and blank header cells.\n2. **Text Sanitation:**\n   Trim non-breaking spaces (`=TRIM(CLEAN(SUBSTITUTE(A2, CHAR(160), \" \")))`) and convert text-stored numbers to true numeric values (`=VALUE()` or multiplying by 1).\n3. **Table Conversion:**\n   Assign meaningful names: `tbl_Sales`, `tbl_Employees`, `tbl_Inventory`. Never leave default `Table1`.\n4. **Structured Formula Column Additions:**\n   When extracting dates, use `=YEAR([@Date])`, `=MONTH([@Date])`, or `=TEXT([@Date], \"yyyy-mm\")` for reliable grouping in PivotTables.\n5. **No Merged Cells:**\n   Unmerge any merged cells across the data range; fill down header values if needed for flat tabular integrity.\n",
+    "file_name": "SKILL.md"
+  },
+  {
     "id": "skill_copilot-excel-skills",
     "name": "copilot-excel-skills",
     "title": "Copilot in Excel Custom Skills Authoring",
-    "category": "M365 & Samarbejde",
+    "category": "📊 Excel & Finans",
     "description": "Use when authoring or managing Copilot in Excel skills.",
     "source": "Enterprise Agent Library",
     "source_url": "https://copilot.vinverdenenrundt.dk",

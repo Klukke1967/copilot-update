@@ -1,5 +1,37 @@
 [
   {
+    "id": "chatgpt_9df9e970",
+    "title": "What Codex Unlocks for Holiday Extras",
+    "link": "https://www.youtube.com/watch?v=vu3YlUMkvyg",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-12T08:45:17Z",
+    "display_date": "12. nov. 2026",
+    "summary": "What happens when the people who understand your customers can build the software to help them? At Holiday Extras, Codex is helping turn that ambition into reality—from rebuilding...",
+    "thumbnail": "https://img.youtube.com/vi/vu3YlUMkvyg/hqdefault.jpg",
+    "tldr_da": "I Holiday Extras benytter de medarbejderes forståelse af kunderne til at udvikle software, der styrker denne forståelse, hvilket Codex bidrager til gennem nyskabende programmer."
+  },
+  {
+    "id": "chatgpt_d8a1aef3",
+    "title": "Holiday Extras is rethinking what it can build with Codex",
+    "link": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-12T08:30:00Z",
+    "display_date": "12. nov. 2026",
+    "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+    "thumbnail": "",
+    "tldr_da": "Holiday Extras bruger Codex til at omforme kundekundskab til bedre app-er, højere bokningskonvertering og nye vækstmuligheder."
+  },
+  {
     "id": "chatgpt_49cf590d",
     "title": "Gilbert + Tobin rethinks the business of law with AI",
     "link": "https://openai.com/index/gilbert-tobin-sam-nickless",
@@ -15,6 +47,23 @@
     "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
     "thumbnail": "",
     "tldr_da": "Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
+  },
+  {
+    "id": "chatgpt_34c6d4ac",
+    "title": "Supporting research on AI and children’s safety",
+    "link": "https://openai.com/index/children-first-declaration",
+    "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "research"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-11T23:00:00Z",
+    "display_date": "11. nov. 2026",
+    "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+    "thumbnail": "",
+    "tldr_da": "OpenAI investerer 2 millioner dollar i forskning om AI og børns sikkerhed, der fokuserer på at udvikle fællesevne til at måle risici og muligheder for unge mennesker."
   },
   {
     "id": "chatgpt_b35fd64c",

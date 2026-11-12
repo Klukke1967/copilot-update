@@ -11,7 +11,7 @@
     "description": "Source pack finance.md (Month-End Close Prep). Coordination only: every figure must be confirmed in the GL, Copilot does not connect to the ERP.",
     "prompt": "Catch me up on the month-end close for [MONTH]. Search my recent emails and Teams chats and pull together: open items and pending journal entries that people mentioned, accruals or provisions being discussed, late information or blockers from other teams, and anything flagged as a risk to the timetable. Give me a short close-prep checklist grouped by owner. Work only from what is actually in my messages, do not invent figures or dates, and any number you mention is for context only and must be confirmed in the GL.",
     "pillars": {
-      "persona": "FP&A Controller / Finansiel Analytiker",
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
       "context": "Teams-kanaler, chat-beskeder og mødereferater i de seneste 7-30 dage.",
       "format": "Struktureret tabel med overskrifter, status og datoer.",
       "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
@@ -29,7 +29,7 @@
     "description": "Source pack finance.md (AR / Collections Context). Confirm balances in the ledger; Copilot summaries may be stale. No payment or write-off decisions.",
     "prompt": "For the account [CUSTOMER NAME], search my emails for the collections history and summarize: invoices and amounts referenced, any promises to pay and the dates given, disputes or queries raised, and the last contact and its outcome. Keep it to what is actually in the correspondence, write 'not found' where something is missing, and do not invent balances. This is to prepare my follow-up, so confirm all balances in the ledger before I act on them.",
     "pillars": {
-      "persona": "FP&A Controller / Finansiel Analytiker",
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
       "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
       "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
       "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
@@ -2696,6 +2696,222 @@
       "persona": "B2B Sales Account Strateg",
       "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
       "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_151",
+    "title": "Rens og formatér rå finansdata til officiel tabel (tbl_GL)",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Konverterer ustrukturerede kontoposter til en officiel Ctrl+T tabel (tbl_GL), standardiserer kontonavne til Proper Case og formaterer valuta efter .Rules standarden.",
+    "prompt": "Gennemgå det markerede rå kontoudtræk på dette ark. Konverter området til en officiel Excel-tabel navngivet 'tbl_GL'. Standardiser alle kontonavne i kolonnen 'Account Name', så de følger Proper Case uden unødige mellemrum. Formatér kolonnerne 'Actual' og 'Budget' som valuta med formatet '#,##0' (uden valutasymbol og uden decimaler). Tjek om der er en aktiv '.Rules'-fane i projektmappen og efterlev dens formateringsregler. Kør en matematisk verificering på rækkeniveau og bekræft overensstemmelsen.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Aktive Excel-dataark, pivottabeller og tilknyttede forretningsrapporter.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_152",
+    "title": "Månedlig variansanalyse mellem Realiseret (Actual) og Budget",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Opretter beregnet varianskolonne og procentvis afvigelse med dynamiske tabelreferencer og betinget formatering af kritiske afvigelser.",
+    "prompt": "Tilføj en ny beregnet kolonne 'Variance' til tabellen tbl_GL med den strukturerede formel '=[@Actual]-[@Budget]' samt en kolonne 'Variance %' med formlen '=IFERROR([@Variance]/[@Budget], 0)'. Formatér 'Variance' som '#,##0;(#,##0);\"-\"' og 'Variance %' som '0.0%'. Påfør en blød rød betinget formatering på alle omkostningskonti, hvor den negative afvigelse overstiger 5.000 kr eller 10%. Afslut med en opsummerende Total Row i tabellen, der viser den samlede nettoafvigelse.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_153",
+    "title": "Automatisk Balance og Resultatopgørelse fra Råbalance (Trial Balance)",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Opbygger en fuldt forbundet resultatopgørelse og balance fra en kontotabel (tbl_GL) med dynamiske SUMIFS og automatisk balance-check.",
+    "prompt": "Opret et nyt faneblad 'Financial Statements' baseret på dataene i tabellen tbl_GL. Opbyg en to-delt finansiel rapport: Øverst en struktureret Balance Sheet (Aktiver opdelt i Cash, A/R, Inventory, Fixed Assets; Passiver opdelt i Forpligtelser og Egenkapital) og nederst en Profit and Loss (Omsætning, Vareforbrug, Bruttoavance, Driftsposter og Nettoresultat). Brug udelukkende strukturerede formler med SUMIFS mod kolonnerne [Bsheet], [PL] og [Amount] frem for statiske celler. Forbind årets resultat direkte fra P&L ind i egenkapitalen på balancen, og indsæt en 'Balance Check' formel der bekræfter at Aktiver = Passiver + Egenkapital (Afvigelse = 0).",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_154",
+    "title": "Dynamisk kontoplan-opslag med XLOOKUP og fejlsikring",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Beriger transaktionslinjer med afdelingsnavn, omkostningstype og budgetansvarlig fra en central stamdatatabel uden skrøbelige VLOOKUP-formler.",
+    "prompt": "Tilføj en ny kolonne 'Department Lead' til transaktionstabellen tbl_Expenses. Brug en moderne XLOOKUP-formel, der slår kontonummeret [@AcctNum] op i stamdatatabellen tbl_ChartOfAccounts[AcctNum] og returnerer tbl_ChartOfAccounts[Owner]. Hvis et kontonummer ikke findes i kontoplanen, skal formlen returnere '[UKENDT KONTO - TJEK]' i stedet for #N/A fejl. Gennemfør en kontrol og list eventuelle konti, der mangler i stamdata.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_155",
+    "title": "Multi-kriterie udgiftsdashboard med SUMIFS og dynamiske arrays",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Genererer en matrix-opgørelse over afdelingers udgifter fordelt på kvartaler med dynamiske arrays og SUMIFS aggregering.",
+    "prompt": "Byg et separat rapporteringsark 'Dept_Summary', der opsummerer udgifter fra tbl_Expenses. Opret en dynamisk matrix med Afdelinger i rækkerne (hentet unikt via =SORT(UNIQUE(tbl_Expenses[Dept]))) og Kvartaler i kolonnerne (Q1, Q2, Q3, Q4). Fyld cellerne med dynamiske SUMIFS formler, der filtrerer på både afdeling og kvartal: '=SUMIFS(tbl_Expenses[Amount], tbl_Expenses[Dept], $A5, tbl_Expenses[Quarter], B$4)'. Tilføj en række med 'Samlet Udgift' og en kolonne med '% af Total'. Undgå at låse faste rækkenumre; anvend fuld dynamisk tabelreferering.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_156",
+    "title": "PivotTable og interaktive Slicere til ledelsesrapportering",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Instruerer Copilot til at oprette en optimeret PivotTable med tidslinje, afdelings-slicere og automatisk top-5 udgiftsanalyse.",
+    "prompt": "Generer en PivotTable på et nyt ark med udgangspunkt i tabellen tbl_SalesData. Placer 'Region' og 'Customer Segment' i Rows, 'Product Category' i Columns, og indsæt summen af 'Revenue' og gennemsnittet af 'Margin %' i Values. Formatér tallene som valuta og procent. Tilføj to interaktive Slicere: én for 'Year/Quarter' og én for 'Sales Rep'. Konfigurer PivotTabellen til klassisk tabelvisning uden gentagne overskrifter og skjul tomme celler.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Struktureret tabel med overskrifter, status og datoer.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_157",
+    "title": "Rengøring af sammenkædede kontostrenge og datoer",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Splitter sammensatte koder (fx '5100-ADMIN-DK'), konverterer tekstformaterede tal og opretter ISO-validerede datokolonner.",
+    "prompt": "Inspicér kolonnen 'Raw_String' i tabellen tbl_Import. Kolonnen indeholder data på formatet 'Kontonummer-Afdeling-Landekode' (f.eks. '5200-OPS-DK'). Opret tre nye strukturerede kolonner: 'Account_Code' (de første 4 cifre), 'Department' (teksten mellem bindestregerne) og 'Country' (de sidste to bogstaver). Kontroller desuden kolonnen 'Transaction_Date', og ret eventuelle amerikanske datoer (MM/DD/YYYY) til standard dansk datoformat (DD-MM-YYYY). Verificer at der ikke opstår cirkulære referencer eller fejlbehæftede formler.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_158",
+    "title": "Finansiel sensitivitetsanalyse og What-If scenariemodel",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Etablerer en 2-vejs sensitivitetsmatrix i Excel, der beregner EBIT ved varierende salgspriser og volumen-vækst.",
+    "prompt": "Byg en What-If følsomhedsanalyse for vores budgetmodel på arket 'Scenario_Planning'. Tag udgangspunkt i basismodellen for EBIT. Opret en to-vejs datatabel (Sensitivity Matrix), hvor række-inputtet er ændring i Salgspris (-10%, -5%, 0%, +5%, +10%) og kolonne-inputtet er Volumen-vækst (-15%, -10%, 0%, +10%, +15%). Forbind cellerne til resultatcellen for Årets Resultat. Formatér matricen med en 3-farvet betinget formatering (rød for fald, gul for uændret, grøn for vækst), så ledelsen straks kan aflæse de mest robuste og sårbare udfald.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_159",
+    "title": "Identifikation af finansielle anomalier, dubletter og usædvanlige posteringer",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Find",
+    "task_type_da": "Søg & Find (Find)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Finder automatisk usædvanlige transaktioner, weekend-posteringer, dublerede bilagsnumre eller beløb over 2,5 standardafvigelser fra middelværdien.",
+    "prompt": "Analyser alle transaktionslinjer i tabellen tbl_GeneralLedger for regnskabsåret. Etabler tre automatiske revisions-tjek: 1) Find potentielle dubletter hvor dato, leverandør og beløb er identiske. 2) Marker transaktioner bogført i weekender (=IF(WEEKDAY([@Date], 2)>5, 'Weekend Booking', 'Normal')). 3) Beregn Z-score for transaktionsstørrelser pr. afdeling og marker beløb, der ligger mere end 2,5 standardafvigelser over afdelingens gennemsnit. Saml alle mistænkelige linjer i en overskuelig 'Audit Review' tabel.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Struktureret tabel med overskrifter, status og datoer.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_160",
+    "title": "Beregning af nøgletalskort (Likviditet, Soliditet, ROIC & EBITDA)",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Opbygger en executive nøgletalsoversigt direkte fra balancen og resultatopgørelsen med Benchmark-sammenligning og pæne KPI-kort.",
+    "prompt": "Opret et executive KPI-dashboard 'Executive_Ratios' baseret på regnskabstallene i 'Financial Statements'. Beregn følgende nøgletal med eksplicitte formler: 1) Likviditetsgrad (Omsætningsaktiver / Kortfristet gæld), 2) Soliditetsgrad (Egenkapital / Samlede aktiver * 100), 3) EBITDA-margin (EBITDA / Omsætning * 100), og 4) Dækningsgrad. Præsenter hvert nøgletal som et overskueligt KPI-kort med: Nøgletalsnavn, aktuel værdi formateret med rette enhed, målsætning (Benchmark), og en statusindikator ('🟢 På mål', '🟡 Opmærksomhed', '🔴 Kritisk').",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_161",
+    "title": "Indirekte pengestrømsopgørelse fra Resultatopgørelse og Balanceforskydninger",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Automatiserer beregningen af drifts-, investerings- og finansieringspengestrømme baseret på to perioders balancer.",
+    "prompt": "Udarbejd en indirekte pengestrømsopgørelse på arket 'Cash_Flow' for regnskabsåret. Tag udgangspunkt i Årets Resultat fra tbl_IncomeStatement. Tilbagefør ikke-likvide poster (afskrivninger og hensættelser). Beregn ændringer i arbejdskapital (forskydning i debitorer, varelager og kreditorer mellem 'Balance Sheet 2025' og 'Balance Sheet 2026'). Saml opgørelsen i: 1) Pengestrømme fra driftsaktivitet, 2) Pengestrømme fra investeringsaktivitet, og 3) Pengestrømme fra finansieringsaktivitet. Afslut med en kontrolcelle, der bekræfter at den beregnede nettoændring i likvider svarer præcist til forskydningen på bankkontiene.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_162",
+    "title": "Opret en autoritativ .Rules fane til styring af Excel Copilot",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "Microsoft 365 Copilot i Excel",
+    "source": "Excel University & M365 Expert",
+    "description": "Etablerer en fuldstændig .Rules-fane i kolonne A med virksomhedens formaterings-, formel- og rapportkrav til Copilot.",
+    "prompt": "Opret en ny fane i denne projektmappe navngivet præcist '.Rules' og sørg for at fanen forbliver synlig. Udfyld kolonne A med vores standarder for Excel Copilot opdelt i sektioner: 'Formatting' (Valuta #,##0 uden symbol/decimaler, tabeller med Ctrl+T og tbl_ præfiks, forbud mod merged cells, brug 'Center Across Selection' ved centrering), 'Formulas' (Foretræk altid XLOOKUP over VLOOKUP, foretræk SUMIFS over SUMIF, brug strukturerede tabelreferencer som [@Felt] frem for cellereferencer), 'Reports' (Foretræk PivotTables til multivariat analyse, placer rapporter på egne ark, medtag altid balance-check), og 'Style Guide' (A1 overskrift 18pt bold, B2 firmanavn 12pt plain, primærfarve #0284C7). Bekræft når fanen er aktiv og klar til brug.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Aktive Excel-dataark, pivottabeller og tilknyttede forretningsrapporter.",
+      "format": "Struktureret tabel med overskrifter, status og datoer.",
       "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
     }
   }

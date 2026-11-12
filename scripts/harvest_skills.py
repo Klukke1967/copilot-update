@@ -63,7 +63,11 @@ PNP_SKILLS = [
 ]
 
 LOCAL_CURATED_SKILLS = [
-    ("copilot-excel-skills", "M365 & Samarbejde", "Copilot in Excel Custom Skills Authoring", Path.home() / ".hermes/skills/.archive/copilot-excel-skills/SKILL.md"),
+    ("excel-copilot-financials", "📊 Excel & Finans", "Excel Copilot Financial Statements Builder (Balance Sheet & P&L)", ROOT / "skills/excel-copilot-financials/SKILL.md"),
+    ("excel-copilot-rules-architect", "📊 Excel & Finans", "Excel Copilot .Rules Sheet Architecture & Behavior", ROOT / "skills/excel-copilot-rules-architect/SKILL.md"),
+    ("excel-gl-variance-analyzer", "📊 Excel & Finans", "Excel General Ledger & Budget Variance Analyzer", ROOT / "skills/excel-gl-variance-analyzer/SKILL.md"),
+    ("excel-copilot-clean-and-transform", "📊 Excel & Finans", "Excel Data Cleaner, Table Staging & Transformation", ROOT / "skills/excel-copilot-clean-and-transform/SKILL.md"),
+    ("copilot-excel-skills", "📊 Excel & Finans", "Copilot in Excel Custom Skills Authoring", Path.home() / ".hermes/skills/.archive/copilot-excel-skills/SKILL.md"),
     ("teams-meeting-pipeline", "M365 & Samarbejde", "Teams Meeting Pipeline & Graph Summarizer", Path.home() / ".hermes/skills/.archive/teams-meeting-pipeline/SKILL.md"),
     ("email-inbox-triage", "M365 & Samarbejde", "Executive Email Inbox Triage & Action Sorter", Path.home() / ".hermes/skills/.archive/email-inbox-triage/SKILL.md"),
     ("document-to-action-items", "Ledelse & Planlægning", "Document & Report to Action Items Converter", Path.home() / ".hermes/skills/.archive/document-to-action-items/SKILL.md"),

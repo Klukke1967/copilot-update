@@ -1797,12 +1797,12 @@
       <button id="tab-btn-prompts" class="main-tab-btn" onclick="switchMainTab('prompts')">
         <span class="tab-icon">💡</span>
         <span>Gode Prompts</span>
-        <span class="tab-badge highlight" id="tab-count-prompts">150</span>
+        <span class="tab-badge highlight" id="tab-count-prompts">162</span>
       </button>
       <button id="tab-btn-skills" class="main-tab-btn" onclick="switchMainTab('skills')">
         <span class="tab-icon">⚡</span>
         <span>Agent Skills</span>
-        <span class="tab-badge" id="tab-count-skills" style="background:#8b5cf6; color:#fff;">22</span>
+        <span class="tab-badge" id="tab-count-skills" style="background:#8b5cf6; color:#fff;">26</span>
       </button>
     </div>
   </div>
@@ -1819,12 +1819,12 @@
     <div class="drawer-nav">
       <div class="drawer-section-title">Prompt & Skill Hub</div>
       <button class="drawer-item" onclick="switchMainTab('prompts'); closeMenu();">
-        <span class="item-label">💡 Gode Prompts (150)</span>
-        <span class="item-badge" style="background:#f59e0b; color:#fff;">150</span>
+        <span class="item-label">💡 Gode Prompts (162)</span>
+        <span class="item-badge" style="background:#f59e0b; color:#fff;">162</span>
       </button>
       <button class="drawer-item" onclick="switchMainTab('skills'); closeMenu();">
         <span class="item-label">⚡ Agent Skills (SKILL.md)</span>
-        <span class="item-badge" style="background:#8b5cf6; color:#fff;">22</span>
+        <span class="item-badge" style="background:#8b5cf6; color:#fff;">26</span>
       </button>
 
       <div class="drawer-section-title">Dit Feed</div>
@@ -1925,10 +1925,10 @@
           🎬 Videoer <span class="chip-count" id="chip-count-video">0</span>
         </button>
         <button class="chip" data-target="prompts" onclick="switchMainTab('prompts')">
-          💡 Prompts <span class="chip-count" id="chip-count-prompts-chip">150</span>
+          💡 Prompts <span class="chip-count" id="chip-count-prompts-chip">162</span>
         </button>
         <button class="chip" data-target="skills" onclick="switchMainTab('skills')">
-          ⚡ Skills <span class="chip-count" id="chip-count-skills-chip">22</span>
+          ⚡ Skills <span class="chip-count" id="chip-count-skills-chip">26</span>
         </button>
       </div>
     </div>
@@ -2068,7 +2068,7 @@
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <input type="text" id="prompt-search-input" placeholder="Søg i 150 prompts (fx 'planner', 'teams', 'variance', 'outlook', 'møde')..." oninput="onPromptSearchChange(this.value)" autocomplete="off">
+          <input type="text" id="prompt-search-input" placeholder="Søg i 162 prompts (fx 'excel', 'variance', 'balance', 'planner', 'teams')..." oninput="onPromptSearchChange(this.value)" autocomplete="off">
           <button id="clear-prompt-search" class="clear-search" onclick="clearPromptSearch()" title="Ryd søgning">✕</button>
         </div>
 
@@ -2101,13 +2101,13 @@
           </p>
         </div>
         <div class="pillars-grid">
-          <div class="pillar-item"><span class="pillar-num" style="background:#7c3aed;">1</span><div class="pillar-content"><h4>📥 Høstet automatisk</h4><p>Microsoft PnP skills opdateres via harvester-scriptet.</p></div></div>
+          <div class="pillar-item"><span class="pillar-num" style="background:#7c3aed;">1</span><div class="pillar-content"><h4>📥 Høstet automatisk</h4><p>Microsoft PnP & kuraterede Excel skills opdateres via harvester-scriptet.</p></div></div>
           <div class="pillar-item"><span class="pillar-num" style="background:#7c3aed;">2</span><div class="pillar-content"><h4>✅ Valideret & struktureret</h4><p>SKILL.md frontmatter, navn og beskrivelse kontrolleres.</p></div></div>
           <div class="pillar-item"><span class="pillar-num" style="background:#7c3aed;">3</span><div class="pillar-content"><h4>💻 Eksternt anvendelige</h4><p>Kopiér hele filen til den agent-platform du bruger.</p></div></div>
         </div>
         <div style="margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap;">
           <a href="skills.zip" download="copilot-skills.zip" class="btn-copy-prompt" style="background: #7c3aed; color: #fff; text-decoration: none; padding: 10px 18px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; border-radius: 8px;">
-            <span>📦 Download alle 22 skills (.ZIP)</span>
+            <span>📦 Download alle 26 skills (.ZIP)</span>
           </a>
         </div>
       </section>
@@ -2115,7 +2115,7 @@
       <div class="controls-wrapper">
         <div class="search-box">
           <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="skill-search-input" placeholder="Søg i 22 skills (fx 'prompt', 'Teams', 'Excel', 'MCP')..." oninput="onSkillSearchChange(this.value)" autocomplete="off">
+          <input type="text" id="skill-search-input" placeholder="Søg i 26 skills (fx 'excel', 'financials', 'rules', 'Teams', 'MCP')..." oninput="onSkillSearchChange(this.value)" autocomplete="off">
           <button id="clear-skill-search" class="clear-search" onclick="clearSkillSearch()" title="Ryd søgning">✕</button>
         </div>
         <div class="filter-chips" id="skill-category-chips"></div>
@@ -3380,9 +3380,10 @@
 
       const depts = [
         { id: 'all', label: 'Alle prompts' },
+        { id: 'Excel & Finans', label: '📊 Excel & Finans' },
         { id: 'M365 & Samarbejde', label: '👥 M365 & Teams' },
         { id: 'Ledelse & Projektledelse', label: '💼 Ledelse & PM' },
-        { id: 'Økonomi & Finans', label: '📊 Økonomi & Finans' },
+        { id: 'Økonomi & Finans', label: '💰 Finans & Regnskab' },
         { id: 'Power User (M365)', label: '⚡ Power User' },
         { id: 'Outlook & Mail-styring', label: '📬 Outlook & Mail' },
         { id: 'IT & Drift', label: '🛠️ IT & Drift' },
