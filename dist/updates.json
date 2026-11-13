@@ -1,5 +1,55 @@
 [
   {
+    "id": "chatgpt_c4184858",
+    "title": "Cyber at the Frontier",
+    "link": "https://www.youtube.com/watch?v=YmxpxJZvm4M",
+    "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "research"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-12T21:37:14Z",
+    "display_date": "12. nov. 2026",
+    "summary": "A live keynote featuring OpenAI's latest cyber announcements.",
+    "thumbnail": "https://img.youtube.com/vi/YmxpxJZvm4M/hqdefault.jpg",
+    "tldr_da": "En levende keynote præsentering fra OpenAI med deres nyeste cyber-annonceringer."
+  },
+  {
+    "id": "chatgpt_bff67df7",
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "link": "https://openai.com/business/customer-stories/amplitude",
+    "category": "chatgpt",
+    "tags": [
+      "m365",
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-12T19:00:00Z",
+    "display_date": "12. nov. 2026",
+    "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+    "thumbnail": "",
+    "tldr_da": "Amplitude bruger OpenAI modeller til at udvikle Wave, en proaktiv produktagent, der identificerer, implementerer og vurderer forbedringer i produkterne i mindre end to dage."
+  },
+  {
+    "id": "chatgpt_0e0766ec",
+    "title": "Gondola doubles revenue as its team builds more with Codex",
+    "link": "https://openai.com/business/customer-stories/gondola",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-12T11:00:00Z",
+    "display_date": "12. nov. 2026",
+    "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
+    "thumbnail": "",
+    "tldr_da": "Gondola fordobler indtægt, mens Codex øger lederens udbringning med 50% og forenkler daglige opgaver for creatives."
+  },
+  {
     "id": "chatgpt_9df9e970",
     "title": "What Codex Unlocks for Holiday Extras",
     "link": "https://www.youtube.com/watch?v=vu3YlUMkvyg",

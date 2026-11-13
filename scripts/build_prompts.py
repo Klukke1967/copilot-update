@@ -180,6 +180,117 @@ EXCEL_COPILOT_PROMPTS = [
     }
 ]
 
+OPERATOR_FRAMEWORK_PROMPTS = [
+    {
+        "title": "Forberedelse til den svære medarbejdersamtale",
+        "department": "Ledelse & Projektledelse",
+        "task_type": "Prepare",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Giver en direkte og konstruktiv åbningsreplik, to sandsynlige reaktionsmønstre (defensiv vs. modtagelig) med svarmuligheder, samt faldgruber at undgå.",
+        "prompt": "Jeg skal have en svær samtale med en kollega/medarbejder om følgende situation: [BESKRIV SITUATION, F.EKS. DEDIKATION, DEADLINES, ADFÆRD ELLER KVALITET]. Giv mig: 1) En direkte åbningsreplik, der er saglig og klar uden at virke anklagende. 2) To sandsynlige måder vedkommende kan reagere på — én defensiv og én modtagelig — samt et konkret forslag til mit opfølgende svar for hver reaktion. 3) Nævn én specifik vending eller fejl, jeg for alt i verden skal undgå at sige, baseret på hvorfor denne type samtaler typisk afspores."
+    },
+    {
+        "title": "Konstruktiv og afbalanceret feedback (under 100 ord)",
+        "department": "Ledelse & Projektledelse",
+        "task_type": "Create",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Omformulerer kritisk feedback, så den er 100% ærlig og specifik uden at virke demotiverende eller hård.",
+        "prompt": "Jeg skal give følgende feedback til et teammedlem: [BESKRIV FEEDBACK/KRITIKKILDE]. Omformuler min besked, så den er ærlig og præcis, men uden at virke hård eller defensiv. Strukturer svaret stramt i tre punkter: 1) Hvad der fungerer godt pt., 2) Hvad der konkret skal ændres, og 3) Hvorfor ændringen gør en positiv forskel for teamet/projektet. Hold hele formuleringen på under 100 ord."
+    },
+    {
+        "title": "Interviewspørgsmål til dyb adfærdstestning (Stærke vs. svage svar)",
+        "department": "HR & Personale",
+        "task_type": "Prepare",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "8 målrettede adfærdsspørgsmål der går bag om CV'et og tester reelle kompetencer, inkl. en facitliste over stærke vs. svage svar.",
+        "prompt": "Jeg skal interviewe en kandidat til stillingen som [ROLLE/TITEL] hos [VIRKSOMHEDSTYPE]. Generer 8 skarpe interviewspørgsmål, der går dybere end standard-CV'et og tester specifikt for [NØGLEKOMPETENCE/PERSONLIG EGENSKAB, F.EKS. KRISERING, EJERSKAB, PRIORITERING ELLER KONFLIKTHÅNDTERING]. For hvert af de 8 spørgsmål: Beskriv kort hvordan et 'stærkt og troværdigt svar' lyder med konkrete signaler, kontra hvad et 'svagt eller overfladisk svar' indeholder, så jeg ved præcis hvad jeg skal lytte efter under samtalen."
+    },
+    {
+        "title": "Første uges onboarding-guide uden forudsat viden",
+        "department": "HR & Personale",
+        "task_type": "Create",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Dag-for-dag tjekliste til nyansatte, der antager 0 kendskab til interne værktøjer, inkl. nøglepersoner og typiske blindgyder.",
+        "prompt": "Opret en struktureret onboarding-tjekliste for den første uge for en ny [ROLLE/FUNKTION], der starter på vores hold. Antag at vedkommende har nul kendskab til vores interne systemer, forkortelser og processer. Organiser tjeklisten dag for dag (Dag 1 til Dag 5). Angiv for hver dag: 1) Konkrete opgaver og opsætning, 2) Hvem vedkommende skal mødes med og det præcise formål med mødet, og 3) Flag 2-3 typiske faldgruber eller detaljer, der ofte overses i den første uge."
+    },
+    {
+        "title": "Strategisk beslutningsramme: Option A vs. Option B",
+        "department": "Ledelse & Projektledelse",
+        "task_type": "Analyze",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Strukturerer svære ledelsesvalg med vejede fordele/ulemper ud fra kernekriterier (omkostning, tid, risiko) og identificerer afgørende manglende information.",
+        "prompt": "Jeg skal træffe en strategisk beslutning mellem to spor: [MULIGHED A] og [MULIGHED B] i forbindelse med [KONTEKST/PROJEKT]. Opbyg en neutral analyse: 1) En sammenlignelig liste over fordele og ulemper for hver mulighed. 2) En vægtning af mulighederne ud fra min primære prioritet: [F.EKS. HASTIGHED / OMKOSTNING / DRIFTSSIKKERHED / SKALERBARHED]. 3) Konkluder med hvilken specifik manglende oplysning eller data, der reelt ville kunne tippe beslutningen fra den ene side til den anden."
+    },
+    {
+        "title": "Idéudvidelse: 10 vinkler fra sikre til dristige",
+        "department": "Ledelse & Projektledelse",
+        "task_type": "Create",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Genererer 10 innovative variationsvinkler på en idé, rangeret fra pragmatiske til dristige, med succeskriterier for de tre stærkeste.",
+        "prompt": "Jeg har følgende grundidé / udfordring: [BESKRIV IDÉ ELLER OPGAVE]. Generer 10 forskellige variationer eller strategiske vinkler på denne idé. Ranger og mærk hver variation inden for tre niveauer: 1) 'Sikker & Pragmatisk' (let at eksekvere med lav risiko), 2) 'Moderat Nytænkende' (kræver visse tilpasninger), og 3) 'Dristig & Utraditionel' (høj risiko/høj gevinst). Udvælg de tre mest lovende vinkler og beskriv for hver, hvilke forudsætninger der absolut skal være til stede, for at den lykkes."
+    },
+    {
+        "title": "Projekt-retrospektiv: Mønster vs. Engangshændelse",
+        "department": "Ledelse & Projektledelse",
+        "task_type": "Analyze",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Evaluerer et afsluttet projektforløb og adskiller enkeltstående hændelser fra underliggende procesfejl, der kræver systemiske rettelser.",
+        "prompt": "Her er hvad der skete under forløbet for [PROJEKTNAVN / LEVERANCE]: [INDSÆT KORT BESKRIVELSE AF FORLØB, UDFORDRINGER OG RESULTAT]. Opbyg et professionelt retrospektiv med tre sektioner: 1) Hvad der fungerede optimalt og skal fastholdes. 2) Hvad der fejlede eller skabte friktion. 3) For hvert problempunkt i del 2: Vurder om der var tale om et 'enkeltstående uheld/engangshændelse' eller et 'systemisk procesmønster', der kræver en varig ændring i vores arbejdsgange. Afslut med 3 konkrete procesforbedringer til næste gang."
+    },
+    {
+        "title": "Hurtig konkurrentsammenligning og differentieringsvinkel",
+        "department": "Salg & Forretningsudvikling",
+        "task_type": "Analyze",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Opbygger en 4-akset sammenligningsmatrix mod en navngiven konkurrent (pris, funktioner, målgruppe, positionering) og finder den stærkeste salgsvinkel.",
+        "prompt": "Jeg skal sammenligne vores [PRODUKT / YDELSE] med konkurrenten [KONKURRENTENS NAVN]. Opbyg en fokuseret sammenligningsmatrix over fire områder: Prissætning, Kernefeatures, Målgruppe og Markedspositionering. Angiv for hvert område, hvor vi er 'Klart foran', 'Klart bagud' eller 'Omtrent lige'. Afslut med at anbefale én skarp differentieringsvinkel, som vores salgs- og marketingbudskaber bør læne sig tungt ind i."
+    },
+    {
+        "title": "Executive Summary: 30-sekunders resumé til topledelsen",
+        "department": "Ledelse & Projektledelse",
+        "task_type": "Catch up",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Koger et langt dokument eller rapport ned til ét stramt afsnit til en travl beslutningstager med 30 sekunder.",
+        "prompt": "Opsummer følgende dokument i ét enkelt, knivskarpt afsnit til en travl topleder, der højst har 30 sekunder til at læse det: [INDSÆT TEKST ELLER DOKUMENTUDDRAG]. Følg denne faste rækkefølge: 1) Start med den absolut vigtigste hovedkonklusion i første sætning. 2) Fremhæv det mest afgørende støtteargument eller datapunkt. 3) Afslut med den præcise beslutning eller handling, der forventes af vedkommende nu. Udelad al generel baggrundshistorie og fyldord."
+    },
+    {
+        "title": "Indvendingshåndtering i 3 niveauer (Fra beroligelse til databevis)",
+        "department": "Salg & Forretningsudvikling",
+        "task_type": "Create",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Forbereder 3 distinkte svarniveauer på kundens modstand uden at lyde defensiv, tilpasset kundens skepsisgrad.",
+        "prompt": "Jeg pitcher vores [PRODUKT / LØSNING / IDÉ] og forventer modstand/indvendinger om: [BESKRIV TYPISK KUNDEINDVENDING, F.EKS. PRIS, IMPLEMENTERINGSTID ELLER SYSTEMSKIFTE]. Giv mig 3 forskellige måder at imødegå bekymringen direkte uden at lyde defensiv: 1) En hurtig beroligende respons (til den lettere skeptiske kunde), 2) Et relations- og procesorienteret svar (til den tøvende kunde), og 3) Et databaseret og veldokumenteret svar med bevisførelse (til den dybt skeptiske kunde). Forklar kort hvornår hvert svar passer bedst."
+    },
+    {
+        "title": "Kold outreach-besked med lavt pres (under 100 ord)",
+        "department": "Salg & Forretningsudvikling",
+        "task_type": "Create",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Ikke-sælgende outreach til LinkedIn eller e-mail med personlig krog og et uforpligtende spørgsmål, der er nemt at sige ja til.",
+        "prompt": "Skriv en kort, usælgende henvendelse til en [MÅLPERSONENS ROLLE/BRANCHE] vedrørende [ÅRSAG TIL HENVENDELSE / VÆRDISKABENDE ANLEDNING]. Regler: 1) Hold beskeden på under 100 ord i alt. 2) Åbn med en specifik observation eller reference til vedkommendes arbejde i stedet for en generisk kliché. 3) Undgå aggressivt salgssprog. 4) Afslut med et lavt-pres spørgsmål (et 'low-pressure ask'), som tager under 30 sekunder at besvare og er nemt at sige ja til."
+    },
+    {
+        "title": "Jargon-knuser og forenkling til eksterne modtagere",
+        "department": "Marketing & Kommunikation",
+        "task_type": "Create",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Adam Biddlecombe / Operator Framework",
+        "description": "Fjerner intern jargon, akronymer og uforståeligt fagsprog fra et dokument, så det kan forstås af enhver uden for branchen.",
+        "prompt": "Forenkl denne faglige tekst, så en person uden for vores branche kan forstå den i første gennemlæsning: [INDSÆT TEKST]. Regler: 1) Fjern alle interne akronymer og corporate buzzwords, og erstat dem med klart, jordnært hverdagssprog. 2) Behold samtlige fakta, tal og logiske pointer intakte. 3) Hvis der er et teknisk fagbegreb, som er absolut uundgåeligt, skal du tilføje en forklarende sætning i parentes, der definerer det på et øjeblik."
+    }
+]
+
 def clean(text):
     if not text:
         return ""
@@ -444,6 +555,31 @@ def main():
         })
         p_id += 1
     print(f"Indlæst {len(EXCEL_COPILOT_PROMPTS)} kuraterede Excel Copilot prompts.")
+
+    print("--- 7: Adam Biddlecombe Operator Framework Prompts (12 prompts) ---")
+    for item in OPERATOR_FRAMEWORK_PROMPTS:
+        ptext = item["prompt"]
+        dept = item["department"]
+        dept_da = DEPT_MAP_DA.get(dept, dept)
+        task_type = item["task_type"]
+        task_da = TASK_TYPE_DA.get(task_type, task_type)
+        pillars = build_pillars(ptext, task_type, dept)
+        
+        all_prompts.append({
+            "id": f"prompt_{p_id:03d}",
+            "title": item["title"],
+            "department": dept,
+            "department_da": dept_da,
+            "task_type": task_type,
+            "task_type_da": task_da,
+            "tool": item.get("tool", "AI Model Agnostisk (Claude / Copilot / ChatGPT)"),
+            "source": item.get("source", "Adam Biddlecombe / Operator Framework"),
+            "description": item["description"],
+            "prompt": ptext,
+            "pillars": pillars
+        })
+        p_id += 1
+    print(f"Indlæst {len(OPERATOR_FRAMEWORK_PROMPTS)} kuraterede Operator Framework prompts.")
     print(f"Samlet antal prompts i biblioteket: {len(all_prompts)}")
 
     OUTPUT_FILE.write_text(json.dumps(all_prompts, ensure_ascii=False, indent=2), encoding="utf-8")
