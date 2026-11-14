@@ -1,7 +1,121 @@
 [
   {
+    "id": "chatgpt_4815987a",
+    "title": "6 Underrated Ways to Use ChatGPT",
+    "link": "https://www.youtube.com/shorts/ErOVIC-MGVA",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-13T17:15:41Z",
+    "display_date": "13. nov. 2026",
+    "summary": "We asked 6 people for their most underrated way to use ChatGPT. Their answers covered personal style, everyday logistics, and stopping random subscription charges. What’s yours?",
+    "thumbnail": "https://img.youtube.com/vi/ErOVIC-MGVA/hqdefault.jpg",
+    "tldr_da": "Videodemonstration fra OpenAI med fokus på nye modelfunktioner og problemløsning med ChatGPT."
+  },
+  {
+    "id": "chatgpt_19c6aea8",
+    "title": "How Mozilla uses GPT-6 Cyber to find and fix Firefox vulnerabilities",
+    "link": "https://www.youtube.com/watch?v=PkAmyub12K8",
+    "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-13T15:56:45Z",
+    "display_date": "13. nov. 2026",
+    "summary": "Mozilla is combining decades of security engineering with AI agents to strengthen Firefox’s defenses. Brian Grinstead joins OpenAI’s Clint Gibler to discuss how the team prioritize...",
+    "thumbnail": "https://img.youtube.com/vi/PkAmyub12K8/hqdefault.jpg",
+    "tldr_da": "Mozilla bruger AI til at identificere og rette op på sikkerhedsrisici i Firefox, kombineret med deres ekspertheder i sikkerhedsteknologi. Brian Grinstead fra Mozilla diskuterer med OpenAI, hvordan de prioriterer og håndterer disse udfordringer."
+  },
+  {
+    "id": "chatgpt_70af7153",
+    "title": "How Mozilla strengthens Firefox security with GPT-6 Cyber",
+    "link": "https://www.youtube.com/shorts/pfbfZKxUEDQ",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-13T15:38:23Z",
+    "display_date": "13. nov. 2026",
+    "summary": "Mozilla’s Brian Grinstead shares how early testing with GPT-6 Cyber identified new vulnerabilities and opportunities to strengthen Firefox’s defenses, helping the team work toward...",
+    "thumbnail": "https://img.youtube.com/vi/pfbfZKxUEDQ/hqdefault.jpg",
+    "tldr_da": "Mozilla deler, hvordan brug af GPT-6 Cyber har opdaget nye sårbarheder og muligheder for at styrke Firefox's sikkerhed."
+  },
+  {
+    "id": "chatgpt_79d13e04",
+    "title": "Introducing ChatGPT Wallet",
+    "link": "https://openai.com/index/introducing-chatgpt-wallet",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-13T14:00:00Z",
+    "display_date": "13. nov. 2026",
+    "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+    "thumbnail": "",
+    "tldr_da": "ChatGPT Wallet er en sikker metode til at gennemføre køb med brugerenes godkendelse og eksisterende kortbeskyttelser for agenter i ChatGPT Work, Codex og dots."
+  },
+  {
+    "id": "copilot_04b41372",
+    "title": "What Ignite Announcements Mean for Business Leaders",
+    "link": "https://www.youtube.com/watch?v=-YH6zLRTwwQ",
+    "category": "copilot",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Steve Corey (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-13T12:45:43Z",
+    "display_date": "13. nov. 2026",
+    "summary": "Steve Corey looks ahead to Microsoft Ignite while examining the operational work required before and after an AI rollout. He explains why governance, oversharing, shadow AI, and en...",
+    "thumbnail": "https://img.youtube.com/vi/-YH6zLRTwwQ/hqdefault.jpg",
+    "tldr_da": "Steve Corey analyserer Microsoft Ignite og understreger de operativa udfordringer for virksomheder i forbindelse med en AI-udfodring, herunder governance, overdeling af sensible informationer og skjult AI-brug."
+  },
+  {
+    "id": "chatgpt_db3076ba",
+    "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+    "link": "https://openai.com/business/customer-stories/shield",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-13T07:00:00Z",
+    "display_date": "13. nov. 2026",
+    "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
+    "thumbnail": "",
+    "tldr_da": "Shield bruger OpenAI til at hjælpe IT-teknikere med at overdrage arbejde i forældede portaler, så deres Forge-agenter kan navigere systemer, så teknicere kan fokusere på problemer, der kræver deres vurdering."
+  },
+  {
+    "id": "claude_058ddecd",
+    "title": "Building strong safety evaluations",
+    "link": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+    "category": "claude",
+    "tags": [
+      "leadership",
+      "research"
+    ],
+    "source": "Anthropic Research (Claude)",
+    "type": "article",
+    "published_at": "2026-11-12T23:00:00Z",
+    "display_date": "12. nov. 2026",
+    "summary": "Recommendations for designing, running, and reporting safety evaluations, based on our own experiences.",
+    "thumbnail": "",
+    "tldr_da": "Anbefalinger for at designe, gennemføre og rapportere sikkerhedsvurderinger baseret på egne erfaringer."
+  },
+  {
     "id": "chatgpt_c4184858",
-    "title": "Cyber at the Frontier",
+    "title": "Cyber at the Frontier: Introducing Daybreak Red Team & Daybreak Defense Factory",
     "link": "https://www.youtube.com/watch?v=YmxpxJZvm4M",
     "category": "chatgpt",
     "tags": [
@@ -12,7 +126,7 @@
     "type": "youtube",
     "published_at": "2026-11-12T21:37:14Z",
     "display_date": "12. nov. 2026",
-    "summary": "A live keynote featuring OpenAI's latest cyber announcements.",
+    "summary": "Greg Brockman, Nancy Wang, Fouad Matin, Clint Gibler, Alexander Thiemann, and Matt Boyle took the stage at Cyber at the Frontier, where OpenAI introduced two cybersecurity products...",
     "thumbnail": "https://img.youtube.com/vi/YmxpxJZvm4M/hqdefault.jpg",
     "tldr_da": "En levende keynote præsentering fra OpenAI med deres nyeste cyber-annonceringer."
   },
@@ -80,6 +194,23 @@
     "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
     "thumbnail": "",
     "tldr_da": "Holiday Extras bruger Codex til at omforme kundekundskab til bedre app-er, højere bokningskonvertering og nye vækstmuligheder."
+  },
+  {
+    "id": "copilot_7cf68696",
+    "title": "SharePoint Knowledge Base: Let Copilot Build It For You",
+    "link": "https://www.youtube.com/watch?v=1VTfZ8qzR_4",
+    "category": "copilot",
+    "tags": [
+      "m365",
+      "developer"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-11-12T05:16:40Z",
+    "display_date": "12. nov. 2026",
+    "summary": "Let’s take a look at the brand-new SharePoint knowledge base. It’s a curated home for your team’s know-how, built for people and also for Copilot and agents to use as grounding. In...",
+    "thumbnail": "https://img.youtube.com/vi/1VTfZ8qzR_4/hqdefault.jpg",
+    "tldr_da": "Laura Rogers introducerer den nye SharePoint videndatabase, en kurateret hjemme for teams viden, som er bygget til både mennesker og Copilot at bruge som reference."
   },
   {
     "id": "chatgpt_49cf590d",
@@ -425,6 +556,22 @@
     "summary": "We’re turning lessons from defending OpenAI into practical tools for our customers. OpenAI President and Co-Founder Greg Brockman shares how we used a frontier model to identify an...",
     "thumbnail": "https://img.youtube.com/vi/vdEGZYIvFiI/hqdefault.jpg",
     "tldr_da": "Greg Brockman fra OpenAI fortæller på YouTube, hvordan de bruger fremtidige modeler til cybersikkerhed, og omvandler deres erfaringer i praktiske værktøjer for kunder."
+  },
+  {
+    "id": "copilot_36a3a2c3",
+    "title": "Build Better Business Reports: Start With These 3 Questions",
+    "link": "https://www.youtube.com/shorts/R3mJKa4RAws",
+    "category": "copilot",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-11-10T14:35:45Z",
+    "display_date": "10. nov. 2026",
+    "summary": "Stop building reports without asking these questions. You need to know the 'why' before you start pulling the data. #PowerBI #DataAnalytics #BusinessTips #DataVisualization #Busine...",
+    "thumbnail": "https://img.youtube.com/vi/R3mJKa4RAws/hqdefault.jpg",
+    "tldr_da": "Laura Rogers fra Copilot & SharePoint anbefaler at stille tre vigtige spørgsmål før man begynder at lave erhvervsrapporter for at sikre, at man kender til formålet med rapporten. #PowerBI #DataAnalytics #DataVisualization"
   },
   {
     "id": "chatgpt_5f191506",
@@ -822,6 +969,22 @@
     "tldr_da": "OpenAI lancerer BioBasicsBench, en 100-opslags benchmark der måler AI-agenteres evne til at forstå ren eksperimentel data og håndtere dagligdagshåndtering i laboratorier."
   },
   {
+    "id": "copilot_9ad97340",
+    "title": "How to Filter Lists, Add Comments, and Mention People",
+    "link": "https://www.youtube.com/shorts/hBTpjbFPW3M",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-11-05T19:35:28Z",
+    "display_date": "5. nov. 2026",
+    "summary": "How to Filter Lists, Add Comments, and Mention People Stop digging through data in Microsoft SharePoint Lists. Use these simple filter and comment hacks to organize your workflow a...",
+    "thumbnail": "https://img.youtube.com/vi/hBTpjbFPW3M/hqdefault.jpg",
+    "tldr_da": "Laura Rogers fra Copilot & SharePoint deler tips om, hvordan man filtrerer lister og tilføjer kommentarer i Microsoft SharePoint for at organisere arbejdsprocesser effektivt."
+  },
+  {
     "id": "chatgpt_a0013522",
     "title": "Cult.fit builds operational muscle with Codex",
     "link": "https://openai.com/index/cultfit-builds-with-codex",
@@ -905,6 +1068,22 @@
     "summary": "Merge uses GPT-6 Astra, ChatGPT, and Codex to review product code and support marketing. Its teams also use AI to plan executive dinners and prepare sales updates.",
     "thumbnail": "",
     "tldr_da": "Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
+  },
+  {
+    "id": "copilot_768bbb72",
+    "title": "Power Automate Process Maps Explained: Why You’ll Actually Use Them",
+    "link": "https://www.youtube.com/watch?v=eSU_oSHyrtM",
+    "category": "copilot",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-11-05T05:07:42Z",
+    "display_date": "5. nov. 2026",
+    "summary": "Learn how to use Power Automate Process Maps to visualize multiple flows that work together as one business process. In this Power Hour, I build a real-world file intake and routin...",
+    "thumbnail": "https://img.youtube.com/vi/eSU_oSHyrtM/hqdefault.jpg",
+    "tldr_da": "Laura Rogers fra Copilot & SharePoint forklarer på kort tid, hvordan man bruger Power Automate Process Maps til at visualisere og forstå komplekse flows i en virksomhedsgenstand."
   },
   {
     "id": "chatgpt_a6169b93",
@@ -1442,6 +1621,22 @@
     "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
+    "id": "copilot_c6af7c82",
+    "title": "Fix your survey response rates instantly #MicrosoftForms #LifeHack",
+    "link": "https://www.youtube.com/shorts/s6bQRp18euE",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-26T20:19:23Z",
+    "display_date": "26. okt. 2026",
+    "summary": "Boost Microsoft Forms Survey Responses with Copilot Getting customer feedback just got way easier. Watch how Copilot handles the outreach and survey responses in seconds. Training...",
+    "thumbnail": "https://img.youtube.com/vi/s6bQRp18euE/hqdefault.jpg",
+    "tldr_da": "Laura Rogers fra Microsoft beskæftiger sig med, hvordan Copilot Microsoft Forms-undersøgelser og -svarkerhverv forbedrer hurtigt, gør kundedbacklash nemmere at få og håndtere."
+  },
+  {
     "id": "copilot_bfd088e0",
     "title": "Copilot Code + Work IQ Made This From ONE Prompt",
     "link": "https://www.youtube.com/shorts/7n4uLMzmemQ",
@@ -1539,6 +1734,23 @@
     "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
+    "id": "copilot_cf7d32a4",
+    "title": "How I created a Purchase Request app without writing a single line of code #nocode #ai #business",
+    "link": "https://www.youtube.com/shorts/Evn9LXTZnLA",
+    "category": "copilot",
+    "tags": [
+      "leadership",
+      "developer"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-25T17:31:36Z",
+    "display_date": "25. okt. 2026",
+    "summary": "Build a Purchase Request App With Copilot Studio Building a custom app in minutes just by uploading requirements files and a prompt. The future of workflow automation in Microsoft...",
+    "thumbnail": "https://img.youtube.com/vi/Evn9LXTZnLA/hqdefault.jpg",
+    "tldr_da": "Laura Rogers fra Copilot & SharePoint demonstrerer, hvordan man med Copilot Studio opbygger en anskaffelsesanmodningsapp i få minutter uden at skrive en linje kode, ved at uploade kravfiler og give en prompt."
+  },
+  {
     "id": "copilot_c1f7eaff",
     "title": "How to Build a Copilot Agent in 2 Seconds",
     "link": "https://www.youtube.com/shorts/1KM1N8nal44",
@@ -1588,6 +1800,22 @@
     "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   },
   {
+    "id": "copilot_07d1d330",
+    "title": "Build Your App in Copilot Studio Just by Describing What You Want",
+    "link": "https://www.youtube.com/shorts/hd1ycVcfZT8",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-22T17:33:28Z",
+    "display_date": "22. okt. 2026",
+    "summary": "Building apps just got way faster. Stop clicking around and start describing what you want to change. I built a full help desk app via prompt, and here's where I show how to make c...",
+    "thumbnail": "https://img.youtube.com/vi/hd1ycVcfZT8/hqdefault.jpg",
+    "tldr_da": "I Laura Rogers' artikel beskriver man, hvordan man hurtigt og nemt bygger apps ved at beskrive ønskede ændringer i stedet for at klikke rundt. En helvejshjælpeapp blev oprettet ved brug af prompt."
+  },
+  {
     "id": "copilot_a63d0c5e",
     "title": "How to Summarize a PDF Report with Copilot (the Right Way)",
     "link": "https://www.youtube.com/shorts/23Jg-lbupxM",
@@ -1602,6 +1830,23 @@
     "summary": "🔥 Get my free Copilot e-book with every prompt from this video ➡️ https://davidpba.myflodesk.com/5levels 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=jvHvysrv2so 🎓 Cop...",
     "thumbnail": "https://img.youtube.com/vi/23Jg-lbupxM/hqdefault.jpg",
     "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
+  },
+  {
+    "id": "copilot_b688891d",
+    "title": "Build a Business App with AI in Copilot Studio",
+    "link": "https://www.youtube.com/watch?v=GV6PCSDbXd4",
+    "category": "copilot",
+    "tags": [
+      "m365",
+      "leadership"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-22T03:45:03Z",
+    "display_date": "22. okt. 2026",
+    "summary": "What happens when you give Copilot Studio a spreadsheet, a requirements document, and a prompt to build an app? Here's my step by step blog post: https://www.iwmentor.com/pages/blo...",
+    "thumbnail": "https://img.youtube.com/vi/GV6PCSDbXd4/hqdefault.jpg",
+    "tldr_da": "Laura Rogers fra Copilot & SharePoint beskriver i sin blog, hvordan Copilot Studio kan tilpasse en app baseret på en spreadsheet, en kravspecifikation og en prompt."
   },
   {
     "id": "claude_0a3a4ddb",
@@ -1650,6 +1895,22 @@
     "summary": "Formal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases. With AI models, however, this is beginning to chang...",
     "thumbnail": "",
     "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
+  },
+  {
+    "id": "copilot_b5bff677",
+    "title": "Target to Executives: Build SharePoint Navigation With Audience Targeting",
+    "link": "https://www.youtube.com/shorts/ae_iQegXC7k",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-21T17:28:28Z",
+    "display_date": "21. okt. 2026",
+    "summary": "Stop cluttering your SharePoint navigation. Audience targeting ensures users only see links relevant to them. Keep your site clean and professional. Training at IW Mentor. #SharePo...",
+    "thumbnail": "https://img.youtube.com/vi/ae_iQegXC7k/hqdefault.jpg",
+    "tldr_da": "Gennemgang fra Laura Rogers (Copilot & SharePoint) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
     "id": "copilot_6615aa90",
@@ -1799,6 +2060,23 @@
     "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
+    "id": "copilot_7b226ade",
+    "title": "Automate Your Work: Create Custom Copilot Skills Instantly!",
+    "link": "https://www.youtube.com/shorts/qaz97SsjWoI",
+    "category": "copilot",
+    "tags": [
+      "leadership",
+      "research"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-17T18:58:27Z",
+    "display_date": "17. okt. 2026",
+    "summary": "Transform project docs into executive summaries instantly! Track progress, decisions, risks, and questions, saved as a personal skill that you can even run an evaluation on. A dail...",
+    "thumbnail": "https://img.youtube.com/vi/qaz97SsjWoI/hqdefault.jpg",
+    "tldr_da": "Laura Rogers introducerer en metode til at omdanne projektdokumenter til eksekutiv sammentagelse automatisk og spor projektudvikling, beslutninger, risici og spørgsmål via en tilpasset Copilot-færdighed."
+  },
+  {
     "id": "claude_fda5cd86",
     "title": "Working at the frontier shapes expectations for the future",
     "link": "https://www.anthropic.com/research/expectations-for-the-future",
@@ -1862,6 +2140,22 @@
     "summary": "Send us Fan Mail (https://www.buzzsprout.com/2657354/fan_mail/new) 🔴 Need help with Microsoft 365 Copilot adoption, governance, and employee training? Let's build your strategy ➡️...",
     "thumbnail": "https://img.youtube.com/vi/vl06Oqfsrww/hqdefault.jpg",
     "tldr_da": "Steve Corey fra YouTube giver ledere råd om at tilpasse deres strategi for Microsoft 365 Copilot, herunder adoption, regering og ansattetræning."
+  },
+  {
+    "id": "copilot_ff9cc88d",
+    "title": "What’s New with Copilot in SharePoint? 10 Features to Know",
+    "link": "https://www.youtube.com/watch?v=hYSwm1mHgVA",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-15T04:36:07Z",
+    "display_date": "15. okt. 2026",
+    "summary": "Copilot in SharePoint has a LOT of new capabilities! In this Power Hour, I demo 10 new Copilot in SharePoint features and show practical ways to use Microsoft 365 Copilot with Shar...",
+    "thumbnail": "https://img.youtube.com/vi/hYSwm1mHgVA/hqdefault.jpg",
+    "tldr_da": "Laura Rogers demonstrerer 10 nye funktioner for Copilot i SharePoint og viser praktiske brugsmuligheder for Microsoft 365 Copilot i SharePoint."
   },
   {
     "id": "claude_eb77f648",
@@ -1978,6 +2272,22 @@
     "tldr_da": "Jeff Su forklarer klart og nemt, hvad personal agents er, og tilbyder en gratis nyhedsbrevserie om AI-essentielle emner."
   },
   {
+    "id": "copilot_20a9e8c4",
+    "title": "Copilot Agents: Purpose, Instructions, Knowledge, Behavior Explained!",
+    "link": "https://www.youtube.com/shorts/m0zjqfKxFh0",
+    "category": "copilot",
+    "tags": [
+      "developer"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-12T17:04:27Z",
+    "display_date": "12. okt. 2026",
+    "summary": "Learn how to build AI agents by understanding their four core components: purpose, instructions, knowledge, and behavior. Most users rely on simple queries, but building custom age...",
+    "thumbnail": "https://img.youtube.com/vi/m0zjqfKxFh0/hqdefault.jpg",
+    "tldr_da": "Laura Rogers fra Copilot & SharePoint forklarer, hvordan man opbygger AI-agenter ved at forstå deres fire kritiske komponenter: formål, instruktioner, viden og adfærd."
+  },
+  {
     "id": "copilot_eb40374a",
     "title": "How to Create Amazing Dashboards with Microsoft Copilot!",
     "link": "https://www.youtube.com/watch?v=5rOUDRRCJXM",
@@ -2026,6 +2336,22 @@
     "summary": "Illicit distillation allows model developers to copy frontier AI capabilities without creating proportionally robust safeguards. Here, we describe how we’ve reduced the rate of dis...",
     "thumbnail": "",
     "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
+  },
+  {
+    "id": "copilot_f52d5273",
+    "title": "Is this the best Teams Tip? Add SharePoint to Channels FAST!",
+    "link": "https://www.youtube.com/shorts/WQ18K6vRL7E",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-11T17:47:54Z",
+    "display_date": "11. okt. 2026",
+    "summary": "Effortlessly embed SharePoint lists and pages directly into your Microsoft Teams channels. Streamline workflows and access crucial data without leaving your team environment. Train...",
+    "thumbnail": "https://img.youtube.com/vi/WQ18K6vRL7E/hqdefault.jpg",
+    "tldr_da": "Laura Rogers fra Copilot & SharePoint anbefaler at integrerer SharePoint-lister og -sider direkte i Microsoft Teams-kanaler for at optimere arbejdsgange og give hurtig adgang til vigtige data uden at forlade teams miljøet."
   },
   {
     "id": "copilot_bb69565e",
@@ -2080,6 +2406,22 @@
     "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
+    "id": "copilot_bcecc949",
+    "title": "Are you Using PowerPoint Brand Kits yet? Here's How and why",
+    "link": "https://www.youtube.com/watch?v=oOYPDzbGZ_s",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-08T03:57:27Z",
+    "display_date": "8. okt. 2026",
+    "summary": "In this episode, Laura explores the new PowerPoint Brand Kit feature, which is included with a M365 Copilot license. See this demonstration on how to leverage Copilot to generate s...",
+    "thumbnail": "https://img.youtube.com/vi/oOYPDzbGZ_s/hqdefault.jpg",
+    "tldr_da": "Laura Rogers demonstrerer i dette afsnit, hvordan man bruger den nye PowerPoint Brand Kit-funktion, der er inkluderet med en M365 Copilot-lisens, og hvordan man kan anvende Copilot til at generere indhold."
+  },
+  {
     "id": "claude_22027868",
     "title": "Building on our commitment to American scientific discovery",
     "link": "https://www.anthropic.com/news/genesis-mission-commitment",
@@ -2110,6 +2452,23 @@
     "summary": "A step-by-step look at 11 new features and improvements in Windows 11 26H2, including several long-requested changes that make everyday tasks a little easier. In this video, I’ll w...",
     "thumbnail": "https://img.youtube.com/vi/oLM9Ra6B4Iw/hqdefault.jpg",
     "tldr_da": "Mike Tholfsen præsenterer i et videoindlæg 11 nye funktioner og forbedringer i Windows 11 26H2, herunder nogle længere tid ønskede ændringer, der gør daglige opgaver lettere."
+  },
+  {
+    "id": "copilot_51ce4590",
+    "title": "Agent vs  Prompt: When to Use Each for Your Needs",
+    "link": "https://www.youtube.com/shorts/iUzf9m6N8f4",
+    "category": "copilot",
+    "tags": [
+      "leadership",
+      "developer"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-10-05T19:04:10Z",
+    "display_date": "5. okt. 2026",
+    "summary": "Agent vs. Prompt: Quick questions get quick answers, but recurring company policy Qs need an agent. Make it shareable and consistent! Training at IW Mentor #ai #Tech #Copilot #Prod...",
+    "thumbnail": "https://img.youtube.com/vi/iUzf9m6N8f4/hqdefault.jpg",
+    "tldr_da": "Agent mod prompt: Hurtige spørgsmål får hurtige svar, men gentagne spørgsmål om virksomhedspolitik kræver en agent. Gør det delelig og konstant!"
   },
   {
     "id": "copilot_bde36b3a",

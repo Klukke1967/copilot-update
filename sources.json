@@ -43,6 +43,12 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-Iu-wRWwWX8NjVRxDnW8JA"
     },
     {
+      "name": "Laura Rogers (Copilot & SharePoint)",
+      "category": "copilot",
+      "type": "youtube",
+      "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbTVoDCaPM6wE0xsDGGr9VA"
+    },
+    {
       "name": "Anthropic News (Claude)",
       "category": "claude",
       "type": "article",
