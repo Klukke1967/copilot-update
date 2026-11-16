@@ -3130,5 +3130,41 @@
       "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
       "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
     }
+  },
+  {
+    "id": "prompt_175",
+    "title": "Model-Handoff Briefing: Overlevering fra planlægning til eksekvering",
+    "department": "Ledelse & Projektledelse",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Ruben Hassid / How to AI",
+    "description": "Strukturerer en komplet overleveringsbrief fra en tænke-/arkitekt-model til en eksekverende model eller ny chat uden tab af beslutninger, fakta eller fremdrift.",
+    "prompt": "Skriv en udtømmende overleverings-brief, så en ny chat eller eksekverende model kan overtage arbejdet på [PROJEKT / OPGAVE] uden adgang til den hidtidige chathistorik. Følg denne faste struktur: 1) Mål (Goal): Én præcis sætning efterfulgt af 'Færdig når:' med de specifikke succeskriterier. 2) Næste skridt (Next step): Den første konkrete handling, der kan udføres med det samme uden min indblanding. 3) Trufne beslutninger (Decided): Hver endelig beslutning med kort begrundelse samt hvad der blev fravalgt og hvorfor. 4) Fakta & Forudsætninger (Facts): Alle nøgletal, navne, filstier og tekniske afhængigheder. 5) Allerede udført (Done here): Hvad der er færdiggjort, så det ikke genstartes unødigt. 6) Spørg mig først (Ask me first): Hvilke ændringer eller gråzoner der absolut kræver min godkendelse. 7) Åbne punkter (Open): Uafklarede spørgsmål (opfind ingen nye). 8) Tjekliste: Resterende trin som afkrydsningsfelter. Slutkrav til modellen: Læs alle relevante filer, eksekver tjeklisten fortløbende uden at stoppe for at spørge om lov til næste skridt, medmindre det falder under 'Spørg mig først'.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Teams-kanaler, chat-beskeder og mødereferater i de seneste 7-30 dage.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_176",
+    "title": "Dynamiske Guardrails: 'Spørg før handling' frem for absolutte forbud",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Ruben Hassid / How to AI",
+    "description": "Erstatter rigide forbud ('Gør aldrig X') med operationelle grænser og godkendelsesrutiner, så agenten ikke går i baglås ved nødvendige undtagelser.",
+    "prompt": "Gennemgå og optimer mine systeminstruktioner og guardrails for opgaven [BESKRIV OPGAVE / ARBEJDSGANG]: [INDSÆT AKTUELLE REGLER ELLER INSTRUKSER]. Erstat alle kategoriske 'Gør aldrig'- eller 'Du må under ingen omstændigheder'-formuleringer med operationelle 'Spørg mig først, før du [HANDLING], fordi [BEGRUNDELSE]'. Opstil 3 niveauer for autonomi: 1) Grøn zone: Handlinger modellen må udføre og lukke selvstændigt. 2) Gul zone: Handlinger hvor modellen skal foreslå løsningen og afvente min godkendelse. 3) Rød zone: Handlinger der er helt off-limits. Giv mig den renskrevne instruktion i én samlet blok klar til brug i System Prompt eller Projects.",
+    "pillars": {
+      "persona": "Microsoft 365 Copilot Power User",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
   }
 ]

@@ -61,6 +61,12 @@
       "feedUrl": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml"
     },
     {
+      "name": "Ruben Hassid - How to AI",
+      "category": "claude",
+      "type": "article",
+      "feedUrl": "https://ruben.substack.com/feed"
+    },
+    {
       "name": "OpenAI Blog (ChatGPT)",
       "category": "chatgpt",
       "type": "article",

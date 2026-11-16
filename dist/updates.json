@@ -1,5 +1,133 @@
 [
   {
+    "id": "chatgpt_b73c6d7b",
+    "title": "LVMH’s Media Division announces strategic partnership with OpenAI",
+    "link": "https://openai.com/index/lvmh-media-division-partnership",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-16T08:00:00Z",
+    "display_date": "16. nov. 2026",
+    "summary": "LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.",
+    "thumbnail": "",
+    "tldr_da": "Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
+  },
+  {
+    "id": "chatgpt_44d48000",
+    "title": "La Cousinade",
+    "link": "https://www.youtube.com/watch?v=soNLXvgUqNY",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-16T04:00:26Z",
+    "display_date": "16. nov. 2026",
+    "summary": "Une cousinade avec 63 cousins. Un site créé avec ChatGPT.",
+    "thumbnail": "https://img.youtube.com/vi/soNLXvgUqNY/hqdefault.jpg",
+    "tldr_da": "La Cousinade featerer 63 cuzender og blev skabt med ChatGPT."
+  },
+  {
+    "id": "copilot_f222ea00",
+    "title": "How to build a Knowledge Base in SharePoint 💻🔥 #sharepoint #productivity #workhacks",
+    "link": "https://www.youtube.com/shorts/K9QHuDT-v20",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-11-15T23:00:11Z",
+    "display_date": "15. nov. 2026",
+    "summary": "A knowledge base is brand new, and is just a few clicks away in SharePoint. Start blank, build it from scratch, and find it right in your site contents. You can even use Copilot to...",
+    "thumbnail": "https://img.youtube.com/vi/K9QHuDT-v20/hqdefault.jpg",
+    "tldr_da": "Laura Rogers fra Copilot & SharePoint introducerer en nem metode til at oprette en videndatabase i SharePoint, der kan bygges fra bunden og findes i siteindhold. Man kan endda bruge Copilot til at hjælpe med processen."
+  },
+  {
+    "id": "chatgpt_2b4f9d82",
+    "title": "The King’s Trust and OpenAI launch £1m partnership",
+    "link": "https://openai.com/index/the-kings-trust-and-openai",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-15T23:00:00Z",
+    "display_date": "15. nov. 2026",
+    "summary": "The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
+    "thumbnail": "",
+    "tldr_da": "King's Trust og OpenAI starter en partnership med en million pund til at hjælpe op til 25.000 unge mennesker i hele UK med at udvikle praktiske AI-færdigheder for arbejde."
+  },
+  {
+    "id": "chatgpt_df3e44b9",
+    "title": "A step toward defining the Standard Model on a lattice",
+    "link": "https://openai.com/index/step-toward-defining-the-standard-model",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-15T21:00:01Z",
+    "display_date": "15. nov. 2026",
+    "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+    "thumbnail": "",
+    "tldr_da": "Blogindlægget fra OpenAI beskæftiger sig med en kandidat-definition af Standardmodellen på gitteret uden brug af perturbativ analyse, og hvordan GPT-6 Astra bidrog til at omgående ideen til en detaljeret bevisførelse."
+  },
+  {
+    "id": "chatgpt_e1f75517",
+    "title": "Our new blog for science",
+    "link": "https://openai.com/index/our-new-blog-for-science",
+    "category": "chatgpt",
+    "tags": [
+      "research"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-15T21:00:00Z",
+    "display_date": "15. nov. 2026",
+    "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+    "thumbnail": "",
+    "tldr_da": "OpenAI's nye vidensblog præsenterer nye fund, praktiske metoder og første håndberetninger fra forskere, der bruger AI til at fremme videnskabelig opdagelse."
+  },
+  {
+    "id": "copilot_e9fee2f9",
+    "title": "Your Future Self Is Begging You to Learn Microsoft Copilot",
+    "link": "https://www.youtube.com/watch?v=L7IPWsJjaY4",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "David Fortin (Copilot & Excel)",
+    "type": "youtube",
+    "published_at": "2026-11-15T09:36:55Z",
+    "display_date": "15. nov. 2026",
+    "summary": "⏬Download my free Microsoft Copilot Cheat Sheet (10,000+ downloads) 👉https://davidpba.myflodesk.com/dcvh5tisb4 🔥Join 6,000+ Busy professionals learning Microsoft Copilot➡️https://l...",
+    "thumbnail": "https://img.youtube.com/vi/L7IPWsJjaY4/hqdefault.jpg",
+    "tldr_da": "David Fortin udkender en gratis cheat sheet for Microsoft Copilot og inviterer professionelle til at deltage i en community med over 6.000 medlemmer, der lærer og deler viden om Copilot."
+  },
+  {
+    "id": "claude_de1b7e76",
+    "title": "4 prompts to erase your data from people-search sites",
+    "link": "https://ruben.substack.com/p/4-prompts-to-erase-your-data-from",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-11-15T03:23:37Z",
+    "display_date": "15. nov. 2026",
+    "summary": "Paste into Claude or ChatGPT, in order, in the same chat.",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fra How to AI giver anvisninger på hvordan man kan bruge AI-assisterede chatbotter som Claude eller ChatGPT for at fjerne sin data fra people-search nettsteder ved at indsætte 4 bestemte prompts i chatten."
+  },
+  {
     "id": "chatgpt_4815987a",
     "title": "6 Underrated Ways to Use ChatGPT",
     "link": "https://www.youtube.com/shorts/ErOVIC-MGVA",
@@ -95,6 +223,22 @@
     "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
     "thumbnail": "",
     "tldr_da": "Shield bruger OpenAI til at hjælpe IT-teknikere med at overdrage arbejde i forældede portaler, så deres Forge-agenter kan navigere systemer, så teknicere kan fokusere på problemer, der kræver deres vurdering."
+  },
+  {
+    "id": "claude_8475e1a5",
+    "title": "Prompt 5.2.",
+    "link": "https://ruben.substack.com/p/prompt-52",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-11-13T02:55:32Z",
+    "display_date": "13. nov. 2026",
+    "summary": "How to prompt the new Fable 5.2, the smartest AI on the market.",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fra How to AI præsenterer anvisninger til at bruge den intelligente nye AI, Fable 5.2."
   },
   {
     "id": "claude_058ddecd",
@@ -688,6 +832,22 @@
     "tldr_da": "OpenAI og Upwork har fundet, at frilansmarkedet oplever skiftende efterspørgsel, nye færdighedskombinationer og større budgetter for AI-relaterede projekter."
   },
   {
+    "id": "claude_87cf7a37",
+    "title": "Claude 101.",
+    "link": "https://ruben.substack.com/p/claude-101",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-11-10T02:55:35Z",
+    "display_date": "10. nov. 2026",
+    "summary": "One setting makes Claude 28% better. And 16 other pro tips:",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fra How to AI deler en guide med 17 pro tips, herunder ét indstillingsskifte, som forbedrer Claude's ydeevne med 28%."
+  },
+  {
     "id": "chatgpt_fefb0097",
     "title": "Kuken Industries searches 70 years of drawings in minutes",
     "link": "https://www.youtube.com/watch?v=FNTz0CdqL6g",
@@ -801,6 +961,22 @@
     "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
     "thumbnail": "",
     "tldr_da": "OpenAI's Control Room overvåger og kan hurtigt stoppe modelarbejde i deres forskningsinfrastruktur, når der opstår sikkerheds- eller sikkerhedsmæssige bekymringer."
+  },
+  {
+    "id": "claude_96470d76",
+    "title": "Master 80% of AI in 23 minutes",
+    "link": "https://ruben.substack.com/p/master-80-of-ai-in-23-minutes",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-11-09T09:52:59Z",
+    "display_date": "9. nov. 2026",
+    "summary": "Pareto.",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fra How to AI præsenterer en metode til at mastere 80% af AI-knowledge inden for 23 minutter, baseret på Pareto-princippet."
   },
   {
     "id": "chatgpt_ebd6c1fb",
@@ -918,6 +1094,22 @@
     "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
     "thumbnail": "",
     "tldr_da": "OpenAI samarbejder med Hacktron for at identificere svagheder, teste forbindelser til tredjeparts-services og styrke forsvar med fremtidig AI."
+  },
+  {
+    "id": "claude_900ae6d8",
+    "title": "Money.",
+    "link": "https://ruben.substack.com/p/cfo",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-11-06T02:55:29Z",
+    "display_date": "6. nov. 2026",
+    "summary": "I gave Claude my bank accounts. He saved me $10,200.",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid deler i sin artikel, hvordan AI-systemet Claude hjalppede ham til at spare 10.200 dollar, da han gav det adgang til hans bankkonti."
   },
   {
     "id": "claude_fbe31174",
@@ -1295,6 +1487,22 @@
     "tldr_da": "David Fortin deler tips og tricks for at rengøre uddannet data i Excel med Copilot, herunder et gratis PDF med 100 brugte prompter og en fuld video tutoriel."
   },
   {
+    "id": "claude_7fe53b9e",
+    "title": "Stop sending slop.",
+    "link": "https://ruben.substack.com/p/grenade",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-11-03T02:55:27Z",
+    "display_date": "3. nov. 2026",
+    "summary": "How to fix Claude slop-grenades:",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fra How to AI foreslår løsninger på hvordan man kan forbedre kvaliteten af AI-genererede tekster, kaldet \"slop-grenader\" fra Claude."
+  },
+  {
     "id": "copilot_b29d1116",
     "title": "How to Build Amazing PowerPoint Presentations with Copilot",
     "link": "https://www.youtube.com/watch?v=NiKlxZrPFZ8",
@@ -1316,15 +1524,13 @@
     "link": "https://www.youtube.com/watch?v=VI4NIsOArUw",
     "category": "copilot",
     "tags": [
-      "m365",
-      "leadership",
-      "developer"
+      "m365"
     ],
     "source": "Steve Corey (YouTube)",
     "type": "youtube",
     "published_at": "2026-11-02T13:00:28Z",
     "display_date": "2. nov. 2026",
-    "summary": "🔴 Need help with Microsoft 365 Copilot agents and cost control? Let's build your strategy ➡️ https://go.stevecorey.com/newfaq ⭐️ Protect your Microsoft 365 data with AFI Backup ➡️...",
+    "summary": "Learn how to use the updated SharePoint FAQ web part to manage content more effectively. See how Copilot integration changes your page-building workflow. 🔴 Need help with Microsoft...",
     "thumbnail": "https://img.youtube.com/vi/VI4NIsOArUw/hqdefault.jpg",
     "tldr_da": "Steve Corey demonstrerer på YouTube, hvordan man bruger den nye SharePoint FAQ-webdel med Copilot og giver strategier for at kontrollere omkostninger ved Microsoft 365 Copilot."
   },
@@ -1423,6 +1629,22 @@
     "summary": "⏬Download the free Slice Slice Baby workbook (every prompt + the meeting transcript) 👉https://davidpba.myflodesk.com/excel-beginners My Copilot in Excel Quick Wins Course 👉 https:/...",
     "thumbnail": "https://img.youtube.com/vi/bz9W2MGcyuc/hqdefault.jpg",
     "tldr_da": "David Fortin tilbyder en gratis arbejdsbog og en hurtig kursus om hvordan bruge Copilot i Excel for begyndere."
+  },
+  {
+    "id": "claude_eb997069",
+    "title": "Clauned.",
+    "link": "https://ruben.substack.com/p/claude-jacking",
+    "category": "claude",
+    "tags": [
+      "developer"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-10-30T02:55:40Z",
+    "display_date": "30. okt. 2026",
+    "summary": "How to reverse engineer anything in one Claude prompt:",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid præsenterer i sin artikel i How to AI en metode for at genoprette enhver ting ved hjælp af en enkelt Claude-prompt."
   },
   {
     "id": "copilot_782c37d1",
@@ -1573,6 +1795,22 @@
     "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
   },
   {
+    "id": "claude_0a10c616",
+    "title": "Who writes this?",
+    "link": "https://ruben.substack.com/p/292481-words",
+    "category": "claude",
+    "tags": [
+      "developer"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-10-27T02:55:35Z",
+    "display_date": "27. okt. 2026",
+    "summary": "How I write a newsletter to 994,381 subscribers with Claude Code & GitHub (and how to set up yours):",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fortæller om, hvordan han bruger Claude Code og GitHub til at skrive en nyhedsbrev til 994.381 abonnenter og hvordan man kan sætte det op for sig selv."
+  },
+  {
     "id": "claude_9e22205e",
     "title": "Early progress on accelerating drug development with Claude",
     "link": "https://www.anthropic.com/research/early-progress-drug-development",
@@ -1667,6 +1905,22 @@
     "summary": "👉 Build practical Microsoft 365 Copilot skills and learn how to turn AI ideas into real workplace solutions with the Your 365 Coach Academy: https://www.your365coach.co.uk/your-365...",
     "thumbnail": "https://img.youtube.com/vi/0-vgKQ4OVC8/hqdefault.jpg",
     "tldr_da": "Scott Brant fra Your365Coach viser på YouTube, hvordan man hurtigt skaber apps med nyt Copilot Code og omsetter AI-ideer til virksomhedsløsninger med Microsoft 365."
+  },
+  {
+    "id": "claude_02097442",
+    "title": "How to actually keep your AI chats private:",
+    "link": "https://ruben.substack.com/p/3-prompts-to-delete-your-data-from-15b",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-10-26T16:22:16Z",
+    "display_date": "26. okt. 2026",
+    "summary": "(works both with Claude and ChatGPT)",
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
     "id": "copilot_4820f07b",
@@ -1781,6 +2035,22 @@
     "summary": "🔥 Grab my free Copilot Cheat Sheet ➡️ https://davidpba.myflodesk.com/dcvh5tisb4 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=f0auVDTTpZM 🎓 Copilot Masterclass ➡️ https...",
     "thumbnail": "https://img.youtube.com/vi/c8mPTRUnJKM/hqdefault.jpg",
     "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
+  },
+  {
+    "id": "claude_779598e5",
+    "title": "One Claude.",
+    "link": "https://ruben.substack.com/p/one",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-10-23T01:55:33Z",
+    "display_date": "23. okt. 2026",
+    "summary": "How to use the new Claude, from beginner to pro:",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassids artikel \"How to AI\" fra How to AI præsenterer en guide til at bruge den nye Claude, fra grundlæggende til professionel niveau."
   },
   {
     "id": "claude_beab1a53",
@@ -1979,6 +2249,22 @@
     "tldr_da": "David Fortin tilbyder 10 effektive Copilot-prompter for arbejde, som man kan downloade og bruge direkte. Han inviterer også medarbejdere til at lære Microsoft Copilot gennem hans kursus."
   },
   {
+    "id": "claude_c1b97278",
+    "title": "Claude for Legal.",
+    "link": "https://ruben.substack.com/p/claude-for-legal",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-10-20T01:55:38Z",
+    "display_date": "20. okt. 2026",
+    "summary": "How to turn Claude into your own legal team (nothing but Claude):",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fra How to AI præsenterer, hvordan man kan bruge Claude som en privat retslig assistent."
+  },
+  {
     "id": "claude_d4747c7f",
     "title": "How Claude designed protein binders against scorpion neurotoxins",
     "link": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
@@ -2075,6 +2361,22 @@
     "summary": "Transform project docs into executive summaries instantly! Track progress, decisions, risks, and questions, saved as a personal skill that you can even run an evaluation on. A dail...",
     "thumbnail": "https://img.youtube.com/vi/qaz97SsjWoI/hqdefault.jpg",
     "tldr_da": "Laura Rogers introducerer en metode til at omdanne projektdokumenter til eksekutiv sammentagelse automatisk og spor projektudvikling, beslutninger, risici og spørgsmål via en tilpasset Copilot-færdighed."
+  },
+  {
+    "id": "claude_57fd6025",
+    "title": "777",
+    "link": "https://ruben.substack.com/p/taste",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-10-16T01:55:36Z",
+    "display_date": "16. okt. 2026",
+    "summary": "Never ask AI for taste.",
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
   },
   {
     "id": "claude_fda5cd86",
@@ -2221,6 +2523,22 @@
     "summary": "Learn where native Microsoft 365 Copilot reporting provides value, where organizations face a measurement gap, and how to turn reporting evidence into a value-realization practice.",
     "thumbnail": "",
     "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
+  },
+  {
+    "id": "claude_293419a5",
+    "title": "Motion.",
+    "link": "https://ruben.substack.com/p/claude-motion-and-dashboards",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-10-14T01:55:38Z",
+    "display_date": "14. okt. 2026",
+    "summary": "How to use Claude Motion & Claude Dashboards (from beginner to pro):",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fortæller i \"How to AI\" hvordan man bruger Claude Motion og Claude Dashboards effektivt, fra grundlæggende til professionelt niveau."
   },
   {
     "id": "claude_2922d5d8",
@@ -2388,6 +2706,22 @@
     "tldr_da": "Vejledning fra Mike Tholfsen (Copilot) om opbygning af dashboards og præsentationer med Microsoft Copilot."
   },
   {
+    "id": "claude_b32dece3",
+    "title": "Certified.",
+    "link": "https://ruben.substack.com/p/certifications-are-scams",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-10-09T12:04:30Z",
+    "display_date": "9. okt. 2026",
+    "summary": "How I use ChatGPT to cheat & get 353 AI certifications.",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fra How to AI beskriver, hvordan han bruger ChatGPT til at få 353 AI-certificater."
+  },
+  {
     "id": "copilot_f5dffd26",
     "title": "Bringing CRM into the flow of work and agents into business process for sales and service teams",
     "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/08/bringing-crm-into-the-flow-of-work-and-agents-into-business-process-for-sales-and-service-teams/",
@@ -2452,6 +2786,22 @@
     "summary": "A step-by-step look at 11 new features and improvements in Windows 11 26H2, including several long-requested changes that make everyday tasks a little easier. In this video, I’ll w...",
     "thumbnail": "https://img.youtube.com/vi/oLM9Ra6B4Iw/hqdefault.jpg",
     "tldr_da": "Mike Tholfsen præsenterer i et videoindlæg 11 nye funktioner og forbedringer i Windows 11 26H2, herunder nogle længere tid ønskede ændringer, der gør daglige opgaver lettere."
+  },
+  {
+    "id": "claude_2c73ad67",
+    "title": "Limits.",
+    "link": "https://ruben.substack.com/p/limitless",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-10-07T01:56:02Z",
+    "display_date": "7. okt. 2026",
+    "summary": "How to make Claude limitless (22 rules):",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fra \"How to AI\" præsenterer 22 regler for at udvide Claude's kapacitet og evne til at håndtere uendelige situationer."
   },
   {
     "id": "copilot_51ce4590",
@@ -2906,360 +3256,5 @@
     "summary": "Every enterprise runs on business processes, but it's the people that provide judgment, manage exceptions, and often connect systems that were never designed to work together. The...",
     "thumbnail": "",
     "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_f02ee585",
-    "title": "Give your AI perfect memory in 3 steps",
-    "link": "https://www.youtube.com/shorts/H6x2sooRVOQ",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Jeff Su (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-09-02T12:00:31Z",
-    "display_date": "2. sep. 2026",
-    "summary": "Free Cowork Toolkit: https://coworkacademy.ai/toolkit?utm_source=youtube&amp;utm_medium=shortform&amp;utm_campaign=ig061 Your #AI has three levels of memory (and each one solves a...",
-    "thumbnail": "https://img.youtube.com/vi/H6x2sooRVOQ/hqdefault.jpg",
-    "tldr_da": "Gennemgang fra Jeff Su (YouTube) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_3d8c2adf",
-    "title": "Assigned Is Not Adopted: How to Increase Microsoft 365 Copilot Usage",
-    "link": "https://stevecorey.com/increase-microsoft-365-copilot-adoption/",
-    "category": "copilot",
-    "tags": [
-      "leadership"
-    ],
-    "source": "Steve Corey Insights (Blog)",
-    "type": "article",
-    "published_at": "2026-09-02T08:00:00Z",
-    "display_date": "2. sep. 2026",
-    "summary": "Learn how to improve Microsoft 365 Copilot adoption by turning assigned licenses into useful, repeatable habits through access, relevance, repetition, and practical measurement.",
-    "thumbnail": "",
-    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_c7862ba7",
-    "title": "Learn 95% of ChatGPT Work in Under 20 Minutes",
-    "link": "https://www.youtube.com/watch?v=KmcTu2EigTs",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Jeff Su (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-08-25T12:00:23Z",
-    "display_date": "25. aug. 2026",
-    "summary": "📚 Grab HubSpot's free Guide to #ChatGPT Work: https://clickhubspot.com/8f3780 Most people open #ChatGPT Work, type a question, and end up using it exactly like the regular chatbot....",
-    "thumbnail": "https://img.youtube.com/vi/KmcTu2EigTs/hqdefault.jpg",
-    "tldr_da": "Jeff Su præsenterer på YouTube, hvordan man effektivt bruger ChatGPT gennem en hurtig guide, der undgår almindeligheder som at bare stille spørgsmål som til en almindelig chatbot."
-  },
-  {
-    "id": "copilot_d5bf02ef",
-    "title": "7 NEW Microsoft Copilot Updates for August 2026!",
-    "link": "https://www.youtube.com/watch?v=o9gd_CoG-us",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Scott Brant - Your365Coach (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-08-24T13:30:39Z",
-    "display_date": "24. aug. 2026",
-    "summary": "👉 Want to master Microsoft Copilot? See how me and the team can help you at https://www.your365coach.co.uk/ Microsoft Copilot has received another wave of updates, and some of them...",
-    "thumbnail": "https://img.youtube.com/vi/o9gd_CoG-us/hqdefault.jpg",
-    "tldr_da": "Scott Brant fra Your365Coach præsenterer på YouTube 7 nye opdateringer til Microsoft Copilot fra august 2026 og tilbyder hjælp til at mastere Copilot på sin hjemmeside."
-  },
-  {
-    "id": "copilot_7b317065",
-    "title": "The Copilot Value Maturity Model: A Five-Stage Path from Deployment to ROI",
-    "link": "https://stevecorey.com/copilot-value-maturity-model/",
-    "category": "copilot",
-    "tags": [
-      "m365",
-      "leadership"
-    ],
-    "source": "Steve Corey Insights (Blog)",
-    "type": "article",
-    "published_at": "2026-08-19T08:00:00Z",
-    "display_date": "19. aug. 2026",
-    "summary": "Explore the five stages of the Copilot Value Maturity Model and learn how organizations move from Microsoft 365 Copilot deployment to adoption, productivity, optimization, and meas...",
-    "thumbnail": "",
-    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_f8a7cd75",
-    "title": "Copilot Chat, Copilot Notebooks or Copilot Agents? Here’s What to Use & When…",
-    "link": "https://www.youtube.com/watch?v=I_Bc7nVv0II",
-    "category": "copilot",
-    "tags": [
-      "developer"
-    ],
-    "source": "Scott Brant - Your365Coach (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-08-18T15:30:38Z",
-    "display_date": "18. aug. 2026",
-    "summary": "Granola is the AI notepad for professionals in back-to-back meetings. Try it in your next meeting via https://www.granola.ai?via=scott-brant Microsoft 365 Copilot now gives you mul...",
-    "thumbnail": "https://img.youtube.com/vi/I_Bc7nVv0II/hqdefault.jpg",
-    "tldr_da": "Videoen fra Scott Brant på YouTube diskuterer, hvornår man skal bruge Microsoft 365 Copilot Chat, Copilot Notebooks eller Copilot Agents og introducerer Granola som en AI-notatblok for professionelle i mødefulde dage."
-  },
-  {
-    "id": "copilot_140ff1aa",
-    "title": "My AI Remembers Everything",
-    "link": "https://www.youtube.com/watch?v=cEEw1AbeysI",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Jeff Su (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-08-12T12:15:33Z",
-    "display_date": "12. aug. 2026",
-    "summary": "📝 Get 100% off Granola for your first month - https://go.granola.ai/jeff-su ⏭️ Want to skip ahead? Grab my entire Cowork system: https://coworkacademy.ai/?utm_source=youtube&amp;ut...",
-    "thumbnail": "https://img.youtube.com/vi/cEEw1AbeysI/hqdefault.jpg",
-    "tldr_da": "Jeff Su deler på YouTube om sin AI, der husker alt, og tilbyder rabat på sine servicepakker for nye brugere."
-  },
-  {
-    "id": "copilot_5eaf6c5c",
-    "title": "How to Use Copilot Chat Better Than 99% of People!",
-    "link": "https://www.youtube.com/watch?v=vbvyaDNNcp4",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Scott Brant - Your365Coach (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-08-11T15:38:29Z",
-    "display_date": "11. aug. 2026",
-    "summary": "Granola is the AI notepad for professionals in back-to-back meetings. Try in your next Teams meeting via https://www.granola.ai?via=scott-brant Most people have access to Microsoft...",
-    "thumbnail": "https://img.youtube.com/vi/vbvyaDNNcp4/hqdefault.jpg",
-    "tldr_da": "Scott Brant fra Your365Coach præsenterer på YouTube, hvordan man bedst kan bruge Copilot Chat sammen med Granola, en AI-notatblok til professionelle, der har møder på trapper. Prøv Granola i din næste Teams-mødevedtægt på https://www.granola.ai?via=scott-brant."
-  },
-  {
-    "id": "copilot_739b9519",
-    "title": "You Know What an AI Agent Is. But What Is an Agent Harness?",
-    "link": "https://stevecorey.com/ai-agent-vs-agent-harness/",
-    "category": "copilot",
-    "tags": [
-      "developer"
-    ],
-    "source": "Steve Corey Insights (Blog)",
-    "type": "article",
-    "published_at": "2026-08-04T23:10:00Z",
-    "display_date": "4. aug. 2026",
-    "summary": "Learn the difference between an AI agent and an agent harness, how harnesses support planning and iterative work, and why the GitHub Copilot harness matters for Copilot Studio agen...",
-    "thumbnail": "",
-    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_3abe7f7a",
-    "title": "Claude is Hiding in Copilot... Here’s How to Actually Use It!",
-    "link": "https://www.youtube.com/watch?v=96VHcy4OYQc",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Scott Brant - Your365Coach (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-08-04T15:21:47Z",
-    "display_date": "4. aug. 2026",
-    "summary": "👉 Build your Microsoft 365 Copilot skills faster with expert-led training and practical guidance at https://www.your365coach.co.uk/your-365-coach-learning-academy Did you know that...",
-    "thumbnail": "https://img.youtube.com/vi/96VHcy4OYQc/hqdefault.jpg",
-    "tldr_da": "Scott Brant fra Your365Coach viser på YouTube, hvordan man effektivt bruger Microsoft 365 Copilot, og tilbyder ekspertundervisning gennem sin læringsskole."
-  },
-  {
-    "id": "copilot_d195886a",
-    "title": "The next measure of AI momentum is work transformed",
-    "link": "https://www.microsoft.com/en-us/copilot/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Microsoft Copilot Blog",
-    "type": "article",
-    "published_at": "2026-07-30T12:00:00Z",
-    "display_date": "30. jul. 2026",
-    "summary": "In yesterday’s earnings call, we shared that Microsoft 365 Copilot has surpassed 30 million paid seats, with net seat adds more than doubling quarter over quarter. The post The nex...",
-    "thumbnail": "",
-    "tldr_da": "Gennemgang fra Microsoft Copilot Blog af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_8dbe7c18",
-    "title": "Copilot Just Turned My Outlook Into an Executive Assistant!",
-    "link": "https://www.youtube.com/watch?v=ienMotF6SC8",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Scott Brant - Your365Coach (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-07-27T15:30:02Z",
-    "display_date": "27. jul. 2026",
-    "summary": "👉 Build your Microsoft 365 Copilot skills faster with expert-led training and practical guidance at https://www.your365coach.co.uk/your-365-coach-learning-academy Most people use M...",
-    "thumbnail": "https://img.youtube.com/vi/ienMotF6SC8/hqdefault.jpg",
-    "tldr_da": "Scott Brant fra Your365Coach viser på YouTube, hvordan Microsoft 365 Copilot kan forvandle Outlook til en eksekutiv hjælper, og tilbyder ekspertråd og praktisk vejledning på deres hjemmeside."
-  },
-  {
-    "id": "copilot_9ff97819",
-    "title": "Agent 365 Licensing Explained: What You Need to Know Before Deploying AI Agents",
-    "link": "https://stevecorey.com/agent-365-licensing-explained/",
-    "category": "copilot",
-    "tags": [
-      "leadership",
-      "developer"
-    ],
-    "source": "Steve Corey Insights (Blog)",
-    "type": "article",
-    "published_at": "2026-07-22T07:00:00Z",
-    "display_date": "22. jul. 2026",
-    "summary": "Learn how Agent 365 licensing works, what organizations need to know about AI agent governance, and answers to common pricing questions.",
-    "thumbnail": "",
-    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_c879578c",
-    "title": "Claude Design is Insanely Easy - Become a Pro in 14 Minutes!",
-    "link": "https://www.youtube.com/watch?v=VeWf0l4ci6Y",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Jeff Su (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-07-21T12:00:15Z",
-    "display_date": "21. jul. 2026",
-    "summary": "✅ Grab my free Cowork Toolkit - https://coworkacademy.ai/toolkit?utm_source=youtube&amp;utm_medium=video&amp;utm_campaign=v207 ⏭️ Want to skip ahead? Grab my entire Cowork system:...",
-    "thumbnail": "https://img.youtube.com/vi/VeWf0l4ci6Y/hqdefault.jpg",
-    "tldr_da": "Jeff Su på YouTube præsenterer en nem guide til at blive ekspert i Claude Design i kun 14 minutter, og tilbyder en gratis værktøjskasse for kollegieforedrag."
-  },
-  {
-    "id": "copilot_8ae6aa41",
-    "title": "The Easiest Way To Build a Copilot Agent in Minutes!",
-    "link": "https://www.youtube.com/watch?v=f6FDToNoLZA",
-    "category": "copilot",
-    "tags": [
-      "developer"
-    ],
-    "source": "Scott Brant - Your365Coach (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-07-20T15:30:28Z",
-    "display_date": "20. jul. 2026",
-    "summary": "👉 Build your Microsoft 365 Copilot skills faster with expert-led training and practical guidance at https://www.your365coach.co.uk/your-365-coach-learning-academy Want to build a M...",
-    "thumbnail": "https://img.youtube.com/vi/f6FDToNoLZA/hqdefault.jpg",
-    "tldr_da": "Scott Brant fra Your365Coach viser på YouTube, hvordan du hurtigt og nemt kan opbygge dine færdigheder med Microsoft 365 Copilot gennem ekspertundervisning og praktisk rådgivning på deres hjemmeside."
-  },
-  {
-    "id": "copilot_070375e5",
-    "title": "Microsoft 365 Copilot Is Expensive - Here’s How to Keep Costs Under Control",
-    "link": "https://stevecorey.com/microsoft-365-copilot-cost-management/",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Steve Corey Insights (Blog)",
-    "type": "article",
-    "published_at": "2026-07-08T08:00:00Z",
-    "display_date": "8. jul. 2026",
-    "summary": "Let’s just say it out loud: Microsoft 365 Copilot is not cheap. If you’re an IT admin or a decision-maker trying to figure out how to roll this out without blowing up your budget,...",
-    "thumbnail": "",
-    "tldr_da": "Gennemgang fra Steve Corey Insights (Blog) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_ac57b7f2",
-    "title": "Gemini Spark: Google’s Most Powerful Personal Agent",
-    "link": "https://www.youtube.com/watch?v=7GkIWPPC9i0",
-    "category": "copilot",
-    "tags": [
-      "developer"
-    ],
-    "source": "Jeff Su (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-06-30T12:00:21Z",
-    "display_date": "30. jun. 2026",
-    "summary": "✅ Try Wispr Flow Pro free - https://ref.wisprflow.ai/jeff-su-yt Gemini Spark is Google's new always-on AI agent, and this beginner's guide breaks down what it actually does and whe...",
-    "thumbnail": "https://img.youtube.com/vi/7GkIWPPC9i0/hqdefault.jpg",
-    "tldr_da": "Gemini Spark er Googles nye altid-tilstede AI-agent, som en introducerende guide fortæller noget om, hvad den virkelig gør og hvorfor den er relevant."
-  },
-  {
-    "id": "copilot_efec76d6",
-    "title": "Copilot in Excel: Built for the era of Frontier Finance",
-    "link": "https://www.microsoft.com/en-us/copilot/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
-    "category": "copilot",
-    "tags": [
-      "m365",
-      "research"
-    ],
-    "source": "Microsoft Copilot Blog",
-    "type": "article",
-    "published_at": "2026-06-25T12:00:00Z",
-    "display_date": "25. jun. 2026",
-    "summary": "Plenty of AI tools claim to be built for finance; Microsoft 365 Copilot in Excel is proving it in practice. The post Copilot in Excel: Built for the era of Frontier Finance appeare...",
-    "thumbnail": "",
-    "tldr_da": "Praktisk vejledning fra Microsoft Copilot Blog med fokus på Copilot i Excel til dataanalyse, formler og tidsbesparelse."
-  },
-  {
-    "id": "copilot_120cbbc6",
-    "title": "How I'd Learn AI From Scratch in 2026 (skip the useless 80%)",
-    "link": "https://www.youtube.com/watch?v=msFxQ7OYPj8",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Jeff Su (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-06-09T12:00:37Z",
-    "display_date": "9. jun. 2026",
-    "summary": "✅ Grab my free Google Gemini Pro Tips cheatsheet - https://clickhubspot.com/d1af92 ⏭️ Want to skip ahead? Grab my entire Cowork system: https://coworkacademy.ai/?utm_source=youtube...",
-    "thumbnail": "https://img.youtube.com/vi/msFxQ7OYPj8/hqdefault.jpg",
-    "tldr_da": "Gennemgang fra Jeff Su (YouTube) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_3e504791",
-    "title": "Google I/O 2026: 3 things you need to know",
-    "link": "https://www.youtube.com/shorts/sEYbctQiycI",
-    "category": "copilot",
-    "tags": [
-      "developer"
-    ],
-    "source": "Jeff Su (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-05-20T15:59:10Z",
-    "display_date": "20. maj 2026",
-    "summary": "Google just announced its answer to Claude Cowork and Codex, and the most interesting part is who it's really for. Three things stood out from Day 1 of #googleio 1. #gemini Spark p...",
-    "thumbnail": "https://img.youtube.com/vi/sEYbctQiycI/hqdefault.jpg",
-    "tldr_da": "Google I/O 2026 introducerer en konkurrent til Claude Cowork og Codex, med fokus på brugere og funktioner der fremhæver tredje dags højlyspringere."
-  },
-  {
-    "id": "copilot_ef8016ae",
-    "title": "Claude Cowork: Top 5 Tips for Productivity",
-    "link": "https://www.youtube.com/watch?v=4wvLHFgnQZQ",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Jeff Su (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-05-19T12:00:11Z",
-    "display_date": "19. maj 2026",
-    "summary": "✅ Grab The Claude Cowork Stack - https://clickhubspot.com/3ed95e ⏭️ Want to skip ahead? Grab my entire Cowork system: https://coworkacademy.ai/?utm_source=youtube&amp;utm_medium=vi...",
-    "thumbnail": "https://img.youtube.com/vi/4wvLHFgnQZQ/hqdefault.jpg",
-    "tldr_da": "videoer fra Jeff Su på YouTube giver de 5 bedste råd til produktivitet og en link til at hente Claude Cowork pakken samt den fulde Cowork system."
-  },
-  {
-    "id": "copilot_87244873",
-    "title": "Claude Cowork setup: the only 2 files you need",
-    "link": "https://www.youtube.com/shorts/oBINTHha8Wc",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Jeff Su (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-05-12T14:01:18Z",
-    "display_date": "12. maj 2026",
-    "summary": "Cowork Toolkit: https://coworkacademy.ai/toolkit?utm_source=youtube&amp;utm_medium=shortform&amp;utm_campaign=ig059 Your entire #ClaudeCowork setup starts with two plain text files...",
-    "thumbnail": "https://img.youtube.com/vi/oBINTHha8Wc/hqdefault.jpg",
-    "tldr_da": "I YouTube-videoen fra Jeff Su beskrives, hvordan du enkelt kan opsætte Claude Cowork-værktøjer med blot to simple tekstfiler."
   }
 ]
