@@ -3166,5 +3166,95 @@
       "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
       "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
     }
+  },
+  {
+    "id": "prompt_177",
+    "title": "Excel-oprydning med godkendelse af ændringer",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Finder dubletter, inkonsistent formatering og forkerte datatyper i et regneark og viser ændringerne, før de godkendes.",
+    "prompt": "Gennemgå [REGNEARK / TABEL] for dubletter, inkonsistent formatering, manglende værdier og forkerte datatyper. Vis først en oversigt over hvert fund med ark, celleområde, problem, foreslået rettelse og mulig risiko. Foretag ingen ændringer endnu. Gruppér forslagene i: 1) Sikkert at rette, 2) Kræver min godkendelse, 3) Må ikke ændres uden yderligere datagrundlag.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_178",
+    "title": "Forklar en Excel-formel i almindeligt sprog",
+    "department": "Excel & Finans",
+    "department_da": "Excel & Finans",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Forklarer en eksisterende Excel-formel trin for trin og identificerer potentielle fejl eller skjulte antagelser.",
+    "prompt": "Forklar formlen [INDSÆT FORMEL] fra celle [CELLE] i almindeligt dansk. Gennemgå den del for del, forklar hvilke celler, områder og betingelser der bruges, og beskriv hvad resultatet betyder for forretningen. Markér potentielle fejl, skjulte antagelser og kanttilfælde. Foreslå kun en alternativ formel, hvis du kan forklare præcist, hvad den forbedrer.",
+    "pillars": {
+      "persona": "FP&A Controller / Senior Excel Arkitekt",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_179",
+    "title": "Mødeopsummering med beslutninger og handlinger",
+    "department": "M365 & Samarbejde",
+    "department_da": "M365 & Samarbejde",
+    "task_type": "Catch up",
+    "task_type_da": "Opsummer (Catch-up)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Udtrækker beslutninger, åbne spørgsmål og konkrete handlinger fra et møde eller en lang samtale.",
+    "prompt": "Analyser [MØDETRANSKRIPT / REFERAT / TEAMS-CHAT]. Returnér: 1) Kort hovedkonklusion, 2) Beslutninger med begrundelse, 3) Handlingspunkter med ansvarlig, deadline og kildehenvisning, 4) Åbne spørgsmål og blokeringer, 5) Udsagn der kræver faktatjek. Opfind aldrig ansvarlige, deadlines eller beslutninger; skriv [IKKE ANGIVET], hvor informationen mangler.",
+    "pillars": {
+      "persona": "Microsoft 365 Copilot Power User",
+      "context": "Teams-kanaler, chat-beskeder og mødereferater i de seneste 7-30 dage.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_180",
+    "title": "PowerPoint-udkast fra SharePoint- eller OneDrive-kilde",
+    "department": "M365 & Samarbejde",
+    "department_da": "M365 & Samarbejde",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Bygger en præsentationsstruktur fra en eksisterende fil og bevarer sporbarheden til kilden.",
+    "prompt": "Opret et første udkast til en PowerPoint-præsentation baseret på [NAVN PÅ SHAREPOINT-/ONEDRIVE-FIL]. Målgruppe: [MÅLGRUPPE]. Formål: [FORMÅL]. Foreslå slide for slide: titel, hovedbudskab, 3-5 punkter, relevante tal/citater og hvilken passage i kilden der understøtter indholdet. Markér manglende oplysninger som [VERIFICÉR]. Opfind ikke tal, kilder eller konklusioner.",
+    "pillars": {
+      "persona": "Microsoft 365 Copilot Power User",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_181",
+    "title": "Genbrug tidligere AI-kontekst uden at miste beslutninger",
+    "department": "Power Users",
+    "department_da": "Power User (M365)",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Forbereder en kompakt kontekstpakke fra en tidligere chat eller opgave til brug i en ny AI-samtale.",
+    "prompt": "Brug den vedhæftede tidligere chat eller opgave som kontekst for [NY OPGAVE]. Udtræk kun det, der er nødvendigt: mål, trufne beslutninger, verificerede fakta, relevante filer/links, åbne spørgsmål og næste konkrete skridt. Adskil tydeligt fakta fra antagelser. Genåbn ikke beslutninger, der allerede er markeret som endelige, medmindre de modsiges af ny dokumentation.",
+    "pillars": {
+      "persona": "Microsoft 365 Copilot Power User",
+      "context": "Teams-kanaler, chat-beskeder og mødereferater i de seneste 7-30 dage.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
   }
 ]

@@ -306,6 +306,51 @@ OPERATOR_FRAMEWORK_PROMPTS = [
         "source": "Ruben Hassid / How to AI",
         "description": "Erstatter rigide forbud ('Gør aldrig X') med operationelle grænser og godkendelsesrutiner, så agenten ikke går i baglås ved nødvendige undtagelser.",
         "prompt": "Gennemgå og optimer mine systeminstruktioner og guardrails for opgaven [BESKRIV OPGAVE / ARBEJDSGANG]: [INDSÆT AKTUELLE REGLER ELLER INSTRUKSER]. Erstat alle kategoriske 'Gør aldrig'- eller 'Du må under ingen omstændigheder'-formuleringer med operationelle 'Spørg mig først, før du [HANDLING], fordi [BEGRUNDELSE]'. Opstil 3 niveauer for autonomi: 1) Grøn zone: Handlinger modellen må udføre og lukke selvstændigt. 2) Gul zone: Handlinger hvor modellen skal foreslå løsningen og afvente min godkendelse. 3) Rød zone: Handlinger der er helt off-limits. Giv mig den renskrevne instruktion i én samlet blok klar til brug i System Prompt eller Projects."
+    },
+    {
+        "title": "Excel-oprydning med godkendelse af ændringer",
+        "department": "Excel & Finans",
+        "task_type": "Analyze",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Matt Village / LinkedIn",
+        "description": "Finder dubletter, inkonsistent formatering og forkerte datatyper i et regneark og viser ændringerne, før de godkendes.",
+        "prompt": "Gennemgå [REGNEARK / TABEL] for dubletter, inkonsistent formatering, manglende værdier og forkerte datatyper. Vis først en oversigt over hvert fund med ark, celleområde, problem, foreslået rettelse og mulig risiko. Foretag ingen ændringer endnu. Gruppér forslagene i: 1) Sikkert at rette, 2) Kræver min godkendelse, 3) Må ikke ændres uden yderligere datagrundlag."
+    },
+    {
+        "title": "Forklar en Excel-formel i almindeligt sprog",
+        "department": "Excel & Finans",
+        "task_type": "Analyze",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Matt Village / LinkedIn",
+        "description": "Forklarer en eksisterende Excel-formel trin for trin og identificerer potentielle fejl eller skjulte antagelser.",
+        "prompt": "Forklar formlen [INDSÆT FORMEL] fra celle [CELLE] i almindeligt dansk. Gennemgå den del for del, forklar hvilke celler, områder og betingelser der bruges, og beskriv hvad resultatet betyder for forretningen. Markér potentielle fejl, skjulte antagelser og kanttilfælde. Foreslå kun en alternativ formel, hvis du kan forklare præcist, hvad den forbedrer."
+    },
+    {
+        "title": "Mødeopsummering med beslutninger og handlinger",
+        "department": "M365 & Samarbejde",
+        "task_type": "Catch up",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Matt Village / LinkedIn",
+        "description": "Udtrækker beslutninger, åbne spørgsmål og konkrete handlinger fra et møde eller en lang samtale.",
+        "prompt": "Analyser [MØDETRANSKRIPT / REFERAT / TEAMS-CHAT]. Returnér: 1) Kort hovedkonklusion, 2) Beslutninger med begrundelse, 3) Handlingspunkter med ansvarlig, deadline og kildehenvisning, 4) Åbne spørgsmål og blokeringer, 5) Udsagn der kræver faktatjek. Opfind aldrig ansvarlige, deadlines eller beslutninger; skriv [IKKE ANGIVET], hvor informationen mangler."
+    },
+    {
+        "title": "PowerPoint-udkast fra SharePoint- eller OneDrive-kilde",
+        "department": "M365 & Samarbejde",
+        "task_type": "Create",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Matt Village / LinkedIn",
+        "description": "Bygger en præsentationsstruktur fra en eksisterende fil og bevarer sporbarheden til kilden.",
+        "prompt": "Opret et første udkast til en PowerPoint-præsentation baseret på [NAVN PÅ SHAREPOINT-/ONEDRIVE-FIL]. Målgruppe: [MÅLGRUPPE]. Formål: [FORMÅL]. Foreslå slide for slide: titel, hovedbudskab, 3-5 punkter, relevante tal/citater og hvilken passage i kilden der understøtter indholdet. Markér manglende oplysninger som [VERIFICÉR]. Opfind ikke tal, kilder eller konklusioner."
+    },
+    {
+        "title": "Genbrug tidligere AI-kontekst uden at miste beslutninger",
+        "department": "Power Users",
+        "task_type": "Prepare",
+        "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+        "source": "Matt Village / LinkedIn",
+        "description": "Forbereder en kompakt kontekstpakke fra en tidligere chat eller opgave til brug i en ny AI-samtale.",
+        "prompt": "Brug den vedhæftede tidligere chat eller opgave som kontekst for [NY OPGAVE]. Udtræk kun det, der er nødvendigt: mål, trufne beslutninger, verificerede fakta, relevante filer/links, åbne spørgsmål og næste konkrete skridt. Adskil tydeligt fakta fra antagelser. Genåbn ikke beslutninger, der allerede er markeret som endelige, medmindre de modsiges af ny dokumentation."
     }
 ]
 
