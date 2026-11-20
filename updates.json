@@ -1,5 +1,22 @@
 [
   {
+    "id": "claude_e67d3209",
+    "title": "30 Claude Code-genveje til en mere effektiv udviklingsarbejdsgang",
+    "link": "https://www.linkedin.com/posts/mattvillage_most-people-use-claude-code-like-a-chat-box-share-7529464193469599744-Sryv/",
+    "category": "claude",
+    "tags": [
+      "developer",
+      "m365"
+    ],
+    "source": "Matt Village / LinkedIn",
+    "type": "article",
+    "published_at": "2026-11-20T10:56:53Z",
+    "display_date": "20. nov. 2026",
+    "summary": "Matt Village gennemgår genveje og arbejdsgange i Claude Code: planlægning før ændringer, kø og baggrundsopgaver, sessionsgenoptagelse, kontekststyring, projektinstruktioner, skills samt diff-, kode- og sikkerhedsreview. Enkelte kommandoer og funktioner kan være versionsafhængige og bør verificeres i den installerede Claude Code-version.",
+    "thumbnail": "",
+    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
+  },
+  {
     "id": "copilot_2c6d497f",
     "title": "30 praktiske Microsoft Copilot-hacks til arbejdsdagen",
     "link": "https://www.linkedin.com/posts/mattvillage_most-people-use-copilot-like-a-search-box-share-7529091025336729600-OUGn/",
@@ -3238,22 +3255,5 @@
     "summary": "Copilot in SharePoint has a LOT of new capabilities! In this Power Hour, I demo 10 new Copilot in SharePoint features and show practical ways to use Microsoft 365 Copilot with Shar...",
     "thumbnail": "https://img.youtube.com/vi/hYSwm1mHgVA/hqdefault.jpg",
     "tldr_da": "Laura Rogers demonstrerer 10 nye funktioner for Copilot i SharePoint og viser praktiske brugsmuligheder for Microsoft 365 Copilot i SharePoint."
-  },
-  {
-    "id": "claude_eb77f648",
-    "title": "An update on independent evaluators",
-    "link": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-    "category": "claude",
-    "tags": [
-      "leadership",
-      "research"
-    ],
-    "source": "Anthropic News (Claude)",
-    "type": "article",
-    "published_at": "2026-10-14T23:00:00Z",
-    "display_date": "14. okt. 2026",
-    "summary": "To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions w...",
-    "thumbnail": "",
-    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
   }
 ]

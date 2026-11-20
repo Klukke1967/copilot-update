@@ -351,6 +351,51 @@ OPERATOR_FRAMEWORK_PROMPTS = [
         "source": "Matt Village / LinkedIn",
         "description": "Forbereder en kompakt kontekstpakke fra en tidligere chat eller opgave til brug i en ny AI-samtale.",
         "prompt": "Brug den vedhæftede tidligere chat eller opgave som kontekst for [NY OPGAVE]. Udtræk kun det, der er nødvendigt: mål, trufne beslutninger, verificerede fakta, relevante filer/links, åbne spørgsmål og næste konkrete skridt. Adskil tydeligt fakta fra antagelser. Genåbn ikke beslutninger, der allerede er markeret som endelige, medmindre de modsiges af ny dokumentation."
+    },
+    {
+        "title": "Claude Code: Planlæg før du ændrer kode",
+        "department": "Udvikling & Agenter",
+        "task_type": "Prepare",
+        "tool": "Claude Code",
+        "source": "Matt Village / LinkedIn",
+        "description": "Tvinger en sikker planlægningsfase ind før kodeændringer, så scope, filer, risici og verifikation er afklaret.",
+        "prompt": "Før du ændrer noget i [REPOSITORY / PROJEKT], skal du først undersøge den eksisterende kode og skrive en kort plan med: mål, relevante filer, afhængigheder, risici, afgrænsning og præcise verifikationschecks. Udfør ikke ændringer i planfasen. Markér antagelser som [VERIFICÉR], og vent på min godkendelse, hvis planen kræver en arkitekturændring eller destruktiv handling."
+    },
+    {
+        "title": "Claude Code: Gennemgå diff før commit",
+        "department": "Udvikling & Agenter",
+        "task_type": "Analyze",
+        "tool": "Claude Code",
+        "source": "Matt Village / LinkedIn",
+        "description": "Kontrollerer alle ændringer før commit og kobler dem til krav, tests og utilsigtede sideeffekter.",
+        "prompt": "Gennemgå den aktuelle git-diff før commit. Kontrollér: 1) at alle ændringer understøtter opgaven, 2) at ingen debugkode, hemmeligheder eller utilsigtede filer er med, 3) at eksisterende adfærd ikke ændres uden begrundelse, 4) at tests og dokumentation er opdateret, og 5) at diffen er minimal og læsbar. Returnér fund med fil, linje, alvorlighed og konkret rettelse. Commit ikke noget."
+    },
+    {
+        "title": "Claude Code: Kode- og sikkerhedsreview før levering",
+        "department": "IT & Drift",
+        "task_type": "Analyze",
+        "tool": "Claude Code",
+        "source": "Matt Village / LinkedIn",
+        "description": "Kombinerer funktionelt kode-review med kontrol af injection, datalæk, rettigheder og usikker fejlhåndtering.",
+        "prompt": "Udfør et selvstændigt kode- og sikkerhedsreview af [BRANCH / PULL REQUEST / ÆNDRING]. Undersøg først projektets eksisterende struktur og testsetup. Find funktionelle fejl, regressionsrisici, injection-vektorer, eksponering af hemmeligheder eller persondata, utilstrækkelig validering, svage rettigheder og manglende fejlhåndtering. Prioritér fund som kritisk, høj, middel eller lav. Rapporter også hvad du konkret har testet, og skriv 'ikke verificeret' for alt, du ikke kunne kontrollere."
+    },
+    {
+        "title": "Claude Code: Stabil langvarig arbejdssession",
+        "department": "Udvikling & Agenter",
+        "task_type": "Prepare",
+        "tool": "Claude Code",
+        "source": "Matt Village / LinkedIn",
+        "description": "Strukturerer lange kodningssessioner med mål, delmål, kontekstkomprimering og genoptagelse uden tab af beslutninger.",
+        "prompt": "Arbejd på [PROJEKT / OPGAVE] som en langvarig, sporbar session. Start med mål og succeskriterier, og opdel arbejdet i konkrete delmål. Efter hvert delmål: verificér resultatet med relevante tests eller inspektioner, registrér ændrede filer og opdatér åbne punkter. Hvis konteksten bliver stor, lav en kompakt overlevering med mål, beslutninger, fakta, udført arbejde, næste skridt og uafklarede punkter — uden at opfinde status."
+    },
+    {
+        "title": "Claude Code: Projektinstruktioner og genbrugelige skills",
+        "department": "Udvikling & Agenter",
+        "task_type": "Create",
+        "tool": "Claude Code",
+        "source": "Matt Village / LinkedIn",
+        "description": "Omsætter gentagne projektregler og arbejdsgange til versionskontrollerede instruktioner og genbrugelige skills.",
+        "prompt": "Gennemgå [PROJEKTETS GENTAGNE ARBEJDSGANGE] og foreslå en vedligeholdelig struktur for projektinstruktioner og genbrugelige skills. Adskil: 1) regler der gælder for hele projektet, 2) lokale brugerpræferencer der ikke må i git, 3) procedurer der bør være en skill, og 4) facts der skal verificeres løbende. Skriv konkrete udkast med tydelige filnavne, scope og eksempler. Opfind ikke projektregler; marker manglende information som [AFKLAR]."
     }
 ]
 
