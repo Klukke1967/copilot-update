@@ -49,6 +49,12 @@
       "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbTVoDCaPM6wE0xsDGGr9VA"
     },
     {
+      "name": "Daniel Anderson (Copilot & M365)",
+      "category": "copilot",
+      "type": "youtube",
+      "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsYYpxfrYrZaKwFPGM7shtQ"
+    },
+    {
       "name": "Anthropic News (Claude)",
       "category": "claude",
       "type": "article",
