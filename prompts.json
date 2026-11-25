@@ -3346,5 +3346,203 @@
       "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
       "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
     }
+  },
+  {
+    "id": "prompt_187",
+    "title": "Dokumentplan med målgruppe, struktur og ordkvoter",
+    "department": "Marketing & Kommunikation",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Prepare",
+    "task_type_da": "Forberedelse (Prepare)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Laver en detaljeret dokumentplan med sektioner, formål og ordkvoter, før selve teksten skrives.",
+    "prompt": "Planlæg et [DOKUMENTTYPE] om [EMNE] til [MÅLGRUPPE]. Start ikke med brødteksten. Lav først en disposition med: formål pr. sektion, hovedbudskab, anbefalet ordantal, nødvendige fakta/kilder og den ønskede handling fra læseren. Dokumentet skal samlet være på cirka [ANTAL] ord og have tonen [TONE]. Markér manglende input som [ADD].",
+    "pillars": {
+      "persona": "Kommunikations- & Content Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_188",
+    "title": "Faktamangler uden opfundne tal",
+    "department": "Marketing & Kommunikation",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Finder huller i et dokument og markerer præcist, hvor forfatteren skal indsætte egne fakta.",
+    "prompt": "Gennemgå dette dokumentudkast: [INDSÆT DOKUMENT]. Markér alle steder, hvor der mangler konkrete fakta, eksempler, tal, kilder eller beslutninger, med [ADD: BESKRIV HVAD DER MANGLER]. Opfind ingen oplysninger. Returnér bagefter en tjekliste over alle [ADD]-felter, sorteret efter hvor vigtige de er for dokumentets troværdighed.",
+    "pillars": {
+      "persona": "Kommunikations- & Content Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_189",
+    "title": "Stram teksten uden at ændre betydningen",
+    "department": "Marketing & Kommunikation",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Gør en tekst kortere, klarere og mere aktiv uden at ændre fakta, intention eller fagligt indhold.",
+    "prompt": "Rediger følgende tekst: [INDSÆT TEKST]. Gør sætningerne kortere, brug aktivt sprog, fjern gentagelser og bevar præcis samme betydning, fakta og forbehold. Bevar min grundlæggende stil. Vis først den redigerede version og derefter en kort liste over de vigtigste ændringer.",
+    "pillars": {
+      "persona": "Kommunikations- & Content Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_190",
+    "title": "Toneændring i to niveauer",
+    "department": "Marketing & Kommunikation",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Omskriver et dokument med både en nænsom justering og en fuld toneændring, så forskellen kan vurderes.",
+    "prompt": "Omskriv [INDSÆT TEKST] til målgruppen [MÅLGRUPPE] med tonen [ØNSKET TONE]. Lav to versioner: 1) Nænsom redigering, hvor struktur og formuleringer i videst muligt omfang bevares, og 2) Fuld omskrivning med tydeligere tone og bedre flow. Bevar alle fakta, begrænsninger og centrale budskaber.",
+    "pillars": {
+      "persona": "Kommunikations- & Content Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_191",
+    "title": "Dokument til fast ordgrænse",
+    "department": "Marketing & Kommunikation",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Forkorter et dokument til en fast ordgrænse uden at miste hovedbudskab eller ønsket handling.",
+    "prompt": "Forkort dette dokument til højst [ANTAL] ord: [INDSÆT TEKST]. Bevar hovedbudskabet, de vigtigste beviser og den konkrete call to action. Fjern gentagelser, baggrund der ikke er nødvendig og formuleringer uden beslutningsværdi. Kontrollér til sidst det faktiske ordantal og oplys, hvad der blev fjernet.",
+    "pillars": {
+      "persona": "Kommunikations- & Content Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_192",
+    "title": "Korrekturlæsning uden stilændring",
+    "department": "Marketing & Kommunikation",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Finder sproglige fejl i en tabel uden automatisk at ændre forfatterens personlige stil.",
+    "prompt": "Korrekturlæs følgende dokument: [INDSÆT TEKST]. Ret ikke teksten endnu. Returnér en tabel med original formulering, placering, fejltype, forslag til rettelse og en kort forklaring. Kontrollér stavning, grammatik, tegnsætning, tvetydigheder og inkonsistente begreber, men foreslå ikke stilændringer medmindre de påvirker forståelsen.",
+    "pillars": {
+      "persona": "Kommunikations- & Content Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_193",
+    "title": "Kritisk læservurdering fra 1 til 10",
+    "department": "Marketing & Kommunikation",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Giver en ærlig vurdering af et dokument fra en krævende, men fair læsers perspektiv.",
+    "prompt": "Vurder dette dokument som en krævende, men fair læser: [INDSÆT TEKST]. Giv en samlet score fra 1-10 for klarhed, troværdighed, relevans, struktur og overbevisningskraft. Forklar scoren med de tre største styrker og tre vigtigste svagheder. Afslut med de fem ændringer, der mest sandsynligt vil løfte dokumentet. Opfind ikke problemer, som ikke kan understøttes af teksten.",
+    "pillars": {
+      "persona": "Kommunikations- & Content Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_194",
+    "title": "Dokumentstruktur med overskrifter, tabeller og indholdsfortegnelse",
+    "department": "Marketing & Kommunikation",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Forbedrer et langt dokument med logiske overskrifter, tabeller og en brugbar indholdsfortegnelse.",
+    "prompt": "Strukturer dette dokument: [INDSÆT TEKST]. Foreslå en logisk hierarkisk overskriftsstruktur, hvor lange opremsninger bliver til tabeller, når det øger læsbarheden. Lav også en indholdsfortegnelse med links eller entydige overskriftsnavne. Bevar dokumentets fakta og rækkefølge, medmindre en flytning tydeligt forbedrer forståelsen.",
+    "pillars": {
+      "persona": "Kommunikations- & Content Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_195",
+    "title": "Udtræk ejere, deadlines og beslutninger",
+    "department": "Ledelse & Projektledelse",
+    "department_da": "Ledelse & Projektledelse",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Udtrækker ansvarlige, deadlines og beslutninger fra et dokument uden at udfylde manglende information med gæt.",
+    "prompt": "Analyser følgende dokument: [INDSÆT TEKST]. Udtræk alle ejere, deadlines, beslutninger, afhængigheder og åbne spørgsmål i en tabel med kolonnerne: type, formulering, ansvarlig, dato, kildeafsnit og status. Brug [IKKE ANGIVET], når dokumentet ikke indeholder informationen. Opfind ikke ejere, datoer eller beslutninger.",
+    "pillars": {
+      "persona": "Senior Projektleder / PMO Director",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_196",
+    "title": "Genbrug et dokument som e-mail, FAQ og one-page brief",
+    "department": "Marketing & Kommunikation",
+    "department_da": "Marketing & Kommunikation",
+    "task_type": "Create",
+    "task_type_da": "Forfat / Opret (Create)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Omdanner ét hoveddokument til tre målrettede formater uden at miste centrale fakta eller handlinger.",
+    "prompt": "Brug dette hoveddokument som eneste kilde: [INDSÆT DOKUMENT]. Omdan det til: 1) En kort e-mail til [MODTAGER], 2) En FAQ med de vigtigste spørgsmål og svar, og 3) Et one-page brief til [BESLUTNINGSTAGER]. Bevar alle væsentlige fakta og forbehold. Markér information, der mangler, som [VERIFICÉR], og tilføj ikke nye påstande.",
+    "pillars": {
+      "persona": "Kommunikations- & Content Strateg",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
+  },
+  {
+    "id": "prompt_197",
+    "title": "Sammenlign to dokumentversioner og find risici",
+    "department": "Indkøb & Kontrakter",
+    "department_da": "Indkøb & Kontrakter",
+    "task_type": "Analyze",
+    "task_type_da": "Analyse (Analyze)",
+    "tool": "AI Model Agnostisk (Claude / Copilot / ChatGPT)",
+    "source": "Matt Village / LinkedIn",
+    "description": "Sammenligner to kontrakt- eller forslagsversioner og finder ændringer i betydning med potentielle risici.",
+    "prompt": "Sammenlign version A og version B af dette dokument: [INDSÆT VERSION A] [INDSÆT VERSION B]. Lav en komplet tabel over ændringer i betydning, ikke kun ordændringer. Angiv afsnit, gammel formulering, ny formulering, praktisk konsekvens og om ændringen kan skabe juridisk, økonomisk eller omdømmemæssig risiko. Markér punkter, der kræver faglig eller juridisk gennemgang; giv ikke juridisk rådgivning.",
+    "pillars": {
+      "persona": "Indkøbs- & Kontraktforhandler",
+      "context": "Søg i seneste e-mails, Teams-chats og SharePoint-filer i organisationen.",
+      "format": "Klar punktopstilling med tydelige handlingspunkter og ejere.",
+      "guardrails": "Brug kun fakta fra virksomhedens data. Opfind aldrig aftaler eller tal. Marker usikre punkter med [VERIFICÉR]."
+    }
   }
 ]

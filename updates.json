@@ -1,5 +1,530 @@
 [
   {
+    "id": "chatgpt_14ba4fda",
+    "title": "How to Set Up Finances in ChatGPT",
+    "link": "https://www.youtube.com/watch?v=hwKct_1ilEQ",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-25T13:00:28Z",
+    "display_date": "25. nov. 2026",
+    "summary": "Finances in ChatGPT can help you get a clearer picture of your spending and find ways to make progress toward your financial goals. In this video, we'll get you up to speed with th...",
+    "thumbnail": "https://img.youtube.com/vi/hwKct_1ilEQ/hqdefault.jpg",
+    "tldr_da": "Videodemonstration fra OpenAI med fokus på nye modelfunktioner og problemløsning med ChatGPT."
+  },
+  {
+    "id": "claude_f916a33d",
+    "title": "Make a Vox-style map video with Claude.",
+    "link": "https://ruben.substack.com/p/make-a-vox-style-map-video-with-claude",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-11-25T08:13:25Z",
+    "display_date": "25. nov. 2026",
+    "summary": "Copy paste the exact prompt in Opus 5.5",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fra How to AI beskæftiger sig med at oprette en Vox-styled kortvideo ved at kopiere og indsætte præcis prompt i Opus 5.5."
+  },
+  {
+    "id": "chatgpt_7f83133e",
+    "title": "Experiment with SVG & 3D Design with the Codex Plugin",
+    "link": "https://www.youtube.com/watch?v=1u0hTd86_HU",
+    "category": "chatgpt",
+    "tags": [
+      "developer",
+      "research"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-24T20:32:42Z",
+    "display_date": "24. nov. 2026",
+    "summary": "Craig Dennis had never drawn an SVG by hand or used Blender. With the SVG & 3D Design plugin for Codex, he shows how to turn a reference image into an editable graphic or 3D model,...",
+    "thumbnail": "https://img.youtube.com/vi/1u0hTd86_HU/hqdefault.jpg",
+    "tldr_da": "Craig Dennis viser på YouTube, hvordan man med OpenAI's Codex-plugin for SVG & 3D Design omsætter referencebilleder til redigerbare grafikker eller 3D-modeller, selv om han tidligere aldrig har tegnet SVG eller brugt Blender."
+  },
+  {
+    "id": "chatgpt_229fe5ae",
+    "title": "How to Search for Exoplanets",
+    "link": "https://www.youtube.com/watch?v=p8lvQQebvpg",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-24T19:00:45Z",
+    "display_date": "24. nov. 2026",
+    "summary": "Two amateur astronomers, Kevin Bond and Ethan Byrd, independently found signals that could point to planets around distant stars. They knew you didn't need your own telescope for t...",
+    "thumbnail": "https://img.youtube.com/vi/p8lvQQebvpg/hqdefault.jpg",
+    "tldr_da": "Videodemonstration fra OpenAI med fokus på nye modelfunktioner og problemløsning med ChatGPT."
+  },
+  {
+    "id": "chatgpt_f35fbaa5",
+    "title": "Make sense of your day | with ChatGPT",
+    "link": "https://www.youtube.com/watch?v=2DUJ2whBJRM",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-24T16:14:03Z",
+    "display_date": "24. nov. 2026",
+    "summary": "Snap a photo and ask ChatGPT to help you figure out what you’re looking at, and highlight anything you should double-check.",
+    "thumbnail": "https://img.youtube.com/vi/2DUJ2whBJRM/hqdefault.jpg",
+    "tldr_da": "I OpenAI's YouTube-video \"Make sense of your day\" viser ChatGPT, hvordan det kan hjælpe med at forstå, hvad du ser på en foto og markerer potentielle punkter, der skal kontrolleres."
+  },
+  {
+    "id": "chatgpt_110cada9",
+    "title": "Make a day of it | with ChatGPT",
+    "link": "https://www.youtube.com/watch?v=4MFBNFyBmQg",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-24T16:14:01Z",
+    "display_date": "24. nov. 2026",
+    "summary": "ChatGPT can turn a rough idea into the perfect-sized plan for your family. Tell ChatGPT what you’re looking for and it’ll browse sites on your behalf to find local information, and...",
+    "thumbnail": "https://img.youtube.com/vi/4MFBNFyBmQg/hqdefault.jpg",
+    "tldr_da": "ChatGPT kan udvikle en grov ide til en perfekt plan for din familie. Fortæl ChatGPT, hvad du søger, og det vil søge lokale informationer på internettet for din raskhed."
+  },
+  {
+    "id": "chatgpt_ea5fe3ed",
+    "title": "Make room in your day | with ChatGPT",
+    "link": "https://www.youtube.com/watch?v=Faoam45LT-Q",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-24T16:13:58Z",
+    "display_date": "24. nov. 2026",
+    "summary": "A little more time at the park? Connect your calendar and ask ChatGPT to find a later time for your meeting.",
+    "thumbnail": "https://img.youtube.com/vi/Faoam45LT-Q/hqdefault.jpg",
+    "tldr_da": "Videodemonstration fra OpenAI med fokus på nye modelfunktioner og problemløsning med ChatGPT."
+  },
+  {
+    "id": "chatgpt_889cf895",
+    "title": "Make your day move | with ChatGPT",
+    "link": "https://www.youtube.com/watch?v=DLV3XRdJAog",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-24T16:13:55Z",
+    "display_date": "24. nov. 2026",
+    "summary": "Plans changed? With your calendar connected, ChatGPT can check your schedule, find another time, and draft a note to let people know.",
+    "thumbnail": "https://img.youtube.com/vi/DLV3XRdJAog/hqdefault.jpg",
+    "tldr_da": "ChatGPT kan tilslutte sig din kalender, tjekke din planlægning, finde et andet tidspunkt, og skrive en note til folk, hvis dine planer ændres."
+  },
+  {
+    "id": "chatgpt_3ff97674",
+    "title": "School Day | Make A Day Do Anything with ChatGPT",
+    "link": "https://www.youtube.com/watch?v=bGiFYYrmnAg",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-24T16:09:11Z",
+    "display_date": "24. nov. 2026",
+    "summary": "When an unexpected change of plans throws Marla and Ava’s day off course, the pair embark on a spontaneous adventure with a little help from ChatGPT. ChatGPT can move things around...",
+    "thumbnail": "https://img.youtube.com/vi/bGiFYYrmnAg/hqdefault.jpg",
+    "tldr_da": "Marla og Ava får hjælp fra ChatGPT til at omskabe deres dag, da der opstår uberegnede forhold."
+  },
+  {
+    "id": "chatgpt_3a1c35ca",
+    "title": "Conheça o novíssimo ChatGPT Modo Voz.",
+    "link": "https://www.youtube.com/watch?v=5p8CdiQGqV4",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-24T12:14:46Z",
+    "display_date": "24. nov. 2026",
+    "summary": "De uma simples pergunta a uma tarefa resolvida. É só falar com o ChatGPT Modo Voz. Ele te escuta e faz com você.",
+    "thumbnail": "https://img.youtube.com/vi/5p8CdiQGqV4/hqdefault.jpg",
+    "tldr_da": "ChatGPT Modus Tones er en ny funktion fra OpenAI, der tillader brugere at stille spørgsmål og udføre opgaver ved at tale direkte til chatbotten, som derefter svarer og interagerer med brugeren."
+  },
+  {
+    "id": "copilot_80e0bbda",
+    "title": "It’s Boring, But These 8 AI Plugins Save You 10 Hours a Week",
+    "link": "https://www.youtube.com/watch?v=e0EGefCi7GE",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Jeff Su (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-24T12:00:10Z",
+    "display_date": "24. nov. 2026",
+    "summary": "🎙️ Get an entire month of Wispr Flow Pro for free - https://ref.wisprflow.ai/jeff-su-yt-2 Most AI plugins look impressive in a demo, then sit unused. These are the eight #ChatGPT a...",
+    "thumbnail": "https://img.youtube.com/vi/e0EGefCi7GE/hqdefault.jpg",
+    "tldr_da": "videoer fra Jeff Su på YouTube fremhæver 8 praktiske AI-tilføjelsesprogrammer, som kan spare brugere 10 timer om ugen, selv om de måske ikke ser særligt spændende ud i praksis."
+  },
+  {
+    "id": "chatgpt_2fb78c77",
+    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "category": "chatgpt",
+    "tags": [
+      "developer",
+      "research"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-24T12:00:00Z",
+    "display_date": "24. nov. 2026",
+    "summary": "GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+    "thumbnail": "",
+    "tldr_da": "GPT-6 modeller demonstrerer evnen til at designe proteinfæller og sekvenser ved brug af fornuft og kode, og laboratoriumstest har fundet bindingsevidens for fem mål."
+  },
+  {
+    "id": "chatgpt_5b23d243",
+    "title": "Searching for distant planets with Astra",
+    "link": "https://openai.com/index/searching-for-distant-planets-with-astra",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-24T10:00:00Z",
+    "display_date": "24. nov. 2026",
+    "summary": "See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.",
+    "thumbnail": "",
+    "tldr_da": "To amatørstjernedyrker brugte Codex og Astra til at identificere potentielle exoplaneter i offentlig data fra NASA's Kepler og TESS-teleskoper."
+  },
+  {
+    "id": "claude_c2fdef9f",
+    "title": "Unpopular.",
+    "link": "https://ruben.substack.com/p/73",
+    "category": "claude",
+    "tags": [
+      "leadership"
+    ],
+    "source": "Ruben Hassid - How to AI",
+    "type": "article",
+    "published_at": "2026-11-24T02:55:32Z",
+    "display_date": "24. nov. 2026",
+    "summary": "How to get AI to answer unpopular opinions:",
+    "thumbnail": "",
+    "tldr_da": "Ruben Hassid fra How to AI diskuterer, hvordan man får AI at udtrykke udbredte meninger, som ikke er populære."
+  },
+  {
+    "id": "copilot_04921d22",
+    "title": "Copilot Studio: Classify Messages and Build Branching Workflows",
+    "link": "https://www.youtube.com/shorts/_J8mQeIdYQU",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Laura Rogers (Copilot & SharePoint)",
+    "type": "youtube",
+    "published_at": "2026-11-24T01:19:33Z",
+    "display_date": "24. nov. 2026",
+    "summary": "A message goes in, a category comes out—then each label sends it down its own branch, with the \"Classify\" action in a Copilot Studio workflow. Add an “other” path for anything uncl...",
+    "thumbnail": "https://img.youtube.com/vi/_J8mQeIdYQU/hqdefault.jpg",
+    "tldr_da": "I Copilot Studio kan du kategorisere meddelelser og oprette gabelvise arbejdsgange med en \"Classify\" handling, som sender meddelelser videre på forskellige baner afhængigt af deres kategori, med en separat \"anden\"bane for udefinerede tilfælde."
+  },
+  {
+    "id": "chatgpt_52e40eea",
+    "title": "Waiting for a better price on that gift? Use ChatGPT.",
+    "link": "https://www.youtube.com/shorts/asUuxCqj0GE",
+    "category": "chatgpt",
+    "tags": [
+      "leadership"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-24T00:36:38Z",
+    "display_date": "24. nov. 2026",
+    "summary": "Try it yourself 👉 Check the price of this item every day and let me know when it drops. Include the old price, new price, and a link to the offer.",
+    "thumbnail": "https://img.youtube.com/vi/asUuxCqj0GE/hqdefault.jpg",
+    "tldr_da": "Brug ChatGPT til at følge prisen på en ønsket gave og få advarsler når prisen falder. Indsend den gamle pris, den nye pris og en link til tilbudet."
+  },
+  {
+    "id": "chatgpt_6e7f073c",
+    "title": "How Intentful uses dots to make more time for growth",
+    "link": "https://openai.com/business/customer-stories/intentful-dots",
+    "category": "chatgpt",
+    "tags": [
+      "research"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-23T23:00:00Z",
+    "display_date": "23. nov. 2026",
+    "summary": "Marina Petrova’s dot Aria helps research websites and build proposals, while proactively flagging messages and resolving issues.",
+    "thumbnail": "",
+    "tldr_da": "Officiel opdatering fra OpenAI om modeludvikling, systemopgraderinger og AI-agenter."
+  },
+  {
+    "id": "chatgpt_b13885c6",
+    "title": "How iFood scales coding agents across 15,000 repositories",
+    "link": "https://openai.com/business/customer-stories/ifood",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-23T23:00:00Z",
+    "display_date": "23. nov. 2026",
+    "summary": "",
+    "thumbnail": "",
+    "tldr_da": "iFood skalering af kodere over 15.000 repository'er beskrives i en artikel fra OpenAI Blog."
+  },
+  {
+    "id": "chatgpt_57c260d3",
+    "title": "Clay helps sales teams win with Codex and ChatGPT",
+    "link": "https://openai.com/business/customer-stories/clay-plugins-openai",
+    "category": "chatgpt",
+    "tags": [
+      "m365",
+      "developer",
+      "research"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-23T23:00:00Z",
+    "display_date": "23. nov. 2026",
+    "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning.",
+    "thumbnail": "",
+    "tldr_da": "Clay bruger integreringer med ChatGPT og Codex til at hjælpe deres brugere med at undersøge salgsdeals og omforme data til salgsstrategier, støttet af GPT-6 modeller for fornuftig analyse."
+  },
+  {
+    "id": "chatgpt_4dc6c649",
+    "title": "OpenAI and Cisco introduce Shirudo",
+    "link": "https://openai.com/index/introducing-shirudo",
+    "category": "chatgpt",
+    "tags": [
+      "m365"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-23T20:20:00Z",
+    "display_date": "23. nov. 2026",
+    "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+    "thumbnail": "",
+    "tldr_da": "OpenAI og Cisco lancerer Shirudo, et open-source køretidsprogram for Linux, der hjælper team med at beskytte kørende systemer under udkastning af patcher."
+  },
+  {
+    "id": "chatgpt_aedd232b",
+    "title": "Investigating Linux Vulnerabilities with GPT-6 Cyber",
+    "link": "https://www.youtube.com/shorts/w-ltt0Np2cY",
+    "category": "chatgpt",
+    "tags": [
+      "m365",
+      "leadership",
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-23T19:03:11Z",
+    "display_date": "23. nov. 2026",
+    "summary": "AI can help security teams move faster from finding vulnerabilities to getting fixes into the software people rely on. In one run, GPT-6 Cyber helped validate 948 Linux kernel vuln...",
+    "thumbnail": "https://img.youtube.com/vi/w-ltt0Np2cY/hqdefault.jpg",
+    "tldr_da": "GPT-6 Cyber hjelper sikkerhedsudbyderne hurtigt at identificere og godkende sårbarheder i Linux-kernen, hvilket resulterede i validering af 948 sårbarheder i en enkelt kørsel."
+  },
+  {
+    "id": "chatgpt_f9674feb",
+    "title": "Investigating Linux Vulnerabilities with GPT-6 Cyber",
+    "link": "https://www.youtube.com/watch?v=MpsO8Ds8uyo",
+    "category": "chatgpt",
+    "tags": [
+      "m365",
+      "leadership",
+      "developer"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-23T19:02:15Z",
+    "display_date": "23. nov. 2026",
+    "summary": "AI can help security teams move faster from finding vulnerabilities to getting fixes into the software people rely on. In one run, GPT-6 Cyber helped validate 948 Linux kernel vuln...",
+    "thumbnail": "https://img.youtube.com/vi/MpsO8Ds8uyo/hqdefault.jpg",
+    "tldr_da": "GPT-6 Cyber hjelper sikkerhedsudbyderne hurtigt at identificere og bekæmpe sårbarheder i Linux-kernen, hvilket resulterede i validering af 948 sårbarheder i en enkelt kørsel."
+  },
+  {
+    "id": "chatgpt_bde2da58",
+    "title": "How Franklin Templeton uses AI for investment research | OpenAI",
+    "link": "https://www.youtube.com/shorts/gAmjBqXNoFI",
+    "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "research"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-23T14:23:23Z",
+    "display_date": "23. nov. 2026",
+    "summary": "“Just delivering data is not enough.” Franklin Templeton’s Katrina Dudley explains how OpenAI is helping the firm connect information from compliance, risk and trading, then turn i...",
+    "thumbnail": "https://img.youtube.com/vi/gAmjBqXNoFI/hqdefault.jpg",
+    "tldr_da": "Katrina Dudley fra Franklin Templeton forklarer på YouTube, hvordan OpenAI hjælper firmaet med at samle og analysere data fra compliance, risikostyring og handel."
+  },
+  {
+    "id": "chatgpt_cbe55615",
+    "title": "How Franklin Templeton uses AI for investment research | OpenAI",
+    "link": "https://www.youtube.com/watch?v=PXKvR8ta22Q",
+    "category": "chatgpt",
+    "tags": [
+      "leadership",
+      "research"
+    ],
+    "source": "OpenAI (YouTube)",
+    "type": "youtube",
+    "published_at": "2026-11-23T14:21:09Z",
+    "display_date": "23. nov. 2026",
+    "summary": "“Just delivering data is not enough.” Franklin Templeton’s Katrina Dudley explains how OpenAI is helping the firm connect information from compliance, risk and trading, then turn i...",
+    "thumbnail": "https://img.youtube.com/vi/PXKvR8ta22Q/hqdefault.jpg",
+    "tldr_da": "Katrina Dudley fra Franklin Templeton forklarer på YouTube, hvordan OpenAI hjælper firmaet med at samle og analysere data fra compliance, risikostyring og handel."
+  },
+  {
+    "id": "copilot_45acddfd",
+    "title": "How to Use Copilot in Excel for Project Management",
+    "link": "https://www.youtube.com/shorts/nTs1tGY6s0k",
+    "category": "copilot",
+    "tags": [
+      "m365",
+      "leadership"
+    ],
+    "source": "David Fortin (Copilot & Excel)",
+    "type": "youtube",
+    "published_at": "2026-11-23T13:00:30Z",
+    "display_date": "23. nov. 2026",
+    "summary": "🔥 Get the free workbook with every prompt from this video ➡️ https://davidpba.myflodesk.com/excel-beginners 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=bz9W2MGcyuc 🎓...",
+    "thumbnail": "https://img.youtube.com/vi/nTs1tGY6s0k/hqdefault.jpg",
+    "tldr_da": "David Fortin viser i sin video, hvordan man bruger Copilot i Excel til projektstyring, og tilbyder en gratis arbejdsbog med hver prompt fra videoen."
+  },
+  {
+    "id": "copilot_f8ccf26b",
+    "title": "How to Use the NEW Copilot Projects",
+    "link": "https://www.youtube.com/watch?v=qj-oyeTRjc8",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "Mike Tholfsen (Copilot)",
+    "type": "youtube",
+    "published_at": "2026-11-23T12:51:42Z",
+    "display_date": "23. nov. 2026",
+    "summary": "A step-by-step tutorial on the NEW Microsoft Copilot Projects. This is one of the new features in Microsoft Copilot and helps you organize your AI chats, files, and instructions in...",
+    "thumbnail": "https://img.youtube.com/vi/qj-oyeTRjc8/hqdefault.jpg",
+    "tldr_da": "Mike Tholfsen fra Microsoft giver en trin-for-trin vejledning i brugen af de nye Copilot Projects, der hjælper med at organisere AI- samtaler, filer og instruktioner."
+  },
+  {
+    "id": "chatgpt_42019905",
+    "title": "Connected intelligence for in-house legal",
+    "link": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+    "category": "chatgpt",
+    "tags": [
+      "m365",
+      "leadership"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-23T07:00:00Z",
+    "display_date": "23. nov. 2026",
+    "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusabl...",
+    "thumbnail": "",
+    "tldr_da": "OpenAI og Cooley diskuterer på deres blog, hvordan AI kan støtte interne retshåndteringsteam med at forbinde virksomhedscontext og oprette genbrugbar juridisk intelligence."
+  },
+  {
+    "id": "chatgpt_a082949f",
+    "title": "Richpanel helps companies automate 50% of support in 30 days",
+    "link": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+    "category": "chatgpt",
+    "tags": [
+      "developer"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-23T07:00:00Z",
+    "display_date": "23. nov. 2026",
+    "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+    "thumbnail": "",
+    "tldr_da": "Richpanel automatiserer 50% af kundesupporten for virksomheder inden for 30 dage ved at bruge AI-værktøjer som GPT-6 Astra, GPT-6.1 Sol og GPT-6 Luna."
+  },
+  {
+    "id": "copilot_a84577e3",
+    "title": "Prep for ANY Meeting with Copilot (One Prompt)",
+    "link": "https://www.youtube.com/shorts/7BPa8BoBBS4",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "David Fortin (Copilot & Excel)",
+    "type": "youtube",
+    "published_at": "2026-11-22T23:00:31Z",
+    "display_date": "22. nov. 2026",
+    "summary": "🔥 Get this meeting prep prompt + 9 more I actually use (free PDF) ➡️ https://davidpba.myflodesk.com/100-prompts 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=D-DvmrPb32...",
+    "thumbnail": "https://img.youtube.com/vi/7BPa8BoBBS4/hqdefault.jpg",
+    "tldr_da": "David Fortin tilbyder en gratis PDF med 10 mødeforberedelsesprompter, herunder et specifikt prompt for Copilot, samt en fuldt dybdegående tutorial på YouTube."
+  },
+  {
+    "id": "claude_ff0cf1a5",
+    "title": "Working with AI",
+    "link": "https://www.anthropic.com/research/working-with-ai",
+    "category": "claude",
+    "tags": [
+      "research"
+    ],
+    "source": "Anthropic Research (Claude)",
+    "type": "article",
+    "published_at": "2026-11-22T23:00:00Z",
+    "display_date": "22. nov. 2026",
+    "summary": "We interviewed people at 58 companies that use Claude about how AI is changing their work. They described few layoffs but reduced hiring, and said the most valuable uses of AI ofte...",
+    "thumbnail": "",
+    "tldr_da": "I et interview med 58 virksomheder, der bruger Claude, beskæftiger folk mindre men ansetter færre, og ser mest værdifuld brug af AI i optimering af eksisterende processer."
+  },
+  {
+    "id": "copilot_6a5a4f07",
+    "title": "8 Incredible PowerPoint Interactive Slides Copilot Built",
+    "link": "https://www.youtube.com/watch?v=WPmHGfcroRg",
+    "category": "copilot",
+    "tags": [
+      "m365"
+    ],
+    "source": "David Fortin (Copilot & Excel)",
+    "type": "youtube",
+    "published_at": "2026-11-22T12:00:13Z",
+    "display_date": "22. nov. 2026",
+    "summary": "⏬Download my free Microsoft Copilot Cheat Sheet (10,000+ downloads) 👉https://davidpba.myflodesk.com/dcvh5tisb4 🔥Join 6,000+ Busy professionals learning Copilot➡️https://learncopilo...",
+    "thumbnail": "https://img.youtube.com/vi/WPmHGfcroRg/hqdefault.jpg",
+    "tldr_da": "David Fortin tilbyder en gratis Cheat Sheet for Microsoft Copilot med fokus på interaktive PowerPoint-præsentationer og indleder med en invitation til de buske professionelle, der ønsker at lære Copilot."
+  },
+  {
+    "id": "chatgpt_d2fc1e26",
+    "title": "Perplexity and Intelligence",
+    "link": "https://openai.com/index/perplexity-and-intelligence",
+    "category": "chatgpt",
+    "tags": [
+      "developer",
+      "research"
+    ],
+    "source": "OpenAI Blog (ChatGPT)",
+    "type": "article",
+    "published_at": "2026-11-21T23:00:00Z",
+    "display_date": "21. nov. 2026",
+    "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+    "thumbnail": "",
+    "tldr_da": "Blogindlægget fra OpenAI diskuterer, hvordan perplexitet bruges til at måle fremskridt i AI-modeller og hvorfor det kan hjælpe udviklere med at etablere en fælles metode til at vurdere nye kapaciteter."
+  },
+  {
     "id": "copilot_aeb3ec53",
     "title": "Create a Branded PowerPoint from Word with Copilot",
     "link": "https://www.youtube.com/shorts/cSLZ6EpDx4g",
@@ -2733,523 +3258,5 @@
     "summary": "Learn how to use the updated SharePoint FAQ web part to manage content more effectively. See how Copilot integration changes your page-building workflow. 🔴 Need help with Microsoft...",
     "thumbnail": "https://img.youtube.com/vi/VI4NIsOArUw/hqdefault.jpg",
     "tldr_da": "Steve Corey demonstrerer på YouTube, hvordan man bruger den nye SharePoint FAQ-webdel med Copilot og giver strategier for at kontrollere omkostninger ved Microsoft 365 Copilot."
-  },
-  {
-    "id": "copilot_f54ad443",
-    "title": "Create Incredible Copilot Dashboards in Excel, PowerPoint & SharePoint",
-    "link": "https://www.youtube.com/watch?v=-XeCMdR7Zz4",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Mike Tholfsen (Copilot)",
-    "type": "youtube",
-    "published_at": "2026-11-02T12:37:21Z",
-    "display_date": "2. nov. 2026",
-    "summary": "Learn how to create amazing interactive dashboards with new features in Microsoft Copilot in Excel, PowerPoint, and SharePoint. In this step-by-step tutorial, I’ll show you how to...",
-    "thumbnail": "https://img.youtube.com/vi/-XeCMdR7Zz4/hqdefault.jpg",
-    "tldr_da": "Lær at oprette fantastiske interaktive dashboards med de nye funktioner i Microsoft Copilot i Excel, PowerPoint og SharePoint."
-  },
-  {
-    "id": "claude_3b1f47cd",
-    "title": "Progress on provable inference for large language models",
-    "link": "https://www.anthropic.com/research/provable-inference",
-    "category": "claude",
-    "tags": [
-      "research"
-    ],
-    "source": "Anthropic Research (Claude)",
-    "type": "article",
-    "published_at": "2026-11-01T23:00:00Z",
-    "display_date": "1. nov. 2026",
-    "summary": "We have made progress on a type of cryptographic proof known as a “zkSNARK.” In this post, we share some of that progress, primarily through a system we call FlashProve.",
-    "thumbnail": "",
-    "tldr_da": "I dette indlæg fra Anthropic beskrives fremskridt med den kryptografiske bevisform \"zkSNARK\" og en ny system kaldet FlashProve."
-  },
-  {
-    "id": "copilot_01935cd5",
-    "title": "How to Stop Copilot from Making Things Up",
-    "link": "https://www.youtube.com/shorts/OuPexkmO2z8",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-11-01T14:00:31Z",
-    "display_date": "1. nov. 2026",
-    "summary": "🔥 Get the CHECK trick + 9 more Copilot prompts I actually use (free PDF) ➡️ https://davidpba.myflodesk.com/100-prompts 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=D-D...",
-    "thumbnail": "https://img.youtube.com/vi/OuPexkmO2z8/hqdefault.jpg",
-    "tldr_da": "David Fortin deler tips og tricks for at forhindre Copilot i at producere udtalte antagelser, herunder CHECK-tricks og 9 yderligere Copilot-prompter i en gratis PDF. videoer og PDF findes på hans hjemmeside."
-  },
-  {
-    "id": "copilot_2f45ba37",
-    "title": "How to Convert a PDF Report to Excel with Copilot",
-    "link": "https://www.youtube.com/shorts/JTXrEUhE9Jg",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-10-31T12:00:13Z",
-    "display_date": "31. okt. 2026",
-    "summary": "🔥 Grab my free Copilot Cheat Sheet ➡️ https://davidpba.myflodesk.com/dcvh5tisb4 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=f0auVDTTpZM 🎓 Copilot Masterclass ➡️ https...",
-    "thumbnail": "https://img.youtube.com/vi/JTXrEUhE9Jg/hqdefault.jpg",
-    "tldr_da": "David Fortin viser, hvordan man bruger Copilot til at konvertere PDF-rapporter til Excel og tilbyder en gratis Cheat Sheet samt en fuld tutorial på YouTube."
-  },
-  {
-    "id": "copilot_8168f54b",
-    "title": "Excel file to Interactive Dashboard for Free with Copilot Chat",
-    "link": "https://www.youtube.com/shorts/kahoJTXNLKU",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-10-30T09:45:32Z",
-    "display_date": "30. okt. 2026",
-    "summary": "🔥 Grab my free Copilot Cheat Sheet ➡️ https://davidpba.myflodesk.com/dcvh5tisb4 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=f0auVDTTpZM 🎓 Copilot Masterclass ➡️ https...",
-    "thumbnail": "https://img.youtube.com/vi/kahoJTXNLKU/hqdefault.jpg",
-    "tldr_da": "David Fortin viser, hvordan man gratis omdanner en Excel-fil til et interaktivt dashboard med Copilot Chat. Se fuldstændig tutorial på YouTube."
-  },
-  {
-    "id": "copilot_35f323a8",
-    "title": "How to Use Copilot in Excel (Beginner Tutorial)",
-    "link": "https://www.youtube.com/watch?v=bz9W2MGcyuc",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-10-30T09:00:10Z",
-    "display_date": "30. okt. 2026",
-    "summary": "⏬Download the free Slice Slice Baby workbook (every prompt + the meeting transcript) 👉https://davidpba.myflodesk.com/excel-beginners My Copilot in Excel Quick Wins Course 👉 https:/...",
-    "thumbnail": "https://img.youtube.com/vi/bz9W2MGcyuc/hqdefault.jpg",
-    "tldr_da": "David Fortin tilbyder en gratis arbejdsbog og en hurtig kursus om hvordan bruge Copilot i Excel for begyndere."
-  },
-  {
-    "id": "claude_eb997069",
-    "title": "Clauned.",
-    "link": "https://ruben.substack.com/p/claude-jacking",
-    "category": "claude",
-    "tags": [
-      "developer"
-    ],
-    "source": "Ruben Hassid - How to AI",
-    "type": "article",
-    "published_at": "2026-10-30T02:55:40Z",
-    "display_date": "30. okt. 2026",
-    "summary": "How to reverse engineer anything in one Claude prompt:",
-    "thumbnail": "",
-    "tldr_da": "Ruben Hassid præsenterer i sin artikel i How to AI en metode for at genoprette enhver ting ved hjælp af en enkelt Claude-prompt."
-  },
-  {
-    "id": "copilot_782c37d1",
-    "title": "3 Copilot Tips to Build Your Own Skills and Agents",
-    "link": "https://www.youtube.com/shorts/bSe8Sn2_juM",
-    "category": "copilot",
-    "tags": [
-      "m365",
-      "developer"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-10-29T10:00:39Z",
-    "display_date": "29. okt. 2026",
-    "summary": "🔥 Download my Copilot Excel Skills for FREE ➡️ https://davidpba.myflodesk.com/yaoqgoo0oo 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=D8Iw8N7j5Ww 🎓 Copilot Masterclass...",
-    "thumbnail": "https://img.youtube.com/vi/bSe8Sn2_juM/hqdefault.jpg",
-    "tldr_da": "David Fortin deler gratis Copilot Excel-færdigheder og en fuld tutorial på YouTube for at hjælpe med at udvikle egne Copilot-enheder."
-  },
-  {
-    "id": "copilot_fb1cc248",
-    "title": "Word mail merge from Excel",
-    "link": "https://www.youtube.com/shorts/FShCrG19tPA",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Mike Tholfsen (Copilot)",
-    "type": "youtube",
-    "published_at": "2026-10-28T11:20:49Z",
-    "display_date": "28. okt. 2026",
-    "summary": "An oldie but a goodie #Word #wordtips #microsoftword",
-    "thumbnail": "https://img.youtube.com/vi/FShCrG19tPA/hqdefault.jpg",
-    "tldr_da": "Mike Tholfsen deler en ny tip om Word mail merge fra Excel, et klassisk vigtigt værktøj for effektiv dokumentgenereering. #Word #wordtips #microsoftword"
-  },
-  {
-    "id": "copilot_b4ffff53",
-    "title": "3 Microsoft Copilot Tips That Go Beyond Emails",
-    "link": "https://www.youtube.com/shorts/T_JqQmatYVI",
-    "category": "copilot",
-    "tags": [
-      "developer"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-10-28T10:00:37Z",
-    "display_date": "28. okt. 2026",
-    "summary": "🔥 Download the files from the full tutorial (+ build your own Agent Instructions Builder) ➡️ https://davidpba.myflodesk.com/u7ublusnlg 📽️ Watch Full Tutorial ➡️ https://www.youtube...",
-    "thumbnail": "https://img.youtube.com/vi/T_JqQmatYVI/hqdefault.jpg",
-    "tldr_da": "David Fortin giver tips til at bruge Microsoft Copilot effektivt over email, inkludere vejledning til at downloade filer og se fuldtutorial på YouTube."
-  },
-  {
-    "id": "copilot_778bfaa6",
-    "title": "What Your Microsoft 365 Environment Tells AI",
-    "link": "https://www.youtube.com/watch?v=vDROpLiDkg0",
-    "category": "copilot",
-    "tags": [
-      "m365",
-      "developer"
-    ],
-    "source": "Steve Corey (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-10-28T08:02:11Z",
-    "display_date": "28. okt. 2026",
-    "summary": "Steve Corey examines why Microsoft 365 readiness is a foundational part of Copilot success. The discussion covers Copilot Code, SharePoint knowledge bases, cost controls, authorita...",
-    "thumbnail": "https://img.youtube.com/vi/vDROpLiDkg0/hqdefault.jpg",
-    "tldr_da": "Gennemgang fra Steve Corey (YouTube) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_2123f3e8",
-    "title": "Your Microsoft 365 Tenant Is Already Part of Your AI Strategy",
-    "link": "https://stevecorey.com/microsoft-365-ai-readiness-copilot-success/",
-    "category": "copilot",
-    "tags": [
-      "leadership"
-    ],
-    "source": "Steve Corey Insights (Blog)",
-    "type": "article",
-    "published_at": "2026-10-28T07:00:00Z",
-    "display_date": "28. okt. 2026",
-    "summary": "Your Microsoft 365 tenant shapes Copilot's answers, risks, and business value. Learn how knowledge, permissions, and governance affect AI readiness.",
-    "thumbnail": "",
-    "tldr_da": "Microsoft 365-klienten former Copilots svar, risici og virksomhedsværdi. Lær hvordan viden, tilladelser og governance påvirker AI-retningslinjer."
-  },
-  {
-    "id": "claude_5bcdc646",
-    "title": "AI for Science expands to foundations and research institutions",
-    "link": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-    "category": "claude",
-    "tags": [
-      "research"
-    ],
-    "source": "Anthropic News (Claude)",
-    "type": "article",
-    "published_at": "2026-10-27T23:00:00Z",
-    "display_date": "27. okt. 2026",
-    "summary": "We’re highlighting 20 scientific foundations, institutions, and research groups around the world that we’ve partnered with in an expansion of our AI for Science program.",
-    "thumbnail": "",
-    "tldr_da": "AI for Science programmet udvides, og Anthropic har samarbejdet med 20 videnskabelige grunde, institutioner og forskningsgrupper om verden."
-  },
-  {
-    "id": "copilot_df1cd97b",
-    "title": "The AI advantage your company can keep",
-    "link": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
-    "category": "copilot",
-    "tags": [
-      "leadership",
-      "developer",
-      "research"
-    ],
-    "source": "Microsoft Copilot Blog",
-    "type": "article",
-    "published_at": "2026-10-27T15:00:00Z",
-    "display_date": "27. okt. 2026",
-    "summary": "New research across more than 200 enterprises looks at how shared knowledge can help companies coordinate their agents—and turn lessons from their work into an operational edge. Th...",
-    "thumbnail": "",
-    "tldr_da": "Ny forskning fra over 200 virksomheder viser, hvordan deling af viden kan hjælpe virksomheder med at koordinere deres agenter og omsætte deres erfaringer til en operativ fordel."
-  },
-  {
-    "id": "copilot_1ea2e5ab",
-    "title": "I knew AI + Notion would be good, but this... wow.",
-    "link": "https://www.youtube.com/watch?v=ofzHbyxkpVg",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Jeff Su (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-10-27T12:02:29Z",
-    "display_date": "27. okt. 2026",
-    "summary": "Grab my free Cowork Toolkit: https://coworkacademy.ai/toolkit?utm_source=youtube&amp;utm_medium=video&amp;utm_campaign=v213 If your #AI keeps creating Notion pages you have to fix,...",
-    "thumbnail": "https://img.youtube.com/vi/ofzHbyxkpVg/hqdefault.jpg",
-    "tldr_da": "Jeff Su på YouTube udforsker integrationen af AI i Notion og er overbevist om de positive aspekter, men opdager også udfordringer som omsortering af automatiske skabe Notion-sider."
-  },
-  {
-    "id": "copilot_3d3864fa",
-    "title": "How to Catch Up on Emails After Vacation with Copilot",
-    "link": "https://www.youtube.com/shorts/czboBvUJVwA",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-10-27T10:00:11Z",
-    "display_date": "27. okt. 2026",
-    "summary": "🔥 Get this catch-up prompt + 9 more I actually use (free PDF) ➡️ https://davidpba.myflodesk.com/100-prompts 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=D-DvmrPb324 🎓...",
-    "thumbnail": "https://img.youtube.com/vi/czboBvUJVwA/hqdefault.jpg",
-    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "claude_0a10c616",
-    "title": "Who writes this?",
-    "link": "https://ruben.substack.com/p/292481-words",
-    "category": "claude",
-    "tags": [
-      "developer"
-    ],
-    "source": "Ruben Hassid - How to AI",
-    "type": "article",
-    "published_at": "2026-10-27T02:55:35Z",
-    "display_date": "27. okt. 2026",
-    "summary": "How I write a newsletter to 994,381 subscribers with Claude Code & GitHub (and how to set up yours):",
-    "thumbnail": "",
-    "tldr_da": "Ruben Hassid fortæller om, hvordan han bruger Claude Code og GitHub til at skrive en nyhedsbrev til 994.381 abonnenter og hvordan man kan sætte det op for sig selv."
-  },
-  {
-    "id": "claude_9e22205e",
-    "title": "Early progress on accelerating drug development with Claude",
-    "link": "https://www.anthropic.com/research/early-progress-drug-development",
-    "category": "claude",
-    "tags": [
-      "research"
-    ],
-    "source": "Anthropic News (Claude)",
-    "type": "article",
-    "published_at": "2026-10-26T23:00:00Z",
-    "display_date": "26. okt. 2026",
-    "summary": "We're at the start of a major effort to speed up drug development with Claude. Over the past several months, our scientists have engaged in deep research partnerships with six orga...",
-    "thumbnail": "",
-    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
-  },
-  {
-    "id": "claude_c6996b43",
-    "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-    "link": "https://www.anthropic.com/news/expanding-partnership-gsa",
-    "category": "claude",
-    "tags": [
-      "leadership"
-    ],
-    "source": "Anthropic News (Claude)",
-    "type": "article",
-    "published_at": "2026-10-26T23:00:00Z",
-    "display_date": "26. okt. 2026",
-    "summary": "We are expanding our partnership with the General Services Administration (GSA) through a new agreement that gives government partners a 40% discount on Claude Enterprise, Claude f...",
-    "thumbnail": "",
-    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
-  },
-  {
-    "id": "claude_2ffddf6c",
-    "title": "How AI agents shape experts’ judgment calls",
-    "link": "https://www.anthropic.com/research/agents-judgment-calls",
-    "category": "claude",
-    "tags": [
-      "developer"
-    ],
-    "source": "Anthropic Research (Claude)",
-    "type": "article",
-    "published_at": "2026-10-26T23:00:00Z",
-    "display_date": "26. okt. 2026",
-    "summary": "As AI does more of the hands-on work, the hope is that experts still make the judgment calls, meaning the decisions with more than one defensible answer. We tested this with 50 pro...",
-    "thumbnail": "",
-    "tldr_da": "Forskningsopdatering fra Anthropic om modelkapacitet, videnskabelige benchmarks og AI-sikkerhed."
-  },
-  {
-    "id": "copilot_c6af7c82",
-    "title": "Fix your survey response rates instantly #MicrosoftForms #LifeHack",
-    "link": "https://www.youtube.com/shorts/s6bQRp18euE",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Laura Rogers (Copilot & SharePoint)",
-    "type": "youtube",
-    "published_at": "2026-10-26T20:19:23Z",
-    "display_date": "26. okt. 2026",
-    "summary": "Boost Microsoft Forms Survey Responses with Copilot Getting customer feedback just got way easier. Watch how Copilot handles the outreach and survey responses in seconds. Training...",
-    "thumbnail": "https://img.youtube.com/vi/s6bQRp18euE/hqdefault.jpg",
-    "tldr_da": "Laura Rogers fra Microsoft beskæftiger sig med, hvordan Copilot Microsoft Forms-undersøgelser og -svarkerhverv forbedrer hurtigt, gør kundedbacklash nemmere at få og håndtere."
-  },
-  {
-    "id": "copilot_bfd088e0",
-    "title": "Copilot Code + Work IQ Made This From ONE Prompt",
-    "link": "https://www.youtube.com/shorts/7n4uLMzmemQ",
-    "category": "copilot",
-    "tags": [
-      "developer"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-10-26T20:00:10Z",
-    "display_date": "26. okt. 2026",
-    "summary": "What do you want me to create with Copilot Code?",
-    "thumbnail": "https://img.youtube.com/vi/7n4uLMzmemQ/hqdefault.jpg",
-    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_1daeed6b",
-    "title": "Easily Create Apps with the NEW Copilot Code in Minutes!",
-    "link": "https://www.youtube.com/watch?v=0-vgKQ4OVC8",
-    "category": "copilot",
-    "tags": [
-      "developer"
-    ],
-    "source": "Scott Brant - Your365Coach (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-10-26T17:48:26Z",
-    "display_date": "26. okt. 2026",
-    "summary": "👉 Build practical Microsoft 365 Copilot skills and learn how to turn AI ideas into real workplace solutions with the Your 365 Coach Academy: https://www.your365coach.co.uk/your-365...",
-    "thumbnail": "https://img.youtube.com/vi/0-vgKQ4OVC8/hqdefault.jpg",
-    "tldr_da": "Scott Brant fra Your365Coach viser på YouTube, hvordan man hurtigt skaber apps med nyt Copilot Code og omsetter AI-ideer til virksomhedsløsninger med Microsoft 365."
-  },
-  {
-    "id": "claude_02097442",
-    "title": "How to actually keep your AI chats private:",
-    "link": "https://ruben.substack.com/p/3-prompts-to-delete-your-data-from-15b",
-    "category": "claude",
-    "tags": [
-      "leadership"
-    ],
-    "source": "Ruben Hassid - How to AI",
-    "type": "article",
-    "published_at": "2026-10-26T16:22:16Z",
-    "display_date": "26. okt. 2026",
-    "summary": "(works both with Claude and ChatGPT)",
-    "thumbnail": "",
-    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
-  },
-  {
-    "id": "copilot_4820f07b",
-    "title": "What a Full App Really Costs With Copilot Cowork!",
-    "link": "https://www.youtube.com/watch?v=PUWUAeW_Hzc",
-    "category": "copilot",
-    "tags": [
-      "developer"
-    ],
-    "source": "Steve Corey (YouTube)",
-    "type": "youtube",
-    "published_at": "2026-10-26T12:00:11Z",
-    "display_date": "26. okt. 2026",
-    "summary": "Build an entire application using Copilot Cowork for just over five dollars. Learn how to manage development costs effectively. 🔴 Need help with Microsoft 365 Copilot agents and co...",
-    "thumbnail": "https://img.youtube.com/vi/PUWUAeW_Hzc/hqdefault.jpg",
-    "tldr_da": "I videoen viser Steve Corey, hvordan man med Copilot Cowork kan bygge en hel app for mindre end 6 dollar og effektivt administrere udviklingsomkostninger."
-  },
-  {
-    "id": "copilot_db2f782b",
-    "title": "PowerPoint Copilot Interactive Slides: A Mind-Blowing New Feature | Full Tutorial",
-    "link": "https://www.youtube.com/watch?v=9ESy0tNudng",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "Mike Tholfsen (Copilot)",
-    "type": "youtube",
-    "published_at": "2026-10-26T11:38:25Z",
-    "display_date": "26. okt. 2026",
-    "summary": "A step-by-step tutorial on how to use the new Interactive Slides feature in PowerPoint Copilot one of the best features I’ve ever seen in PowerPoint! I’ll show you how to turn a si...",
-    "thumbnail": "https://img.youtube.com/vi/9ESy0tNudng/hqdefault.jpg",
-    "tldr_da": "Mike Tholfsen demonstrerer i denne fuldstændige guide, hvordan man bruger den nye interaktive slides-funktion i PowerPoint Copilot, en af de bedste funktioner nogensinde i PowerPoint."
-  },
-  {
-    "id": "copilot_26c41ba2",
-    "title": "How to Do Deep Research with Microsoft Copilot",
-    "link": "https://www.youtube.com/shorts/0NpVTw2nggE",
-    "category": "copilot",
-    "tags": [
-      "developer",
-      "research"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-10-26T11:00:34Z",
-    "display_date": "26. okt. 2026",
-    "summary": "🔥 Download the files from the full tutorial (+ build your own Agent Instructions Builder) ➡️ https://davidpba.myflodesk.com/u7ublusnlg 📽️ Watch Full Tutorial ➡️ https://www.youtube...",
-    "thumbnail": "https://img.youtube.com/vi/0NpVTw2nggE/hqdefault.jpg",
-    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "claude_e0a2cd40",
-    "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-    "link": "https://www.anthropic.com/news/s1-sec",
-    "category": "claude",
-    "tags": [
-      "leadership"
-    ],
-    "source": "Anthropic News (Claude)",
-    "type": "article",
-    "published_at": "2026-10-25T23:00:00Z",
-    "display_date": "25. okt. 2026",
-    "summary": "Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A co...",
-    "thumbnail": "",
-    "tldr_da": "Seneste annoncering fra Anthropic om Claude og praktiske forretningsmuligheder."
-  },
-  {
-    "id": "copilot_cf7d32a4",
-    "title": "How I created a Purchase Request app without writing a single line of code #nocode #ai #business",
-    "link": "https://www.youtube.com/shorts/Evn9LXTZnLA",
-    "category": "copilot",
-    "tags": [
-      "leadership",
-      "developer"
-    ],
-    "source": "Laura Rogers (Copilot & SharePoint)",
-    "type": "youtube",
-    "published_at": "2026-10-25T17:31:36Z",
-    "display_date": "25. okt. 2026",
-    "summary": "Build a Purchase Request App With Copilot Studio Building a custom app in minutes just by uploading requirements files and a prompt. The future of workflow automation in Microsoft...",
-    "thumbnail": "https://img.youtube.com/vi/Evn9LXTZnLA/hqdefault.jpg",
-    "tldr_da": "Laura Rogers fra Copilot & SharePoint demonstrerer, hvordan man med Copilot Studio opbygger en anskaffelsesanmodningsapp i få minutter uden at skrive en linje kode, ved at uploade kravfiler og give en prompt."
-  },
-  {
-    "id": "copilot_c1f7eaff",
-    "title": "How to Build a Copilot Agent in 2 Seconds",
-    "link": "https://www.youtube.com/shorts/1KM1N8nal44",
-    "category": "copilot",
-    "tags": [
-      "developer"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-10-24T10:30:00Z",
-    "display_date": "24. okt. 2026",
-    "summary": "🔥 Build your own Agent Instructions Builder (free files) ➡️ https://davidpba.myflodesk.com/u7ublusnlg 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=oHwdMkpcTyo 🎓 Copilo...",
-    "thumbnail": "https://img.youtube.com/vi/1KM1N8nal44/hqdefault.jpg",
-    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "copilot_49f063e6",
-    "title": "Microsoft Copilot Licenses Explained (Free vs Paid)",
-    "link": "https://www.youtube.com/shorts/c8mPTRUnJKM",
-    "category": "copilot",
-    "tags": [
-      "m365"
-    ],
-    "source": "David Fortin (Copilot & Excel)",
-    "type": "youtube",
-    "published_at": "2026-10-23T11:00:01Z",
-    "display_date": "23. okt. 2026",
-    "summary": "🔥 Grab my free Copilot Cheat Sheet ➡️ https://davidpba.myflodesk.com/dcvh5tisb4 📽️ Watch Full Tutorial ➡️ https://www.youtube.com/watch?v=f0auVDTTpZM 🎓 Copilot Masterclass ➡️ https...",
-    "thumbnail": "https://img.youtube.com/vi/c8mPTRUnJKM/hqdefault.jpg",
-    "tldr_da": "Gennemgang fra David Fortin (Copilot & Excel) af nye Copilot-funktioner, modelindstillinger og praktisk udrulning i M365."
-  },
-  {
-    "id": "claude_779598e5",
-    "title": "One Claude.",
-    "link": "https://ruben.substack.com/p/one",
-    "category": "claude",
-    "tags": [
-      "leadership"
-    ],
-    "source": "Ruben Hassid - How to AI",
-    "type": "article",
-    "published_at": "2026-10-23T01:55:33Z",
-    "display_date": "23. okt. 2026",
-    "summary": "How to use the new Claude, from beginner to pro:",
-    "thumbnail": "",
-    "tldr_da": "Ruben Hassids artikel \"How to AI\" fra How to AI præsenterer en guide til at bruge den nye Claude, fra grundlæggende til professionel niveau."
   }
 ]
